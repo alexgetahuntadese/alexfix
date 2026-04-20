@@ -42,14 +42,19 @@ export const NetworkStatusIndicator = () => {
 };
 
 export const OfflineBadge = () => {
-  const { isOffline } = useNetworkStatus();
+  const { isOffline, pendingMutations } = useNetworkStatus();
 
-  if (!isOffline) return null;
+  if (!isOffline && pendingMutations === 0) return null;
 
   return (
     <div className="flex items-center gap-1.5 px-2 py-1 bg-amber-500/10 text-amber-500 rounded-md text-xs font-medium">
       <WifiOff className="h-3 w-3" />
-      <span>Offline</span>
+      <span>{isOffline ? 'Offline' : 'Syncing...'}</span>
+      {pendingMutations > 0 && (
+        <span className="ml-1 px-1.5 py-0.5 bg-amber-500 text-white rounded-full text-[10px]">
+          {pendingMutations}
+        </span>
+      )}
     </div>
   );
 };

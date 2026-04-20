@@ -1,4 +1,6 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
+import { offlineQueue } from '@/lib/offlineQueue';
+import { offlineStorage } from '@/lib/offlineStorage';
 
 interface NetworkStatus {
   isOnline: boolean;
@@ -7,6 +9,7 @@ interface NetworkStatus {
   downlink: number | null;
   rtt: number | null;
   saveData: boolean;
+  pendingMutations: number;
 }
 
 export const useNetworkStatus = (): NetworkStatus => {
@@ -17,9 +20,18 @@ export const useNetworkStatus = (): NetworkStatus => {
   const [downlink, setDownlink] = useState<number | null>(null);
   const [rtt, setRtt] = useState<number | null>(null);
   const [saveData, setSaveData] = useState(false);
+  const [pendingMutations, setPendingMutations] = useState(0);
+
+  const updatePendingCount = useCallback(() => {
+    setPendingMutations(offlineQueue.getQueueSize());
+  }, []);
 
   useEffect(() => {
-    const handleOnline = () => setIsOnline(true);
+    const handleOnline = async () => {
+      setIsOnline(true);
+      // Clear expired offline storage
+      await offlineStorage.clearExpired();
+    };
     const handleOffline = () => setIsOnline(false);
 
     window.addEventListener('online', handleOnline);
@@ -52,6 +64,13 @@ export const useNetworkStatus = (): NetworkStatus => {
     };
   }, []);
 
+  // Update pending mutations count periodically
+  useEffect(() => {
+    updatePendingCount();
+    const interval = setInterval(updatePendingCount, 5000);
+    return () => clearInterval(interval);
+  }, [updatePendingCount]);
+
   return {
     isOnline,
     isOffline: !isOnline,
@@ -59,5 +78,6 @@ export const useNetworkStatus = (): NetworkStatus => {
     downlink,
     rtt,
     saveData,
+    pendingMutations,
   };
 };
