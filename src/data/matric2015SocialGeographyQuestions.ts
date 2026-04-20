@@ -4,7 +4,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   {
     "id": "m2015-social-geo-1",
     "sectionDirection": "Choose the correct answer.",
-    "question": "Share Share This Question Which of the following is the southern limit of the Western lowlands?",
+    "question": "Which of the following is the southern limit of the Western lowlands?",
     "options": [
       "Baro-Akobo lowlands",
       "Abay-Dinder lowlands",
@@ -16,7 +16,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-2",
-    "question": "Share Share This Question Which one describes the general characteristics of Ethiopian rivers?",
+    "question": "Which one describes the general characteristics of Ethiopian rivers?",
     "options": [
       "They are very suitable for water transportation.",
       "Most rivers originate from lowland areas.",
@@ -28,7 +28,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-3",
-    "question": "Share Share This Question What characterizes the inland drainage system of Ethiopia?",
+    "question": "What characterizes the inland drainage system of Ethiopia?",
     "options": [
       "It drains most parts of the northwestern Ethiopia.",
       "It includes the river basins of the Omo-Ghibe.",
@@ -40,7 +40,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-4",
-    "question": "Share Share This Question Which one of the following explains the temporal variation of rainfall in Ethiopia?",
+    "question": "Which one of the following explains the temporal variation of rainfall in Ethiopia?",
     "options": [
       "Spring is the rainy season in most parts of Ethiopia.",
       "In Autumn, many places in Ethiopia receive the highest rainfall.",
@@ -52,7 +52,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-5",
-    "question": "Share Share This Question Which one is correct about the Ethiopian Woodland Savanna vegetation?",
+    "question": "Which one is correct about the Ethiopian Woodland Savanna vegetation?",
     "options": [
       "It is very similar to European Alpine vegetation.",
       "It is known for dense acacia trees.",
@@ -64,7 +64,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-6",
-    "question": "Share Share This Question If you were asked by a tourist who wanted to see Chelad bahir in Ethiopia, which specific national park would be your recommendation?",
+    "question": "If you were asked by a tourist who wanted to see Chelad bahir in Ethiopia, which specific national park would be your recommendation?",
     "options": [
       "The Bale Mountains",
       "The Nechisar Park",
@@ -76,7 +76,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-7",
-    "question": "Share Share This Question If you are asked to propose a strategy for conservation of wildlife where hunting is strictly forbidden, what would be your suggestion as conservation area?",
+    "question": "If you are asked to propose a strategy for conservation of wildlife where hunting is strictly forbidden, what would be your suggestion as conservation area?",
     "options": [
       "National parks",
       "Sanctuaries",
@@ -88,7 +88,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-8",
-    "question": "Share Share This Question Which measure of soil conservation should be widely used against soil erosion in arid and semi-arid areas of the Horn?",
+    "question": "Which measure of soil conservation should be widely used against soil erosion in arid and semi-arid areas of the Horn?",
     "options": [
       "Terracing",
       "Intercropping",
@@ -100,7 +100,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-9",
-    "question": "Share Share This Question Which of the following igneous rock has clearly observed crystals and coarse grains?",
+    "question": "Which of the following igneous rock has clearly observed crystals and coarse grains?",
     "options": [
       "Obsidian",
       "Granite",
@@ -112,7 +112,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-10",
-    "question": "Share Share This Question One of the following is a poorly drained and aerated soil type. Which one is it?",
+    "question": "One of the following is a poorly drained and aerated soil type. Which one is it?",
     "options": [
       "Loam soils",
       "Silt soils",
@@ -124,7 +124,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-11",
-    "question": "Share Share This Question Which of the following is correct about natural causes of climate change?",
+    "question": "Which of the following is correct about natural causes of climate change?",
     "options": [
       "Continental drift changes the flow of ocean currents and winds.",
       "Volcanic eruption leads to atmospheric heating.",
@@ -136,7 +136,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-12",
-    "question": "Share Share This Question How do you explain the spatio-temporal distribution of temperature in Ethiopia?",
+    "question": "How do you explain the spatio-temporal distribution of temperature in Ethiopia?",
     "options": [
       "Annual range of temperature is greater than the daily range.",
       "Temperature decreases from the center to the peripheries.",
@@ -148,7 +148,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-13",
-    "question": "Share Share This Question Which climatic zone of Ethiopia experiences hot temperature, small cloud cover and very windy conditions throughout the year?",
+    "question": "Which climatic zone of Ethiopia experiences hot temperature, small cloud cover and very windy conditions throughout the year?",
     "options": [
       "Woina Dega",
       "Bereha",
@@ -160,7 +160,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-14",
-    "question": "Share Share This Question Why are some regions of the world more sparsely populated than others? This is because of the",
+    "question": "Why are some regions of the world more sparsely populated than others? This is because of the",
     "options": [
       "availability of fertile soil.",
       "presence of a favorable climate.",
@@ -172,7 +172,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-15",
-    "question": "Share Share This Question What type of migration results when governments move war and natural disaster-affected people to new places?",
+    "question": "What type of migration results when governments move war and natural disaster-affected people to new places?",
     "options": [
       "Evacuee",
       "Resettlement",
@@ -184,7 +184,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-16",
-    "question": "Share Share This Question How do we generalize the level of the world's urbanization across continents?",
+    "question": "How do we generalize the level of the world's urbanization across continents?",
     "options": [
       "Africa has the highest level of urbanization.",
       "Asia has a higher level of urbanization than Latin America.",
@@ -196,7 +196,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-17",
-    "question": "Share Share This Question How do we describe rural and urban settlements?",
+    "question": "How do we describe rural and urban settlements?",
     "options": [
       "Rural settlements have defined shapes.",
       "Rural areas are known by dense population.",
@@ -208,7 +208,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-18",
-    "question": "Share Share This Question Why was hilltops mainly preferred for the establishment of old urban centers of Ethiopia? This was due to their",
+    "question": "Why was hilltops mainly preferred for the establishment of old urban centers of Ethiopia? This was due to their",
     "options": [
       "water resources.",
       "defensive locations.",
@@ -220,7 +220,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-19",
-    "question": "Share Share This Question What is the size of Africa compared to the sizes of other continents?",
+    "question": "What is the size of Africa compared to the sizes of other continents?",
     "options": [
       "It is the largest continent next to the Asian continent.",
       "It constitutes half of the total land surface of the earth.",
@@ -232,7 +232,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-20",
-    "question": "Share Share This Question How do the relative compact shape and unbroken coastline of Africa impact its development?",
+    "question": "How do the relative compact shape and unbroken coastline of Africa impact its development?",
     "options": [
       "Its compact shape discourages intra-continental movements.",
       "Its unbroken coastline makes the continent rich in natural harbors.",
@@ -244,7 +244,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-21",
-    "question": "Share Share This Question Which of the following distinguishes the regions of Africa?",
+    "question": "Which of the following distinguishes the regions of Africa?",
     "options": [
       "Eastern Africa is the smallest in terms of area.",
       "Western Africa has the highest urban population.",
@@ -256,7 +256,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-22",
-    "question": "Share Share This Question Which region of Africa lies both in the northern and southern hemispheres?",
+    "question": "Which region of Africa lies both in the northern and southern hemispheres?",
     "options": [
       "Northern Africa",
       "Southern Africa",
@@ -268,7 +268,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-23",
-    "question": "Share Share This Question Among the following geological events, which one happened during the Cenozoic Era?",
+    "question": "Among the following geological events, which one happened during the Cenozoic Era?",
     "options": [
       "Formation of Laurasia and Gondwanaland",
       "Formation of plateau and volcanic mountains",
@@ -280,7 +280,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-24",
-    "question": "Share Share This Question Which of the following is correct about the African plateaus?",
+    "question": "Which of the following is correct about the African plateaus?",
     "options": [
       "Plateaus account for more than half of the landscape of the continent.",
       "The Bihé plateau is an example of low plateaus.",
@@ -292,7 +292,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-25",
-    "question": "Share Share This Question Which wind type is dominantly affecting the tropical climate of Africa?",
+    "question": "Which wind type is dominantly affecting the tropical climate of Africa?",
     "options": [
       "Polar easterlies",
       "Guinea Monsoon",
@@ -304,7 +304,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-26",
-    "question": "Share Share This Question How do you describe the seasonal temperature condition of Africa?",
+    "question": "How do you describe the seasonal temperature condition of Africa?",
     "options": [
       "Months from March to May exhibit low temperature in the most parts of the northern Africa.",
       "The Sahara Desert experiences a relatively high temperature between June to August.",
@@ -316,7 +316,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-27",
-    "question": "Share Share This Question One of the following is the main feature of warm temperate continental climatic region of Africa. Which one is it?",
+    "question": "One of the following is the main feature of warm temperate continental climatic region of Africa. Which one is it?",
     "options": [
       "Its main source of rainfall is from the Atlantic Ocean.",
       "It is mostly found in the northern parts of Africa.",
@@ -328,7 +328,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-28",
-    "question": "Share Share This Question Which part of Africa is highly prone to drought?",
+    "question": "Which part of Africa is highly prone to drought?",
     "options": [
       "The Northern tip of Africa",
       "The Southern tip of Africa",
@@ -340,7 +340,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-29",
-    "question": "Share Share This Question Which drainage system of Africa has only one major river and flows northwards?",
+    "question": "Which drainage system of Africa has only one major river and flows northwards?",
     "options": [
       "The Mediterranean Sea drainage system",
       "The Indian Ocean drainage system",
@@ -352,7 +352,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-30",
-    "question": "Share Share This Question Among the following lakes of Africa, which one is a non-rift valley lake?",
+    "question": "Among the following lakes of Africa, which one is a non-rift valley lake?",
     "options": [
       "Kivu",
       "Victoria",
@@ -364,7 +364,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-31",
-    "question": "Share Share This Question In what ways does the presence of many waterfalls, rapids and steep courses of African rivers tend to mainly benefit the socioeconomic development of the continent?",
+    "question": "In what ways does the presence of many waterfalls, rapids and steep courses of African rivers tend to mainly benefit the socioeconomic development of the continent?",
     "options": [
       "By generating hydroelectric power",
       "By creating conducive environment for fishing",
@@ -376,7 +376,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-32",
-    "question": "Share Share This Question How do you analyze the hydro politics of the Nile River?",
+    "question": "How do you analyze the hydro politics of the Nile River?",
     "options": [
       "Lower course countries are the least beneficiary of the River water.",
       "The Great Ethiopian Renaissance Dam will benefit the neighboring countries.",
@@ -388,7 +388,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-33",
-    "question": "Share Share This Question Which of the following is an example of human influence on land use?",
+    "question": "Which of the following is an example of human influence on land use?",
     "options": [
       "Agricultural programs",
       "Soil quality",
@@ -400,7 +400,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-34",
-    "question": "Share Share This Question If carefully and scientifically managed, which of the following resources tends to regenerate?",
+    "question": "If carefully and scientifically managed, which of the following resources tends to regenerate?",
     "options": [
       "Petroleum",
       "Soil",
@@ -412,7 +412,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-35",
-    "question": "Share Share This Question Among the most common woods of Ethiopia, which one has been traditionally used for making water pipes and baskets?",
+    "question": "Among the most common woods of Ethiopia, which one has been traditionally used for making water pipes and baskets?",
     "options": [
       "Bamboo",
       "Olea",
@@ -424,7 +424,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-36",
-    "question": "Share Share This Question What is the main environmental policy focus area of the Ethiopian green legacy program?",
+    "question": "What is the main environmental policy focus area of the Ethiopian green legacy program?",
     "options": [
       "Policy associated with energy resources",
       "Policy related to soil and agriculture",
@@ -436,7 +436,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-37",
-    "question": "Share Share This Question Which of the following planet is situated very close to the Sun?",
+    "question": "Which of the following planet is situated very close to the Sun?",
     "options": [
       "Jupiter",
       "Saturn",
@@ -448,7 +448,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-38",
-    "question": "Share Share This Question Which of the following describes the core structure of the earth?",
+    "question": "Which of the following describes the core structure of the earth?",
     "options": [
       "It is mainly composed of silicate minerals.",
       "It is as hot as the surface of the sun.",
@@ -460,7 +460,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-39",
-    "question": "Share Share This Question One of the following explains the Continental Drift Theory. Which one is it?",
+    "question": "One of the following explains the Continental Drift Theory. Which one is it?",
     "options": [
       "Laurasia was the northern part of the supercontinent.",
       "The theory was developed by Thomas Robert Malthus.",
@@ -472,7 +472,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-40",
-    "question": "Share Share This Question On which of the earth sub-systems listed below, can human cultural imprints be found?",
+    "question": "On which of the earth sub-systems listed below, can human cultural imprints be found?",
     "options": [
       "Atmosphere",
       "Lithosphere",
@@ -484,7 +484,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-41",
-    "question": "Share Share This Question If you find a large number of herbivore and carnivore animals in a certain geographical area in Africa, what can you generalize about the type of the climate of the area?",
+    "question": "If you find a large number of herbivore and carnivore animals in a certain geographical area in Africa, what can you generalize about the type of the climate of the area?",
     "options": [
       "Tropical desert and semi-desert",
       "Highland climate",
@@ -496,7 +496,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-42",
-    "question": "Share Share This Question Despite many efforts, wild life resources of Africa are deteriorating from time to time. If you are asked to prioritize and implement conservation measures, which one is the most important one?",
+    "question": "Despite many efforts, wild life resources of Africa are deteriorating from time to time. If you are asked to prioritize and implement conservation measures, which one is the most important one?",
     "options": [
       "Preserving the natural vegetation",
       "Establishing national parks and game reserves",
@@ -508,7 +508,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-43",
-    "question": "Share Share This Question Which soil type is mainly located in the tropical monsoon climatic region of Africa?",
+    "question": "Which soil type is mainly located in the tropical monsoon climatic region of Africa?",
     "options": [
       "Acrisols",
       "Calcisols",
@@ -520,7 +520,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-44",
-    "question": "Share Share This Question How do you describe the population size and growth of Africa?",
+    "question": "How do you describe the population size and growth of Africa?",
     "options": [
       "It has the lowest rate of population growth rate.",
       "Its population doubling time is the longest.",
@@ -532,7 +532,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-45",
-    "question": "Share Share This Question Among the following, which one describes the international migration in Africa?",
+    "question": "Among the following, which one describes the international migration in Africa?",
     "options": [
       "Brain drain is bringing more opportunities than challenges.",
       "It has modified the sociocultural assets of North Africa.",
@@ -544,7 +544,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-46",
-    "question": "Share Share This Question Let's say your birth place has a rapid rate population growth which pushes the residents of the area to permanently leave their place of living. What do you think might your place of birth benefit from these permanent migrants?",
+    "question": "Let's say your birth place has a rapid rate population growth which pushes the residents of the area to permanently leave their place of living. What do you think might your place of birth benefit from these permanent migrants?",
     "options": [
       "It solves the problem of labor shortage",
       "It results in high concentrations of elders",
@@ -556,7 +556,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-47",
-    "question": "Share Share This Question What could be generalized about the economic growth and development trend of Africa?",
+    "question": "What could be generalized about the economic growth and development trend of Africa?",
     "options": [
       "Rapid population growth acts as an engine to many African economies.",
       "Different economic sectors of the continent are being integrated.",
@@ -568,7 +568,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-48",
-    "question": "Share Share This Question Which feature best explains the socio-economic condition of developed countries?",
+    "question": "Which feature best explains the socio-economic condition of developed countries?",
     "options": [
       "High proportion of children",
       "High level of urbanization",
@@ -580,7 +580,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-49",
-    "question": "Share Share This Question What is the main implication of the large size of young population in Ethiopia?",
+    "question": "What is the main implication of the large size of young population in Ethiopia?",
     "options": [
       "The country has the smallest proportion of non-productive population.",
       "The country needs a high expenditure for the provision of basic social services.",
@@ -592,7 +592,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-50",
-    "question": "Share Share This Question What motivated the government of Ethiopia to develop anti-natalist population policy? The need to",
+    "question": "What motivated the government of Ethiopia to develop anti-natalist population policy? The need to",
     "options": [
       "reduce the rate of urban-rural migration",
       "encourage population growth",
@@ -604,7 +604,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-51",
-    "question": "Share Share This Question How does the International Monetary Fund (IMF) contribute to the economic development of nations?",
+    "question": "How does the International Monetary Fund (IMF) contribute to the economic development of nations?",
     "options": [
       "By promoting countries to set tariffs and quotas",
       "By supporting green campaigns",
@@ -616,7 +616,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-52",
-    "question": "Share Share This Question As a citizen of Ethiopia, what is your view about the advantage your country gained as a result of globalization?",
+    "question": "As a citizen of Ethiopia, what is your view about the advantage your country gained as a result of globalization?",
     "options": [
       "It marks the domination of imported products.",
       "It increases the flow of remittance.",
@@ -628,7 +628,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-53",
-    "question": "Share Share This Question Which one of the following is correct about the scope of Geography?",
+    "question": "Which one of the following is correct about the scope of Geography?",
     "options": [
       "It is delimited to the geospheres of the earth.",
       "It is limited to describing the capital cities of countries.",
@@ -640,7 +640,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-54",
-    "question": "Share Share This Question Why has the quantitative revolution been introduced to the subject matter of Geography?",
+    "question": "Why has the quantitative revolution been introduced to the subject matter of Geography?",
     "options": [
       "To change the empirical nature of geography to a descriptive one",
       "To explain and interpret spatial phenomena in a subjective manner",
@@ -652,7 +652,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-55",
-    "question": "Share Share This Question How does Geography tend to bridge natural and social sciences?",
+    "question": "How does Geography tend to bridge natural and social sciences?",
     "options": [
       "By offering different mathematical equations to natural sciences",
       "By borrowing spatial concepts from natural and social sciences",
@@ -664,7 +664,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-56",
-    "question": "Share Share This Question If you observe a point where a strong river cuts into the course of a weaker river in your locality, which of the features listed below represents the observed case?",
+    "question": "If you observe a point where a strong river cuts into the course of a weaker river in your locality, which of the features listed below represents the observed case?",
     "options": [
       "Misfit stream",
       "Elbow of capture",
@@ -676,7 +676,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-57",
-    "question": "Share Share This Question Which branch of human geography is concerned with the dynamic nature of places over time?",
+    "question": "Which branch of human geography is concerned with the dynamic nature of places over time?",
     "options": [
       "Historical geography",
       "Political geography",
@@ -688,7 +688,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-58",
-    "question": "Share Share This Question In which of the following conditions does folding happen?",
+    "question": "In which of the following conditions does folding happen?",
     "options": [
       "When two forces move away from one another",
       "When molten materials are forced out to the surface",
@@ -700,7 +700,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-59",
-    "question": "Share Share This Question What type of erosion is commonly found in coastal areas?",
+    "question": "What type of erosion is commonly found in coastal areas?",
     "options": [
       "Erosion through glaciation",
       "Erosion by sea waves",
@@ -712,7 +712,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-60",
-    "question": "Share Share This Question What is a crescent-moon shaped small hill of sediments that is formed by the action of wind called?",
+    "question": "What is a crescent-moon shaped small hill of sediments that is formed by the action of wind called?",
     "options": [
       "Beach",
       "Loess deposit",
@@ -724,7 +724,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-61",
-    "question": "Share Share This Question Which structure of the atmosphere is known by containing the lowest percentage of atmospheric mass?",
+    "question": "Which structure of the atmosphere is known by containing the lowest percentage of atmospheric mass?",
     "options": [
       "Stratosphere",
       "Troposphere",
@@ -736,7 +736,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-62",
-    "question": "Share Share This Question Which of the following refers to how energy from the sun is transmitted to the surface of the earth?",
+    "question": "Which of the following refers to how energy from the sun is transmitted to the surface of the earth?",
     "options": [
       "Radiation",
       "Advection",
@@ -748,7 +748,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-63",
-    "question": "Share Share This Question What is the common feature of planetary winds?",
+    "question": "What is the common feature of planetary winds?",
     "options": [
       "They change their directions on a daily basis",
       "They affect small areas for short periods of time",
@@ -760,7 +760,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-64",
-    "question": "Share Share This Question Which of the following is correct about ocean currents?",
+    "question": "Which of the following is correct about ocean currents?",
     "options": [
       "Ocean current is the vertical movement of ocean water.",
       "Warm ocean currents cause precipitation to the surrounding areas.",
@@ -772,7 +772,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-65",
-    "question": "Share Share This Question What was the central argument of Malthusian Population Theory?",
+    "question": "What was the central argument of Malthusian Population Theory?",
     "options": [
       "Positive checks reduce birth rates",
       "Food production increases geometrically",
@@ -784,7 +784,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-66",
-    "question": "Share Share This Question How do you explain the settlement pattern of the Ethiopian population?",
+    "question": "How do you explain the settlement pattern of the Ethiopian population?",
     "options": [
       "The Shewa and Harerge plateaus host fewer urban populations.",
       "Many urban areas in Ethiopia lie along major transport routes.",
@@ -796,7 +796,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-67",
-    "question": "Share Share This Question Which one of the following is the main impact of rapid population growth in Ethiopia?",
+    "question": "Which one of the following is the main impact of rapid population growth in Ethiopia?",
     "options": [
       "Air pollution",
       "Water pollution",
@@ -808,7 +808,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-68",
-    "question": "Share Share This Question How do you describe the economic growth and development trend of Ethiopia?",
+    "question": "How do you describe the economic growth and development trend of Ethiopia?",
     "options": [
       "Many settlements have access to all-weather roads.",
       "The country has the highest literacy rates in Africa.",
@@ -820,7 +820,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-69",
-    "question": "Share Share This Question What should policy makers in Ethiopia do to boost the economy?",
+    "question": "What should policy makers in Ethiopia do to boost the economy?",
     "options": [
       "Encouraging state control of the economy",
       "Encouraging population growth of the country",
@@ -832,7 +832,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-70",
-    "question": "Share Share This Question Why was the Plan for Accelerated and Sustained Development to End Poverty (PASDEP) not successful as planned in Ethiopia?",
+    "question": "Why was the Plan for Accelerated and Sustained Development to End Poverty (PASDEP) not successful as planned in Ethiopia?",
     "options": [
       "Because of a lack of study support from experts",
       "Due to the then global financial crisis",
@@ -844,7 +844,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-71",
-    "question": "Share Share This Question Which one of the following describes the distribution of pressure over the surface of the earth?",
+    "question": "Which one of the following describes the distribution of pressure over the surface of the earth?",
     "options": [
       "When the sun is overhead north of the equator, pressure belts shift southward.",
       "When the sun is overhead at the equator, pressure belts shift northward by small degrees.",
@@ -856,7 +856,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-72",
-    "question": "Share Share This Question Which one of the statements below explains the characteristics of a region?",
+    "question": "Which one of the statements below explains the characteristics of a region?",
     "options": [
       "A region has distinct physical elements.",
       "A region can be either artificial or natural.",
@@ -868,7 +868,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-73",
-    "question": "Share Share This Question One of the following describes the tropical zone of the earth. Which one is it?",
+    "question": "One of the following describes the tropical zone of the earth. Which one is it?",
     "options": [
       "It is found between the Tropic of Cancer and the Tropic of Capricorn.",
       "It is mostly covered by semi-desert and desert vegetation.",
@@ -880,7 +880,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-74",
-    "question": "Share Share This Question Which of the following best explains the Tundra region?",
+    "question": "Which of the following best explains the Tundra region?",
     "options": [
       "It has the highest daily range of temperature.",
       "It is mostly located in the southern hemisphere.",
@@ -892,7 +892,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-75",
-    "question": "Share Share This Question What change is mainly brought due to the development of transport and communication technologies?",
+    "question": "What change is mainly brought due to the development of transport and communication technologies?",
     "options": [
       "Distance and time have got great impact on the production",
       "Production of perishable products near major urban centers",
@@ -904,7 +904,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-76",
-    "question": "Share Share This Question Among the following, which one is primarily used to gather population data from a segment of the whole population?",
+    "question": "Among the following, which one is primarily used to gather population data from a segment of the whole population?",
     "options": [
       "Divorce records",
       "Vital registration",
@@ -916,7 +916,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-77",
-    "question": "Share Share This Question Which one of the following is the sparsely populated part of the world?",
+    "question": "Which one of the following is the sparsely populated part of the world?",
     "options": [
       "Indonesia basins",
       "East and south Asia",
@@ -928,7 +928,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-78",
-    "question": "Share Share This Question What is the main role of the tertiary economic activities in a given country's development?",
+    "question": "What is the main role of the tertiary economic activities in a given country's development?",
     "options": [
       "Making high-level decisions",
       "Providing services",
@@ -940,7 +940,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-79",
-    "question": "Share Share This Question Which of the following country is the leading in fish processing industry in Africa?",
+    "question": "Which of the following country is the leading in fish processing industry in Africa?",
     "options": [
       "Morocco",
       "Nigeria",
@@ -952,7 +952,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-80",
-    "question": "Share Share This Question Which statement best explains the practice of placer mining in Africa?",
+    "question": "Which statement best explains the practice of placer mining in Africa?",
     "options": [
       "It is one of the modern and highly productive ways of mining.",
       "It is a process of quarrying useful stones for construction purpose.",
@@ -964,7 +964,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-81",
-    "question": "Share Share This Question In which of the following contexts can the qualitative research be the preferred approach?",
+    "question": "In which of the following contexts can the qualitative research be the preferred approach?",
     "options": [
       "If the association among variables is to be quantified.",
       "If continuous variables are to be analyzed.",
@@ -976,7 +976,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-82",
-    "question": "Share Share This Question Which of the following is correct about research method and methodology?",
+    "question": "Which of the following is correct about research method and methodology?",
     "options": [
       "Research method justifies the philosophical foundation of the research.",
       "Research methodology is limited to collecting and organizing data to solve problems.",
@@ -988,7 +988,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-83",
-    "question": "Share Share This Question If you were commissioned to conduct an empirical study, which basic element of research might enable you to identify gaps to be filled by your study?",
+    "question": "If you were commissioned to conduct an empirical study, which basic element of research might enable you to identify gaps to be filled by your study?",
     "options": [
       "Developing a hypothesis",
       "Reviewing related literature",
@@ -1000,7 +1000,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-84",
-    "question": "Share Share This Question How is the relative location of the Horn of Africa described?",
+    "question": "How is the relative location of the Horn of Africa described?",
     "options": [
       "It is adjoined by the Red Sea in the northeast.",
       "It is bounded in the northwest by the Indian Ocean.",
@@ -1012,7 +1012,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-85",
-    "question": "Share Share This Question What would be the challenge of a country with a large areal size?",
+    "question": "What would be the challenge of a country with a large areal size?",
     "options": [
       "Ethnic and language diversities",
       "Shortage of arable land",
@@ -1024,7 +1024,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-86",
-    "question": "Share Share This Question What major event took place in the Horn during the Paleozoic Era?",
+    "question": "What major event took place in the Horn during the Paleozoic Era?",
     "options": [
       "Climatic change with a massive deposition",
       "Appearance of invertebrate marine creatures",
@@ -1036,7 +1036,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-87",
-    "question": "Share Share This Question Which station has the highest annual range of temperature?",
+    "question": "Which station has the highest annual range of temperature?",
     "options": [
       "Station III",
       "Station I",
@@ -1048,7 +1048,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-88",
-    "question": "Share Share This Question What type of natural vegetation is predominant at station II?",
+    "question": "What type of natural vegetation is predominant at station II?",
     "options": [
       "Conifers",
       "Maquis",
@@ -1060,7 +1060,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-89",
-    "question": "Share Share This Question What type of ecosystem is represented by station I?",
+    "question": "What type of ecosystem is represented by station I?",
     "options": [
       "Grass lands",
       "Tropical rainforest",
@@ -1072,7 +1072,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-90",
-    "question": "Share Share This Question Which station best represents the winter rainfall region of Ethiopia?",
+    "question": "Which station best represents the winter rainfall region of Ethiopia?",
     "options": [
       "Station I",
       "Station II",
@@ -1084,7 +1084,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-91",
-    "question": "Share Share This Question What can be generalized about the population structure of the region?",
+    "question": "What can be generalized about the population structure of the region?",
     "options": [
       "The region has higher percentage of economically dependent child population.",
       "The number of economically active population of the region is lower than the Sub-Saharan Africa.",
@@ -1096,7 +1096,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-92",
-    "question": "Share Share This Question What is the crude birth rate of the population?",
+    "question": "What is the crude birth rate of the population?",
     "options": [
       "5/1000",
       "10/1000",
@@ -1108,7 +1108,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-93",
-    "question": "Share Share This Question What is the population growth rate of the region?",
+    "question": "What is the population growth rate of the region?",
     "options": [
       "2.4%",
       "2.5%",
@@ -1120,7 +1120,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-94",
-    "question": "Share Share This Question The maternal mortality rate of the region is",
+    "question": "The maternal mortality rate of the region is",
     "options": [
       "1/1000.",
       "5/1000.",
@@ -1132,7 +1132,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-95",
-    "question": "Share Share This Question What is the geographic grid of point 'V'?",
+    "question": "What is the geographic grid of point 'V'?",
     "options": [
       "9°6'0\"S 33°42'0\"E",
       "9°12'0\"S 33°36'0\"E",
@@ -1144,7 +1144,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-96",
-    "question": "Share Share This Question What is the altitude of point 'N'? (Distance between upper and lower contours is 8mm and distance of the point 'N' from upper contour is 5mm)",
+    "question": "What is the altitude of point 'N'? (Distance between upper and lower contours is 8mm and distance of the point 'N' from upper contour is 5mm)",
     "options": [
       "1462.5 m",
       "1437.5 m",
@@ -1156,7 +1156,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-97",
-    "question": "Share Share This Question Which of the following marginal information is depicted on the map?",
+    "question": "Which of the following marginal information is depicted on the map?",
     "options": [
       "Direction arrow",
       "Type of projection",
@@ -1168,7 +1168,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-98",
-    "question": "Share Share This Question Which type of slope is shown by line 'KL'?",
+    "question": "Which type of slope is shown by line 'KL'?",
     "options": [
       "Even",
       "Terraced",
@@ -1180,7 +1180,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-99",
-    "question": "Share Share This Question What is the most appropriate technique to display statistical data of portion of parts in relation to a single whole?",
+    "question": "What is the most appropriate technique to display statistical data of portion of parts in relation to a single whole?",
     "options": [
       "Bar graph",
       "Line graph",
@@ -1192,7 +1192,7 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2015-social-geo-100",
-    "question": "Share Share This Question What is the areal scale of the map?",
+    "question": "What is the areal scale of the map?",
     "options": [
       "1cm² to 1.5 km²",
       "1cm² to 3 km²",

@@ -159,7 +159,7 @@ export const matric2014SatQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2014-nat-sat-14",
-    "question": "Share Share This Question",
+    "question": "Question text missing",
     "options": [
       "Elephant",
       "Lion",
@@ -171,7 +171,7 @@ export const matric2014SatQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2014-nat-sat-15",
-    "question": "Share Share This Question",
+    "question": "Question text missing",
     "options": [
       "Pencil",
       "Book",
@@ -183,7 +183,7 @@ export const matric2014SatQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2014-nat-sat-16",
-    "question": "Share Share This Question",
+    "question": "Question text missing",
     "options": [
       "Confusion",
       "Chaos",
@@ -195,7 +195,7 @@ export const matric2014SatQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2014-nat-sat-17",
-    "question": "Share Share This Question",
+    "question": "Question text missing",
     "options": [
       "Heart",
       "Eye",
@@ -207,7 +207,7 @@ export const matric2014SatQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2014-nat-sat-18",
-    "question": "Share Share This Question",
+    "question": "Question text missing",
     "options": [
       "Reader",
       "Writer",

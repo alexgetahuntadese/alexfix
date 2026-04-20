@@ -138,7 +138,7 @@ export const matric2014SocialEnglishQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2014-soc-english-10",
-    "question": "Share Share This Question",
+    "question": "Question text missing",
     "options": [
       "It is difficult for students to make changes in essays written by hand:",
       "It is difficult for students to make changes in essays written by hand.",
@@ -150,7 +150,7 @@ export const matric2014SocialEnglishQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2014-soc-english-11",
-    "question": "Share Share This Question",
+    "question": "Question text missing",
     "options": [
       "Both Addis Ababa and Dire-Dawa have become exciting cities for living.",
       "Both Addis Ababa and dire-Dawa have become exciting cities for living.",
@@ -162,7 +162,7 @@ export const matric2014SocialEnglishQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2014-soc-english-12",
-    "question": "Share Share This Question",
+    "question": "Question text missing",
     "options": [
       "I thought she knew the answer, he said, but she didn't.",
       "I thought she knew the answer, he said, but she didn't",
@@ -174,7 +174,7 @@ export const matric2014SocialEnglishQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2014-soc-english-13",
-    "question": "Share Share This Question",
+    "question": "Question text missing",
     "options": [
       "I passed my driving test last week, but, she failed hers.",
       "I passed my driving test last week but, she failed hers.",
@@ -222,7 +222,7 @@ export const matric2014SocialEnglishQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2014-soc-english-17",
-    "question": "Share Share This Question",
+    "question": "Question text missing",
     "options": [
       "fasination",
       "subsistence",
@@ -234,7 +234,7 @@ export const matric2014SocialEnglishQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2014-soc-english-18",
-    "question": "Share Share This Question",
+    "question": "Question text missing",
     "options": [
       "audience",
       "cigarete",

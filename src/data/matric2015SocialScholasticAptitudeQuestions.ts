@@ -12,7 +12,7 @@ export const matric2015SocialScholasticAptitudeQuestions: MatricExamQuestion[] =
       "Speculation"
     ],
     "correctAnswer": 1,
-    "explanation": "Devaluation means reduction in value. Its opposite is Appreciation (increase in value)."
+    "explanation": "Devaluation refers to a deliberate downward adjustment of the value of a country's currency relative to another currency or standard. Its antonym is Appreciation, which means an increase in the value of currency or assets."
   },
   {
     "id": "m2015-social-sat-2",
