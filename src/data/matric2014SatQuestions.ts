@@ -159,7 +159,7 @@ export const matric2014SatQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2014-nat-sat-14",
-    "question": "Question text missing",
+    "question": "Lion is to Africa as Tiger is to ______",
     "options": [
       "Elephant",
       "Lion",
@@ -167,11 +167,11 @@ export const matric2014SatQuestions: MatricExamQuestion[] = [
       "Leopard"
     ],
     "correctAnswer": 2,
-    "explanation": "The correct answer is option C. This is based on standard examination patterns."
+    "explanation": "The correct answer is option C. Tigers are native to Asia, just as lions are native to Africa. This is an analogy about geographic habitats of big cats."
   },
   {
     "id": "m2014-nat-sat-15",
-    "question": "Question text missing",
+    "question": "Pencil is to writing as Pen is to ______",
     "options": [
       "Pencil",
       "Book",
@@ -179,7 +179,7 @@ export const matric2014SatQuestions: MatricExamQuestion[] = [
       "Pen"
     ],
     "correctAnswer": 3,
-    "explanation": "The correct answer is option D. This is based on standard examination patterns."
+    "explanation": "The correct answer is option D. Both pencil and pen are writing instruments, making this an analogy about tools used for the same purpose."
   },
   {
     "id": "m2014-nat-sat-16",

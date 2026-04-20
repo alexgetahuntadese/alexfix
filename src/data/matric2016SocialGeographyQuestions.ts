@@ -12,8 +12,8 @@ export const matric2016SocialGeographyQuestions: MatricExamQuestion[] = [
     id: "m2016-social-geo-2",
     question: "Which statement explains the size of the African population?",
     options: ["is more populous than North America","is the third populous continent","has two-thirds of the world's population","has half of the population of Oceania"],
-    correctAnswer: 1,
-    explanation: "Africa is the third most populous continent after Asia and Europe.",
+    correctAnswer: 0,
+    explanation: "Africa has approximately 1.4 billion people, making it more populous than North America which has about 600 million people.",
   },
   {
     id: "m2016-social-geo-3",
