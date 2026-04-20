@@ -304,6 +304,7 @@ const Index = () => {
               { title: "Career Architects", desc: "Professional pathway design", icon: "💼", route: "/career-simulator" },
               { title: "Performance Analytics", desc: "Advanced progress tracking", icon: "📊", route: "/performance" },
               { title: "Elite Profile", desc: "Premium account management", icon: "👤", route: "/profile" },
+              { title: "Contact Us", desc: "Get in touch with our team", icon: "📞", route: "/contact" },
             ].map((item, index) => (
               <motion.div
                 key={index}
@@ -403,7 +404,7 @@ const Index = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="text-center md:text-left">
               <p className="text-amber-100/80 text-sm mb-2">
-                Created by <span className="text-amber-300 font-semibold">Milkesa Comm.</span> <span className="text-amber-300 font-semibold">Getahun Tadese</span>
+                Created by <span className="text-amber-300 font-semibold">Milkesa Comm.</span> <span className="text-amber-300 font-semibold">Getahun Tadese in Ethiopia</span>
               </p>
               <p className="text-amber-100/60 text-xs mb-2">
                 © 2026 Simple Road. All rights reserved.

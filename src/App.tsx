@@ -32,6 +32,7 @@ const NotesSubjectsPage = lazy(() => import("./pages/NotesSubjectsPage"));
 const NotesChaptersPage = lazy(() => import("./pages/NotesChaptersPage"));
 const BooksPage = lazy(() => import("./pages/BooksPage"));
 const BookSubjectsPage = lazy(() => import("./pages/BookSubjectsPage"));
+const ContactPage = lazy(() => import("./pages/ContactPage"));
 const LoginPage = lazy(() => import("./pages/LoginPage"));
 const SignUpPage = lazy(() => import("./pages/SignUpPage"));
 
@@ -178,6 +179,11 @@ const App = () => (
                 <Route path="/books/:grade" element={
                   <Suspense fallback={<PageLoader />}>
                     <BookSubjectsPage />
+                  </Suspense>
+                } />
+                <Route path="/contact" element={
+                  <Suspense fallback={<PageLoader />}>
+                    <ContactPage />
                   </Suspense>
                 } />
                 <Route path="/login" element={
