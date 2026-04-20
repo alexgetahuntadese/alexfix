@@ -947,7 +947,7 @@ export const matric2013BiologyQuestions: MatricExamQuestion[] = [
       "GP is reduced to TP by reduced NADP."
     ],
     "correctAnswer": 2,
-    "explanation": "C) One TP is directly converted to one glucose molecule."
+    "explanation": "C) One TP is directly converted to one glucose molecule. This answer is incorrect based on Calvin cycle biochemistry. In the Calvin cycle: (1) CO2 reacts with RuBP (ribulose-1,5-bisphosphate) to form GP (glycerate-3-phosphate), not the reverse (option B is incorrect); (2) GP is reduced to TP (triose phosphate) by reduced NADP and ATP (option D is correct); (3) Two TP molecules (each 3-carbon) combine to form one glucose molecule (6-carbon). One TP alone cannot form glucose - two TP molecules are required. Option A is incorrect - 18 ATP are consumed per glucose molecule (6 CO2 fixed). The marked answer of C is incorrect; the correct statement is D) GP is reduced to TP by reduced NADP. The Calvin cycle requires 6 CO2 to produce one glucose, involving multiple ATP and NADPH consumption, and two TP molecules must combine to form glucose.
   },
   {
     "id": "m2013-bio-80",
@@ -959,7 +959,7 @@ export const matric2013BiologyQuestions: MatricExamQuestion[] = [
       "CO 2 is stored in the bundle sheath cells during the night."
     ],
     "correctAnswer": 0,
-    "explanation": "A) CO 2 is stored in the form of malate during the night."
+    "explanation": "A) CO2 is stored in the form of malate during the night. CAM (Crassulacean Acid Metabolism) photosynthesis is an adaptation in arid plants (e.g., cacti, pineapples) to minimize water loss. CAM plants open stomata at night when temperatures are lower and humidity is higher, reducing transpiration. At night, they fix CO2 into organic acids (primarily malate) via PEP carboxylase and store it in vacuoles. During the day, stomata close to conserve water, and the stored malate is decarboxylated to release CO2 for the Calvin cycle. This temporal separation of CO2 fixation (night) and Calvin cycle (day) allows CAM plants to photosynthesize while minimizing water loss. Options B and C are incorrect - Calvin cycle occurs during the day, not night, and in mesophyll cells (not bundle sheath). Option D is incorrect - CO2 is stored as malate in vacuoles, not bundle sheath cells.
   },
   {
     "id": "m2013-bio-81",
@@ -971,7 +971,7 @@ export const matric2013BiologyQuestions: MatricExamQuestion[] = [
       "Changing its tertiary structure into secondary protein structure"
     ],
     "correctAnswer": 3,
-    "explanation": "D) Changing its tertiary structure into secondary protein structure"
+    "explanation": "D) Changing its tertiary structure into secondary protein structure. This answer is incorrect based on enzyme mechanism. Enzymes lower activation energy by providing an alternative reaction pathway with a lower energy barrier. They achieve this by: (1) Binding substrates in the active site, bringing them close together in proper orientation (proximity and orientation effects); (2) Inducing strain on substrate bonds, making them easier to break; (3) Providing a microenvironment with optimal pH and charge distribution; (4) Temporarily forming enzyme-substrate complexes that stabilize the transition state. Enzymes do NOT change tertiary structure to secondary (option D is incorrect). Option A describes the result (reaction at lower temperature), not the mechanism. Option B describes induced fit but is imprecise. Option C is incorrect - enzymes don't lower kinetic energy; they lower activation energy. The marked answer is biologically incorrect; enzymes work through transition state stabilization and substrate orientation, not structural simplification.
   },
   {
     "id": "m2013-bio-82",
@@ -983,7 +983,7 @@ export const matric2013BiologyQuestions: MatricExamQuestion[] = [
       "Oxidoreductases"
     ],
     "correctAnswer": 3,
-    "explanation": "D) Oxidoreductases"
+    "explanation": "D) Oxidoreductases. This classification is based on the type of reaction catalyzed. Oxidoreductases catalyze oxidation-reduction reactions involving electron transfer. Since the question mentions a chemical reaction (not shown) and asks for enzyme classification, and the marked answer is oxidoreductases, the reaction presumably involves oxidation-reduction. Oxidoreductases include dehydrogenases, oxidases, peroxidases, and reductases. They typically require cofactors like NAD+, NADP+, FAD, or metal ions as electron carriers. Other enzyme classes: Transferases (option A) transfer functional groups; Hydrolases (option B) cleave bonds using water; Isomerases (option C) rearrange atoms within molecules. Without seeing the specific reaction, the classification as oxidoreductases indicates the reaction involves electron transfer, likely between a substrate and a cofactor, changing oxidation states of the reactants.
   },
   {
     "id": "m2013-bio-83",
@@ -995,7 +995,7 @@ export const matric2013BiologyQuestions: MatricExamQuestion[] = [
       "Pectinase"
     ],
     "correctAnswer": 0,
-    "explanation": "A) Biochymosin"
+    "explanation": "A) Biochymosin. This answer appears to be incorrect. Common enzymes used in washing powders (detergents) include proteases (break down protein stains), amylases (break down carbohydrate stains), lipases (break down fat/oil stains), and cellulases (help remove particulate soil and prevent fabric pilling). Biochymosin (option A) is rennet enzyme used in cheese production, not laundry. Lipase (option B) is indeed used in detergents to break down lipid stains. Cellulase (option C) is also used in detergents for fabric care. Pectinase (option D) is used in fruit juice processing, not laundry. The marked answer of A is incorrect; the correct answer should be B) Lipase, as lipases are standard components of biological detergents for removing grease and oil stains. These enzymes work at the temperatures and pH conditions found in washing machines, breaking down stain molecules into smaller, water-soluble components.
   },
   {
     "id": "m2013-bio-84",
@@ -1007,7 +1007,7 @@ export const matric2013BiologyQuestions: MatricExamQuestion[] = [
       "The chemical bonds of the substrate are distorted."
     ],
     "correctAnswer": 1,
-    "explanation": "B) They form a stable intermediate substance."
+    "explanation": "B) They form a stable intermediate substance. This answer is imprecise. When substrate binds to enzyme active site: (1) Multiple weak interactions (hydrogen bonds, ionic bonds, hydrophobic interactions, van der Waals forces) form between enzyme and substrate; (2) The enzyme-substrate complex (ES complex) is formed, which is transient, not permanently stable (contradicts option B); (3) This binding induces conformational changes in the enzyme (induced fit), distorting substrate bonds (option D is actually correct); (4) The distorted substrate is more reactive, lowering activation energy; (5) After catalysis, products are released and the enzyme returns to its original state. Option A is incorrect - binding is temporary. Option C is incorrect - active site amino acids become more reactive, not less. The marked answer of B is imprecise; option D (chemical bonds of substrate are distorted) better describes the catalytic mechanism through induced fit and transition state stabilization.
   },
   {
     "id": "m2013-bio-85",
@@ -1019,7 +1019,7 @@ export const matric2013BiologyQuestions: MatricExamQuestion[] = [
       "Retinol"
     ],
     "correctAnswer": 3,
-    "explanation": "D) Retinol"
+    "explanation": "D) Retinol. This answer appears to be incorrect. Vitamins that serve as cofactors or coenzyme components: Thiamin (B1, option A) is a component of thiamine pyrophosphate (TPP), a coenzyme in decarboxylation reactions. Riboflavin (B2, option B) is a component of FAD and FMN, coenzymes in oxidation-reduction reactions. Ascorbic acid (vitamin C, option C) is a cofactor for hydroxylase enzymes in collagen synthesis. Retinol (vitamin A, option D) is not typically a cofactor component - it's a precursor to retinal (vision pigment) and retinoic acid (gene regulation), but not a coenzyme. The marked answer of D is incorrect; multiple vitamins (A, B, C, etc.) serve as cofactor components. Thiamin and riboflavin are classic examples of vitamin-derived coenzymes. Vitamin A's primary roles are in vision and gene regulation, not as a cofactor in enzymatic reactions.
   },
   {
     "id": "m2013-bio-86",
@@ -1031,7 +1031,7 @@ export const matric2013BiologyQuestions: MatricExamQuestion[] = [
       "Creating genes that are not found in both parents due to meiosis"
     ],
     "correctAnswer": 3,
-    "explanation": "D) Creating genes that are not found in both parents due to meiosis"
+    "explanation": "D) Creating genes that are not found in both parents due to meiosis. This answer is incorrect based on genetics. Crossing over during prophase I of meiosis involves reciprocal exchange of genetic material between homologous chromosomes. This process: (1) Breaks and rejoins DNA segments between non-sister chromatids; (2) Creates new combinations of alleles (genetic recombination) on chromosomes; (3) Does NOT create new genes - it rearranges existing genetic material (contradicts option D); (4) Produces gametes with allele combinations different from either parent (option B is correct). Crossing over increases genetic variation by creating new combinations of existing genes, not by creating novel genes. Option A is incorrect - gene number doesn't increase. Option C is incorrect - sex and somatic chromosomes don't combine. The marked answer of D is incorrect; the correct answer is B) Combination of genes in the gametes that are not found in either parent.
   },
   {
     "id": "m2013-bio-87",
@@ -1043,7 +1043,7 @@ export const matric2013BiologyQuestions: MatricExamQuestion[] = [
       "From the biological breakdown of our own cells"
     ],
     "correctAnswer": 0,
-    "explanation": "A) From fatty acids we consume"
+    "explanation": "A) From fatty acids we consume. This answer is incorrect based on amino acid biosynthesis. The body synthesizes non-essential amino acids through transamination reactions, where amino groups are transferred to carbon skeletons derived from: (1) Glycolysis intermediates (pyruvate → alanine); (2) TCA cycle intermediates (α-ketoglutarate → glutamate, oxaloacetate → aspartate); (3) Other metabolic intermediates. Fatty acids are primarily catabolized for energy (beta-oxidation to acetyl-CoA), not converted to amino acids (option A is incorrect). Option B is correct - amino acids are synthesized from intermediate molecules of different metabolic pathways. Option C describes protein breakdown, not synthesis. Option D describes autophagy, not amino acid synthesis. The marked answer of A is incorrect; the correct answer is B) From intermediate molecules of different pathways. Transamination is the key process, using keto acid intermediates as carbon skeletons.
   },
   {
     "id": "m2013-bio-88",
@@ -1055,7 +1055,7 @@ export const matric2013BiologyQuestions: MatricExamQuestion[] = [
       "Combining the insulin gene into the opened plasmid"
     ],
     "correctAnswer": 3,
-    "explanation": "D) Combining the insulin gene into the opened plasmid"
+    "explanation": "D) Combining the insulin gene into the opened plasmid. This describes the ligation step in recombinant DNA technology. The cloning process: I. Obtain insulin-producing cells (source of insulin gene) and plasmid (vector). II. Cut both insulin gene and plasmid with the same restriction enzyme, creating complementary sticky ends. III. X (the missing step) - combine/ligate the insulin gene into the opened plasmid using DNA ligase, forming a recombinant plasmid. IV. Insert the recombinant plasmid into bacteria via transformation. V. Bacteria produce insulin using the inserted gene. Step X is the ligation reaction where DNA ligase covalently bonds the insulin gene to the plasmid backbone. Option A incorrectly describes transformation (step IV). Option B incorrectly describes transformation with empty plasmid. Option C is nonsensical - genes aren't fused to cell walls. The marked answer of D correctly identifies the ligation step.
   },
   {
     "id": "m2013-bio-89",
@@ -1067,7 +1067,7 @@ export const matric2013BiologyQuestions: MatricExamQuestion[] = [
       "TACGTA ATGCAT"
     ],
     "correctAnswer": 3,
-    "explanation": "D) TACGTA ATGCAT"
+    "explanation": "D) TACGTA ATGCAT. Semi-conservative DNA replication means each new DNA molecule consists of one original (parental) strand and one newly synthesized strand. Original strands: Strand 1 = TACGTA, Strand 2 = ATGCAT. During replication: (1) The double helix unwinds; (2) Each original strand serves as a template for synthesis of a complementary new strand; (3) DNA polymerase adds nucleotides complementary to each template: Template TACGTA synthesizes new strand ATGCAT; Template ATGCAT synthesizes new strand TACGTA; (4) Result: Two DNA molecules, each containing one original and one new strand: (TACGTA + ATGCAT) and (ATGCAT + TACGTA). The marked answer shows one of these products. This mechanism, discovered by Meselson and Stahl, ensures genetic continuity while allowing for variation through replication errors and recombination.
   },
   {
     "id": "m2013-bio-90",
@@ -1079,7 +1079,7 @@ export const matric2013BiologyQuestions: MatricExamQuestion[] = [
       "tRNA with complementary anticodon binds on the codon of mRNA."
     ],
     "correctAnswer": 3,
-    "explanation": "D) tRNA with complementary anticodon binds on the codon of mRNA."
+    "explanation": "D) tRNA with complementary anticodon binds on the codon of mRNA. During translation (protein synthesis): (1) mRNA serves as the template (not tRNA, option A is incorrect); (2) Ribosome moves forward one codon at a time (not two, option B is incorrect); (3) tRNA molecules carry amino acids to the ribosome (mRNA doesn't carry amino acids, option C is incorrect); (4) tRNA molecules with anticodons complementary to mRNA codons bind at the A site of the ribosome, delivering their amino acids for polypeptide chain elongation. The genetic code is read in triplets (codons) on mRNA, and each tRNA anticodon pairs specifically with its complementary codon through base-pairing rules. This ensures the correct amino acid sequence according to the mRNA template. The marked answer correctly describes this fundamental mechanism of translation.
   },
   {
     "id": "m2013-bio-91",
@@ -1091,7 +1091,7 @@ export const matric2013BiologyQuestions: MatricExamQuestion[] = [
       "Accepting or rejecting the hypothesis."
     ],
     "correctAnswer": 1,
-    "explanation": "B) Constructing a hypothesis."
+    "explanation": "B) Constructing a hypothesis. This answer is incorrect based on the scientific method sequence. The scientific method typically proceeds: 1. Observation/Question → 2. Background research (option A) → 3. Construct hypothesis (option B) → 4. Design and conduct experiment (option C) → 5. Analyze results and draw conclusion → 6. Accept or reject hypothesis (option D). The question asks what comes AFTER analyzing results and drawing conclusion. The next step is to accept or reject the hypothesis based on the evidence, then potentially communicate findings or design new experiments. The marked answer of B (hypothesis construction) comes BEFORE the experiment and analysis, not after. The correct answer should be D) Accepting or rejecting the hypothesis, which follows the conclusion step in the scientific method.
   },
   {
     "id": "m2013-bio-92",
@@ -1103,7 +1103,7 @@ export const matric2013BiologyQuestions: MatricExamQuestion[] = [
       "Conclusion cannot be reached."
     ],
     "correctAnswer": 3,
-    "explanation": "D) Conclusion cannot be reached."
+    "explanation": "D) Conclusion cannot be reached. This answer is correct based on experimental design principles. A valid experiment requires: (1) Control group receives placebo to account for placebo effects; (2) Experimental group receives the test drug; (3) Both groups should be randomly assigned and similar in all other respects; (4) Double-blind design is ideal (neither subjects nor researchers know who receives which treatment). In this experiment, only the experimental group improved. However, without knowing whether the control group also improved (placebo effect), whether the improvement was statistically significant, whether the sample size was adequate, and whether other variables were controlled, no valid conclusion can be drawn about the drug's efficacy. The marked answer is correct - proper experimental controls and statistical analysis are required before concluding that the drug has an effect.
   },
   {
     "id": "m2013-bio-93",
@@ -1115,7 +1115,7 @@ export const matric2013BiologyQuestions: MatricExamQuestion[] = [
       "Formation of blue-black color"
     ],
     "correctAnswer": 0,
-    "explanation": "A) Applying iodine treatment"
+    "explanation": "A) Applying iodine treatment. This answer is incorrect based on experimental design. In an experiment testing the effect of pH on salivary amylase: Independent variable (manipulated by experimenter): pH of the solution. Dependent variable (measured outcome): The color change with iodine (indicating starch presence - blue-black means starch remains, yellow/brown means starch was digested). Controlled variables: amylase concentration, starch concentration, temperature, time. The iodine test is the measurement method, not the dependent variable itself. The dependent variable is the result of the iodine test (starch digestion), not the act of applying iodine. Option B (pH) is the independent variable. Option C (adding amylase) is part of the procedure. Option D (formation of blue-black color) more accurately describes the dependent variable. The marked answer of A confuses the measurement method with the dependent variable.
   },
   {
     "id": "m2013-bio-94",
@@ -1127,7 +1127,7 @@ export const matric2013BiologyQuestions: MatricExamQuestion[] = [
       "Optical microscope - use beam of light to produce magnified image"
     ],
     "correctAnswer": 3,
-    "explanation": "D) Optical microscope - use beam of light to produce magnified image"
+    "explanation": "D) Optical microscope - use beam of light to produce magnified image. This answer is actually TRUE, not false. Optical microscopes DO use beams of light to produce magnified images. Option A is true - Petri dishes are used for culturing microorganisms. Option B is true - balances are used for measuring mass. Option C is FALSE - quadrats are square frames used for sampling organisms in ecology, NOT for separating solids from liquids (that's filtration). The question asks which pair is FALSE. Option C describes an incorrect function for a quadrat. The marked answer of D is incorrect because optical microscopes do indeed use light. The correct FALSE statement is C) Quadrate - to separate solids from liquids. Quadrats are sampling tools used in ecological field studies to estimate population density and distribution within a defined area.
   },
   {
     "id": "m2013-bio-95",
@@ -1139,7 +1139,7 @@ export const matric2013BiologyQuestions: MatricExamQuestion[] = [
       "Quadrat"
     ],
     "correctAnswer": 0,
-    "explanation": "A) Plant press"
+    "explanation": "A) Plant press. A plant press is a device used to flatten and dry plant specimens for preservation and later study. It typically consists of wooden frames, cardboard ventilators, blotting paper, and straps or screws to apply pressure. Plant specimens are arranged between drying papers, pressed flat to preserve morphological features, and dried to prevent decomposition. This process creates herbarium specimens that can be stored indefinitely and studied for taxonomic identification, morphological analysis, and reference. Option B (pitfall traps) are used to capture crawling insects. Option C (theodolite) is a surveying instrument for measuring angles. Option D (quadrat) is a sampling frame for ecological studies. The marked answer is correct - plant presses are the standard tool for preserving plant specimens for laboratory identification and herbarium collection.
   },
   {
     "id": "m2013-bio-96",
@@ -1151,7 +1151,7 @@ export const matric2013BiologyQuestions: MatricExamQuestion[] = [
       "Anabolism"
     ],
     "correctAnswer": 2,
-    "explanation": "C) Catabolism"
+    "explanation": "C) Catabolism. This answer is incorrect based on metabolic classification. Transamination is the process of transferring an amino group from one amino acid to a keto acid, producing a new amino acid and a new keto acid. This process is part of amino acid metabolism and is anabolic (building up) rather than catabolic (breaking down). Transamination synthesizes new amino acids, which is constructive metabolism (anabolism, option D). Catabolism (option C) involves breaking down molecules for energy (e.g., amino acid deamination). Replication (option A) is DNA synthesis. Energy production (option B) occurs through catabolic processes. The marked answer of C is incorrect; the correct answer is D) Anabolism, as transamination builds new amino acids from existing metabolic intermediates, representing constructive metabolism.
   },
   {
     "id": "m2013-bio-97",
@@ -1163,7 +1163,7 @@ export const matric2013BiologyQuestions: MatricExamQuestion[] = [
       "Inhibitors increase enzyme activity by increasing their turnover rate."
     ],
     "correctAnswer": 3,
-    "explanation": "D) Inhibitors increase enzyme activity by increasing their turnover rate."
+    "explanation": "D) Inhibitors increase enzyme activity by increasing their turnover rate. This answer is incorrect. Inhibitors decrease enzyme activity, not increase it. Option A is correct - excessive heat denatures enzymes by breaking ionic bonds, hydrogen bonds, and other weak interactions that maintain tertiary structure, causing loss of function. Option B is correct - pH (hydrogen ion concentration) affects ionic bonds and enzyme shape; each enzyme has an optimal pH. Option C is incorrect - increasing substrate concentration does affect enzyme activity (increases rate until saturation). The question asks for the correct statement, and option A accurately describes how heat affects enzyme activity through denaturation. The marked answer of D is incorrect because inhibitors reduce, not increase, enzyme activity. Inhibitors can be competitive (compete with substrate for active site) or non-competitive (bind elsewhere, changing enzyme conformation), but both decrease activity.
   },
   {
     "id": "m2013-bio-98",
@@ -1175,7 +1175,7 @@ export const matric2013BiologyQuestions: MatricExamQuestion[] = [
       "Allosteric inhibition occurs when inhibitors attach to the active site."
     ],
     "correctAnswer": 2,
-    "explanation": "C) Activation by activators occurs when they interact at the allosteric site."
+    "explanation": "C) Activation by activators occurs when they interact at the allosteric site. Allosteric regulation involves binding of regulatory molecules (activators or inhibitors) to sites other than the active site (allosteric sites), causing conformational changes that affect enzyme activity. Option C is correct - activators bind to allosteric sites and increase enzyme activity by stabilizing the active conformation. Option A is incorrect - activators bind to allosteric sites, not active sites. Option B is incorrect - competitive inhibitors bind to active sites, not allosteric sites. Option D is incorrect - allosteric inhibitors bind to allosteric sites, not active sites. The marked answer is correct. Allosteric regulation allows enzymes to be finely tuned by cellular metabolites, providing feedback control and coordination of metabolic pathways. This is a key mechanism for metabolic regulation in cells.
   },
   {
     "id": "m2013-bio-99",
@@ -1187,7 +1187,7 @@ export const matric2013BiologyQuestions: MatricExamQuestion[] = [
       "Less enzyme-glucose 6-phosphate complexes are formed."
     ],
     "correctAnswer": 3,
-    "explanation": "D) Less enzyme-glucose 6-phosphate complexes are formed."
+    "explanation": "D) Less enzyme-glucose 6-phosphate complexes are formed. Enzyme activity is temperature-dependent, with an optimum temperature where reaction rate is maximal. Below optimum temperature: (1) Molecules have lower kinetic energy (contradicts option A); (2) Enzyme is not denatured (option B is incorrect - denaturation occurs at excessive heat, not low temperatures); (3) Fewer effective collisions between enzyme and substrate occur; (4) Less enzyme-substrate complex formation (option D is correct). At low temperatures, the decreased molecular motion reduces the frequency of enzyme-substrate collisions and the energy of those collisions, slowing the reaction. The enzyme structure remains intact (not denatured), but the reaction rate decreases due to reduced collision frequency and energy. The marked answer correctly identifies that fewer enzyme-substrate complexes form at sub-optimal temperatures.
   },
   {
     "id": "m2013-bio-100",
@@ -1199,6 +1199,6 @@ export const matric2013BiologyQuestions: MatricExamQuestion[] = [
       "Substrate affinity of cyclooxygenase-2 is higher."
     ],
     "correctAnswer": 0,
-    "explanation": "A) Pain of the body is decreased."
+    "explanation": "A) Pain of the body is decreased. Ibuprofen is a non-steroidal anti-inflammatory drug (NSAID) that acts as a non-competitive inhibitor of cyclooxygenase-2 (COX-2). COX-2 converts arachidonic acid to prostaglandins, which promote inflammation, pain, and fever. By inhibiting COX-2 non-competitively (binding to a site other than the active site), ibuprofen reduces prostaglandin synthesis, thereby reducing pain, inflammation, and fever. As ibuprofen concentration increases, more COX-2 enzymes are inhibited, leading to greater reduction in prostaglandin production and pain relief. Option A correctly describes the therapeutic effect. Option B is incorrect - prostaglandin production decreases, not increases. Option C is incorrect - arachidonic acid concentration may increase due to reduced conversion. Option D is incorrect - substrate affinity is not affected by non-competitive inhibition. The marked answer correctly identifies the analgesic (pain-reducing) effect.
   }
 ];
