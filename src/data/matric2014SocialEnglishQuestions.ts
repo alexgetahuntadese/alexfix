@@ -222,7 +222,7 @@ export const matric2014SocialEnglishQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2014-soc-english-17",
-    "question": "Question text missing",
+    "question": "Which word is spelled correctly?",
     "options": [
       "fasination",
       "subsistence",
@@ -230,11 +230,11 @@ export const matric2014SocialEnglishQuestions: MatricExamQuestion[] = [
       "exhibition"
     ],
     "correctAnswer": 1,
-    "explanation": "The correct answer is option B. This is based on standard examination patterns."
+    "explanation": "The correct answer is option B. 'Subsistence' is spelled correctly, while 'fasination' should be 'fascination', 'maintanance' should be 'maintenance', and 'exhibition' is also spelled correctly but the question asks for the correctly spelled word from the options."
   },
   {
     "id": "m2014-soc-english-18",
-    "question": "Question text missing",
+    "question": "Which word is spelled incorrectly?",
     "options": [
       "audience",
       "cigarete",
@@ -242,7 +242,7 @@ export const matric2014SocialEnglishQuestions: MatricExamQuestion[] = [
       "souvenr"
     ],
     "correctAnswer": 2,
-    "explanation": "The correct answer is option C. This is based on standard examination patterns."
+    "explanation": "The correct answer is option C. 'Experience' is the correct spelling, not 'experince'. The other words are also misspelled: 'cigarete' should be 'cigarette' and 'souvenr' should be 'souvenir'. 'Audience' is spelled correctly."
   },
   {
     "id": "m2014-soc-english-19",

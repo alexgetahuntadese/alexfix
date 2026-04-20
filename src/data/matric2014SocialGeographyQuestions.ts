@@ -107,7 +107,7 @@ export const matric2014SocialGeographyQuestions: MatricExamQuestion[] = [
       "Before the 1930, the rate of population growth was very high."
     ],
     "correctAnswer": 1,
-    "explanation": "The correct answer is option B. This is based on standard examination patterns."
+    "explanation": "Between 1984 and 2007, Ethiopia experienced rapid population growth, though it is actually the second most populous country in Africa after Nigeria, not third."
   },
   {
     "id": "m2014-soc-geography-10",
@@ -286,8 +286,8 @@ export const matric2014SocialGeographyQuestions: MatricExamQuestion[] = [
       "Currently, Ethiopia is one of the middle income countries.",
       "The majority of Ethiopian population has access to clean water."
     ],
-    "correctAnswer": 0,
-    "explanation": "The correct answer is option A. This is based on standard examination patterns."
+    "correctAnswer": 1,
+    "explanation": "Ethiopia's illiteracy rate has significantly decreased since the 1990s due to expanded education programs."
   },
   {
     "id": "m2014-soc-geography-25",

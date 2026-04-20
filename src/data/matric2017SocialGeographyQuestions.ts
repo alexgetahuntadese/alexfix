@@ -765,7 +765,7 @@ const answerKey: Record<string, number> = {
   "m2017-social-geo-59": 3,
   "m2017-social-geo-60": 1,
   "m2017-social-geo-61": 2,
-  "m2017-social-geo-62": 3,
+  "m2017-social-geo-62": 0,
   "m2017-social-geo-63": 3,
   "m2017-social-geo-64": 1,
   "m2017-social-geo-65": 2,
