@@ -183,7 +183,7 @@ export const matric2014SatQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2014-nat-sat-16",
-    "question": "Question text missing",
+    "question": "Order is the opposite of ______",
     "options": [
       "Confusion",
       "Chaos",
@@ -191,7 +191,7 @@ export const matric2014SatQuestions: MatricExamQuestion[] = [
       "Legal"
     ],
     "correctAnswer": 0,
-    "explanation": "The correct answer is option A. This is based on standard examination patterns."
+    "explanation": "The correct answer is option A. Confusion is the opposite of order, representing a lack of organization or clarity."
   },
   {
     "id": "m2014-nat-sat-17",
