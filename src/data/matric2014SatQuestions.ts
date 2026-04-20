@@ -195,7 +195,7 @@ export const matric2014SatQuestions: MatricExamQuestion[] = [
   },
   {
     "id": "m2014-nat-sat-17",
-    "question": "Question text missing",
+    "question": "Heart is to circulatory system as Eye is to ______",
     "options": [
       "Heart",
       "Eye",
@@ -203,11 +203,11 @@ export const matric2014SatQuestions: MatricExamQuestion[] = [
       "Tongue"
     ],
     "correctAnswer": 1,
-    "explanation": "The correct answer is option B. This is based on standard examination patterns."
+    "explanation": "The correct answer is option B. The eye is part of the visual system, just as the heart is part of the circulatory system. This is an analogy about body organs and their respective systems."
   },
   {
     "id": "m2014-nat-sat-18",
-    "question": "Question text missing",
+    "question": "Reader is to books as Reporter is to ______",
     "options": [
       "Reader",
       "Writer",
@@ -215,7 +215,7 @@ export const matric2014SatQuestions: MatricExamQuestion[] = [
       "Publisher"
     ],
     "correctAnswer": 2,
-    "explanation": "The correct answer is option C. This is based on standard examination patterns."
+    "explanation": "The correct answer is option C. A reporter gathers and reports news, similar to how a reader consumes books. This is an analogy about media consumption and production roles."
   },
   {
     "id": "m2014-nat-sat-19",

@@ -191,8 +191,8 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
       "North America is the most urbanized continent.",
       "There is a high level of urbanization in the developing world."
     ],
-    "correctAnswer": 0,
-    "explanation": "Correct answer is option A."
+    "correctAnswer": 2,
+    "explanation": "North America is the most urbanized continent with over 80% urban population, followed by Latin America and Europe."
   },
   {
     "id": "m2015-social-geo-17",
@@ -227,8 +227,8 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
       "It nearly doubles the total size of North America.",
       "It is four times larger than the size of Antarctica."
     ],
-    "correctAnswer": 3,
-    "explanation": "Correct answer is option D."
+    "correctAnswer": 2,
+    "explanation": "Africa (30.3M km²) is nearly double the size of North America (24.7M km²)."
   },
   {
     "id": "m2015-social-geo-20",
@@ -527,8 +527,8 @@ export const matric2015SocialGeographyQuestions: MatricExamQuestion[] = [
       "It is the least populated continent.",
       "It has a negative net migration rate."
     ],
-    "correctAnswer": 0,
-    "explanation": "Correct answer is option A."
+    "correctAnswer": 3,
+    "explanation": "Africa has a negative net migration rate overall, with more emigration than immigration to the continent."
   },
   {
     "id": "m2015-social-geo-45",

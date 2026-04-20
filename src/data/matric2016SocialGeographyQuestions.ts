@@ -82,8 +82,8 @@ export const matric2016SocialGeographyQuestions: MatricExamQuestion[] = [
     id: "m2016-social-geo-12",
     question: "Which one of the following describes the level of urbanization in the world?",
     options: ["Africa has higher urban population than other developing regions","Developing regions have higher urban population than the world's average","Japan has the highest percentage of urban population","Europe has the second highest percentage of urban population"],
-    correctAnswer: 3,
-    explanation: "Europe has one of the highest urbanization levels in the world and is commonly placed second in this school-level comparison.",
+    correctAnswer: 1,
+    explanation: "Developing regions collectively have higher urban populations than the global average due to rapid urbanization trends.",
   },
   {
     id: "m2016-social-geo-13",
@@ -523,8 +523,8 @@ export const matric2016SocialGeographyQuestions: MatricExamQuestion[] = [
     id: "m2016-social-geo-75",
     question: "Which statement describes the size of Africa?",
     options: ["It covers about one-fourth of the world's area.","It is the largest continent of the world.","It is larger than Europe and Antarctica put together.","It is about two-thirds of South America."],
-    correctAnswer: 2,
-    explanation: "Africa is larger than Europe and Antarctica combined.",
+    correctAnswer: 0,
+    explanation: "Africa covers about one-fifth (20%) of Earth's land surface, approximately 30.3 million square kilometers.",
   },
   {
     id: "m2016-social-geo-76",

@@ -214,8 +214,8 @@ export const matric2014SocialGeographyQuestions: MatricExamQuestion[] = [
       "Zebra",
       "Oryx"
     ],
-    "correctAnswer": 2,
-    "explanation": "The correct answer is option C. This is based on standard examination patterns."
+    "correctAnswer": 1,
+    "explanation": "Elephants are heavily hunted for their ivory, which has high economic value in illegal markets."
   },
   {
     "id": "m2014-soc-geography-19",
