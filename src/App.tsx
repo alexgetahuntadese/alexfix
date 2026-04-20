@@ -2,6 +2,7 @@
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { NetworkStatusIndicator } from "@/components/NetworkStatusIndicator";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { ThemeProvider } from "next-themes";
@@ -48,9 +49,26 @@ const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
       staleTime: 5 * 60 * 1000, // 5 minutes
-      cacheTime: 10 * 60 * 1000, // 10 minutes
-      retry: 1,
+      gcTime: 10 * 60 * 1000, // 10 minutes (formerly cacheTime)
+      retry: (failureCount, error) => {
+        // Don't retry if offline
+        if (!navigator.onLine) return false;
+        // Retry up to 3 times for network errors
+        if (failureCount < 3) return true;
+        return false;
+      },
       refetchOnWindowFocus: false,
+      refetchOnReconnect: true, // Refetch when coming back online
+      retryDelay: (attemptIndex) => Math.min(1000 * 2 ** attemptIndex, 30000), // Exponential backoff
+    },
+    mutations: {
+      retry: (failureCount, error) => {
+        // Don't retry mutations if offline
+        if (!navigator.onLine) return false;
+        // Retry mutations up to 2 times
+        if (failureCount < 2) return true;
+        return false;
+      },
     },
   },
 });
@@ -61,6 +79,7 @@ const App = () => (
       <LanguageProvider>
         <AuthProvider>
           <TooltipProvider>
+            <NetworkStatusIndicator />
             <Toaster />
             <Sonner />
             <BrowserRouter>

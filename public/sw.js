@@ -1,5 +1,5 @@
-const STATIC_CACHE = "simple-road-static-v5";
-const RUNTIME_CACHE = "simple-road-runtime-v5";
+const STATIC_CACHE = "simple-road-static-v6";
+const RUNTIME_CACHE = "simple-road-runtime-v6";
 const APP_SHELL = [
   "/",
   "/index.html",
@@ -12,9 +12,20 @@ const APP_SHELL = [
 
 const isSameOrigin = (url) => url.origin === self.location.origin;
 
+const isApiRequest = (request) => {
+  const url = new URL(request.url);
+  return (
+    url.pathname.startsWith("/api/") ||
+    url.hostname.includes("supabase.co") ||
+    url.hostname.includes("parse") ||
+    request.headers.get("authorization") !== null
+  );
+};
+
 const isStaticAssetRequest = (request) =>
   request.method === "GET" &&
   isSameOrigin(new URL(request.url)) &&
+  !isApiRequest(request) &&
   (request.destination === "script" ||
     request.destination === "style" ||
     request.destination === "image" ||
@@ -105,6 +116,12 @@ const createPartialContentResponse = async (request, cachedResponse) => {
 self.addEventListener("fetch", (event) => {
   const { request } = event;
 
+  // Don't cache API requests - let them fail naturally when offline
+  if (isApiRequest(request)) {
+    return;
+  }
+
+  // Don't cache non-GET requests
   if (request.method !== "GET") {
     return;
   }

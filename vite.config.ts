@@ -33,12 +33,24 @@ export default defineConfig(({ mode }) => ({
   build: {
     rollupOptions: {
       output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom', 'react-router-dom'],
-          ui: ['@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu', '@radix-ui/react-select', 'class-variance-authority', 'clsx', 'tailwind-merge'],
-          charts: ['recharts', 'framer-motion'],
-          supabase: ['@supabase/supabase-js', '@supabase/ssr'],
-          utils: ['date-fns', 'zod', 'cmdk'],
+        manualChunks: (id) => {
+          if (id.includes('node_modules')) {
+            if (id.includes('react') || id.includes('react-dom') || id.includes('react-router-dom')) {
+              return 'vendor';
+            }
+            if (id.includes('@radix-ui') || id.includes('class-variance-authority') || id.includes('clsx') || id.includes('tailwind-merge')) {
+              return 'ui';
+            }
+            if (id.includes('recharts') || id.includes('framer-motion')) {
+              return 'charts';
+            }
+            if (id.includes('@supabase')) {
+              return 'supabase';
+            }
+            if (id.includes('date-fns') || id.includes('zod') || id.includes('cmdk')) {
+              return 'utils';
+            }
+          }
         },
       },
     },
