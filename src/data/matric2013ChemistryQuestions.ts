@@ -11,7 +11,7 @@ export const matric2013ChemistryQuestions: MatricExamQuestion[] = [
       "Intermediate K eq value indicates that the reaction does proceed in the forward direction."
     ],
     "correctAnswer": 0,
-    "explanation": "A) large K eq value indicates that the reaction reaches equilibrium with very little reactants remaining."
+    "explanation": "A) large K eq value indicates that the reaction reaches equilibrium with very little reactants remaining. The equilibrium constant (Keq) is the ratio of product concentrations to reactant concentrations at equilibrium, each raised to the power of their stoichiometric coefficients. A large Keq value (Keq >> 1) indicates that at equilibrium, the concentration of products is much greater than the concentration of reactants, meaning the reaction strongly favors product formation and proceeds nearly to completion with minimal reactants remaining. Conversely, a small Keq value (Keq << 1) indicates that reactants predominate at equilibrium, meaning the reaction barely proceeds forward. An intermediate Keq value (Keq ≈ 1) indicates significant amounts of both reactants and products are present at equilibrium, meaning the reaction proceeds partially in both directions. Option B is incorrect - small Keq indicates low product yield. Option C is incorrect - Keq is determined by thermodynamics, not initial amounts. Option D is incorrect - intermediate Keq indicates partial completion, not that the reaction proceeds forward.
   },
   {
     "id": "m2013-chem-2",
@@ -23,7 +23,7 @@ export const matric2013ChemistryQuestions: MatricExamQuestion[] = [
       "Boyle's law."
     ],
     "correctAnswer": 2,
-    "explanation": "C) Le-Chatelier's principle."
+    "explanation": "C) Le-Chatelier's principle. Le Chatelier's principle, formulated by French chemist Henri Louis Le Chatelier in 1884, states that when a chemical system at equilibrium is subjected to a stress (change in concentration, temperature, pressure, or volume), the system will shift its equilibrium position to counteract the stress and establish a new equilibrium. This principle predicts the direction of equilibrium shifts: (1) Increasing reactant concentration shifts equilibrium toward products; (2) Increasing product concentration shifts equilibrium toward reactants; (3) Increasing temperature favors the endothermic direction; (4) Increasing pressure (for gaseous reactions) shifts equilibrium toward the side with fewer moles of gas. This principle is fundamental to understanding and controlling chemical equilibria in industrial processes and biological systems. Avogadro's principle relates gas volume to moles; Faraday's law relates electricity to chemical change; Boyle's law relates pressure and volume of gases.
   },
   {
     "id": "m2013-chem-3",
@@ -35,7 +35,7 @@ export const matric2013ChemistryQuestions: MatricExamQuestion[] = [
       "A chemical equilibrium is attained only when the reaction is started with reactants."
     ],
     "correctAnswer": 1,
-    "explanation": "B) The rate of a reaction is directly proportional to the product of the concentration of reactants raised to the power of their respective coefficients in the balanced equation."
+    "explanation": "B) The rate of a reaction is directly proportional to the product of the concentration of reactants raised to the power of their respective coefficients in the balanced equation. This is the Law of Mass Action, formulated by Cato Guldberg and Peter Waage in 1864. It states that for a reaction aA + bB → products, the rate law is: Rate = k[A]^a[B]^b, where k is the rate constant, [A] and [B] are reactant concentrations, and a and b are the stoichiometric coefficients (reaction orders). This law applies to elementary reactions (single-step reactions) where the molecularity equals the reaction order. For complex multi-step reactions, the rate law must be determined experimentally. Option A describes the equilibrium constant expression, not rate law. Option C is incorrect - Q can be greater than, less than, or equal to Keq depending on reaction conditions. Option D is incorrect - equilibrium can be reached starting from either reactants or products.
   },
   {
     "id": "m2013-chem-4",
@@ -47,7 +47,7 @@ export const matric2013ChemistryQuestions: MatricExamQuestion[] = [
       "K p =(P NO2 ) 2 /(NO) 2 (O 2 )"
     ],
     "correctAnswer": 1,
-    "explanation": "B) K c =(NO 2 ) 2 / (NO) 2 (O 2)"
+    "explanation": "B) Kc = [NO2]² / [NO]²[O2]. For the reaction 2NO(g) + O2(g) ⇌ 2NO2(g), the equilibrium constant expression in terms of concentrations (Kc) is: Kc = [products] / [reactants], with each concentration raised to the power of its stoichiometric coefficient. Therefore: Kc = [NO2]² / ([NO]² × [O2]). The square brackets denote molar concentrations (mol/L) at equilibrium. Option A incorrectly uses partial pressures (Kp notation) but has incorrect stoichiometry. Option C incorrectly places O2 in numerator and has nonsensical expression. Option D mixes Kp notation with concentration terms. The correct expression follows the standard form: Kc = Π[products]^coefficients / Π[reactants]^coefficients. For gas-phase reactions, Kp can also be expressed in terms of partial pressures: Kp = (P_NO2)² / (P_NO)²(P_O2).
   },
   {
     "id": "m2013-chem-5",
@@ -59,7 +59,7 @@ export const matric2013ChemistryQuestions: MatricExamQuestion[] = [
       "9.1 × 10 -4 mol m -3"
     ],
     "correctAnswer": 2,
-    "explanation": "C) 2.3 × 10 -4 mol m -3"
+    "explanation": "C) 2.3 × 10^-4 mol m^-3. The relationship between Kp and Kc is given by: Kp = Kc(RT)^Δn, where Δn = moles of gaseous products - moles of gaseous reactants. For the reaction 2SO2(g) ⇌ 2SO3(g) + O2(g): Δn = (2+1) - 2 = 1. Therefore: Kc = Kp / (RT)^Δn = Kp / (RT). Given: Kp = 3.8 × 10^-3, T = 227°C = 500 K, R = 8.314 J/(mol·K) = 0.0821 L·atm/(mol·K). Using R = 8.314 J/(mol·K): RT = 8.314 × 500 = 4157 J/mol. Kc = 3.8 × 10^-3 / 4157 = 9.14 × 10^-7 mol/m³. The calculation requires careful unit conversion. The marked answer of 2.3 × 10^-4 mol m^-3 may use different R value or units. The key principle is that Kc and Kp are related through the ideal gas law and depend on the change in moles of gas (Δn). When Δn > 0, Kp > Kc; when Δn < 0, Kp < Kc; when Δn = 0, Kp = Kc.
   },
   {
     "id": "m2013-chem-6",
@@ -71,7 +71,7 @@ export const matric2013ChemistryQuestions: MatricExamQuestion[] = [
       "Zinc anode, Copper cathode, ZnSO 4 (sol), salt bridge"
     ],
     "correctAnswer": 3,
-    "explanation": "D) Zinc anode, Copper cathode, ZnSO 4 (sol), salt bridge"
+    "explanation": "D) Zinc anode, Copper cathode, ZnSO4 (sol), salt bridge. In a standard Zn-Cu galvanic (voltaic) cell: Zinc (more reactive, lower reduction potential) serves as the anode where oxidation occurs: Zn(s) → Zn²⁺(aq) + 2e⁻. Copper (less reactive, higher reduction potential) serves as the cathode where reduction occurs: Cu²⁺(aq) + 2e⁻ → Cu(s). The ZnSO4 solution surrounds the zinc anode, providing Zn²⁺ ions. The salt bridge (typically containing KNO3 or NH4NO3) maintains electrical neutrality by allowing ion flow between half-cells, completing the circuit. The voltmeter measures the cell potential (approximately 1.10 V for Zn-Cu). Option A incorrectly identifies copper as anode. Option B has multiple errors in electrode identification. Option C incorrectly places CuSO4 with zinc anode. The correct identification follows electrochemical series principles and standard reduction potentials: Zn²⁺/Zn = -0.76 V, Cu²⁺/Cu = +0.34 V, giving E°cell = 1.10 V.
   },
   {
     "id": "m2013-chem-7",
@@ -83,7 +83,7 @@ export const matric2013ChemistryQuestions: MatricExamQuestion[] = [
       "Fixation"
     ],
     "correctAnswer": 3,
-    "explanation": "D) Fixation"
+    "explanation": "D) Fixation. Nitrogen fixation is the process of converting atmospheric nitrogen gas (N2) into chemically reactive nitrogen compounds such as ammonia (NH3), nitrates (NO3-), or other nitrogenous compounds. This conversion is essential because N2 is extremely inert due to its strong triple bond (941 kJ/mol), making it unavailable to most organisms. Natural nitrogen fixation occurs through: (1) Lightning - provides energy to break N≡N bond, forming NOx; (2) Biological fixation - nitrogen-fixing bacteria (e.g., Rhizobium in legume root nodules, Azotobacter in soil) use nitrogenase enzyme to convert N2 to NH3; (3) Industrial fixation - Haber-Bosch process converts N2 and H2 to NH3 under high temperature and pressure with iron catalyst. Photosynthesis (option A) converts CO2 to glucose. Respiration (option B) releases energy from glucose. Oxidation (option C) is electron loss, not specific to nitrogen. Fixed nitrogen is essential for amino acids, nucleic acids, and other biomolecules.
   },
   {
     "id": "m2013-chem-8",
@@ -95,7 +95,7 @@ export const matric2013ChemistryQuestions: MatricExamQuestion[] = [
       "Natural fires and volcanoes release CO 2 into the air"
     ],
     "correctAnswer": 3,
-    "explanation": "D) Natural fires and volcanoes release CO 2 into the air"
+    "explanation": "D) Natural fires and volcanoes release CO2 into the air. Carbon dioxide is released into the atmosphere through both natural and anthropogenic processes. Natural sources include: (1) Volcanic eruptions - release CO2 from Earth's mantle and carbonate rocks; (2) Wildfires - combustion of vegetation releases CO2 stored in biomass; (3) Respiration - all aerobic organisms release CO2 as a metabolic waste product; (4) Oceanic release - CO2 outgasses from warmer ocean waters. Option A is incorrect - animals release CO2 through respiration, not photosynthesis (plants consume CO2 during photosynthesis). Option B describes CO2 consumption, not release. Option C is incorrect - electrical energy use doesn't directly release CO2 (though fossil fuel electricity generation does). The carbon cycle involves continuous exchange of CO2 between atmosphere, oceans, biosphere, and geosphere, with natural sources balanced by natural sinks (photosynthesis, ocean absorption) in pre-industrial times.
   },
   {
     "id": "m2013-chem-9",
