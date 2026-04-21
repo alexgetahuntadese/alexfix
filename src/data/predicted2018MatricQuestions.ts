@@ -124,6 +124,126 @@ export const predicted2018NaturalMathQuestions: MatricExamQuestion[] = [
     ],
     correctAnswer: 0,
     explanation: "det(A) = (2)(4) - (1)(3) = 8 - 3 = 5."
+  },
+  {
+    id: "pred-2018-math-11",
+    question: "Find the value of cos(120°).",
+    options: [
+      "-1/2",
+      "1/2",
+      "√3/2",
+      "-√3/2"
+    ],
+    correctAnswer: 0,
+    explanation: "cos(120°) = cos(180° - 60°) = -cos(60°) = -1/2."
+  },
+  {
+    id: "pred-2018-math-12",
+    question: "Solve: 2ˣ = 32.",
+    options: [
+      "5",
+      "4",
+      "6",
+      "3"
+    ],
+    correctAnswer: 0,
+    explanation: "32 = 2⁵, so 2ˣ = 2⁵, therefore x = 5."
+  },
+  {
+    id: "pred-2018-math-13",
+    question: "Find the limit: lim(x→0) (sin x)/x.",
+    options: [
+      "1",
+      "0",
+      "∞",
+      "undefined"
+    ],
+    correctAnswer: 0,
+    explanation: "This is a fundamental limit in calculus: lim(x→0) (sin x)/x = 1."
+  },
+  {
+    id: "pred-2018-math-14",
+    question: "If tan(θ) = 3/4 and θ is acute, find sin(θ).",
+    options: [
+      "3/5",
+      "4/5",
+      "3/4",
+      "4/3"
+    ],
+    correctAnswer: 0,
+    explanation: "If tan(θ) = 3/4, then opposite = 3, adjacent = 4. Hypotenuse = √(3² + 4²) = 5. sin(θ) = opposite/hypotenuse = 3/5."
+  },
+  {
+    id: "pred-2018-math-15",
+    question: "Find the volume of a sphere with radius 3 cm. (Use π = 22/7)",
+    options: [
+      "113 1/7 cm³",
+      "108 cm³",
+      "118 2/7 cm³",
+      "126 cm³"
+    ],
+    correctAnswer: 0,
+    explanation: "Volume of sphere = (4/3)πr³ = (4/3) × (22/7) × 27 = (4 × 22 × 27)/(21) = 2376/21 = 113 1/7 cm³."
+  },
+  {
+    id: "pred-2018-math-16",
+    question: "Solve the quadratic equation: x² - 5x + 6 = 0.",
+    options: [
+      "x = 2, 3",
+      "x = 1, 6",
+      "x = -2, -3",
+      "x = -1, -6"
+    ],
+    correctAnswer: 0,
+    explanation: "Factorizing: x² - 5x + 6 = (x - 2)(x - 3) = 0. So x = 2 or x = 3."
+  },
+  {
+    id: "pred-2018-math-17",
+    question: "Find the derivative of f(x) = eˣ + ln(x).",
+    options: [
+      "eˣ + 1/x",
+      "eˣ + x",
+      "eˣ - 1/x",
+      "eˣ"
+    ],
+    correctAnswer: 0,
+    explanation: "Derivative of eˣ is eˣ. Derivative of ln(x) is 1/x. So f'(x) = eˣ + 1/x."
+  },
+  {
+    id: "pred-2018-math-18",
+    question: "In an arithmetic progression, the 5th term is 17 and the 10th term is 32. Find the first term.",
+    options: [
+      "5",
+      "7",
+      "9",
+      "3"
+    ],
+    correctAnswer: 0,
+    explanation: "For AP: a₅ = a + 4d = 17, a₁₀ = a + 9d = 32. Subtracting: 5d = 15, so d = 3. Then a = 17 - 4(3) = 17 - 12 = 5."
+  },
+  {
+    id: "pred-2018-math-19",
+    question: "Find the value of √(144) + √(81).",
+    options: [
+      "21",
+      "15",
+      "27",
+      "24"
+    ],
+    correctAnswer: 0,
+    explanation: "√144 = 12, √81 = 9. 12 + 9 = 21."
+  },
+  {
+    id: "pred-2018-math-20",
+    question: "If vectors a = (2, 3) and b = (4, 1), find a · b (dot product).",
+    options: [
+      "11",
+      "10",
+      "9",
+      "12"
+    ],
+    correctAnswer: 0,
+    explanation: "Dot product: a · b = (2)(4) + (3)(1) = 8 + 3 = 11."
   }
 ];
 
@@ -247,6 +367,126 @@ export const predicted2018NaturalPhysicsQuestions: MatricExamQuestion[] = [
     ],
     correctAnswer: 0,
     explanation: "After 30 years (3 half-lives), the remaining fraction = (1/2)³ = 1/8 = 12.5%."
+  },
+  {
+    id: "pred-2018-phy-11",
+    question: "What is the momentum of a 5 kg object moving at 8 m/s?",
+    options: [
+      "40 kg·m/s",
+      "13 kg·m/s",
+      "0.625 kg·m/s",
+      "80 kg·m/s"
+    ],
+    correctAnswer: 0,
+    explanation: "Momentum p = mv = 5 × 8 = 40 kg·m/s."
+  },
+  {
+    id: "pred-2018-phy-12",
+    question: "Two resistors of 6 Ω and 12 Ω are connected in parallel. Calculate the total resistance.",
+    options: [
+      "4 Ω",
+      "18 Ω",
+      "3 Ω",
+      "8 Ω"
+    ],
+    correctAnswer: 0,
+    explanation: "For parallel resistors: 1/R = 1/6 + 1/12 = 2/12 + 1/12 = 3/12 = 1/4, so R = 4 Ω."
+  },
+  {
+    id: "pred-2018-phy-13",
+    question: "What is the work done by a force of 30 N moving an object 5 m?",
+    options: [
+      "150 J",
+      "35 J",
+      "6 J",
+      "300 J"
+    ],
+    correctAnswer: 0,
+    explanation: "Work = Force × Distance = 30 × 5 = 150 J."
+  },
+  {
+    id: "pred-2018-phy-14",
+    question: "The frequency of a wave is 50 Hz. What is its period?",
+    options: [
+      "0.02 s",
+      "2 s",
+      "50 s",
+      "0.5 s"
+    ],
+    correctAnswer: 0,
+    explanation: "Period T = 1/f = 1/50 = 0.02 s."
+  },
+  {
+    id: "pred-2018-phy-15",
+    question: "A ball is thrown vertically upward with initial velocity 20 m/s. What is the maximum height reached? (g = 10 m/s²)",
+    options: [
+      "20 m",
+      "10 m",
+      "40 m",
+      "5 m"
+    ],
+    correctAnswer: 0,
+    explanation: "Using v² = u² - 2gh. At max height, v = 0. 0 = 20² - 2(10)h, so h = 400/20 = 20 m."
+  },
+  {
+    id: "pred-2018-phy-16",
+    question: "What is the power dissipated in a 10 Ω resistor with 5 A current?",
+    options: [
+      "250 W",
+      "50 W",
+      "0.5 W",
+      "500 W"
+    ],
+    correctAnswer: 0,
+    explanation: "Power P = I²R = 5² × 10 = 25 × 10 = 250 W."
+  },
+  {
+    id: "pred-2018-phy-17",
+    question: "The focal length of a convex lens is 20 cm. An object is placed 30 cm from the lens. Where is the image formed?",
+    options: [
+      "60 cm from lens",
+      "12 cm from lens",
+      "40 cm from lens",
+      "15 cm from lens"
+    ],
+    correctAnswer: 0,
+    explanation: "Using lens formula: 1/f = 1/u + 1/v. 1/20 = 1/30 + 1/v, so 1/v = 1/20 - 1/30 = (3-2)/60 = 1/60, so v = 60 cm."
+  },
+  {
+    id: "pred-2018-phy-18",
+    question: "What is the escape velocity from Earth's surface? (g = 10 m/s², R = 6400 km)",
+    options: [
+      "≈ 11.2 km/s",
+      "≈ 8 km/s",
+      "≈ 15 km/s",
+      "≈ 20 km/s"
+    ],
+    correctAnswer: 0,
+    explanation: "Escape velocity vₑ = √(2gR) = √(2 × 10 × 6400000) = √(128000000) ≈ 11314 m/s ≈ 11.2 km/s."
+  },
+  {
+    id: "pred-2018-phy-19",
+    question: "A capacitor of 100 μF is charged to 10 V. What is the stored energy?",
+    options: [
+      "0.005 J",
+      "0.5 J",
+      "0.05 J",
+      "5 J"
+    ],
+    correctAnswer: 0,
+    explanation: "Energy = (1/2)CV² = (1/2)(100 × 10⁻⁶)(10)² = (1/2)(10⁻⁴)(100) = 0.005 J."
+  },
+  {
+    id: "pred-2018-phy-20",
+    question: "What is the de Broglie wavelength of an electron with velocity 10⁶ m/s? (h = 6.63 × 10⁻³⁴ J·s, mₑ = 9.11 × 10⁻³¹ kg)",
+    options: [
+      "≈ 0.73 nm",
+      "≈ 7.3 nm",
+      "≈ 0.073 nm",
+      "≈ 73 nm"
+    ],
+    correctAnswer: 0,
+    explanation: "λ = h/mv = (6.63 × 10⁻³⁴)/(9.11 × 10⁻³¹ × 10⁶) = 7.28 × 10⁻¹⁰ m = 0.728 nm ≈ 0.73 nm."
   }
 ];
 
@@ -370,6 +610,126 @@ export const predicted2018NaturalChemistryQuestions: MatricExamQuestion[] = [
     ],
     correctAnswer: 0,
     explanation: "Divide all subscripts by 6: C₆/₆H₁₂/₆O₆/₆ = CH₂O."
+  },
+  {
+    id: "pred-2018-chem-11",
+    question: "What is Avogadro's number?",
+    options: [
+      "6.022 × 10²³",
+      "6.022 × 10²²",
+      "6.022 × 10²⁴",
+      "6.022 × 10²¹"
+    ],
+    correctAnswer: 0,
+    explanation: "Avogadro's number is 6.022 × 10²³, representing the number of particles in one mole of a substance."
+  },
+  {
+    id: "pred-2018-chem-12",
+    question: "What type of reaction is: 2H₂ + O₂ → 2H₂O?",
+    options: [
+      "Combination reaction",
+      "Decomposition reaction",
+      "Displacement reaction",
+      "Double displacement reaction"
+    ],
+    correctAnswer: 0,
+    explanation: "In a combination reaction, two or more substances combine to form a single product. Here H₂ and O₂ combine to form H₂O."
+  },
+  {
+    id: "pred-2018-chem-13",
+    question: "What is the mass of 0.5 moles of NaCl? (Na=23, Cl=35.5)",
+    options: [
+      "29.25 g",
+      "58.5 g",
+      "14.625 g",
+      "117 g"
+    ],
+    correctAnswer: 0,
+    explanation: "Molar mass of NaCl = 23 + 35.5 = 58.5 g/mol. Mass = 0.5 × 58.5 = 29.25 g."
+  },
+  {
+    id: "pred-2018-chem-14",
+    question: "Which element has the highest electronegativity?",
+    options: [
+      "Fluorine",
+      "Oxygen",
+      "Chlorine",
+      "Nitrogen"
+    ],
+    correctAnswer: 0,
+    explanation: "Fluorine has the highest electronegativity (4.0 on the Pauling scale) of all elements."
+  },
+  {
+    id: "pred-2018-chem-15",
+    question: "What is the shape of a methane (CH₄) molecule?",
+    options: [
+      "Tetrahedral",
+      "Trigonal planar",
+      "Linear",
+      "Octahedral"
+    ],
+    correctAnswer: 0,
+    explanation: "Methane has a tetrahedral molecular geometry with bond angles of approximately 109.5°."
+  },
+  {
+    id: "pred-2018-chem-16",
+    question: "What is the product when sodium hydroxide reacts with hydrochloric acid?",
+    options: [
+      "NaCl + H₂O",
+      "NaH + Cl₂",
+      "NaO + HCl",
+      "NaCl + H₂"
+    ],
+    correctAnswer: 0,
+    explanation: "NaOH + HCl → NaCl + H₂O. This is a neutralization reaction producing salt and water."
+  },
+  {
+    id: "pred-2018-chem-17",
+    question: "What is the number of valence electrons in nitrogen?",
+    options: [
+      "5",
+      "3",
+      "7",
+      "2"
+    ],
+    correctAnswer: 0,
+    explanation: "Nitrogen has 5 valence electrons (2s² 2p³ configuration)."
+  },
+  {
+    id: "pred-2018-chem-18",
+    question: "Which of the following is a Lewis acid?",
+    options: [
+      "BF₃",
+      "NH₃",
+      "H₂O",
+      "OH⁻"
+    ],
+    correctAnswer: 0,
+    explanation: "BF₃ is a Lewis acid because it can accept an electron pair (boron has an incomplete octet)."
+  },
+  {
+    id: "pred-2018-chem-19",
+    question: "What is the concentration if 0.1 moles of solute is dissolved in 500 mL of solution?",
+    options: [
+      "0.2 M",
+      "0.1 M",
+      "0.5 M",
+      "2 M"
+    ],
+    correctAnswer: 0,
+    explanation: "Molarity = moles/volume(L) = 0.1/0.5 = 0.2 M."
+  },
+  {
+    id: "pred-2018-chem-20",
+    question: "What is the IUPAC name of CH₃-CH₂-CH₃?",
+    options: [
+      "Propane",
+      "Ethane",
+      "Butane",
+      "Methane"
+    ],
+    correctAnswer: 0,
+    explanation: "CH₃-CH₂-CH₃ has 3 carbon atoms, so it is propane."
   }
 ];
 
@@ -493,6 +853,126 @@ export const predicted2018NaturalBiologyQuestions: MatricExamQuestion[] = [
     ],
     correctAnswer: 0,
     explanation: "Bone is a type of connective tissue that provides structural support and protection."
+  },
+  {
+    id: "pred-2018-bio-11",
+    question: "What is the powerhouse of the cell?",
+    options: [
+      "Mitochondria",
+      "Nucleus",
+      "Ribosome",
+      "Golgi apparatus"
+    ],
+    correctAnswer: 0,
+    explanation: "Mitochondria are often called the powerhouse of the cell because they produce ATP through cellular respiration."
+  },
+  {
+    id: "pred-2018-bio-12",
+    question: "Which organelle contains digestive enzymes?",
+    options: [
+      "Lysosome",
+      "Ribosome",
+      "Mitochondria",
+      "Golgi apparatus"
+    ],
+    correctAnswer: 0,
+    explanation: "Lysosomes contain digestive enzymes that break down waste materials and cellular debris."
+  },
+  {
+    id: "pred-2018-bio-13",
+    question: "What is the process by which plants make food?",
+    options: [
+      "Photosynthesis",
+      "Respiration",
+      "Digestion",
+      "Fermentation"
+    ],
+    correctAnswer: 0,
+    explanation: "Photosynthesis is the process by which plants convert light energy into chemical energy (glucose)."
+  },
+  {
+    id: "pred-2018-bio-14",
+    question: "Which blood component fights infection?",
+    options: [
+      "White blood cells",
+      "Red blood cells",
+      "Platelets",
+      "Plasma"
+    ],
+    correctAnswer: 0,
+    explanation: "White blood cells (leukocytes) are part of the immune system and fight infections."
+  },
+  {
+    id: "pred-2018-bio-15",
+    question: "What is the function of the cell membrane?",
+    options: [
+      "Controls what enters and exits the cell",
+      "Produces energy",
+      "Contains DNA",
+      "Synthesizes proteins"
+    ],
+    correctAnswer: 0,
+    explanation: "The cell membrane (plasma membrane) regulates the movement of substances in and out of the cell."
+  },
+  {
+    id: "pred-2018-bio-16",
+    question: "What is the basic unit of life?",
+    options: [
+      "Cell",
+      "Tissue",
+      "Organ",
+      "Organism"
+    ],
+    correctAnswer: 0,
+    explanation: "The cell is the basic structural and functional unit of all living organisms."
+  },
+  {
+    id: "pred-2018-bio-17",
+    question: "Which organelle packages and ships proteins?",
+    options: [
+      "Golgi apparatus",
+      "Endoplasmic reticulum",
+      "Ribosome",
+      "Nucleus"
+    ],
+    correctAnswer: 0,
+    explanation: "The Golgi apparatus modifies, packages, and ships proteins and lipids to their destinations."
+  },
+  {
+    id: "pred-2018-bio-18",
+    question: "What is DNA replication?",
+    options: [
+      "Process of copying DNA",
+      "Process of making proteins",
+      "Process of cell division",
+      "Process of energy production"
+    ],
+    correctAnswer: 0,
+    explanation: "DNA replication is the process by which a cell makes an identical copy of its DNA."
+  },
+  {
+    id: "pred-2018-bio-19",
+    question: "What is the function of chlorophyll?",
+    options: [
+      "Absorbs light for photosynthesis",
+      "Transports water",
+      "Produces ATP",
+      "Stores genetic information"
+    ],
+    correctAnswer: 0,
+    explanation: "Chlorophyll is the green pigment in plants that absorbs light energy for photosynthesis."
+  },
+  {
+    id: "pred-2018-bio-20",
+    question: "Which type of muscle is found in the heart?",
+    options: [
+      "Cardiac muscle",
+      "Skeletal muscle",
+      "Smooth muscle",
+      "Striated muscle"
+    ],
+    correctAnswer: 0,
+    explanation: "Cardiac muscle is the specialized muscle tissue found only in the heart, responsible for pumping blood."
   }
 ];
 
@@ -616,6 +1096,126 @@ export const predicted2018NaturalCivicsQuestions: MatricExamQuestion[] = [
     ],
     correctAnswer: 0,
     explanation: "Civil rights are rights that protect individuals from discrimination and ensure equal treatment under the law."
+  },
+  {
+    id: "pred-2018-civ-11",
+    question: "What is 'checks and balances'?",
+    options: [
+      "System where each branch can limit the powers of others",
+      "System for counting money",
+      "System for checking documents",
+      "System for balancing budgets"
+    ],
+    correctAnswer: 0,
+    explanation: "Checks and balances ensure no single branch becomes too powerful by allowing each branch to limit the others."
+  },
+  {
+    id: "pred-2018-civ-12",
+    question: "What is the role of the executive branch?",
+    options: [
+      "To enforce laws",
+      "To make laws",
+      "To interpret laws",
+      "To judge laws"
+    ],
+    correctAnswer: 0,
+    explanation: "The executive branch (president/prime minister) enforces laws and administers government programs."
+  },
+  {
+    id: "pred-2018-civ-13",
+    question: "What is 'due process'?",
+    options: [
+      "Fair treatment through judicial system",
+      "Speedy trial",
+      "Free legal representation",
+      "Public trial"
+    ],
+    correctAnswer: 0,
+    explanation: "Due process ensures fair treatment through the judicial system, protecting citizens from arbitrary government action."
+  },
+  {
+    id: "pred-2018-civ-14",
+    question: "What is the purpose of taxation?",
+    options: [
+      "To fund public services and government operations",
+      "To punish citizens",
+      "To control population",
+      "To reward supporters"
+    ],
+    correctAnswer: 0,
+    explanation: "Taxation provides revenue to fund public services, infrastructure, defense, and government operations."
+  },
+  {
+    id: "pred-2018-civ-15",
+    question: "What is 'judicial review'?",
+    options: [
+      "Power of courts to review laws for constitutionality",
+      "Review of court cases",
+      "Review of judges",
+      "Review of legal documents"
+    ],
+    correctAnswer: 0,
+    explanation: "Judicial review is the power of courts to determine whether laws violate the constitution."
+  },
+  {
+    id: "pred-2018-civ-16",
+    question: "What is a 'political party'?",
+    options: [
+      "Organization of people with similar political goals",
+      "Government department",
+      "Court system",
+      "Military unit"
+    ],
+    correctAnswer: 0,
+    explanation: "A political party is an organized group of people who share similar political views and seek to influence government policy."
+  },
+  {
+    id: "pred-2018-civ-17",
+    question: "What is 'freedom of speech'?",
+    options: [
+      "Right to express opinions without censorship",
+      "Right to speak only in public",
+      "Right to speak only to government",
+      "Right to speak only in private"
+    ],
+    correctAnswer: 0,
+    explanation: "Freedom of speech is the right to express opinions without government censorship or restraint."
+  },
+  {
+    id: "pred-2018-civ-18",
+    question: "What is the role of the legislative branch?",
+    options: [
+      "To make laws",
+      "To enforce laws",
+      "To interpret laws",
+      "To execute laws"
+    ],
+    correctAnswer: 0,
+    explanation: "The legislative branch (parliament/congress) is responsible for making and passing laws."
+  },
+  {
+    id: "pred-2018-civ-19",
+    question: "What is 'universal suffrage'?",
+    options: [
+      "Right of all adult citizens to vote",
+      "Right of only men to vote",
+      "Right of only wealthy to vote",
+      "Right of only educated to vote"
+    ],
+    correctAnswer: 0,
+    explanation: "Universal suffrage means all adult citizens have the right to vote regardless of race, gender, or economic status."
+  },
+  {
+    id: "pred-2018-civ-20",
+    question: "What is 'civil disobedience'?",
+    options: [
+      "Refusal to obey unjust laws through nonviolent protest",
+      "Violent rebellion",
+      "Obeying all laws",
+      "Breaking laws for personal gain"
+    ],
+    correctAnswer: 0,
+    explanation: "Civil disobedience is the refusal to obey certain laws as a form of peaceful protest against unjust policies."
   }
 ];
 
@@ -739,6 +1339,126 @@ export const predicted2018NaturalScholasticAptitudeQuestions: MatricExamQuestion
     ],
     correctAnswer: 0,
     explanation: "Area = πr² = (22/7) × 7² = (22/7) × 49 = 22 × 7 = 154 cm²."
+  },
+  {
+    id: "pred-2018-sat-11",
+    question: "Choose the word that is most similar in meaning to 'Pragmatic':",
+    options: [
+      "Practical",
+      "Idealistic",
+      "Theoretical",
+      "Impractical"
+    ],
+    correctAnswer: 0,
+    explanation: "Pragmatic means dealing with things sensibly and realistically, which is synonymous with practical."
+  },
+  {
+    id: "pred-2018-sat-12",
+    question: "What comes next: 3, 9, 27, 81, ____",
+    options: [
+      "243",
+      "162",
+      "324",
+      "108"
+    ],
+    correctAnswer: 0,
+    explanation: "Each term is multiplied by 3: 3×3=9, 9×3=27, 27×3=81, 81×3=243."
+  },
+  {
+    id: "pred-2018-sat-13",
+    question: "Complete the analogy: Pen is to Write as Camera is to ____",
+    options: [
+      "Capture",
+      "Photo",
+      "Lens",
+      "Flash"
+    ],
+    correctAnswer: 0,
+    explanation: "A pen is used to write, just as a camera is used to capture images. This is a function-based analogy."
+  },
+  {
+    id: "pred-2018-sat-14",
+    question: "If 8 machines produce 64 items in 4 hours, how many items will 12 machines produce in 6 hours?",
+    options: [
+      "144",
+      "96",
+      "128",
+      "192"
+    ],
+    correctAnswer: 0,
+    explanation: "8 machines × 4 hours = 32 machine-hours for 64 items. So 1 machine-hour produces 2 items. 12 × 6 = 72 machine-hours. 72 × 2 = 144 items."
+  },
+  {
+    id: "pred-2018-sat-15",
+    question: "Choose the word that is most opposite in meaning to 'Abundant':",
+    options: [
+      "Scarce",
+      "Plentiful",
+      "Rich",
+      "Full"
+    ],
+    correctAnswer: 0,
+    explanation: "Abundant means existing in large quantities. Scarce means insufficient in quantity."
+  },
+  {
+    id: "pred-2018-sat-16",
+    question: "What is the next term: 64, 32, 16, 8, ____",
+    options: [
+      "4",
+      "2",
+      "6",
+      "1"
+    ],
+    correctAnswer: 0,
+    explanation: "Each term is halved: 64/2=32, 32/2=16, 16/2=8, 8/2=4."
+  },
+  {
+    id: "pred-2018-sat-17",
+    question: "If A > B and B > C, then which statement is true?",
+    options: [
+      "A > C",
+      "C > A",
+      "A = C",
+      "Cannot determine"
+    ],
+    correctAnswer: 0,
+    explanation: "By transitive property: if A > B and B > C, then A > C."
+  },
+  {
+    id: "pred-2018-sat-18",
+    question: "Complete the analogy: Fish is to Water as Bird is to ____",
+    options: [
+      "Air",
+      "Tree",
+      "Nest",
+      "Sky"
+    ],
+    correctAnswer: 0,
+    explanation: "Fish live in water, just as birds live in air. This is a habitat-based analogy."
+  },
+  {
+    id: "pred-2018-sat-19",
+    question: "What is the perimeter of a rectangle with length 12 and width 8?",
+    options: [
+      "40",
+      "20",
+      "96",
+      "32"
+    ],
+    correctAnswer: 0,
+    explanation: "Perimeter = 2(length + width) = 2(12 + 8) = 2(20) = 40."
+  },
+  {
+    id: "pred-2018-sat-20",
+    question: "Choose the word that is most similar in meaning to 'Meticulous':",
+    options: [
+      "Careful",
+      "Careless",
+      "Quick",
+      "Rough"
+    ],
+    correctAnswer: 0,
+    explanation: "Meticulous means showing great attention to detail, which is synonymous with careful."
   }
 ];
 
@@ -753,10 +1473,70 @@ export const predicted2018NaturalEnglishQuestions: MatricExamQuestion[] = [
       "going"
     ],
     correctAnswer: 0,
-    explanation: "The past tense of 'go' is 'went'. The sentence refers to a completed action in the past."
+    explanation: "The past tense of 'go' is 'went'. Since the action happened yesterday, we use the past tense."
   },
   {
     id: "pred-2018-eng-2",
+    question: "Which word is a synonym for 'happy'?",
+    options: [
+      "joyful",
+      "sad",
+      "angry",
+      "tired"
+    ],
+    correctAnswer: 0,
+    explanation: "Joyful means experiencing or showing great pleasure, which is a synonym for happy."
+  },
+  {
+    id: "pred-2018-eng-10",
+    question: "Which sentence is in passive voice?",
+    options: [
+      "The book was read by the student.",
+      "The student read the book.",
+      "The student is reading the book.",
+      "The student has read the book."
+    ],
+    correctAnswer: 0,
+    explanation: "In passive voice, the subject receives the action. 'The book' receives the action of being read."
+  },
+  {
+    id: "pred-2018-eng-11",
+    question: "Choose the correct article: '___ apple a day keeps the doctor away.'",
+    options: [
+      "An",
+      "A",
+      "The",
+      "No article"
+    ],
+    correctAnswer: 0,
+    explanation: "Use 'an' before words starting with a vowel sound. 'Apple' starts with a vowel sound /æ/."
+  },
+  {
+    id: "pred-2018-eng-12",
+    question: "What is the comparative form of 'good'?",
+    options: [
+      "better",
+      "gooder",
+      "more good",
+      "best"
+    ],
+    correctAnswer: 0,
+    explanation: "'Good' is an irregular adjective. Its comparative form is 'better'."
+  },
+  {
+    id: "pred-2018-eng-13",
+    question: "Choose the correct conjunction: 'I studied hard, ___ I passed the exam.'",
+    options: [
+      "so",
+      "but",
+      "or",
+      "because"
+    ],
+    correctAnswer: 0,
+    explanation: "'So' shows cause and effect. I studied hard, therefore I passed."
+  },
+  {
+    id: "pred-2018-eng-14",
     question: "Which word is spelled correctly?",
     options: [
       "necessary",
@@ -765,103 +1545,79 @@ export const predicted2018NaturalEnglishQuestions: MatricExamQuestion[] = [
       "neccesary"
     ],
     correctAnswer: 0,
-    explanation: "'Necessary' is the correct spelling. Remember: one 'c', two 's's."
+    explanation: "The correct spelling is 'necessary' with one 'c' and two 's's."
   },
   {
-    id: "pred-2018-eng-3",
-    question: "What is the synonym of 'happy'?",
+    id: "pred-2018-eng-15",
+    question: "What is the superlative form of 'tall'?",
     options: [
-      "joyful",
-      "sad",
-      "angry",
-      "tired"
+      "tallest",
+      "taller",
+      "most tall",
+      "more tall"
     ],
     correctAnswer: 0,
-    explanation: "Joyful means feeling, expressing, or causing great pleasure and happiness - a synonym of happy."
+    explanation: "The superlative form of 'tall' is 'tallest', formed by adding '-est' to the adjective."
   },
   {
-    id: "pred-2018-eng-4",
-    question: "Choose the correct sentence:",
+    id: "pred-2018-eng-16",
+    question: "Choose the correct tense: 'They ___ football every Sunday.'",
     options: [
-      "The team is playing well.",
-      "The team are playing well.",
-      "The team be playing well.",
-      "The team was playing good."
+      "play",
+      "plays",
+      "played",
+      "playing"
     ],
     correctAnswer: 0,
-    explanation: "When referring to a team as a single unit, use the singular verb 'is'."
+    explanation: "For habitual actions in the present, we use the simple present tense. 'They' takes the base form 'play'."
   },
   {
-    id: "pred-2018-eng-5",
-    question: "What type of noun is 'happiness'?",
+    id: "pred-2018-eng-17",
+    question: "Which sentence uses the conditional correctly?",
     options: [
-      "Abstract noun",
-      "Concrete noun",
-      "Proper noun",
-      "Collective noun"
+      "If I were you, I would study harder.",
+      "If I was you, I would study harder.",
+      "If I am you, I will study harder.",
+      "If I be you, I would study harder."
     ],
     correctAnswer: 0,
-    explanation: "Happiness is an abstract noun because it represents a quality, state, or idea that cannot be touched."
+    explanation: "In conditional sentences about hypothetical situations, we use 'If I were' (subjunctive mood)."
   },
   {
-    id: "pred-2018-eng-6",
-    question: "Which is the correct use of 'their'?",
+    id: "pred-2018-eng-18",
+    question: "What is the meaning of the idiom 'break a leg'?",
     options: [
-      "They lost their book.",
-      "They lost there book.",
-      "They lost they're book.",
-      "They lost thier book."
+      "Good luck",
+      "To injure oneself",
+      "To work hard",
+      "To take a break"
     ],
     correctAnswer: 0,
-    explanation: "'Their' is the possessive form of 'they'. 'There' refers to place, 'they're' is 'they are'."
+    explanation: "'Break a leg' is an idiom used to wish someone good luck, especially before a performance."
   },
   {
-    id: "pred-2018-eng-7",
-    question: "What is the past participle of 'write'?",
+    id: "pred-2018-eng-19",
+    question: "Choose the correct word: 'The weather is ___ today.'",
     options: [
-      "written",
-      "wrote",
-      "writing",
-      "writed"
+      "beautiful",
+      "beauty",
+      "beautifully",
+      "beautify"
     ],
     correctAnswer: 0,
-    explanation: "The past participle of 'write' is 'written' (irregular verb)."
+    explanation: "We need an adjective to describe the noun 'weather'. 'Beautiful' is the correct adjective form."
   },
   {
-    id: "pred-2018-eng-8",
-    question: "Choose the correct preposition: 'She is good ___ mathematics.'",
+    id: "pred-2018-eng-20",
+    question: "What type of sentence is this: 'What time is it?'",
     options: [
-      "at",
-      "in",
-      "on",
-      "with"
+      "Interrogative",
+      "Declarative",
+      "Imperative",
+      "Exclamatory"
     ],
     correctAnswer: 0,
-    explanation: "When describing skill or ability in a subject, we use 'good at'."
-  },
-  {
-    id: "pred-2018-eng-9",
-    question: "Which sentence is in the passive voice?",
-    options: [
-      "The book was read by the student.",
-      "The student read the book.",
-      "The student is reading the book.",
-      "The student has read the book."
-    ],
-    correctAnswer: 0,
-    explanation: "Passive voice: subject receives the action. 'The book was read by the student' - the book receives the action."
-  },
-  {
-    id: "pred-2018-eng-10",
-    question: "What is the antonym of 'expand'?",
-    options: [
-      "shrink",
-      "grow",
-      "increase",
-      "enlarge"
-    ],
-    correctAnswer: 0,
-    explanation: "Shrink means to become smaller, which is the opposite (antonym) of expand."
+    explanation: "An interrogative sentence asks a question. It ends with a question mark."
   }
 ];
 
@@ -900,11 +1656,23 @@ export const predicted2018SocialMathQuestions: MatricExamQuestion[] = [
       "50 Birr"
     ],
     correctAnswer: 0,
-    explanation: "Simple interest = P × r × t = 1000 × 0.05 × 3 = 150 Birr."
+    explanation: "Simple Interest = P × R × T = 1000 × 0.05 × 3 = 150 Birr."
   },
   {
     id: "pred-2018-smath-4",
-    question: "Find the mean of 5, 10, 15, 20, 25.",
+    question: "A shopkeeper sells an item for 240 Birr with a 20% profit. What was the cost price?",
+    options: [
+      "200 Birr",
+      "180 Birr",
+      "220 Birr",
+      "192 Birr"
+    ],
+    correctAnswer: 0,
+    explanation: "Selling Price = Cost Price + Profit. 240 = CP + 20% of CP = 1.2 CP. CP = 240/1.2 = 200 Birr."
+  },
+  {
+    id: "pred-2018-smath-5",
+    question: "What is the mean of 5, 10, 15, 20, 25?",
     options: [
       "15",
       "12",
@@ -915,43 +1683,19 @@ export const predicted2018SocialMathQuestions: MatricExamQuestion[] = [
     explanation: "Mean = (5 + 10 + 15 + 20 + 25)/5 = 75/5 = 15."
   },
   {
-    id: "pred-2018-smath-5",
-    question: "A shopkeeper buys an item for 80 Birr and sells it for 100 Birr. What is the profit percentage?",
-    options: [
-      "25%",
-      "20%",
-      "30%",
-      "15%"
-    ],
-    correctAnswer: 0,
-    explanation: "Profit = 100 - 80 = 20 Birr. Profit % = (20/80) × 100 = 25%."
-  },
-  {
     id: "pred-2018-smath-6",
-    question: "What is 15% of 200?",
+    question: "If 15% of a number is 30, what is the number?",
     options: [
-      "30",
-      "20",
-      "25",
-      "35"
+      "200",
+      "150",
+      "250",
+      "180"
     ],
     correctAnswer: 0,
-    explanation: "15% of 200 = (15/100) × 200 = 15 × 2 = 30."
+    explanation: "Let the number be x. 15% of x = 30. 0.15x = 30. x = 30/0.15 = 200."
   },
   {
     id: "pred-2018-smath-7",
-    question: "If the ratio of boys to girls is 3:2 and there are 30 boys, how many girls are there?",
-    options: [
-      "20",
-      "15",
-      "25",
-      "18"
-    ],
-    correctAnswer: 0,
-    explanation: "3:2 = 30:x. 3x = 60, so x = 20 girls."
-  },
-  {
-    id: "pred-2018-smath-8",
     question: "What is the median of 3, 7, 2, 9, 5?",
     options: [
       "5",
@@ -960,31 +1704,163 @@ export const predicted2018SocialMathQuestions: MatricExamQuestion[] = [
       "9"
     ],
     correctAnswer: 0,
-    explanation: "Arrange in order: 2, 3, 5, 7, 9. The middle value (median) is 5."
+    explanation: "Arrange in order: 2, 3, 5, 7, 9. The median (middle value) is 5."
+  },
+  {
+    id: "pred-2018-smath-8",
+    question: "A trader buys goods for 5000 Birr and sells for 6000 Birr. What is the profit percentage?",
+    options: [
+      "20%",
+      "15%",
+      "25%",
+      "18%"
+    ],
+    correctAnswer: 0,
+    explanation: "Profit = 6000 - 5000 = 1000 Birr. Profit % = (1000/5000) × 100 = 20%."
   },
   {
     id: "pred-2018-smath-9",
-    question: "Convert 2.5 hours to minutes.",
+    question: "What is 2/3 of 120?",
     options: [
-      "150 minutes",
-      "120 minutes",
-      "180 minutes",
-      "250 minutes"
+      "80",
+      "60",
+      "90",
+      "40"
     ],
     correctAnswer: 0,
-    explanation: "2.5 hours = 2.5 × 60 = 150 minutes."
+    explanation: "2/3 of 120 = (2/3) × 120 = 240/3 = 80."
   },
   {
     id: "pred-2018-smath-10",
-    question: "What is the area of a rectangle with length 8 cm and width 5 cm?",
+    question: "If the ratio of boys to girls is 3:2 and there are 30 boys, how many girls are there?",
     options: [
-      "40 cm²",
-      "26 cm²",
-      "13 cm²",
-      "45 cm²"
+      "20",
+      "15",
+      "25",
+      "18"
     ],
     correctAnswer: 0,
-    explanation: "Area of rectangle = length × width = 8 × 5 = 40 cm²."
+    explanation: "3:2 ratio means for every 3 boys there are 2 girls. 30 boys = 10 × 3, so girls = 10 × 2 = 20."
+  },
+  {
+    id: "pred-2018-smath-11",
+    question: "What is 15% of 800?",
+    options: [
+      "120",
+      "100",
+      "150",
+      "80"
+    ],
+    correctAnswer: 0,
+    explanation: "15% of 800 = 0.15 × 800 = 120."
+  },
+  {
+    id: "pred-2018-smath-12",
+    question: "If a car depreciates by 10% each year, what will be its value after 2 years if it was initially 200,000 Birr?",
+    options: [
+      "162,000 Birr",
+      "180,000 Birr",
+      "160,000 Birr",
+      "164,000 Birr"
+    ],
+    correctAnswer: 0,
+    explanation: "After 1 year: 200,000 × 0.9 = 180,000. After 2 years: 180,000 × 0.9 = 162,000 Birr."
+  },
+  {
+    id: "pred-2018-smath-13",
+    question: "What is the mode of 2, 3, 5, 3, 7, 3, 9?",
+    options: [
+      "3",
+      "5",
+      "7",
+      "9"
+    ],
+    correctAnswer: 0,
+    explanation: "The mode is the most frequently occurring value. 3 appears 3 times, which is the most."
+  },
+  {
+    id: "pred-2018-smath-14",
+    question: "A discount of 20% on an item is equivalent to a discount of how much on 500 Birr?",
+    options: [
+      "100 Birr",
+      "150 Birr",
+      "200 Birr",
+      "80 Birr"
+    ],
+    correctAnswer: 0,
+    explanation: "20% of 500 = 0.2 × 500 = 100 Birr."
+  },
+  {
+    id: "pred-2018-smath-15",
+    question: "What is the range of 5, 12, 8, 15, 20?",
+    options: [
+      "15",
+      "10",
+      "12",
+      "8"
+    ],
+    correctAnswer: 0,
+    explanation: "Range = Maximum - Minimum = 20 - 5 = 15."
+  },
+  {
+    id: "pred-2018-smath-16",
+    question: "If 3 apples cost 60 Birr, how much do 7 apples cost?",
+    options: [
+      "140 Birr",
+      "120 Birr",
+      "150 Birr",
+      "180 Birr"
+    ],
+    correctAnswer: 0,
+    explanation: "Cost per apple = 60/3 = 20 Birr. Cost of 7 apples = 7 × 20 = 140 Birr."
+  },
+  {
+    id: "pred-2018-smath-17",
+    question: "What is 25% as a decimal?",
+    options: [
+      "0.25",
+      "0.025",
+      "2.5",
+      "0.0025"
+    ],
+    correctAnswer: 0,
+    explanation: "25% = 25/100 = 0.25."
+  },
+  {
+    id: "pred-2018-smath-18",
+    question: "A shop offers a 'buy 2 get 1 free' offer. What percentage discount is this?",
+    options: [
+      "33.33%",
+      "25%",
+      "50%",
+      "40%"
+    ],
+    correctAnswer: 0,
+    explanation: "For 3 items, you pay for 2. Discount = 1/3 ≈ 33.33%."
+  },
+  {
+    id: "pred-2018-smath-19",
+    question: "What is the compound interest on 1000 Birr at 10% per year for 2 years?",
+    options: [
+      "210 Birr",
+      "200 Birr",
+      "220 Birr",
+      "100 Birr"
+    ],
+    correctAnswer: 0,
+    explanation: "Year 1: 1000 × 0.10 = 100. Year 2: 1100 × 0.10 = 110. Total interest = 100 + 110 = 210 Birr."
+  },
+  {
+    id: "pred-2018-smath-20",
+    question: "If the price increases from 80 to 100, what is the percentage increase?",
+    options: [
+      "25%",
+      "20%",
+      "30%",
+      "15%"
+    ],
+    correctAnswer: 0,
+    explanation: "Increase = 100 - 80 = 20. Percentage increase = (20/80) × 100 = 25%."
   }
 ];
 
@@ -1212,25 +2088,145 @@ export const predicted2018SocialGeographyQuestions: MatricExamQuestion[] = [
     id: "pred-2018-sgeo-9",
     question: "What is the population of Ethiopia approximately?",
     options: [
-      "Over 120 million",
-      "Over 80 million",
-      "Over 50 million",
-      "Over 200 million"
+      "120 million",
+      "80 million",
+      "150 million",
+      "100 million"
     ],
     correctAnswer: 0,
-    explanation: "Ethiopia's population is over 120 million, making it the second most populous country in Africa."
+    explanation: "Ethiopia's population is approximately 120 million, making it the second-most populous nation in Africa."
   },
   {
     id: "pred-2018-sgeo-10",
-    question: "What is the main cash crop of Ethiopia?",
+    question: "What is the main export crop of Ethiopia?",
     options: [
       "Coffee",
       "Tea",
       "Cocoa",
-      "Rubber"
+      "Sugar"
     ],
     correctAnswer: 0,
-    explanation: "Coffee is Ethiopia's main cash crop and the country is believed to be the origin of coffee."
+    explanation: "Coffee is Ethiopia's main export crop, and the country is known as the birthplace of coffee."
+  },
+  {
+    id: "pred-2018-sgeo-11",
+    question: "What is the largest lake in Ethiopia?",
+    options: [
+      "Lake Tana",
+      "Lake Abaya",
+      "Lake Chamo",
+      "Lake Ziway"
+    ],
+    correctAnswer: 0,
+    explanation: "Lake Tana is the largest lake in Ethiopia and the source of the Blue Nile River."
+  },
+  {
+    id: "pred-2018-sgeo-12",
+    question: "Which region in Ethiopia is known for its rock-hewn churches?",
+    options: [
+      "Tigray",
+      "Oromia",
+      "Amhara",
+      "Somali"
+    ],
+    correctAnswer: 0,
+    explanation: "Tigray region is famous for its rock-hewn churches, particularly those in Lalibela."
+  },
+  {
+    id: "pred-2018-sgeo-13",
+    question: "What is the dominant religion in Ethiopia?",
+    options: [
+      "Christianity (Ethiopian Orthodox)",
+      "Islam",
+      "Hinduism",
+      "Buddhism"
+    ],
+    correctAnswer: 0,
+    explanation: "Ethiopian Orthodox Christianity is the dominant religion, practiced by approximately 40-45% of the population."
+  },
+  {
+    id: "pred-2018-sgeo-14",
+    question: "What is the currency of Ethiopia?",
+    options: [
+      "Ethiopian Birr",
+      "Ethiopian Dollar",
+      "Ethiopian Pound",
+      "Ethiopian Euro"
+    ],
+    correctAnswer: 0,
+    explanation: "The Ethiopian Birr (ETB) is the official currency of Ethiopia."
+  },
+  {
+    id: "pred-2018-sgeo-15",
+    question: "Which mountain range runs through Ethiopia?",
+    options: [
+      "Ethiopian Highlands",
+      "Andes Mountains",
+      "Himalayas",
+      "Alps"
+    ],
+    correctAnswer: 0,
+    explanation: "The Ethiopian Highlands is a rugged mass of mountains in Ethiopia, forming the largest continuous area of its elevation in the continent."
+  },
+  {
+    id: "pred-2018-sgeo-16",
+    question: "What is the most widely spoken language in Ethiopia?",
+    options: [
+      "Amharic",
+      "Oromo",
+      "Tigrinya",
+      "Somali"
+    ],
+    correctAnswer: 0,
+    explanation: "Amharic is the official working language and most widely spoken language in Ethiopia."
+  },
+  {
+    id: "pred-2018-sgeo-17",
+    question: "What is the Danakil Depression known for?",
+    options: [
+      "Being one of the hottest places on Earth",
+      "Being the coldest place in Africa",
+      "Having the highest rainfall",
+      "Being covered in forests"
+    ],
+    correctAnswer: 0,
+    explanation: "The Danakil Depression is one of the hottest and lowest places on Earth, with temperatures often exceeding 50°C."
+  },
+  {
+    id: "pred-2018-sgeo-18",
+    question: "What is the Simien Mountains National Park famous for?",
+    options: [
+      "Endemic wildlife and dramatic landscapes",
+      "Ancient ruins",
+      "Desert scenery",
+      "Coastal beaches"
+    ],
+    correctAnswer: 0,
+    explanation: "Simien Mountains National Park is a UNESCO World Heritage Site known for endemic species like the Walia ibex and Gelada baboon."
+  },
+  {
+    id: "pred-2018-sgeo-19",
+    question: "Which river originates in Ethiopia and flows into Sudan?",
+    options: [
+      "Blue Nile",
+      "White Nile",
+      "Congo River",
+      "Niger River"
+    ],
+    correctAnswer: 0,
+    explanation: "The Blue Nile originates from Lake Tana in Ethiopia and flows into Sudan, where it joins the White Nile."
+  },
+  {
+    id: "pred-2018-sgeo-20",
+    question: "What is the main environmental challenge facing Ethiopia?",
+    options: [
+      "Deforestation and soil erosion",
+      "Flooding",
+      "Desertification only",
+      "Air pollution"
+    ],
+    correctAnswer: 0,
+    explanation: "Deforestation and soil erosion are major environmental challenges, with Ethiopia losing significant forest cover over decades."
   }
 ];
 
@@ -1354,6 +2350,126 @@ export const predicted2018SocialEconomicsQuestions: MatricExamQuestion[] = [
     ],
     correctAnswer: 0,
     explanation: "International trade is the exchange of goods, services, and capital across national borders."
+  },
+  {
+    id: "pred-2018-secon-11",
+    question: "What is 'monetary policy'?",
+    options: [
+      "Central bank actions to control money supply and interest rates",
+      "Government taxation policy",
+      "Trade agreements between countries",
+      "Environmental regulations"
+    ],
+    correctAnswer: 0,
+    explanation: "Monetary policy involves central bank actions to control money supply and interest rates to influence the economy."
+  },
+  {
+    id: "pred-2018-secon-12",
+    question: "What is 'fiscal policy'?",
+    options: [
+      "Government use of taxation and spending to influence the economy",
+      "Central bank policy",
+      "Trade policy",
+      "Environmental policy"
+    ],
+    correctAnswer: 0,
+    explanation: "Fiscal policy refers to the government's use of taxation and spending to influence economic activity."
+  },
+  {
+    id: "pred-2018-secon-13",
+    question: "What is a 'monopoly'?",
+    options: [
+      "A single seller dominates the market with no close substitutes",
+      "Many sellers compete",
+      "Government controls the market",
+      "No sellers exist"
+    ],
+    correctAnswer: 0,
+    explanation: "A monopoly exists when a single seller controls the entire market for a product with no close substitutes."
+  },
+  {
+    id: "pred-2018-secon-14",
+    question: "What is 'comparative advantage'?",
+    options: [
+      "Producing at lower opportunity cost than trading partners",
+      "Producing more than others",
+      "Producing faster than others",
+      "Producing cheaper than others"
+    ],
+    correctAnswer: 0,
+    explanation: "Comparative advantage means producing goods at a lower opportunity cost than trading partners."
+  },
+  {
+    id: "pred-2018-secon-15",
+    question: "What is the 'law of demand'?",
+    options: [
+      "As price increases, quantity demanded decreases",
+      "As price increases, quantity demanded increases",
+      "Price and demand are unrelated",
+      "Demand always increases"
+    ],
+    correctAnswer: 0,
+    explanation: "The law of demand states that as price increases, quantity demanded decreases, all else being equal."
+  },
+  {
+    id: "pred-2018-secon-16",
+    question: "What is the 'law of supply'?",
+    options: [
+      "As price increases, quantity supplied increases",
+      "As price increases, quantity supplied decreases",
+      "Supply is independent of price",
+      "Supply always decreases"
+    ],
+    correctAnswer: 0,
+    explanation: "The law of supply states that as price increases, producers are willing to supply more of the good."
+  },
+  {
+    id: "pred-2018-secon-17",
+    question: "What is 'equilibrium price'?",
+    options: [
+      "Price where quantity demanded equals quantity supplied",
+      "Highest price in market",
+      "Lowest price in market",
+      "Government-set price"
+    ],
+    correctAnswer: 0,
+    explanation: "Equilibrium price occurs where the quantity demanded by consumers equals the quantity supplied by producers."
+  },
+  {
+    id: "pred-2018-secon-18",
+    question: "What is a 'public good'?",
+    options: [
+      "Non-excludable and non-rivalrous good",
+      "Good sold by government",
+      "Expensive good",
+      "Imported good"
+    ],
+    correctAnswer: 0,
+    explanation: "Public goods are non-excludable (cannot exclude anyone) and non-rivalrous (one person's use doesn't reduce availability)."
+  },
+  {
+    id: "pred-2018-secon-19",
+    question: "What is the 'business cycle'?",
+    options: [
+      "Fluctuations in economic activity over time",
+      "Daily business operations",
+      "Annual business reports",
+      "Business planning process"
+    ],
+    correctAnswer: 0,
+    explanation: "The business cycle refers to periodic economic fluctuations including expansions and recessions."
+  },
+  {
+    id: "pred-2018-secon-20",
+    question: "What is the difference between nominal and real GDP?",
+    options: [
+      "Nominal uses current prices; real uses constant prices",
+      "Nominal is larger; real is smaller",
+      "Nominal includes services; real does not",
+      "No difference"
+    ],
+    correctAnswer: 0,
+    explanation: "Nominal GDP uses current prices, while real GDP adjusts for inflation using constant base-year prices."
   }
 ];
 
@@ -1477,6 +2593,126 @@ export const predicted2018SocialCivicsQuestions: MatricExamQuestion[] = [
     ],
     correctAnswer: 0,
     explanation: "Civic education prepares citizens to participate effectively in democratic processes and understand their rights and responsibilities."
+  },
+  {
+    id: "pred-2018-sciv-11",
+    question: "What is 'checks and balances'?",
+    options: [
+      "Each branch can limit the powers of the others",
+      "One branch controls everything",
+      "No branch has power",
+      "Military controls all branches"
+    ],
+    correctAnswer: 0,
+    explanation: "Checks and balances ensure no single branch becomes too powerful by allowing each branch to limit the others."
+  },
+  {
+    id: "pred-2018-sciv-12",
+    question: "What is the role of the executive branch?",
+    options: [
+      "To enforce laws",
+      "To make laws",
+      "To interpret laws",
+      "To judge laws"
+    ],
+    correctAnswer: 0,
+    explanation: "The executive branch (president/prime minister) enforces laws and administers government programs."
+  },
+  {
+    id: "pred-2018-sciv-13",
+    question: "What is the role of the judiciary?",
+    options: [
+      "To interpret laws and ensure justice",
+      "To create laws",
+      "To enforce laws",
+      "To collect taxes"
+    ],
+    correctAnswer: 0,
+    explanation: "The judiciary interprets laws, resolves disputes, and ensures justice is served according to the constitution."
+  },
+  {
+    id: "pred-2018-sciv-14",
+    question: "What is 'due process'?",
+    options: [
+      "Fair treatment through judicial system",
+      "Speedy trial only",
+      "Free legal representation only",
+      "Public trial only"
+    ],
+    correctAnswer: 0,
+    explanation: "Due process ensures fair treatment through the judicial system, protecting citizens from arbitrary government action."
+  },
+  {
+    id: "pred-2018-sciv-15",
+    question: "What is a 'political party'?",
+    options: [
+      "Organization of people with similar political goals",
+      "Government department",
+      "Court system",
+      "Military unit"
+    ],
+    correctAnswer: 0,
+    explanation: "A political party is an organized group of people who share similar political views and seek to influence government policy."
+  },
+  {
+    id: "pred-2018-sciv-16",
+    question: "What is 'freedom of speech'?",
+    options: [
+      "Right to express opinions without censorship",
+      "Right to speak only in public",
+      "Right to speak only to government",
+      "Right to speak only in private"
+    ],
+    correctAnswer: 0,
+    explanation: "Freedom of speech is the right to express opinions without government censorship or restraint."
+  },
+  {
+    id: "pred-2018-sciv-17",
+    question: "What is 'universal suffrage'?",
+    options: [
+      "Right of all adult citizens to vote",
+      "Right of only men to vote",
+      "Right of only wealthy to vote",
+      "Right of only educated to vote"
+    ],
+    correctAnswer: 0,
+    explanation: "Universal suffrage means all adult citizens have the right to vote regardless of race, gender, or economic status."
+  },
+  {
+    id: "pred-2018-sciv-18",
+    question: "What is 'judicial review'?",
+    options: [
+      "Power of courts to review laws for constitutionality",
+      "Review of court cases",
+      "Review of judges",
+      "Review of legal documents"
+    ],
+    correctAnswer: 0,
+    explanation: "Judicial review is the power of courts to determine whether laws violate the constitution."
+  },
+  {
+    id: "pred-2018-sciv-19",
+    question: "What is 'civil disobedience'?",
+    options: [
+      "Refusal to obey unjust laws through nonviolent protest",
+      "Violent rebellion",
+      "Obeying all laws",
+      "Breaking laws for personal gain"
+    ],
+    correctAnswer: 0,
+    explanation: "Civil disobedience is the refusal to obey certain laws as a form of peaceful protest against unjust policies."
+  },
+  {
+    id: "pred-2018-sciv-20",
+    question: "What is 'federalism'?",
+    options: [
+      "Division of power between central and regional governments",
+      "Central government controls everything",
+      "No government exists",
+      "Military dictatorship"
+    ],
+    correctAnswer: 0,
+    explanation: "Federalism is a system of government where power is divided between a central government and regional governments."
   }
 ];
 
@@ -1503,103 +2739,223 @@ export const predicted2018SocialScholasticAptitudeQuestions: MatricExamQuestion[
       "Sometimes true"
     ],
     correctAnswer: 0,
-    explanation: "This is not necessarily true. X could be a subset of Y that doesn't overlap with the 'some Y' that are Z."
+    explanation: "This is a logical fallacy. Just because some Y are Z doesn't mean any X are Z. We cannot determine this relationship."
   },
   {
     id: "pred-2018-ssat-3",
-    question: "Choose the word that is most similar in meaning to 'Ubiquitous':",
+    question: "Choose the word that is most similar in meaning to 'Diligent':",
     options: [
-      "Omnipresent",
-      "Rare",
-      "Unique",
-      "Scarce"
+      "Hardworking",
+      "Lazy",
+      "Careless",
+      "Slow"
     ],
     correctAnswer: 0,
-    explanation: "Ubiquitous means present, appearing, or found everywhere, which is synonymous with omnipresent."
+    explanation: "Diligent means showing care in one's work or duties, which is synonymous with hardworking."
   },
   {
     id: "pred-2018-ssat-4",
-    question: "What number comes next in the sequence: 3, 9, 27, 81, ____",
+    question: "What number comes next in the sequence: 3, 6, 12, 24, ____",
     options: [
-      "243",
-      "162",
-      "324",
-      "108"
+      "48",
+      "36",
+      "30",
+      "60"
     ],
     correctAnswer: 0,
-    explanation: "The pattern is multiplying by 3: 3×3=9, 9×3=27, 27×3=81, 81×3=243."
+    explanation: "The pattern is doubling each number: 3×2=6, 6×2=12, 12×2=24, 24×2=48."
   },
   {
     id: "pred-2018-ssat-5",
-    question: "If 3 machines produce 15 toys in 5 hours, how many toys will 6 machines produce in 10 hours?",
+    question: "If a worker can complete a job in 6 days, how many days will 3 workers take?",
     options: [
-      "60",
-      "30",
-      "45",
-      "75"
+      "2 days",
+      "3 days",
+      "6 days",
+      "18 days"
     ],
     correctAnswer: 0,
-    explanation: "3 machines × 5 hours = 15 toys, so 1 machine produces 1 toy per hour. 6 machines × 10 hours = 60 toys."
+    explanation: "More workers means less time. 3 workers is triple, so time is divided by 3: 6/3 = 2 days."
   },
   {
     id: "pred-2018-ssat-6",
-    question: "Choose the word that is most opposite in meaning to 'Meticulous':",
+    question: "Choose the word that is most opposite in meaning to 'Generous':",
     options: [
-      "Careless",
-      "Careful",
-      "Detailed",
-      "Thorough"
+      "Stingy",
+      "Kind",
+      "Rich",
+      "Giving"
     ],
     correctAnswer: 0,
-    explanation: "Meticulous means showing great attention to detail. Careless is the opposite."
+    explanation: "Generous means willing to give more than necessary. Stingy means unwilling to give or spend."
   },
   {
     id: "pred-2018-ssat-7",
-    question: "What is the next term in the sequence: 2, 4, 8, 16, 32, ____",
+    question: "What is the next term in the sequence: 1, 4, 9, 16, 25, ____",
     options: [
-      "64",
-      "48",
-      "56",
-      "96"
+      "36",
+      "30",
+      "49",
+      "32"
     ],
     correctAnswer: 0,
-    explanation: "The pattern is doubling each time: 2×2=4, 4×2=8, 8×2=16, 16×2=32, 32×2=64."
+    explanation: "This is the sequence of perfect squares: 1²=1, 2²=4, 3²=9, 4²=16, 5²=25, 6²=36."
   },
   {
     id: "pred-2018-ssat-8",
-    question: "If a car uses 8 liters of fuel for 100 km, how many liters will it use for 250 km?",
+    question: "Complete the analogy: Doctor is to Hospital as Teacher is to ____",
     options: [
-      "20 liters",
-      "16 liters",
-      "25 liters",
-      "32 liters"
+      "School",
+      "Classroom",
+      "Student",
+      "Book"
     ],
     correctAnswer: 0,
-    explanation: "Fuel consumption is proportional to distance. 8L/100km × 250km = 20L."
+    explanation: "A doctor works in a hospital, just as a teacher works in a school. This is a workplace-based analogy."
   },
   {
     id: "pred-2018-ssat-9",
-    question: "Complete the analogy: Library is to Books as Museum is to ____",
+    question: "What is 40% of 250?",
     options: [
-      "Artifacts",
-      "Visitors",
-      "Tickets",
-      "Building"
+      "100",
+      "80",
+      "120",
+      "50"
     ],
     correctAnswer: 0,
-    explanation: "A library houses books, just as a museum houses artifacts. This is a content-based analogy."
+    explanation: "40% of 250 = 0.40 × 250 = 100."
   },
   {
     id: "pred-2018-ssat-10",
-    question: "What is the perimeter of a square with side 9 cm?",
+    question: "What comes next: 100, 50, 25, 12.5, ____",
     options: [
-      "36 cm",
-      "18 cm",
-      "81 cm",
-      "27 cm"
+      "6.25",
+      "10",
+      "8",
+      "5"
     ],
     correctAnswer: 0,
-    explanation: "Perimeter of a square = 4 × side = 4 × 9 = 36 cm."
+    explanation: "Each term is halved: 100/2=50, 50/2=25, 25/2=12.5, 12.5/2=6.25."
+  },
+  {
+    id: "pred-2018-ssat-11",
+    question: "Choose the word that is most similar in meaning to 'Meticulous':",
+    options: [
+      "Careful",
+      "Careless",
+      "Quick",
+      "Rough"
+    ],
+    correctAnswer: 0,
+    explanation: "Meticulous means showing great attention to detail, which is synonymous with careful."
+  },
+  {
+    id: "pred-2018-ssat-12",
+    question: "What comes next: 2, 5, 11, 23, 47, ____",
+    options: [
+      "95",
+      "94",
+      "96",
+      "93"
+    ],
+    correctAnswer: 0,
+    explanation: "The pattern is ×2+1: 2×2+1=5, 5×2+1=11, 11×2+1=23, 23×2+1=47, 47×2+1=95."
+  },
+  {
+    id: "pred-2018-ssat-13",
+    question: "Complete the analogy: Library is to Books as Garden is to ____",
+    options: [
+      "Plants",
+      "Flowers",
+      "Trees",
+      "Soil"
+    ],
+    correctAnswer: 0,
+    explanation: "A library contains books, just as a garden contains plants. This is a container-content analogy."
+  },
+  {
+    id: "pred-2018-ssat-14",
+    question: "If 6 machines produce 120 units in 4 hours, how many units will 8 machines produce in 6 hours?",
+    options: [
+      "240",
+      "180",
+      "200",
+      "160"
+    ],
+    correctAnswer: 0,
+    explanation: "6 machines × 4 hours = 24 machine-hours for 120 units. So 1 machine-hour produces 5 units. 8 × 6 = 48 machine-hours. 48 × 5 = 240 units."
+  },
+  {
+    id: "pred-2018-ssat-15",
+    question: "Choose the word that is most opposite in meaning to 'Humble':",
+    options: [
+      "Arrogant",
+      "Modest",
+      "Shy",
+      "Quiet"
+    ],
+    correctAnswer: 0,
+    explanation: "Humble means having a modest view of one's importance. Arrogant means having an exaggerated sense of self-importance."
+  },
+  {
+    id: "pred-2018-ssat-16",
+    question: "What is the area of a triangle with base 8 and height 6?",
+    options: [
+      "24",
+      "48",
+      "12",
+      "14"
+    ],
+    correctAnswer: 0,
+    explanation: "Area = (1/2) × base × height = (1/2) × 8 × 6 = 24."
+  },
+  {
+    id: "pred-2018-ssat-17",
+    question: "If A is to the east of B, and B is to the east of C, then A is to the ____ of C.",
+    options: [
+      "east",
+      "west",
+      "north",
+      "south"
+    ],
+    correctAnswer: 0,
+    explanation: "If A is east of B, and B is east of C, then A is east of C (transitive property of direction)."
+  },
+  {
+    id: "pred-2018-ssat-18",
+    question: "Complete the analogy: Music is to Sound as Painting is to ____",
+    options: [
+      "Sight",
+      "Color",
+      "Canvas",
+      "Brush"
+    ],
+    correctAnswer: 0,
+    explanation: "Music appeals to the sense of hearing (sound), just as painting appeals to the sense of sight."
+  },
+  {
+    id: "pred-2018-ssat-19",
+    question: "What is 25% of 80 plus 50% of 60?",
+    options: [
+      "50",
+      "40",
+      "60",
+      "45"
+    ],
+    correctAnswer: 0,
+    explanation: "25% of 80 = 20. 50% of 60 = 30. 20 + 30 = 50."
+  },
+  {
+    id: "pred-2018-ssat-20",
+    question: "Choose the word that is most similar in meaning to 'Eloquent':",
+    options: [
+      "Articulate",
+      "Silent",
+      "Confused",
+      "Simple"
+    ],
+    correctAnswer: 0,
+    explanation: "Eloquent means fluent or persuasive in speaking or writing, which is synonymous with articulate."
   }
 ];
 
@@ -1723,5 +3079,125 @@ export const predicted2018SocialHistoryQuestions: MatricExamQuestion[] = [
     ],
     correctAnswer: 0,
     explanation: "The Solomonic Dynasty claimed descent from the biblical King Solomon and Queen of Sheba, providing religious legitimacy to Ethiopian emperors."
+  },
+  {
+    id: "pred-2018-hist-11",
+    question: "When did Menelik II expand Ethiopian territory?",
+    options: [
+      "Late 19th century (1889-1913)",
+      "Early 18th century",
+      "Mid 20th century",
+      "17th century"
+    ],
+    correctAnswer: 0,
+    explanation: "Emperor Menelik II significantly expanded Ethiopian territory in the late 19th century, incorporating regions like Ogaden and the southern territories."
+  },
+  {
+    id: "pred-2018-hist-12",
+    question: "What was the role of Ethiopia in World War II?",
+    options: [
+      "Fought against Italian occupation alongside Allied forces",
+      "Remained neutral",
+      "Fought with Axis powers",
+      "Did not participate"
+    ],
+    correctAnswer: 0,
+    explanation: "Ethiopia fought against Italian occupation during WWII, eventually liberating the country in 1941 with British Allied support."
+  },
+  {
+    id: "pred-2018-hist-13",
+    question: "What was the Red Terror in Ethiopia?",
+    options: [
+      "Violent campaign by Derg against political opponents (1977-1978)",
+      "Communist revolution",
+      "War with Eritrea",
+      "Economic reform program"
+    ],
+    correctAnswer: 0,
+    explanation: "The Red Terror was a violent campaign by the Derg regime against political opponents, resulting in thousands of deaths."
+  },
+  {
+    id: "pred-2018-hist-14",
+    question: "When did Ethiopia adopt Christianity as a state religion?",
+    options: [
+      "4th century (330 AD)",
+      "1st century",
+      "7th century",
+      "10th century"
+    ],
+    correctAnswer: 0,
+    explanation: "Ethiopia adopted Christianity as a state religion in the 4th century under King Ezana, making it one of the oldest Christian nations."
+  },
+  {
+    id: "pred-2018-hist-15",
+    question: "What was the significance of the Axumite Kingdom?",
+    options: [
+      "Major ancient civilization and trade empire",
+      "Small tribal kingdom",
+      "European colony",
+      "Islamic state"
+    ],
+    correctAnswer: 0,
+    explanation: "The Axumite Kingdom was a major ancient civilization that controlled trade routes between Rome and India, and was one of the first states to mint coins."
+  },
+  {
+    id: "pred-2018-hist-16",
+    question: "Who was Empress Taytu Betul?",
+    options: [
+      "Wife of Menelik II and key figure in Ethiopian history",
+      "First female emperor",
+      "Military commander only",
+      "Foreign diplomat"
+    ],
+    correctAnswer: 0,
+    explanation: "Empress Taytu Betul was the wife of Menelik II and played a crucial role in Ethiopian politics, particularly during the Battle of Adwa."
+  },
+  {
+    id: "pred-2018-hist-17",
+    question: "What was the Zagwe Dynasty known for?",
+    options: [
+      "Building rock-hewn churches in Lalibela",
+      "Military conquests",
+      "Trade expansion",
+      "Islamic conversion"
+    ],
+    correctAnswer: 0,
+    explanation: "The Zagwe Dynasty (12th-13th century) is famous for building the rock-hewn churches of Lalibela, now a UNESCO World Heritage Site."
+  },
+  {
+    id: "pred-2018-hist-18",
+    question: "When did Ethiopia defeat Italy at the Battle of Adwa?",
+    options: [
+      "March 1, 1896",
+      "October 3, 1935",
+      "May 5, 1941",
+      "December 19, 1944"
+    ],
+    correctAnswer: 0,
+    explanation: "The Battle of Adwa was fought on March 1, 1896, resulting in a decisive Ethiopian victory over Italy."
+  },
+  {
+    id: "pred-2018-hist-19",
+    question: "What was the purpose of the Organization of African Unity (OAU)?",
+    options: [
+      "To promote African unity and independence",
+      "To colonize Africa",
+      "To establish European control",
+      "To promote Islam only"
+    ],
+    correctAnswer: 0,
+    explanation: "The OAU was founded in 1963 in Addis Ababa to promote African unity, independence, and cooperation among African states."
+  },
+  {
+    id: "pred-2018-hist-20",
+    question: "What was the Ethiopian Civil War (1974-1991)?",
+    options: [
+      "Conflict between Derg and various opposition groups",
+      "War with Italy",
+      "War with Eritrea only",
+      "Religious conflict"
+    ],
+    correctAnswer: 0,
+    explanation: "The Ethiopian Civil War was fought between the Derg regime and various opposition groups, including the EPRDF which eventually won in 1991."
   }
 ];

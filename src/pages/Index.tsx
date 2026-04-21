@@ -145,6 +145,87 @@ const Index = () => {
         </div>
       </motion.section>
 
+      {/* New Feature Announcement - Tech Company Style */}
+      <motion.section
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.85 }}
+        className="relative px-4 py-16"
+      >
+        <div className="mx-auto max-w-5xl">
+          <div className="relative group">
+            <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 rounded-3xl blur-2xl opacity-30 group-hover:opacity-50 transition-all duration-500 animate-pulse"></div>
+            <div className="relative bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 p-8 md:p-12 rounded-3xl border border-purple-400/30 overflow-hidden">
+              {/* Background Pattern */}
+              <div className="absolute inset-0 opacity-10">
+                <div className="absolute top-0 right-0 w-96 h-96 bg-purple-500 rounded-full blur-3xl"></div>
+                <div className="absolute bottom-0 left-0 w-96 h-96 bg-pink-500 rounded-full blur-3xl"></div>
+              </div>
+
+              <div className="relative z-10">
+                <div className="flex items-center justify-center gap-2 mb-6">
+                  <div className="px-4 py-1.5 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full text-white text-sm font-bold tracking-wide uppercase">
+                    New Feature
+                  </div>
+                  <div className="px-4 py-1.5 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full text-white text-sm font-bold tracking-wide uppercase">
+                    90% Accuracy
+                  </div>
+                </div>
+
+                <h2 className="text-4xl md:text-6xl font-bold text-white text-center mb-4 leading-tight">
+                  Introducing
+                  <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-orange-400 bg-clip-text text-transparent block mt-2">
+                    AI-Powered Exam Predictions
+                  </span>
+                </h2>
+
+                <p className="text-xl md:text-2xl text-white/70 text-center mb-8 max-w-3xl mx-auto leading-relaxed">
+                  Practice with questions that have a 90% probability of appearing in your next matric exam. Built using advanced pattern analysis.
+                </p>
+
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                  {[
+                    { icon: "🎯", label: "High Accuracy", desc: "90% probability" },
+                    { icon: "📊", label: "Data-Driven", desc: "Pattern analysis" },
+                    { icon: "📚", label: "All Subjects", desc: "Complete coverage" },
+                    { icon: "⚡", label: "Instant Access", desc: "Start now" },
+                  ].map((feature, index) => (
+                    <div key={index} className="text-center p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300">
+                      <div className="text-3xl mb-2">{feature.icon}</div>
+                      <div className="text-white font-semibold text-sm mb-1">{feature.label}</div>
+                      <div className="text-white/50 text-xs">{feature.desc}</div>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                  <Link
+                    to="/predicted-matric"
+                    className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl shadow-2xl hover:shadow-purple-500/50 transform hover:scale-105 transition-all duration-300 border border-purple-400/30"
+                  >
+                    <span className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl blur opacity-50 group-hover:opacity-75 transition duration-300"></span>
+                    <span className="relative flex items-center gap-2">
+                      <Target className="w-5 h-5" />
+                      Try Predictions Now
+                      <Zap className="w-5 h-5" />
+                    </span>
+                  </Link>
+                  <Link
+                    to="/matric"
+                    className="group inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white/80 border-2 border-white/30 rounded-2xl hover:bg-white/10 hover:border-white/50 transition-all duration-300 backdrop-blur-sm"
+                  >
+                    <span className="flex items-center gap-2">
+                      <Star className="w-5 h-5" />
+                      View All Exams
+                    </span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </motion.section>
+
       {/* Predicted Matric Section */}
       <motion.section
         initial={{ opacity: 0 }}
