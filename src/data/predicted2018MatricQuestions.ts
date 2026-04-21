@@ -244,6 +244,246 @@ export const predicted2018NaturalMathQuestions: MatricExamQuestion[] = [
     ],
     correctAnswer: 0,
     explanation: "Dot product: a · b = (2)(4) + (3)(1) = 8 + 3 = 11."
+  },
+  {
+    id: "pred-2018-math-21",
+    question: "Find the value of log₈(64).",
+    options: [
+      "2",
+      "3",
+      "4",
+      "1"
+    ],
+    correctAnswer: 0,
+    explanation: "log₈(64) = x means 8ˣ = 64. Since 8² = 64, x = 2."
+  },
+  {
+    id: "pred-2018-math-22",
+    question: "What is the sum of interior angles of a regular hexagon?",
+    options: [
+      "720°",
+      "540°",
+      "360°",
+      "900°"
+    ],
+    correctAnswer: 0,
+    explanation: "Sum of interior angles = (n-2) × 180° = (6-2) × 180° = 4 × 180° = 720°."
+  },
+  {
+    id: "pred-2018-math-23",
+    question: "Solve for x: 2ˣ⁺¹ = 32.",
+    options: [
+      "4",
+      "5",
+      "3",
+      "6"
+    ],
+    correctAnswer: 0,
+    explanation: "2ˣ⁺¹ = 32 = 2⁵. Therefore, x + 1 = 5, so x = 4."
+  },
+  {
+    id: "pred-2018-math-24",
+    question: "What is the probability of rolling a sum of 7 with two dice?",
+    options: [
+      "1/6",
+      "1/12",
+      "1/9",
+      "1/8"
+    ],
+    correctAnswer: 0,
+    explanation: "There are 6 favorable outcomes (1+6, 2+5, 3+4, 4+3, 5+2, 6+1) out of 36 total outcomes. P = 6/36 = 1/6."
+  },
+  {
+    id: "pred-2018-math-25",
+    question: "Find the equation of the circle with center (2, -3) and radius 5.",
+    options: [
+      "(x-2)² + (y+3)² = 25",
+      "(x+2)² + (y-3)² = 25",
+      "(x-2)² + (y-3)² = 25",
+      "(x+2)² + (y+3)² = 25"
+    ],
+    correctAnswer: 0,
+    explanation: "Circle equation: (x-h)² + (y-k)² = r². With center (2, -3) and r=5: (x-2)² + (y+3)² = 25."
+  },
+  {
+    id: "pred-2018-math-26",
+    question: "What is the value of sin(30°) × cos(60°)?",
+    options: [
+      "1/4",
+      "1/2",
+      "√3/4",
+      "0"
+    ],
+    correctAnswer: 0,
+    explanation: "sin(30°) = 1/2, cos(60°) = 1/2. Product = (1/2) × (1/2) = 1/4."
+  },
+  {
+    id: "pred-2018-math-27",
+    question: "Find the determinant of the matrix [[3, 2], [1, 4]].",
+    options: [
+      "10",
+      "14",
+      "6",
+      "12"
+    ],
+    correctAnswer: 0,
+    explanation: "det = (3)(4) - (2)(1) = 12 - 2 = 10."
+  },
+  {
+    id: "pred-2018-math-28",
+    question: "What is the sum of the first 50 natural numbers?",
+    options: [
+      "1275",
+      "1250",
+      "1300",
+      "1200"
+    ],
+    correctAnswer: 0,
+    explanation: "Sum = n(n+1)/2 = 50(51)/2 = 2550/2 = 1275."
+  },
+  {
+    id: "pred-2018-math-29",
+    question: "Find the value of C(7, 3) - the number of combinations.",
+    options: [
+      "35",
+      "21",
+      "42",
+      "28"
+    ],
+    correctAnswer: 0,
+    explanation: "C(7, 3) = 7!/(3! × 4!) = (7×6×5)/(3×2×1) = 210/6 = 35."
+  },
+  {
+    id: "pred-2018-math-30",
+    question: "What is the LCM of 12, 15, and 20?",
+    options: [
+      "60",
+      "120",
+      "180",
+      "30"
+    ],
+    correctAnswer: 0,
+    explanation: "Prime factors: 12=2²×3, 15=3×5, 20=2²×5. LCM = 2²×3×5 = 60."
+  },
+  {
+    id: "pred-2018-math-31",
+    question: "Solve the quadratic equation: x² - 5x + 6 = 0",
+    options: [
+      "x = 2 or x = 3",
+      "x = -2 or x = -3",
+      "x = 1 or x = 6",
+      "x = -1 or x = -6"
+    ],
+    correctAnswer: 0,
+    explanation: "Factor: (x-2)(x-3) = 0. Therefore, x = 2 or x = 3."
+  },
+  {
+    id: "pred-2018-math-32",
+    question: "What is the value of sin²(45°) + cos²(45°)?",
+    options: [
+      "1",
+      "0",
+      "2",
+      "1/2"
+    ],
+    correctAnswer: 0,
+    explanation: "Trigonometric identity: sin²θ + cos²θ = 1 for any angle θ."
+  },
+  {
+    id: "pred-2018-math-33",
+    question: "Find the slope of the line passing through points (2, 3) and (6, 11).",
+    options: [
+      "2",
+      "4",
+      "1/2",
+      "3"
+    ],
+    correctAnswer: 0,
+    explanation: "Slope m = (y₂-y₁)/(x₂-x₁) = (11-3)/(6-2) = 8/4 = 2."
+  },
+  {
+    id: "pred-2018-math-34",
+    question: "Simplify: √50 + √18",
+    options: [
+      "8√2",
+      "5√2",
+      "4√2",
+      "6√2"
+    ],
+    correctAnswer: 0,
+    explanation: "√50 = 5√2, √18 = 3√2. Sum = 5√2 + 3√2 = 8√2."
+  },
+  {
+    id: "pred-2018-math-35",
+    question: "What is the value of 2⁵ × 2³?",
+    options: [
+      "256",
+      "64",
+      "128",
+      "32"
+    ],
+    correctAnswer: 0,
+    explanation: "2⁵ × 2³ = 2⁵⁺³ = 2⁸ = 256."
+  },
+  {
+    id: "pred-2018-math-36",
+    question: "Find the midpoint of the line segment joining (3, 4) and (7, 8).",
+    options: [
+      "(5, 6)",
+      "(4, 5)",
+      "(6, 7)",
+      "(5, 5)"
+    ],
+    correctAnswer: 0,
+    explanation: "Midpoint = ((x₁+x₂)/2, (y₁+y₂)/2) = ((3+7)/2, (4+8)/2) = (5, 6)."
+  },
+  {
+    id: "pred-2018-math-37",
+    question: "What is the value of tan(45°)?",
+    options: [
+      "1",
+      "0",
+      "√3",
+      "1/√3"
+    ],
+    correctAnswer: 0,
+    explanation: "tan(45°) = sin(45°)/cos(45°) = (√2/2)/(√2/2) = 1."
+  },
+  {
+    id: "pred-2018-math-38",
+    question: "Solve: |2x - 3| = 5",
+    options: [
+      "x = 4 or x = -1",
+      "x = 4 or x = 1",
+      "x = -4 or x = 1",
+      "x = -4 or x = -1"
+    ],
+    correctAnswer: 0,
+    explanation: "2x - 3 = 5 gives x = 4. 2x - 3 = -5 gives x = -1."
+  },
+  {
+    id: "pred-2018-math-39",
+    question: "What is the equation of the line with slope 2 passing through (1, 3)?",
+    options: [
+      "y = 2x + 1",
+      "y = 2x - 1",
+      "y = 2x + 3",
+      "y = 2x - 3"
+    ],
+    correctAnswer: 0,
+    explanation: "Point-slope: y - 3 = 2(x - 1). y - 3 = 2x - 2. y = 2x + 1."
+  },
+  {
+    id: "pred-2018-math-40",
+    question: "What is the sum of the interior angles of a pentagon?",
+    options: [
+      "540°",
+      "360°",
+      "720°",
+      "180°"
+    ],
+    correctAnswer: 0,
+    explanation: "Sum = (n-2) × 180° = (5-2) × 180° = 3 × 180° = 540°."
   }
 ];
 
@@ -487,6 +727,246 @@ export const predicted2018NaturalPhysicsQuestions: MatricExamQuestion[] = [
     ],
     correctAnswer: 0,
     explanation: "λ = h/mv = (6.63 × 10⁻³⁴)/(9.11 × 10⁻³¹ × 10⁶) = 7.28 × 10⁻¹⁰ m = 0.728 nm ≈ 0.73 nm."
+  },
+  {
+    id: "pred-2018-phy-21",
+    question: "What is the gravitational force between two 10 kg masses separated by 1 meter? (G = 6.67 × 10⁻¹¹ N·m²/kg²)",
+    options: [
+      "6.67 × 10⁻⁹ N",
+      "6.67 × 10⁻¹¹ N",
+      "6.67 × 10⁻⁷ N",
+      "6.67 × 10⁻¹³ N"
+    ],
+    correctAnswer: 0,
+    explanation: "F = G(m₁m₂)/r² = (6.67 × 10⁻¹¹)(10×10)/1² = 6.67 × 10⁻⁹ N."
+  },
+  {
+    id: "pred-2018-phy-22",
+    question: "A stone is thrown horizontally from a cliff at 20 m/s. If it takes 4 seconds to hit the ground, how far from the cliff does it land?",
+    options: [
+      "80 m",
+      "40 m",
+      "160 m",
+      "20 m"
+    ],
+    correctAnswer: 0,
+    explanation: "Horizontal distance = horizontal velocity × time = 20 × 4 = 80 m."
+  },
+  {
+    id: "pred-2018-phy-23",
+    question: "What is the frequency of a wave with wavelength 0.5 m and speed 340 m/s?",
+    options: [
+      "680 Hz",
+      "170 Hz",
+      "340 Hz",
+      "1360 Hz"
+    ],
+    correctAnswer: 0,
+    explanation: "f = v/λ = 340/0.5 = 680 Hz."
+  },
+  {
+    id: "pred-2018-phy-24",
+    question: "A 5 kg object falls from rest. What is its kinetic energy after falling 10 meters? (g = 10 m/s²)",
+    options: [
+      "500 J",
+      "250 J",
+      "100 J",
+      "50 J"
+    ],
+    correctAnswer: 0,
+    explanation: "KE = mgh = 5 × 10 × 10 = 500 J (potential energy converts to kinetic energy)."
+  },
+  {
+    id: "pred-2018-phy-25",
+    question: "What is the angular velocity of a wheel rotating at 120 rpm?",
+    options: [
+      "4π rad/s",
+      "2π rad/s",
+      "8π rad/s",
+      "π rad/s"
+    ],
+    correctAnswer: 0,
+    explanation: "120 rpm = 120 × (2π/60) = 4π rad/s."
+  },
+  {
+    id: "pred-2018-phy-26",
+    question: "A convex mirror has a focal length of -20 cm. An object is placed 30 cm from the mirror. Where is the image formed?",
+    options: [
+      "-12 cm (virtual, behind mirror)",
+      "-60 cm (virtual, behind mirror)",
+      "12 cm (real, in front)",
+      "60 cm (real, in front)"
+    ],
+    correctAnswer: 0,
+    explanation: "1/f = 1/u + 1/v. 1/(-20) = 1/30 + 1/v. 1/v = -1/20 - 1/30 = -5/60 = -1/12. v = -12 cm."
+  },
+  {
+    id: "pred-2018-phy-27",
+    question: "What is the work done to stretch a spring by 0.1 m if its spring constant is 100 N/m?",
+    options: [
+      "0.5 J",
+      "1 J",
+      "10 J",
+      "0.1 J"
+    ],
+    correctAnswer: 0,
+    explanation: "W = (1/2)kx² = (1/2)(100)(0.1)² = 50 × 0.01 = 0.5 J."
+  },
+  {
+    id: "pred-2018-phy-28",
+    question: "Two resistors of 10 Ω each are connected in series. What is the total resistance?",
+    options: [
+      "20 Ω",
+      "5 Ω",
+      "10 Ω",
+      "100 Ω"
+    ],
+    correctAnswer: 0,
+    explanation: "In series, total resistance = R₁ + R₂ = 10 + 10 = 20 Ω."
+  },
+  {
+    id: "pred-2018-phy-29",
+    question: "What is the pressure exerted by a force of 500 N on an area of 0.5 m²?",
+    options: [
+      "1000 Pa",
+      "250 Pa",
+      "500 Pa",
+      "100 Pa"
+    ],
+    correctAnswer: 0,
+    explanation: "Pressure = Force/Area = 500/0.5 = 1000 Pa."
+  },
+  {
+    id: "pred-2018-phy-30",
+    question: "A transformer has 100 turns in the primary coil and 500 turns in the secondary. If the primary voltage is 12 V, what is the secondary voltage?",
+    options: [
+      "60 V",
+      "120 V",
+      "24 V",
+      "30 V"
+    ],
+    correctAnswer: 0,
+    explanation: "Vₛ/Vₚ = Nₛ/Nₚ. Vₛ/12 = 500/100 = 5. Vₛ = 12 × 5 = 60 V."
+  },
+  {
+    id: "pred-2018-phy-31",
+    question: "What is Newton's Second Law of Motion?",
+    options: [
+      "F = ma (Force equals mass times acceleration)",
+      "F = mv (Force equals mass times velocity)",
+      "F = m/a (Force equals mass divided by acceleration)",
+      "F = m + a (Force equals mass plus acceleration)"
+    ],
+    correctAnswer: 0,
+    explanation: "Newton's Second Law states that the acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass: F = ma."
+  },
+  {
+    id: "pred-2018-phy-32",
+    question: "What is the kinetic energy of a 2 kg object moving at 5 m/s?",
+    options: [
+      "25 J",
+      "10 J",
+      "50 J",
+      "20 J"
+    ],
+    correctAnswer: 0,
+    explanation: "KE = (1/2)mv² = (1/2)(2)(5)² = (1/2)(2)(25) = 25 J."
+  },
+  {
+    id: "pred-2018-phy-33",
+    question: "What is the unit of electric current?",
+    options: [
+      "Ampere (A)",
+      "Volt (V)",
+      "Watt (W)",
+      "Ohm (Ω)"
+    ],
+    correctAnswer: 0,
+    explanation: "The SI unit of electric current is the Ampere (A), named after André-Marie Ampère."
+  },
+  {
+    id: "pred-2018-phy-34",
+    question: "What is the speed of light in vacuum?",
+    options: [
+      "3 × 10⁸ m/s",
+      "3 × 10⁶ m/s",
+      "3 × 10⁵ m/s",
+      "3 × 10⁷ m/s"
+    ],
+    correctAnswer: 0,
+    explanation: "The speed of light in vacuum is approximately 3 × 10⁸ meters per second."
+  },
+  {
+    id: "pred-2018-phy-35",
+    question: "What is the law of conservation of energy?",
+    options: [
+      "Energy cannot be created or destroyed, only transformed",
+      "Energy can be created but not destroyed",
+      "Energy is always lost",
+      "Energy increases over time"
+    ],
+    correctAnswer: 0,
+    explanation: "The law of conservation of energy states that energy cannot be created or destroyed, only transformed from one form to another."
+  },
+  {
+    id: "pred-2018-phy-36",
+    question: "What is the period of a pendulum with length 1 m? (Use g = 10 m/s²)",
+    options: [
+      "≈ 2 seconds",
+      "≈ 1 second",
+      "≈ 3 seconds",
+      "≈ 4 seconds"
+    ],
+    correctAnswer: 0,
+    explanation: "T = 2π√(l/g) = 2π√(1/10) = 2π(0.316) ≈ 2 seconds."
+  },
+  {
+    id: "pred-2018-phy-37",
+    question: "What is Ohm's Law?",
+    options: [
+      "V = IR (Voltage equals current times resistance)",
+      "I = VR (Current equals voltage times resistance)",
+      "R = VI (Resistance equals voltage times current)",
+      "V = I/R (Voltage equals current divided by resistance)"
+    ],
+    correctAnswer: 0,
+    explanation: "Ohm's Law states that the voltage across a conductor is directly proportional to the current flowing through it: V = IR."
+  },
+  {
+    id: "pred-2018-phy-38",
+    question: "What is the unit of power?",
+    options: [
+      "Watt (W)",
+      "Joule (J)",
+      "Newton (N)",
+      "Pascal (Pa)"
+    ],
+    correctAnswer: 0,
+    explanation: "The SI unit of power is the Watt (W), which equals one Joule per second."
+  },
+  {
+    id: "pred-2018-phy-39",
+    question: "What is the principle of floatation?",
+    options: [
+      "Objects float when their weight equals the weight of displaced fluid",
+      "Objects float when they are lighter than water",
+      "Objects float when they are hollow",
+      "Objects float when they are small"
+    ],
+    correctAnswer: 0,
+    explanation: "Archimedes' principle states that an object floats when the buoyant force (weight of displaced fluid) equals the object's weight."
+  },
+  {
+    id: "pred-2018-phy-40",
+    question: "What is the refractive index of a medium?",
+    options: [
+      "Ratio of speed of light in vacuum to speed in medium",
+      "Ratio of speed in medium to speed in vacuum",
+      "Speed of light in the medium",
+      "Speed of light in vacuum"
+    ],
+    correctAnswer: 0,
+    explanation: "Refractive index n = c/v, where c is speed of light in vacuum and v is speed in the medium."
   }
 ];
 
@@ -730,6 +1210,246 @@ export const predicted2018NaturalChemistryQuestions: MatricExamQuestion[] = [
     ],
     correctAnswer: 0,
     explanation: "CH₃-CH₂-CH₃ has 3 carbon atoms, so it is propane."
+  },
+  {
+    id: "pred-2018-chem-21",
+    question: "What is the hybridization of carbon in methane (CH₄)?",
+    options: [
+      "sp³",
+      "sp²",
+      "sp",
+      "sp³d"
+    ],
+    correctAnswer: 0,
+    explanation: "Carbon in methane forms 4 sigma bonds, requiring sp³ hybridization with tetrahedral geometry."
+  },
+  {
+    id: "pred-2018-chem-22",
+    question: "What is the pH of a 0.001 M HCl solution?",
+    options: [
+      "3",
+      "2",
+      "4",
+      "1"
+    ],
+    correctAnswer: 0,
+    explanation: "HCl is a strong acid, so [H⁺] = 0.001 M. pH = -log(0.001) = -log(10⁻³) = 3."
+  },
+  {
+    id: "pred-2018-chem-23",
+    question: "What type of reaction is: 2H₂ + O₂ → 2H₂O?",
+    options: [
+      "Combination (synthesis) reaction",
+      "Decomposition reaction",
+      "Displacement reaction",
+      "Double displacement reaction"
+    ],
+    correctAnswer: 0,
+    explanation: "Two substances (H₂ and O₂) combine to form one product (H₂O), making it a combination reaction."
+  },
+  {
+    id: "pred-2018-chem-24",
+    question: "What is the oxidation number of sulfur in H₂SO₄?",
+    options: [
+      "+6",
+      "+4",
+      "+2",
+      "0"
+    ],
+    correctAnswer: 0,
+    explanation: "H is +1 (×2 = +2), O is -2 (×4 = -8). For neutral molecule: +2 + S - 8 = 0, so S = +6."
+  },
+  {
+    id: "pred-2018-chem-25",
+    question: "What is the mass of 2 moles of water (H₂O)? (H=1, O=16)",
+    options: [
+      "36 g",
+      "18 g",
+      "32 g",
+      "20 g"
+    ],
+    correctAnswer: 0,
+    explanation: "Molar mass of H₂O = 2(1) + 16 = 18 g/mol. Mass of 2 moles = 2 × 18 = 36 g."
+  },
+  {
+    id: "pred-2018-chem-26",
+    question: "Which of the following is a noble gas?",
+    options: [
+      "Argon",
+      "Oxygen",
+      "Nitrogen",
+      "Chlorine"
+    ],
+    correctAnswer: 0,
+    explanation: "Argon (Ar) is a noble gas in Group 18 of the periodic table, known for being inert."
+  },
+  {
+    id: "pred-2018-chem-27",
+    question: "What is the empirical formula of glucose (C₆H₁₂O₆)?",
+    options: [
+      "CH₂O",
+      "C₂H₄O₂",
+      "CHO",
+      "C₃H₆O₃"
+    ],
+    correctAnswer: 0,
+    explanation: "Divide all subscripts by 6: C₆/₆H₁₂/₆O₆/₆ = CH₂O."
+  },
+  {
+    id: "pred-2018-chem-28",
+    question: "What is the concentration of a solution made by dissolving 10 g of NaCl in enough water to make 500 mL? (Na=23, Cl=35.5)",
+    options: [
+      "0.34 M",
+      "0.2 M",
+      "0.5 M",
+      "0.1 M"
+    ],
+    correctAnswer: 0,
+    explanation: "Moles = 10/58.5 = 0.171. Volume = 0.5 L. Molarity = 0.171/0.5 = 0.34 M."
+  },
+  {
+    id: "pred-2018-chem-29",
+    question: "What is the product when calcium reacts with water?",
+    options: [
+      "Ca(OH)₂ + H₂",
+      "CaO + H₂",
+      "CaH₂ + O₂",
+      "Ca + H₂O"
+    ],
+    correctAnswer: 0,
+    explanation: "Ca + 2H₂O → Ca(OH)₂ + H₂. Calcium reacts with water to form calcium hydroxide and hydrogen gas."
+  },
+  {
+    id: "pred-2018-chem-30",
+    question: "What is the number of neutrons in carbon-14?",
+    options: [
+      "8",
+      "6",
+      "7",
+      "14"
+    ],
+    correctAnswer: 0,
+    explanation: "Carbon-14 has mass number 14 and atomic number 6. Neutrons = mass number - atomic number = 14 - 6 = 8."
+  },
+  {
+    id: "pred-2018-chem-31",
+    question: "What is the atomic number of carbon?",
+    options: [
+      "6",
+      "12",
+      "14",
+      "8"
+    ],
+    correctAnswer: 0,
+    explanation: "The atomic number of carbon is 6, which means it has 6 protons in its nucleus."
+  },
+  {
+    id: "pred-2018-chem-32",
+    question: "What type of bond is formed between sodium and chlorine?",
+    options: [
+      "Ionic bond",
+      "Covalent bond",
+      "Metallic bond",
+      "Hydrogen bond"
+    ],
+    correctAnswer: 0,
+    explanation: "Sodium (metal) transfers an electron to chlorine (non-metal), forming an ionic bond between Na⁺ and Cl⁻."
+  },
+  {
+    id: "pred-2018-chem-33",
+    question: "What is the mass number of an atom with 8 protons and 8 neutrons?",
+    options: [
+      "16",
+      "8",
+      "24",
+      "12"
+    ],
+    correctAnswer: 0,
+    explanation: "Mass number = protons + neutrons = 8 + 8 = 16."
+  },
+  {
+    id: "pred-2018-chem-34",
+    question: "What is Avogadro's number?",
+    options: [
+      "6.02 × 10²³",
+      "6.02 × 10²²",
+      "6.02 × 10²⁴",
+      "6.02 × 10²¹"
+    ],
+    correctAnswer: 0,
+    explanation: "Avogadro's number (6.02 × 10²³) is the number of particles in one mole of a substance."
+  },
+  {
+    id: "pred-2018-chem-35",
+    question: "What is the pH of a neutral solution?",
+    options: [
+      "7",
+      "0",
+      "14",
+      "1"
+    ],
+    correctAnswer: 0,
+    explanation: "A neutral solution has a pH of 7, where [H⁺] = [OH⁻]."
+  },
+  {
+    id: "pred-2018-chem-36",
+    question: "What is the formula for carbon dioxide?",
+    options: [
+      "CO₂",
+      "CO",
+      "C₂O",
+      "C₂O₄"
+    ],
+    correctAnswer: 0,
+    explanation: "Carbon dioxide consists of one carbon atom bonded to two oxygen atoms: CO₂."
+  },
+  {
+    id: "pred-2018-chem-37",
+    question: "What happens to the rate of reaction when temperature increases?",
+    options: [
+      "Reaction rate increases",
+      "Reaction rate decreases",
+      "Reaction rate stays the same",
+      "Reaction stops"
+    ],
+    correctAnswer: 0,
+    explanation: "Increasing temperature increases the kinetic energy of molecules, leading to more frequent and energetic collisions, thus increasing the reaction rate."
+  },
+  {
+    id: "pred-2018-chem-38",
+    question: "What is the law of conservation of mass?",
+    options: [
+      "Mass is neither created nor destroyed in a chemical reaction",
+      "Mass is always created",
+      "Mass is always destroyed",
+      "Mass changes randomly"
+    ],
+    correctAnswer: 0,
+    explanation: "The law of conservation of mass states that in a closed system, mass is neither created nor destroyed in a chemical reaction."
+  },
+  {
+    id: "pred-2018-chem-39",
+    question: "What is a catalyst?",
+    options: [
+      "Substance that speeds up reaction without being consumed",
+      "Substance that slows down reaction",
+      "Substance that is consumed in reaction",
+      "Product of reaction"
+    ],
+    correctAnswer: 0,
+    explanation: "A catalyst is a substance that increases the rate of a chemical reaction without being consumed in the process."
+  },
+  {
+    id: "pred-2018-chem-40",
+    question: "What is the chemical formula for water?",
+    options: [
+      "H₂O",
+      "HO",
+      "H₂O₂",
+      "H₃O"
+    ],
+    correctAnswer: 0,
+    explanation: "Water consists of two hydrogen atoms bonded to one oxygen atom: H₂O."
   }
 ];
 
@@ -973,6 +1693,246 @@ export const predicted2018NaturalBiologyQuestions: MatricExamQuestion[] = [
     ],
     correctAnswer: 0,
     explanation: "Cardiac muscle is the specialized muscle tissue found only in the heart, responsible for pumping blood."
+  },
+  {
+    id: "pred-2018-bio-21",
+    question: "What is the function of the cell wall in plant cells?",
+    options: [
+      "Provides structural support and protection",
+      "Stores genetic information",
+      "Produces energy",
+      "Controls cell division"
+    ],
+    correctAnswer: 0,
+    explanation: "The cell wall provides rigid structural support and protection for plant cells, maintaining cell shape and preventing excessive water uptake."
+  },
+  {
+    id: "pred-2018-bio-22",
+    question: "What is the process by which plants make their own food using sunlight?",
+    options: [
+      "Photosynthesis",
+      "Respiration",
+      "Digestion",
+      "Fermentation"
+    ],
+    correctAnswer: 0,
+    explanation: "Photosynthesis is the process by which plants convert light energy, CO₂, and water into glucose and oxygen."
+  },
+  {
+    id: "pred-2018-bio-23",
+    question: "What is the basic unit of heredity?",
+    options: [
+      "Gene",
+      "Chromosome",
+      "DNA",
+      "Nucleotide"
+    ],
+    correctAnswer: 0,
+    explanation: "A gene is the basic unit of heredity, consisting of DNA sequences that code for specific traits."
+  },
+  {
+    id: "pred-2018-bio-24",
+    question: "What is mitosis?",
+    options: [
+      "Cell division resulting in two identical daughter cells",
+      "Cell division resulting in four different cells",
+      "Formation of gametes",
+      "DNA replication only"
+    ],
+    correctAnswer: 0,
+    explanation: "Mitosis is a type of cell division that results in two genetically identical daughter cells from a single parent cell."
+  },
+  {
+    id: "pred-2018-bio-25",
+    question: "What is the function of the plasma membrane?",
+    options: [
+      "Controls what enters and exits the cell",
+      "Produces energy",
+      "Stores genetic material",
+      "Synthesizes proteins"
+    ],
+    correctAnswer: 0,
+    explanation: "The plasma membrane (cell membrane) regulates the movement of substances in and out of the cell through selective permeability."
+  },
+  {
+    id: "pred-2018-bio-26",
+    question: "What are chromosomes made of?",
+    options: [
+      "DNA and proteins",
+      "RNA and proteins",
+      "DNA only",
+      "Proteins only"
+    ],
+    correctAnswer: 0,
+    explanation: "Chromosomes are made of DNA tightly coiled around histone proteins, which help package the DNA."
+  },
+  {
+    id: "pred-2018-bio-27",
+    question: "What is the difference between prokaryotic and eukaryotic cells?",
+    options: [
+      "Prokaryotes lack a nucleus; eukaryotes have a nucleus",
+      "Prokaryotes are larger; eukaryotes are smaller",
+      "Eukaryotes lack DNA; prokaryotes have DNA",
+      "Prokaryotes have organelles; eukaryotes do not"
+    ],
+    correctAnswer: 0,
+    explanation: "The main difference is that prokaryotic cells lack a membrane-bound nucleus, while eukaryotic cells have a true nucleus."
+  },
+  {
+    id: "pred-2018-bio-28",
+    question: "What is the function of enzymes?",
+    options: [
+      "Catalyze biochemical reactions",
+      "Store energy",
+      "Provide structural support",
+      "Transport oxygen"
+    ],
+    correctAnswer: 0,
+    explanation: "Enzymes are biological catalysts that speed up biochemical reactions without being consumed in the process."
+  },
+  {
+    id: "pred-2018-bio-29",
+    question: "What is the role of chlorophyll in photosynthesis?",
+    options: [
+      "Absorbs light energy to drive photosynthesis",
+      "Produces glucose",
+      "Releases oxygen",
+      "Transports water"
+    ],
+    correctAnswer: 0,
+    explanation: "Chlorophyll is the green pigment in plants that absorbs light energy, which is then used to power the photosynthetic reactions."
+  },
+  {
+    id: "pred-2018-bio-30",
+    question: "What is meiosis?",
+    options: [
+      "Cell division producing four haploid gametes",
+      "Cell division producing two diploid cells",
+      "DNA replication process",
+      "Protein synthesis process"
+    ],
+    correctAnswer: 0,
+    explanation: "Meiosis is a type of cell division that produces four haploid gametes (sperm or egg cells) from one diploid parent cell."
+  },
+  {
+    id: "pred-2018-bio-31",
+    question: "What is the powerhouse of the cell?",
+    options: [
+      "Mitochondria",
+      "Nucleus",
+      "Ribosome",
+      "Golgi apparatus"
+    ],
+    correctAnswer: 0,
+    explanation: "Mitochondria are known as the powerhouse of the cell because they produce ATP through cellular respiration."
+  },
+  {
+    id: "pred-2018-bio-32",
+    question: "What is DNA?",
+    options: [
+      "Deoxyribonucleic acid - genetic material",
+      "Ribonucleic acid - protein synthesis",
+      "A type of protein",
+      "A carbohydrate"
+    ],
+    correctAnswer: 0,
+    explanation: "DNA (Deoxyribonucleic acid) is the molecule that carries genetic instructions for the development, functioning, and reproduction of all living organisms."
+  },
+  {
+    id: "pred-2018-bio-33",
+    question: "What is the basic unit of life?",
+    options: [
+      "Cell",
+      "Tissue",
+      "Organ",
+      "Organism"
+    ],
+    correctAnswer: 0,
+    explanation: "The cell is the basic structural and functional unit of all living organisms."
+  },
+  {
+    id: "pred-2018-bio-34",
+    question: "What is the function of red blood cells?",
+    options: [
+      "Carry oxygen throughout the body",
+      "Fight infections",
+      "Clot blood",
+      "Produce hormones"
+    ],
+    correctAnswer: 0,
+    explanation: "Red blood cells contain hemoglobin which binds to oxygen and transports it throughout the body."
+  },
+  {
+    id: "pred-2018-bio-35",
+    question: "What is the function of white blood cells?",
+    options: [
+      "Fight infections and diseases",
+      "Carry oxygen",
+      "Clot blood",
+      "Transport nutrients"
+    ],
+    correctAnswer: 0,
+    explanation: "White blood cells (leukocytes) are part of the immune system and help fight infections and foreign invaders."
+  },
+  {
+    id: "pred-2018-bio-36",
+    question: "What is the process by which plants release oxygen?",
+    options: [
+      "Photosynthesis",
+      "Respiration",
+      "Transpiration",
+      "Digestion"
+    ],
+    correctAnswer: 0,
+    explanation: "During photosynthesis, plants use sunlight to convert CO₂ and water into glucose and release oxygen as a byproduct."
+  },
+  {
+    id: "pred-2018-bio-37",
+    question: "What are the products of cellular respiration?",
+    options: [
+      "CO₂, water, and ATP",
+      "Glucose and oxygen",
+      "Oxygen and glucose",
+      "Water and oxygen"
+    ],
+    correctAnswer: 0,
+    explanation: "Cellular respiration converts glucose and oxygen into carbon dioxide, water, and ATP (energy)."
+  },
+  {
+    id: "pred-2018-bio-38",
+    question: "What is the function of the nucleus?",
+    options: [
+      "Contains genetic material and controls cell activities",
+      "Produces energy",
+      "Synthesizes proteins",
+      "Stores water"
+    ],
+    correctAnswer: 0,
+    explanation: "The nucleus contains DNA and controls all cell activities by regulating gene expression."
+  },
+  {
+    id: "pred-2018-bio-39",
+    question: "What is the difference between DNA and RNA?",
+    options: [
+      "DNA has deoxyribose and is double-stranded; RNA has ribose and is single-stranded",
+      "RNA has deoxyribose; DNA has ribose",
+      "Both are the same",
+      "DNA is single-stranded; RNA is double-stranded"
+    ],
+    correctAnswer: 0,
+    explanation: "DNA contains deoxyribose sugar and is double-stranded, while RNA contains ribose sugar and is typically single-stranded."
+  },
+  {
+    id: "pred-2018-bio-40",
+    question: "What is the function of the digestive system?",
+    options: [
+      "Break down food and absorb nutrients",
+      "Pump blood",
+      "Exchange gases",
+      "Control body movements"
+    ],
+    correctAnswer: 0,
+    explanation: "The digestive system breaks down food into smaller molecules that can be absorbed and used by the body for energy, growth, and repair."
   }
 ];
 
@@ -1216,6 +2176,246 @@ export const predicted2018NaturalCivicsQuestions: MatricExamQuestion[] = [
     ],
     correctAnswer: 0,
     explanation: "Civil disobedience is the refusal to obey certain laws as a form of peaceful protest against unjust policies."
+  },
+  {
+    id: "pred-2018-civ-21",
+    question: "What is 'rule of law'?",
+    options: [
+      "All individuals and institutions are subject to and accountable to law",
+      "Only government follows laws",
+      "Laws apply only to citizens",
+      "Laws can be ignored by officials"
+    ],
+    correctAnswer: 0,
+    explanation: "Rule of law means that all individuals, including government officials, are subject to and accountable under the law."
+  },
+  {
+    id: "pred-2018-civ-22",
+    question: "What is 'separation of powers'?",
+    options: [
+      "Division of government responsibilities into branches to prevent concentration of power",
+      "One branch controls everything",
+      "All branches have the same powers",
+      "No separation between branches"
+    ],
+    correctAnswer: 0,
+    explanation: "Separation of powers divides government responsibilities among legislative, executive, and judicial branches to prevent any one branch from becoming too powerful."
+  },
+  {
+    id: "pred-2018-civ-23",
+    question: "What is 'constitutionalism'?",
+    options: [
+      "Government limited by a constitution",
+      "Government without limits",
+      "Rule by military",
+      "Rule by one person"
+    ],
+    correctAnswer: 0,
+    explanation: "Constitutionalism is the principle that government power is limited by a constitution and must follow its provisions."
+  },
+  {
+    id: "pred-2018-civ-24",
+    question: "What is 'civil society'?",
+    options: [
+      "Organizations and institutions that operate independently of government",
+      "Government organizations",
+      "Military organizations",
+      "Political parties only"
+    ],
+    correctAnswer: 0,
+    explanation: "Civil society consists of non-governmental organizations, community groups, and other organizations that operate independently of the government."
+  },
+  {
+    id: "pred-2018-civ-25",
+    question: "What is 'media freedom'?",
+    options: [
+      "Right of media to report without government censorship",
+      "Government control of media",
+      "Media only reporting positive news",
+      "No media allowed"
+    ],
+    correctAnswer: 0,
+    explanation: "Media freedom is the right of journalists and media organizations to report news and express opinions without government censorship or interference."
+  },
+  {
+    id: "pred-2018-civ-26",
+    question: "What is 'transparency' in government?",
+    options: [
+      "Openness about government decisions and actions",
+      "Government secrecy",
+      "Hidden government operations",
+      "No public access to information"
+    ],
+    correctAnswer: 0,
+    explanation: "Transparency in government means openness about government decisions, actions, and spending, allowing citizens to hold officials accountable."
+  },
+  {
+    id: "pred-2018-civ-27",
+    question: "What is 'accountability' in governance?",
+    options: [
+      "Government officials being answerable for their actions",
+      "Officials having no responsibility",
+      "Government acting without oversight",
+      "No consequences for actions"
+    ],
+    correctAnswer: 0,
+    explanation: "Accountability means government officials must answer for their decisions and actions, and can be held responsible for their performance."
+  },
+  {
+    id: "pred-2018-civ-28",
+    question: "What is 'gender equality'?",
+    options: [
+      "Equal rights and opportunities for all genders",
+      "Superiority of one gender",
+      "Different rights based on gender",
+      "Only men have rights"
+    ],
+    correctAnswer: 0,
+    explanation: "Gender equality means that all people, regardless of gender, have equal rights, responsibilities, and opportunities in all areas of life."
+  },
+  {
+    id: "pred-2018-civ-29",
+    question: "What is 'political ideology'?",
+    options: [
+      "Set of beliefs about how society should function",
+      "Political party only",
+      "Government policy",
+      "Economic system only"
+    ],
+    correctAnswer: 0,
+    explanation: "Political ideology is a set of beliefs about the proper role of government and how society should be organized and governed."
+  },
+  {
+    id: "pred-2018-civ-30",
+    question: "What is 'civil liberty'?",
+    options: [
+      "Freedoms that protect individuals from government abuse",
+      "Government powers",
+      "Military rights",
+      "Corporate privileges"
+    ],
+    correctAnswer: 0,
+    explanation: "Civil liberties are freedoms that protect individuals from government abuse, such as freedom of speech, religion, and assembly."
+  },
+  {
+    id: "pred-2018-civ-31",
+    question: "What is 'democracy'?",
+    options: [
+      "System of government by the whole population or elected representatives",
+      "Rule by one person",
+      "Rule by military",
+      "Rule by the wealthy"
+    ],
+    correctAnswer: 0,
+    explanation: "Democracy is a system of government where power is vested in the people, either directly or through elected representatives."
+  },
+  {
+    id: "pred-2018-civ-32",
+    question: "What is 'human rights'?",
+    options: [
+      "Fundamental rights inherent to all human beings",
+      "Rights only for citizens",
+      "Rights granted by government",
+      "Rights only for wealthy"
+    ],
+    correctAnswer: 0,
+    explanation: "Human rights are rights inherent to all human beings, regardless of nationality, place of residence, sex, or any other status."
+  },
+  {
+    id: "pred-2018-civ-33",
+    question: "What is 'voting'?",
+    options: [
+      "Formal expression of preference for a candidate or proposal",
+      "Government decision",
+      "Military action",
+      "Court judgment"
+    ],
+    correctAnswer: 0,
+    explanation: "Voting is the formal expression of preference for a candidate or a proposal in an election or referendum."
+  },
+  {
+    id: "pred-2018-civ-34",
+    question: "What is 'political participation'?",
+    options: [
+      "Involvement in political processes and activities",
+      "Only voting",
+      "Only protesting",
+      "Only joining political parties"
+    ],
+    correctAnswer: 0,
+    explanation: "Political participation includes various activities such as voting, campaigning, protesting, and engaging in public debates."
+  },
+  {
+    id: "pred-2018-civ-35",
+    question: "What is 'judiciary'?",
+    options: [
+      "Branch of government responsible for interpreting laws",
+      "Branch that makes laws",
+      "Branch that executes laws",
+      "Military branch"
+    ],
+    correctAnswer: 0,
+    explanation: "The judiciary is the branch of government responsible for interpreting laws, resolving disputes, and administering justice."
+  },
+  {
+    id: "pred-2018-civ-36",
+    question: "What is 'legislature'?",
+    options: [
+      "Branch of government that makes laws",
+      "Branch that interprets laws",
+      "Branch that executes laws",
+      "Military branch"
+    ],
+    correctAnswer: 0,
+    explanation: "The legislature is the branch of government responsible for making laws, typically consisting of a parliament or congress."
+  },
+  {
+    id: "pred-2018-civ-37",
+    question: "What is 'executive'?",
+    options: [
+      "Branch of government that enforces laws",
+      "Branch that makes laws",
+      "Branch that interprets laws",
+      "Judicial branch"
+    ],
+    correctAnswer: 0,
+    explanation: "The executive branch is responsible for implementing and enforcing laws, typically led by a president or prime minister."
+  },
+  {
+    id: "pred-2018-civ-38",
+    question: "What is 'election'?",
+    options: [
+      "Formal process of selecting a person for public office",
+      "Military selection",
+      "Court appointment",
+      "Monarch selection"
+    ],
+    correctAnswer: 0,
+    explanation: "An election is a formal decision-making process by which a population chooses an individual to hold public office."
+  },
+  {
+    id: "pred-2018-civ-39",
+    question: "What is 'political party'?",
+    options: [
+      "Organization of people with similar political goals",
+      "Government organization",
+      "Military group",
+      "Social club"
+    ],
+    correctAnswer: 0,
+    explanation: "A political party is an organized group of people who share similar political views and aim to gain political power."
+  },
+  {
+    id: "pred-2018-civ-40",
+    question: "What is 'public opinion'?",
+    options: [
+      "Collective attitudes and beliefs of citizens on public issues",
+      "Government opinion",
+      "Media opinion",
+      "Military opinion"
+    ],
+    correctAnswer: 0,
+    explanation: "Public opinion refers to the collective views, attitudes, and beliefs of citizens on public issues and policies."
   }
 ];
 
@@ -1459,6 +2659,246 @@ export const predicted2018NaturalScholasticAptitudeQuestions: MatricExamQuestion
     ],
     correctAnswer: 0,
     explanation: "Meticulous means showing great attention to detail, which is synonymous with careful."
+  },
+  {
+    id: "pred-2018-sat-21",
+    question: "Complete the analogy: Author is to Book as Artist is to ____",
+    options: [
+      "Painting",
+      "Canvas",
+      "Brush",
+      "Gallery"
+    ],
+    correctAnswer: 0,
+    explanation: "An author creates a book, just as an artist creates a painting. This is a creator-creation analogy."
+  },
+  {
+    id: "pred-2018-sat-22",
+    question: "What is 15% of 200 plus 20% of 150?",
+    options: [
+      "60",
+      "50",
+      "70",
+      "55"
+    ],
+    correctAnswer: 0,
+    explanation: "15% of 200 = 30. 20% of 150 = 30. 30 + 30 = 60."
+  },
+  {
+    id: "pred-2018-sat-23",
+    question: "If all roses are flowers and some flowers are red, then some roses are definitely red.",
+    options: [
+      "Cannot be determined",
+      "True",
+      "False",
+      "Sometimes true"
+    ],
+    correctAnswer: 0,
+    explanation: "This is a logical fallacy. Some flowers being red doesn't guarantee that any roses are red. We cannot determine this relationship."
+  },
+  {
+    id: "pred-2018-sat-24",
+    question: "What comes next: 1, 4, 2, 5, 3, 6, ____",
+    options: [
+      "4",
+      "7",
+      "5",
+      "8"
+    ],
+    correctAnswer: 0,
+    explanation: "The pattern alternates: +3, -2, +3, -2, +3. So 6 - 2 = 4."
+  },
+  {
+    id: "pred-2018-sat-25",
+    question: "Choose the word that is most similar in meaning to 'Candid':",
+    options: [
+      "Frank",
+      "Secretive",
+      "Dishonest",
+      "Shy"
+    ],
+    correctAnswer: 0,
+    explanation: "Candid means truthful and straightforward, which is synonymous with frank."
+  },
+  {
+    id: "pred-2018-sat-26",
+    question: "Complete the analogy: Clock is to Time as Thermometer is to ____",
+    options: [
+      "Temperature",
+      "Heat",
+      "Weather",
+      "Degree"
+    ],
+    correctAnswer: 0,
+    explanation: "A clock measures time, just as a thermometer measures temperature. This is a tool-measurement analogy."
+  },
+  {
+    id: "pred-2018-sat-27",
+    question: "What is the volume of a cube with side length 3 cm?",
+    options: [
+      "27 cm³",
+      "9 cm³",
+      "18 cm³",
+      "36 cm³"
+    ],
+    correctAnswer: 0,
+    explanation: "Volume = side³ = 3³ = 27 cm³."
+  },
+  {
+    id: "pred-2018-sat-28",
+    question: "Choose the word that is most opposite in meaning to 'Optimistic':",
+    options: [
+      "Pessimistic",
+      "Hopeful",
+      "Positive",
+      "Confident"
+    ],
+    correctAnswer: 0,
+    explanation: "Optimistic means hopeful and positive. Pessimistic means expecting the worst or being negative."
+  },
+  {
+    id: "pred-2018-sat-29",
+    question: "What is the next term: 5, 8, 12, 17, 23, ____",
+    options: [
+      "30",
+      "29",
+      "31",
+      "28"
+    ],
+    correctAnswer: 0,
+    explanation: "The pattern increases by +3, +4, +5, +6. So next is +7: 23 + 7 = 30."
+  },
+  {
+    id: "pred-2018-sat-30",
+    question: "Complete the analogy: Captain is to Ship as Pilot is to ____",
+    options: [
+      "Airplane",
+      "Airport",
+      "Sky",
+      "Passenger"
+    ],
+    correctAnswer: 0,
+    explanation: "A captain commands a ship, just as a pilot commands an airplane. This is a commander-vehicle analogy."
+  },
+  {
+    id: "pred-2018-sat-31",
+    question: "What is 25% of 80?",
+    options: [
+      "20",
+      "25",
+      "15",
+      "30"
+    ],
+    correctAnswer: 0,
+    explanation: "25% of 80 = 0.25 × 80 = 20."
+  },
+  {
+    id: "pred-2018-sat-32",
+    question: "What comes next: 2, 6, 12, 20, 30, ____",
+    options: [
+      "42",
+      "40",
+      "44",
+      "38"
+    ],
+    correctAnswer: 0,
+    explanation: "The pattern increases by +4, +6, +8, +10. So next is +12: 30 + 12 = 42."
+  },
+  {
+    id: "pred-2018-sat-33",
+    question: "Choose the word that is most similar in meaning to 'Benevolent':",
+    options: [
+      "Kind",
+      "Cruel",
+      "Angry",
+      "Sad"
+    ],
+    correctAnswer: 0,
+    explanation: "Benevolent means well-meaning and kindly, which is synonymous with kind."
+  },
+  {
+    id: "pred-2018-sat-34",
+    question: "What is the area of a rectangle with length 8 and width 5?",
+    options: [
+      "40",
+      "13",
+      "26",
+      "45"
+    ],
+    correctAnswer: 0,
+    explanation: "Area = length × width = 8 × 5 = 40."
+  },
+  {
+    id: "pred-2018-sat-35",
+    question: "What is the next term: 1, 4, 9, 16, 25, ____",
+    options: [
+      "36",
+      "35",
+      "30",
+      "40"
+    ],
+    correctAnswer: 0,
+    explanation: "The pattern is perfect squares: 1², 2², 3², 4², 5². Next is 6² = 36."
+  },
+  {
+    id: "pred-2018-sat-36",
+    question: "Choose the word that is most opposite in meaning to 'Ancient':",
+    options: [
+      "Modern",
+      "Old",
+      "Historic",
+      "Traditional"
+    ],
+    correctAnswer: 0,
+    explanation: "Ancient means very old. Modern means current or recent, which is the opposite."
+  },
+  {
+    id: "pred-2018-sat-37",
+    question: "What is 1/3 + 1/6?",
+    options: [
+      "1/2",
+      "1/3",
+      "2/3",
+      "1/6"
+    ],
+    correctAnswer: 0,
+    explanation: "1/3 + 1/6 = 2/6 + 1/6 = 3/6 = 1/2."
+  },
+  {
+    id: "pred-2018-sat-38",
+    question: "Complete the analogy: Pen is to Write as Knife is to ____",
+    options: [
+      "Cut",
+      "Sharp",
+      "Metal",
+      "Handle"
+    ],
+    correctAnswer: 0,
+    explanation: "A pen is used to write, just as a knife is used to cut. This is a tool-function analogy."
+  },
+  {
+    id: "pred-2018-sat-39",
+    question: "What is the perimeter of a square with side length 6?",
+    options: [
+      "24",
+      "12",
+      "36",
+      "18"
+    ],
+    correctAnswer: 0,
+    explanation: "Perimeter = 4 × side = 4 × 6 = 24."
+  },
+  {
+    id: "pred-2018-sat-40",
+    question: "Choose the word that is most similar in meaning to 'Prudent':",
+    options: [
+      "Wise",
+      "Careless",
+      "Reckless",
+      "Foolish"
+    ],
+    correctAnswer: 0,
+    explanation: "Prudent means acting with or showing care and thought for the future, which is synonymous with wise."
   }
 ];
 
@@ -1618,6 +3058,246 @@ export const predicted2018NaturalEnglishQuestions: MatricExamQuestion[] = [
     ],
     correctAnswer: 0,
     explanation: "An interrogative sentence asks a question. It ends with a question mark."
+  },
+  {
+    id: "pred-2018-eng-21",
+    question: "Choose the correct word: 'She has a ___ of books on her shelf.'",
+    options: [
+      "collection",
+      "collecton",
+      "colection",
+      "collektion"
+    ],
+    correctAnswer: 0,
+    explanation: "'Collection' is the correct spelling meaning a group of things gathered together."
+  },
+  {
+    id: "pred-2018-eng-22",
+    question: "What is the past perfect tense of 'write'?",
+    options: [
+      "had written",
+      "wrote",
+      "has written",
+      "was writing"
+    ],
+    correctAnswer: 0,
+    explanation: "Past perfect tense is formed with 'had' + past participle. The past participle of 'write' is 'written'."
+  },
+  {
+    id: "pred-2018-eng-23",
+    question: "Which sentence uses the subjunctive mood correctly?",
+    options: [
+      "I suggest that he study harder.",
+      "I suggest that he studies harder.",
+      "I suggest that he studied harder.",
+      "I suggest that he studying harder."
+    ],
+    correctAnswer: 0,
+    explanation: "The subjunctive mood uses the base form of the verb after 'suggest that' - 'he study' not 'he studies'."
+  },
+  {
+    id: "pred-2018-eng-24",
+    question: "What is the meaning of the prefix 'anti-'?",
+    options: [
+      "Against or opposite",
+      "Before",
+      "After",
+      "Between"
+    ],
+    correctAnswer: 0,
+    explanation: "The prefix 'anti-' means against, opposite, or opposing, as in 'antibiotic' (against bacteria)."
+  },
+  {
+    id: "pred-2018-eng-25",
+    question: "Choose the correct sentence:",
+    options: [
+      "Each of the students has a textbook.",
+      "Each of the students have a textbook.",
+      "Each of the students are having a textbook.",
+      "Each of the students having a textbook."
+    ],
+    correctAnswer: 0,
+    explanation: "'Each' is singular and requires a singular verb 'has', not 'have'."
+  },
+  {
+    id: "pred-2018-eng-26",
+    question: "What type of noun is 'happiness'?",
+    options: [
+      "Abstract noun",
+      "Concrete noun",
+      "Proper noun",
+      "Collective noun"
+    ],
+    correctAnswer: 0,
+    explanation: "'Happiness' is an abstract noun because it represents a concept or emotion that cannot be physically touched."
+  },
+  {
+    id: "pred-2018-eng-27",
+    question: "Choose the correct form: 'If I ___ you, I would accept the offer.'",
+    options: [
+      "were",
+      "was",
+      "am",
+      "be"
+    ],
+    correctAnswer: 0,
+    explanation: "In hypothetical conditional sentences, use 'were' (subjunctive mood) instead of 'was'."
+  },
+  {
+    id: "pred-2018-eng-28",
+    question: "What is the superlative form of 'expensive'?",
+    options: [
+      "most expensive",
+      "expensivest",
+      "more expensive",
+      "expensiver"
+    ],
+    correctAnswer: 0,
+    explanation: "For longer adjectives (three or more syllables), use 'most' to form the superlative."
+  },
+  {
+    id: "pred-2018-eng-29",
+    question: "Which word is a preposition?",
+    options: [
+      "under",
+      "understand",
+      "undergo",
+      "underground"
+    ],
+    correctAnswer: 0,
+    explanation: "'Under' is a preposition indicating position or relationship. The others are verbs or adjectives."
+  },
+  {
+    id: "pred-2018-eng-30",
+    question: "Choose the correct word: 'The weather is ___ today.'",
+    options: [
+      "pleasant",
+      "pleasent",
+      "plesant",
+      "pleasent"
+    ],
+    correctAnswer: 0,
+    explanation: "'Pleasant' is the correct spelling meaning enjoyable or agreeable."
+  },
+  {
+    id: "pred-2018-eng-31",
+    question: "What is the past tense of 'begin'?",
+    options: [
+      "began",
+      "begun",
+      "beginning",
+      "begined"
+    ],
+    correctAnswer: 0,
+    explanation: "The past tense of 'begin' is the irregular verb 'began'."
+  },
+  {
+    id: "pred-2018-eng-32",
+    question: "What is the plural of 'mouse'?",
+    options: [
+      "mice",
+      "mouses",
+      "mices",
+      "mouse"
+    ],
+    correctAnswer: 0,
+    explanation: "'Mice' is the irregular plural of 'mouse'."
+  },
+  {
+    id: "pred-2018-eng-33",
+    question: "Which word is an adverb?",
+    options: [
+      "quickly",
+      "quick",
+      "quickness",
+      "quicken"
+    ],
+    correctAnswer: 0,
+    explanation: "'Quickly' is an adverb describing how an action is performed. 'Quick' is an adjective, 'quickness' is a noun, 'quicken' is a verb."
+  },
+  {
+    id: "pred-2018-eng-34",
+    question: "What is the comparative form of 'bad'?",
+    options: [
+      "worse",
+      "badder",
+      "more bad",
+      "baddest"
+    ],
+    correctAnswer: 0,
+    explanation: "'Bad' is an irregular adjective. Its comparative form is 'worse'."
+  },
+  {
+    id: "pred-2018-eng-35",
+    question: "Choose the correct conjunction: 'I like coffee, ___ I prefer tea.'",
+    options: [
+      "but",
+      "and",
+      "or",
+      "because"
+    ],
+    correctAnswer: 0,
+    explanation: "'But' shows contrast. I like coffee, but I prefer tea."
+  },
+  {
+    id: "pred-2018-eng-36",
+    question: "What is the meaning of the suffix '-less'?",
+    options: [
+      "Without",
+      "Full of",
+      "Small",
+      "Large"
+    ],
+    correctAnswer: 0,
+    explanation: "The suffix '-less' means without, as in 'hopeless' (without hope)."
+  },
+  {
+    id: "pred-2018-eng-37",
+    question: "What type of noun is 'team'?",
+    options: [
+      "Collective noun",
+      "Proper noun",
+      "Abstract noun",
+      "Concrete noun"
+    ],
+    correctAnswer: 0,
+    explanation: "'Team' is a collective noun because it refers to a group of people considered as a single unit."
+  },
+  {
+    id: "pred-2018-eng-38",
+    question: "What is the superlative form of 'good'?",
+    options: [
+      "best",
+      "goodest",
+      "more good",
+      "better"
+    ],
+    correctAnswer: 0,
+    explanation: "'Good' is an irregular adjective. Its superlative form is 'best'."
+  },
+  {
+    id: "pred-2018-eng-39",
+    question: "Which sentence is in the passive voice?",
+    options: [
+      "The book was read by the student.",
+      "The student read the book.",
+      "The student is reading the book.",
+      "The student has read the book."
+    ],
+    correctAnswer: 0,
+    explanation: "Passive voice: subject receives the action. 'The book was read by the student' is passive (book receives the action)."
+  },
+  {
+    id: "pred-2018-eng-40",
+    question: "What is the past participle of 'write'?",
+    options: [
+      "written",
+      "wrote",
+      "writing",
+      "writes"
+    ],
+    correctAnswer: 0,
+    explanation: "The past participle of 'write' is 'written'. It is used with auxiliary verbs like 'have' or 'had'."
   }
 ];
 
@@ -1861,6 +3541,246 @@ export const predicted2018SocialMathQuestions: MatricExamQuestion[] = [
     ],
     correctAnswer: 0,
     explanation: "Increase = 100 - 80 = 20. Percentage increase = (20/80) × 100 = 25%."
+  },
+  {
+    id: "pred-2018-smath-21",
+    question: "What is the greatest common divisor (GCD) of 36 and 48?",
+    options: [
+      "12",
+      "6",
+      "24",
+      "18"
+    ],
+    correctAnswer: 0,
+    explanation: "Factors of 36: 1,2,3,4,6,9,12,18,36. Factors of 48: 1,2,3,4,6,8,12,16,24,48. GCD = 12."
+  },
+  {
+    id: "pred-2018-smath-22",
+    question: "A bank offers 8% compound interest annually. How much will 5000 Birr become after 2 years?",
+    options: [
+      "5832 Birr",
+      "5800 Birr",
+      "5850 Birr",
+      "5750 Birr"
+    ],
+    correctAnswer: 0,
+    explanation: "Year 1: 5000 × 1.08 = 5400. Year 2: 5400 × 1.08 = 5832 Birr."
+  },
+  {
+    id: "pred-2018-smath-23",
+    question: "What is the standard deviation of 2, 4, 6, 8, 10?",
+    options: [
+      "√8 ≈ 2.83",
+      "√10 ≈ 3.16",
+      "√6 ≈ 2.45",
+      "√12 ≈ 3.46"
+    ],
+    correctAnswer: 0,
+    explanation: "Mean = 6. Variance = [(2-6)²+(4-6)²+(6-6)²+(8-6)²+(10-6)²]/5 = (16+4+0+4+16)/5 = 40/5 = 8. SD = √8 ≈ 2.83."
+  },
+  {
+    id: "pred-2018-smath-24",
+    question: "If a rectangle has length 15 cm and width 8 cm, what is its diagonal?",
+    options: [
+      "17 cm",
+      "23 cm",
+      "20 cm",
+      "13 cm"
+    ],
+    correctAnswer: 0,
+    explanation: "Diagonal = √(l² + w²) = √(15² + 8²) = √(225 + 64) = √289 = 17 cm."
+  },
+  {
+    id: "pred-2018-smath-25",
+    question: "What is the surface area of a cube with side length 4 cm?",
+    options: [
+      "96 cm²",
+      "64 cm²",
+      "48 cm²",
+      "144 cm²"
+    ],
+    correctAnswer: 0,
+    explanation: "Surface area = 6 × side² = 6 × 4² = 6 × 16 = 96 cm²."
+  },
+  {
+    id: "pred-2018-smath-26",
+    question: "Solve: 3x - 7 = 2x + 5",
+    options: [
+      "x = 12",
+      "x = 2",
+      "x = 10",
+      "x = 7"
+    ],
+    correctAnswer: 0,
+    explanation: "3x - 7 = 2x + 5. Subtract 2x: x - 7 = 5. Add 7: x = 12."
+  },
+  {
+    id: "pred-2018-smath-27",
+    question: "What is the volume of a cylinder with radius 3 cm and height 10 cm? (Use π = 22/7)",
+    options: [
+      "282.86 cm³",
+      "188.57 cm³",
+      "94.29 cm³",
+      "377.14 cm³"
+    ],
+    correctAnswer: 0,
+    explanation: "Volume = πr²h = (22/7) × 9 × 10 = (22/7) × 90 = 1980/7 ≈ 282.86 cm³."
+  },
+  {
+    id: "pred-2018-smath-28",
+    question: "A shop sells an item for 450 Birr with a 12.5% profit. What is the cost price?",
+    options: [
+      "400 Birr",
+      "420 Birr",
+      "375 Birr",
+      "393.75 Birr"
+    ],
+    correctAnswer: 0,
+    explanation: "Selling Price = CP + 12.5% of CP = 1.125 CP. CP = 450/1.125 = 400 Birr."
+  },
+  {
+    id: "pred-2018-smath-29",
+    question: "What is the probability of getting an even number when rolling a die?",
+    options: [
+      "1/2",
+      "1/3",
+      "2/3",
+      "1/6"
+    ],
+    correctAnswer: 0,
+    explanation: "Even numbers on a die: 2, 4, 6 (3 outcomes). Total outcomes: 6. P = 3/6 = 1/2."
+  },
+  {
+    id: "pred-2018-smath-30",
+    question: "If the HCF of two numbers is 6 and their LCM is 180, and one number is 36, what is the other number?",
+    options: [
+      "30",
+      "24",
+      "60",
+      "18"
+    ],
+    correctAnswer: 0,
+    explanation: "Product of two numbers = HCF × LCM = 6 × 180 = 1080. Other number = 1080/36 = 30."
+  },
+  {
+    id: "pred-2018-smath-31",
+    question: "Solve the quadratic equation: x² - 7x + 12 = 0",
+    options: [
+      "x = 3 or x = 4",
+      "x = -3 or x = -4",
+      "x = 2 or x = 6",
+      "x = -2 or x = -6"
+    ],
+    correctAnswer: 0,
+    explanation: "Factor: (x-3)(x-4) = 0. Therefore, x = 3 or x = 4."
+  },
+  {
+    id: "pred-2018-smath-32",
+    question: "What is the slope of the line passing through (1, 2) and (4, 8)?",
+    options: [
+      "2",
+      "3",
+      "1.5",
+      "2.5"
+    ],
+    correctAnswer: 0,
+    explanation: "Slope m = (8-2)/(4-1) = 6/3 = 2."
+  },
+  {
+    id: "pred-2018-smath-33",
+    question: "What is the area of a triangle with base 12 cm and height 8 cm?",
+    options: [
+      "48 cm²",
+      "96 cm²",
+      "24 cm²",
+      "40 cm²"
+    ],
+    correctAnswer: 0,
+    explanation: "Area = (1/2) × base × height = (1/2) × 12 × 8 = 48 cm²."
+  },
+  {
+    id: "pred-2018-smath-34",
+    question: "Simplify: √72 - √18",
+    options: [
+      "3√2",
+      "5√2",
+      "4√2",
+      "7√2"
+    ],
+    correctAnswer: 0,
+    explanation: "√72 = 6√2, √18 = 3√2. Difference = 6√2 - 3√2 = 3√2."
+  },
+  {
+    id: "pred-2018-smath-35",
+    question: "What is 3² × 2³?",
+    options: [
+      "72",
+      "36",
+      "54",
+      "18"
+    ],
+    correctAnswer: 0,
+    explanation: "3² = 9, 2³ = 8. 9 × 8 = 72."
+  },
+  {
+    id: "pred-2018-smath-36",
+    question: "Find the midpoint of the line segment joining (0, 0) and (6, 8).",
+    options: [
+      "(3, 4)",
+      "(2, 4)",
+      "(3, 5)",
+      "(4, 3)"
+    ],
+    correctAnswer: 0,
+    explanation: "Midpoint = ((0+6)/2, (0+8)/2) = (3, 4)."
+  },
+  {
+    id: "pred-2018-smath-37",
+    question: "What is the value of cos(60°)?",
+    options: [
+      "1/2",
+      "√3/2",
+      "0",
+      "1"
+    ],
+    correctAnswer: 0,
+    explanation: "cos(60°) = 1/2."
+  },
+  {
+    id: "pred-2018-smath-38",
+    question: "Solve: |x - 4| = 6",
+    options: [
+      "x = 10 or x = -2",
+      "x = 10 or x = 2",
+      "x = -10 or x = 2",
+      "x = -10 or x = -2"
+    ],
+    correctAnswer: 0,
+    explanation: "x - 4 = 6 gives x = 10. x - 4 = -6 gives x = -2."
+  },
+  {
+    id: "pred-2018-smath-39",
+    question: "What is the equation of the line with slope -1 passing through (2, 5)?",
+    options: [
+      "y = -x + 7",
+      "y = -x + 3",
+      "y = x + 7",
+      "y = x - 7"
+    ],
+    correctAnswer: 0,
+    explanation: "y - 5 = -1(x - 2). y - 5 = -x + 2. y = -x + 7."
+  },
+  {
+    id: "pred-2018-smath-40",
+    question: "What is the sum of the interior angles of an octagon?",
+    options: [
+      "1080°",
+      "720°",
+      "1440°",
+      "540°"
+    ],
+    correctAnswer: 0,
+    explanation: "Sum = (n-2) × 180° = (8-2) × 180° = 6 × 180° = 1080°."
   }
 ];
 
@@ -1984,6 +3904,366 @@ export const predicted2018SocialEnglishQuestions: MatricExamQuestion[] = [
     ],
     correctAnswer: 0,
     explanation: "The conclusion summarizes the main points and restates the thesis in a new way."
+  },
+  {
+    id: "pred-2018-seng-11",
+    question: "Choose the correct word: 'She has a ___ of books on her shelf.'",
+    options: [
+      "collection",
+      "collecton",
+      "colection",
+      "collektion"
+    ],
+    correctAnswer: 0,
+    explanation: "'Collection' is the correct spelling meaning a group of things gathered together."
+  },
+  {
+    id: "pred-2018-seng-12",
+    question: "What is the past perfect tense of 'write'?",
+    options: [
+      "had written",
+      "wrote",
+      "has written",
+      "was writing"
+    ],
+    correctAnswer: 0,
+    explanation: "Past perfect tense is formed with 'had' + past participle. The past participle of 'write' is 'written'."
+  },
+  {
+    id: "pred-2018-seng-13",
+    question: "Which sentence uses the subjunctive mood correctly?",
+    options: [
+      "I suggest that he study harder.",
+      "I suggest that he studies harder.",
+      "I suggest that he studied harder.",
+      "I suggest that he studying harder."
+    ],
+    correctAnswer: 0,
+    explanation: "The subjunctive mood uses the base form of the verb after 'suggest that' - 'he study' not 'he studies'."
+  },
+  {
+    id: "pred-2018-seng-14",
+    question: "What is the meaning of the prefix 'anti-'?",
+    options: [
+      "Against or opposite",
+      "Before",
+      "After",
+      "Between"
+    ],
+    correctAnswer: 0,
+    explanation: "The prefix 'anti-' means against, opposite, or opposing, as in 'antibiotic' (against bacteria)."
+  },
+  {
+    id: "pred-2018-seng-15",
+    question: "Choose the correct sentence:",
+    options: [
+      "Each of the students has a textbook.",
+      "Each of the students have a textbook.",
+      "Each of the students are having a textbook.",
+      "Each of the students having a textbook."
+    ],
+    correctAnswer: 0,
+    explanation: "'Each' is singular and requires a singular verb 'has', not 'have'."
+  },
+  {
+    id: "pred-2018-seng-16",
+    question: "What type of noun is 'happiness'?",
+    options: [
+      "Abstract noun",
+      "Concrete noun",
+      "Proper noun",
+      "Collective noun"
+    ],
+    correctAnswer: 0,
+    explanation: "'Happiness' is an abstract noun because it represents a concept or emotion that cannot be physically touched."
+  },
+  {
+    id: "pred-2018-seng-17",
+    question: "Choose the correct form: 'If I ___ you, I would accept the offer.'",
+    options: [
+      "were",
+      "was",
+      "am",
+      "be"
+    ],
+    correctAnswer: 0,
+    explanation: "In hypothetical conditional sentences, use 'were' (subjunctive mood) instead of 'was'."
+  },
+  {
+    id: "pred-2018-seng-18",
+    question: "What is the superlative form of 'expensive'?",
+    options: [
+      "most expensive",
+      "expensivest",
+      "more expensive",
+      "expensiver"
+    ],
+    correctAnswer: 0,
+    explanation: "For longer adjectives (three or more syllables), use 'most' to form the superlative."
+  },
+  {
+    id: "pred-2018-seng-19",
+    question: "Which word is a preposition?",
+    options: [
+      "under",
+      "understand",
+      "undergo",
+      "underground"
+    ],
+    correctAnswer: 0,
+    explanation: "'Under' is a preposition indicating position or relationship. The others are verbs or adjectives."
+  },
+  {
+    id: "pred-2018-seng-20",
+    question: "Choose the correct word: 'The weather is ___ today.'",
+    options: [
+      "pleasant",
+      "pleasent",
+      "plesant",
+      "pleasent"
+    ],
+    correctAnswer: 0,
+    explanation: "'Pleasant' is the correct spelling meaning enjoyable or agreeable."
+  },
+  {
+    id: "pred-2018-seng-21",
+    question: "What is the past tense of 'begin'?",
+    options: [
+      "began",
+      "begun",
+      "beginning",
+      "begined"
+    ],
+    correctAnswer: 0,
+    explanation: "The past tense of 'begin' is the irregular verb 'began'."
+  },
+  {
+    id: "pred-2018-seng-22",
+    question: "What is the plural of 'mouse'?",
+    options: [
+      "mice",
+      "mouses",
+      "mices",
+      "mouse"
+    ],
+    correctAnswer: 0,
+    explanation: "'Mice' is the irregular plural of 'mouse'."
+  },
+  {
+    id: "pred-2018-seng-23",
+    question: "Which word is an adverb?",
+    options: [
+      "quickly",
+      "quick",
+      "quickness",
+      "quicken"
+    ],
+    correctAnswer: 0,
+    explanation: "'Quickly' is an adverb describing how an action is performed. 'Quick' is an adjective, 'quickness' is a noun, 'quicken' is a verb."
+  },
+  {
+    id: "pred-2018-seng-24",
+    question: "What is the comparative form of 'bad'?",
+    options: [
+      "worse",
+      "badder",
+      "more bad",
+      "baddest"
+    ],
+    correctAnswer: 0,
+    explanation: "'Bad' is an irregular adjective. Its comparative form is 'worse'."
+  },
+  {
+    id: "pred-2018-seng-25",
+    question: "Choose the correct conjunction: 'I like coffee, ___ I prefer tea.'",
+    options: [
+      "but",
+      "and",
+      "or",
+      "because"
+    ],
+    correctAnswer: 0,
+    explanation: "'But' shows contrast. I like coffee, but I prefer tea."
+  },
+  {
+    id: "pred-2018-seng-26",
+    question: "What is the meaning of the suffix '-less'?",
+    options: [
+      "Without",
+      "Full of",
+      "Small",
+      "Large"
+    ],
+    correctAnswer: 0,
+    explanation: "The suffix '-less' means without, as in 'hopeless' (without hope)."
+  },
+  {
+    id: "pred-2018-seng-27",
+    question: "What type of noun is 'team'?",
+    options: [
+      "Collective noun",
+      "Proper noun",
+      "Abstract noun",
+      "Concrete noun"
+    ],
+    correctAnswer: 0,
+    explanation: "'Team' is a collective noun because it refers to a group of people considered as a single unit."
+  },
+  {
+    id: "pred-2018-seng-28",
+    question: "Choose the correct word: 'She ___ to the store yesterday.'",
+    options: [
+      "went",
+      "gone",
+      "go",
+      "going"
+    ],
+    correctAnswer: 0,
+    explanation: "The past tense of 'go' is 'went'. Since it happened yesterday, we use the past tense."
+  },
+  {
+    id: "pred-2018-seng-29",
+    question: "What is the superlative form of 'good'?",
+    options: [
+      "best",
+      "goodest",
+      "more good",
+      "better"
+    ],
+    correctAnswer: 0,
+    explanation: "'Good' is an irregular adjective. Its superlative form is 'best'."
+  },
+  {
+    id: "pred-2018-seng-30",
+    question: "Which sentence is in the passive voice?",
+    options: [
+      "The book was read by the student.",
+      "The student read the book.",
+      "The student is reading the book.",
+      "The student has read the book."
+    ],
+    correctAnswer: 0,
+    explanation: "Passive voice: subject receives the action. 'The book was read by the student' is passive (book receives the action)."
+  },
+  {
+    id: "pred-2018-seng-31",
+    question: "What is the past participle of 'go'?",
+    options: [
+      "gone",
+      "went",
+      "going",
+      "goes"
+    ],
+    correctAnswer: 0,
+    explanation: "The past participle of 'go' is 'gone'. It is used with auxiliary verbs like 'have' or 'had'."
+  },
+  {
+    id: "pred-2018-seng-32",
+    question: "What is the plural of 'child'?",
+    options: [
+      "children",
+      "childs",
+      "childrens",
+      "child"
+    ],
+    correctAnswer: 0,
+    explanation: "'Children' is the irregular plural of 'child'."
+  },
+  {
+    id: "pred-2018-seng-33",
+    question: "Which word is a conjunction?",
+    options: [
+      "however",
+      "quickly",
+      "quick",
+      "quickness"
+    ],
+    correctAnswer: 0,
+    explanation: "'However' is a conjunction used to connect ideas. 'Quickly' is an adverb, 'quick' is an adjective, 'quickness' is a noun."
+  },
+  {
+    id: "pred-2018-seng-34",
+    question: "What is the comparative form of 'far'?",
+    options: [
+      "farther",
+      "farrer",
+      "more far",
+      "farthest"
+    ],
+    correctAnswer: 0,
+    explanation: "'Far' is an irregular adjective. Its comparative form is 'farther' (or 'further' for distance)."
+  },
+  {
+    id: "pred-2018-seng-35",
+    question: "Choose the correct preposition: 'She arrived ___ the station.'",
+    options: [
+      "at",
+      "in",
+      "on",
+      "to"
+    ],
+    correctAnswer: 0,
+    explanation: "'At' is the correct preposition for arriving at a location like a station."
+  },
+  {
+    id: "pred-2018-seng-36",
+    question: "What is the meaning of the prefix 're-'?",
+    options: [
+      "Again or back",
+      "Before",
+      "After",
+      "Not"
+    ],
+    correctAnswer: 0,
+    explanation: "The prefix 're-' means again or back, as in 'rewrite' (write again) or 'return' (go back)."
+  },
+  {
+    id: "pred-2018-seng-37",
+    question: "What type of noun is 'happiness'?",
+    options: [
+      "Abstract noun",
+      "Concrete noun",
+      "Proper noun",
+      "Collective noun"
+    ],
+    correctAnswer: 0,
+    explanation: "'Happiness' is an abstract noun because it represents an emotion or concept that cannot be physically touched."
+  },
+  {
+    id: "pred-2018-seng-38",
+    question: "Choose the correct word: 'They ___ playing football yesterday.'",
+    options: [
+      "were",
+      "was",
+      "are",
+      "did"
+    ],
+    correctAnswer: 0,
+    explanation: "'They' is plural and the action happened in the past, so we use 'were'."
+  },
+  {
+    id: "pred-2018-seng-39",
+    question: "What is the superlative form of 'far'?",
+    options: [
+      "farthest",
+      "farrer",
+      "more far",
+      "farther"
+    ],
+    correctAnswer: 0,
+    explanation: "'Far' is an irregular adjective. Its superlative form is 'farthest' (or 'furthest' for distance)."
+  },
+  {
+    id: "pred-2018-seng-40",
+    question: "Which sentence is in the active voice?",
+    options: [
+      "The student read the book.",
+      "The book was read by the student.",
+      "The book is being read by the student.",
+      "The book has been read by the student."
+    ],
+    correctAnswer: 0,
+    explanation: "Active voice: subject performs the action. 'The student read the book' is active (student performs the reading)."
   }
 ];
 
@@ -2227,6 +4507,246 @@ export const predicted2018SocialGeographyQuestions: MatricExamQuestion[] = [
     ],
     correctAnswer: 0,
     explanation: "Deforestation and soil erosion are major environmental challenges, with Ethiopia losing significant forest cover over decades."
+  },
+  {
+    id: "pred-2018-sgeo-21",
+    question: "What is the Tropic of Cancer?",
+    options: [
+      "The northernmost latitude where the sun can be directly overhead",
+      "The southernmost latitude where the sun can be directly overhead",
+      "The equator",
+      "The Arctic Circle"
+    ],
+    correctAnswer: 0,
+    explanation: "The Tropic of Cancer at 23.5°N is the northernmost latitude where the sun appears directly overhead at noon during the June solstice."
+  },
+  {
+    id: "pred-2018-sgeo-22",
+    question: "What is the difference between weather and climate?",
+    options: [
+      "Weather is short-term; climate is long-term average",
+      "Weather is long-term; climate is short-term",
+      "They are the same thing",
+      "Weather affects land; climate affects ocean"
+    ],
+    correctAnswer: 0,
+    explanation: "Weather refers to day-to-day atmospheric conditions, while climate is the average weather pattern over a long period (typically 30+ years)."
+  },
+  {
+    id: "pred-2018-sgeo-23",
+    question: "What is the largest desert in Africa?",
+    options: [
+      "Sahara Desert",
+      "Kalahari Desert",
+      "Namib Desert",
+      "Gobi Desert"
+    ],
+    correctAnswer: 0,
+    explanation: "The Sahara Desert is the largest hot desert in the world and covers most of North Africa."
+  },
+  {
+    id: "pred-2018-sgeo-24",
+    question: "What is the difference between latitude and longitude?",
+    options: [
+      "Latitude measures north-south position; longitude measures east-west position",
+      "Latitude measures east-west; longitude measures north-south",
+      "Both measure the same thing",
+      "Latitude measures time; longitude measures distance"
+    ],
+    correctAnswer: 0,
+    explanation: "Latitude lines run horizontally and measure distance north or south of the equator. Longitude lines run vertically and measure distance east or west of the Prime Meridian."
+  },
+  {
+    id: "pred-2018-sgeo-25",
+    question: "What is a tributary?",
+    options: [
+      "A river or stream flowing into a larger river",
+      "A river flowing out of a lake",
+      "A man-made canal",
+      "A dry riverbed"
+    ],
+    correctAnswer: 0,
+    explanation: "A tributary is a smaller river or stream that flows into and joins a larger river or lake."
+  },
+  {
+    id: "pred-2018-sgeo-26",
+    question: "What is the International Date Line?",
+    options: [
+      "An imaginary line where the date changes by one day",
+      "A line separating countries",
+      "A line at the equator",
+      "A line at the Prime Meridian"
+    ],
+    correctAnswer: 0,
+    explanation: "The International Date Line (roughly 180° longitude) is where the date changes when crossing east or west."
+  },
+  {
+    id: "pred-2018-sgeo-27",
+    question: "What is the most populous country in Africa?",
+    options: [
+      "Nigeria",
+      "Ethiopia",
+      "Egypt",
+      "Democratic Republic of Congo"
+    ],
+    correctAnswer: 0,
+    explanation: "Nigeria is the most populous country in Africa with over 200 million people."
+  },
+  {
+    id: "pred-2018-sgeo-28",
+    question: "What is the difference between an isthmus and a peninsula?",
+    options: [
+      "Isthmus connects two land masses; peninsula is surrounded by water on three sides",
+      "Peninsula connects two land masses; isthmus is surrounded by water",
+      "They are the same",
+      "Isthmus is a mountain; peninsula is a valley"
+    ],
+    correctAnswer: 0,
+    explanation: "An isthmus is a narrow strip of land connecting two larger land areas. A peninsula is a piece of land almost entirely surrounded by water."
+  },
+  {
+    id: "pred-2018-sgeo-29",
+    question: "What is the greenhouse effect?",
+    options: [
+      "Trapping of heat in the atmosphere by certain gases",
+      "Growing plants in a greenhouse",
+      "Cooling of the Earth",
+      "Reflection of sunlight"
+    ],
+    correctAnswer: 0,
+    explanation: "The greenhouse effect is the trapping of the sun's warmth in the Earth's lower atmosphere by gases like CO₂ and methane."
+  },
+  {
+    id: "pred-2018-sgeo-30",
+    question: "What is the Ring of Fire?",
+    options: [
+      "A Pacific Ocean area with frequent earthquakes and volcanic activity",
+      "A forest fire zone",
+      "A desert region",
+      "A mountain range"
+    ],
+    correctAnswer: 0,
+    explanation: "The Ring of Fire is a horseshoe-shaped area in the Pacific Ocean basin where many earthquakes and volcanic eruptions occur."
+  },
+  {
+    id: "pred-2018-sgeo-31",
+    question: "What is the capital city of Ethiopia?",
+    options: [
+      "Addis Ababa",
+      "Dire Dawa",
+      "Mekelle",
+      "Bahir Dar"
+    ],
+    correctAnswer: 0,
+    explanation: "Addis Ababa is the capital and largest city of Ethiopia, founded in 1886."
+  },
+  {
+    id: "pred-2018-sgeo-32",
+    question: "What is the longest river in Africa?",
+    options: [
+      "Nile River",
+      "Congo River",
+      "Niger River",
+      "Zambezi River"
+    ],
+    correctAnswer: 0,
+    explanation: "The Nile River is the longest river in Africa, flowing northward through northeastern Africa."
+  },
+  {
+    id: "pred-2018-sgeo-33",
+    question: "What is the Great Rift Valley?",
+    options: [
+      "A large geological trench running through Africa",
+      "A mountain range in Europe",
+      "A desert in Asia",
+      "An ocean trench"
+    ],
+    correctAnswer: 0,
+    explanation: "The Great Rift Valley is a continuous geographic trench running from Lebanon to Mozambique, approximately 6,000 km in length."
+  },
+  {
+    id: "pred-2018-sgeo-34",
+    question: "What is the population of Ethiopia approximately?",
+    options: [
+      "Over 120 million",
+      "Over 80 million",
+      "Over 200 million",
+      "Over 50 million"
+    ],
+    correctAnswer: 0,
+    explanation: "Ethiopia's population is over 120 million, making it the second most populous country in Africa after Nigeria."
+  },
+  {
+    id: "pred-2018-sgeo-35",
+    question: "What is the main river in Ethiopia?",
+    options: [
+      "Blue Nile (Abay)",
+      "Awash River",
+      "Omo River",
+      "Shebelle River"
+    ],
+    correctAnswer: 0,
+    explanation: "The Blue Nile (Abay) is the main river in Ethiopia, originating from Lake Tana and contributing about 80% of the Nile's water."
+  },
+  {
+    id: "pred-2018-sgeo-36",
+    question: "What is Lake Tana known for?",
+    options: [
+      "Source of the Blue Nile",
+      "Largest lake in Africa",
+      "Highest lake in the world",
+      "Saltwater lake"
+    ],
+    correctAnswer: 0,
+    explanation: "Lake Tana is the source of the Blue Nile River and is the largest lake in Ethiopia."
+  },
+  {
+    id: "pred-2018-sgeo-37",
+    question: "What is the Ethiopian Highlands?",
+    options: [
+      "A rugged mass of mountains in Ethiopia",
+      "A desert region",
+      "A coastal plain",
+      "A river basin"
+    ],
+    correctAnswer: 0,
+    explanation: "The Ethiopian Highlands is a rugged mass of mountains forming the largest continuous area of its elevation in Africa."
+  },
+  {
+    id: "pred-2018-sgeo-38",
+    question: "What is the climate of the Ethiopian highlands?",
+    options: [
+      "Highland tropical climate",
+      "Arid desert climate",
+      "Mediterranean climate",
+      "Tropical rainforest climate"
+    ],
+    correctAnswer: 0,
+    explanation: "The Ethiopian highlands have a highland tropical climate with cooler temperatures due to altitude."
+  },
+  {
+    id: "pred-2018-sgeo-39",
+    question: "What is the Danakil Depression?",
+    options: [
+      "One of the lowest and hottest places on Earth",
+      "A mountain range",
+      "A fertile valley",
+      "A coastal city"
+    ],
+    correctAnswer: 0,
+    explanation: "The Danakil Depression is one of the lowest and hottest places on Earth, located in the Afar Region of Ethiopia."
+  },
+  {
+    id: "pred-2018-sgeo-40",
+    question: "What is the main export crop of Ethiopia?",
+    options: [
+      "Coffee",
+      "Tea",
+      "Cocoa",
+      "Cotton"
+    ],
+    correctAnswer: 0,
+    explanation: "Coffee is Ethiopia's main export crop, with the country being the birthplace of Arabica coffee."
   }
 ];
 
@@ -2470,6 +4990,246 @@ export const predicted2018SocialEconomicsQuestions: MatricExamQuestion[] = [
     ],
     correctAnswer: 0,
     explanation: "Nominal GDP uses current prices, while real GDP adjusts for inflation using constant base-year prices."
+  },
+  {
+    id: "pred-2018-secon-21",
+    question: "What is 'elasticity of demand'?",
+    options: [
+      "Measure of how quantity demanded responds to price changes",
+      "Measure of production costs",
+      "Measure of government spending",
+      "Measure of trade balance"
+    ],
+    correctAnswer: 0,
+    explanation: "Price elasticity of demand measures how much the quantity demanded of a good responds to a change in its price."
+  },
+  {
+    id: "pred-2018-secon-22",
+    question: "What is a 'subsidy'?",
+    options: [
+      "Government payment to producers to lower production costs",
+      "Tax on consumers",
+      "Government loan",
+      "Private investment"
+    ],
+    correctAnswer: 0,
+    explanation: "A subsidy is a government payment to producers to reduce production costs and encourage production of specific goods."
+  },
+  {
+    id: "pred-2018-secon-23",
+    question: "What is the difference between a 'need' and a 'want'?",
+    options: [
+      "Needs are essential; wants are desires",
+      "Needs are expensive; wants are cheap",
+      "Needs are for rich people; wants are for poor",
+      "They are the same"
+    ],
+    correctAnswer: 0,
+    explanation: "Needs are essential requirements for survival (food, shelter, clothing), while wants are desires that enhance quality of life."
+  },
+  {
+    id: "pred-2018-secon-24",
+    question: "What is 'human capital'?",
+    options: [
+      "Skills, knowledge, and experience possessed by workers",
+      "Money invested in machines",
+      "Government buildings",
+      "Natural resources"
+    ],
+    correctAnswer: 0,
+    explanation: "Human capital refers to the skills, knowledge, and experience that workers possess, which increases their productivity."
+  },
+  {
+    id: "pred-2018-secon-25",
+    question: "What is 'division of labor'?",
+    options: [
+      "Specialization of workers in specific tasks",
+      "Workers doing all tasks",
+      "Government control of labor",
+      "Labor union formation"
+    ],
+    correctAnswer: 0,
+    explanation: "Division of labor is the specialization of workers in specific tasks, which increases efficiency and productivity."
+  },
+  {
+    id: "pred-2018-secon-26",
+    question: "What is the 'law of diminishing returns'?",
+    options: [
+      "Adding more input eventually yields smaller increases in output",
+      "More input always yields more output",
+      "Output decreases with more input",
+      "Input and output are unrelated"
+    ],
+    correctAnswer: 0,
+    explanation: "The law of diminishing returns states that adding more of a variable input to fixed inputs eventually results in smaller increases in output."
+  },
+  {
+    id: "pred-2018-secon-27",
+    question: "What is 'foreign direct investment (FDI)'?",
+    options: [
+      "Investment by a company in business operations in another country",
+      "Government foreign aid",
+      "International trade",
+      "Currency exchange"
+    ],
+    correctAnswer: 0,
+    explanation: "FDI is when a company or individual invests directly in business operations in another country, establishing operations or acquiring assets."
+  },
+  {
+    id: "pred-2018-secon-28",
+    question: "What is 'recession'?",
+    options: [
+      "Period of economic decline characterized by reduced GDP and employment",
+      "Period of rapid economic growth",
+      "Stable economic period",
+      "High inflation period"
+    ],
+    correctAnswer: 0,
+    explanation: "A recession is a significant decline in economic activity spread across the economy, typically visible in GDP, income, employment, and industrial production."
+  },
+  {
+    id: "pred-2018-secon-29",
+    question: "What is 'balance of trade'?",
+    options: [
+      "Difference between a country's exports and imports",
+      "Government budget balance",
+      "Bank account balance",
+      "Personal savings"
+    ],
+    correctAnswer: 0,
+    explanation: "Balance of trade is the difference between the value of a country's exports and imports of goods and services."
+  },
+  {
+    id: "pred-2018-secon-30",
+    question: "What is 'sustainable development'?",
+    options: [
+      "Development that meets present needs without compromising future generations",
+      "Rapid economic growth",
+      "Development using all resources immediately",
+      "Only environmental protection"
+    ],
+    correctAnswer: 0,
+    explanation: "Sustainable development is development that meets the needs of the present without compromising the ability of future generations to meet their own needs."
+  },
+  {
+    id: "pred-2018-secon-31",
+    question: "What is 'inflation'?",
+    options: [
+      "General increase in prices and fall in purchasing power",
+      "General decrease in prices",
+      "Increase in production",
+      "Decrease in unemployment"
+    ],
+    correctAnswer: 0,
+    explanation: "Inflation is the rate at which the general level of prices for goods and services is rising, leading to a fall in purchasing power."
+  },
+  {
+    id: "pred-2018-secon-32",
+    question: "What is 'GDP'?",
+    options: [
+      "Gross Domestic Product - total value of goods and services produced",
+      "General Domestic Price",
+      "Gross Development Plan",
+      "General Development Product"
+    ],
+    correctAnswer: 0,
+    explanation: "GDP (Gross Domestic Product) is the total monetary value of all finished goods and services produced within a country's borders in a specific time period."
+  },
+  {
+    id: "pred-2018-secon-33",
+    question: "What is 'unemployment'?",
+    options: [
+      "People who are actively seeking work but unable to find jobs",
+      "People who choose not to work",
+      "People working part-time",
+      "All people not working"
+    ],
+    correctAnswer: 0,
+    explanation: "Unemployment refers to people who are actively looking for work but are unable to find employment."
+  },
+  {
+    id: "pred-2018-secon-34",
+    question: "What is 'supply and demand'?",
+    options: [
+      "Economic model of price determination in a market",
+      "Government control of prices",
+      "Production only",
+      "Consumption only"
+    ],
+    correctAnswer: 0,
+    explanation: "Supply and demand is an economic model that determines the price of goods in a market based on availability and consumer desire."
+  },
+  {
+    id: "pred-2018-secon-35",
+    question: "What is 'opportunity cost'?",
+    options: [
+      "Value of the next best alternative forgone",
+      "Cost of production",
+      "Price of goods",
+      "Profit margin"
+    ],
+    correctAnswer: 0,
+    explanation: "Opportunity cost is the value of the next best alternative that must be forgone when making a choice."
+  },
+  {
+    id: "pred-2018-secon-36",
+    question: "What is 'market economy'?",
+    options: [
+      "Economic system where supply and demand determine prices",
+      "Government controls all economic decisions",
+      "No private property",
+      "Central planning only"
+    ],
+    correctAnswer: 0,
+    explanation: "A market economy is an economic system where decisions about production and consumption are guided by market forces of supply and demand."
+  },
+  {
+    id: "pred-2018-secon-37",
+    question: "What is 'poverty'?",
+    options: [
+      "State of lacking sufficient money or material possessions",
+      "State of having too much money",
+      "State of being unemployed only",
+      "State of being wealthy"
+    ],
+    correctAnswer: 0,
+    explanation: "Poverty is the state of not having enough money to meet basic needs such as food, clothing, and shelter."
+  },
+  {
+    id: "pred-2018-secon-38",
+    question: "What is 'tax'?",
+    options: [
+      "Mandatory financial charge imposed by government",
+      "Voluntary payment to government",
+      "Payment to private companies",
+      "Charitable donation"
+    ],
+    correctAnswer: 0,
+    explanation: "A tax is a compulsory financial charge or other type of levy imposed by a government on individuals or entities."
+  },
+  {
+    id: "pred-2018-secon-39",
+    question: "What is 'budget deficit'?",
+    options: [
+      "When government spending exceeds revenue",
+      "When revenue exceeds spending",
+      "When budget is balanced",
+      "When there is no spending"
+    ],
+    correctAnswer: 0,
+    explanation: "A budget deficit occurs when government spending exceeds its revenue, typically requiring borrowing to cover the gap."
+  },
+  {
+    id: "pred-2018-secon-40",
+    question: "What is 'economic growth'?",
+    options: [
+      "Increase in the production of goods and services over time",
+      "Decrease in production",
+      "No change in production",
+      "Stagnation of economy"
+    ],
+    correctAnswer: 0,
+    explanation: "Economic growth is an increase in the production of goods and services over a specific period, typically measured by GDP."
   }
 ];
 
@@ -2713,6 +5473,246 @@ export const predicted2018SocialCivicsQuestions: MatricExamQuestion[] = [
     ],
     correctAnswer: 0,
     explanation: "Federalism is a system of government where power is divided between a central government and regional governments."
+  },
+  {
+    id: "pred-2018-sciv-21",
+    question: "What is 'rule of law'?",
+    options: [
+      "All individuals and institutions are subject to and accountable to law",
+      "Only government follows laws",
+      "Laws apply only to citizens",
+      "Laws can be ignored by officials"
+    ],
+    correctAnswer: 0,
+    explanation: "Rule of law means that all individuals, including government officials, are subject to and accountable under the law."
+  },
+  {
+    id: "pred-2018-sciv-22",
+    question: "What is 'separation of powers'?",
+    options: [
+      "Division of government responsibilities into branches to prevent concentration of power",
+      "One branch controls everything",
+      "All branches have the same powers",
+      "No separation between branches"
+    ],
+    correctAnswer: 0,
+    explanation: "Separation of powers divides government responsibilities among legislative, executive, and judicial branches to prevent any one branch from becoming too powerful."
+  },
+  {
+    id: "pred-2018-sciv-23",
+    question: "What is 'constitutionalism'?",
+    options: [
+      "Government limited by a constitution",
+      "Government without limits",
+      "Rule by military",
+      "Rule by one person"
+    ],
+    correctAnswer: 0,
+    explanation: "Constitutionalism is the principle that government power is limited by a constitution and must follow its provisions."
+  },
+  {
+    id: "pred-2018-sciv-24",
+    question: "What is 'civil society'?",
+    options: [
+      "Organizations and institutions that operate independently of government",
+      "Government organizations",
+      "Military organizations",
+      "Political parties only"
+    ],
+    correctAnswer: 0,
+    explanation: "Civil society consists of non-governmental organizations, community groups, and other organizations that operate independently of the government."
+  },
+  {
+    id: "pred-2018-sciv-25",
+    question: "What is 'media freedom'?",
+    options: [
+      "Right of media to report without government censorship",
+      "Government control of media",
+      "Media only reporting positive news",
+      "No media allowed"
+    ],
+    correctAnswer: 0,
+    explanation: "Media freedom is the right of journalists and media organizations to report news and express opinions without government censorship or interference."
+  },
+  {
+    id: "pred-2018-sciv-26",
+    question: "What is 'transparency' in government?",
+    options: [
+      "Openness about government decisions and actions",
+      "Government secrecy",
+      "Hidden government operations",
+      "No public access to information"
+    ],
+    correctAnswer: 0,
+    explanation: "Transparency in government means openness about government decisions, actions, and spending, allowing citizens to hold officials accountable."
+  },
+  {
+    id: "pred-2018-sciv-27",
+    question: "What is 'accountability' in governance?",
+    options: [
+      "Government officials being answerable for their actions",
+      "Officials having no responsibility",
+      "Government acting without oversight",
+      "No consequences for actions"
+    ],
+    correctAnswer: 0,
+    explanation: "Accountability means government officials must answer for their decisions and actions, and can be held responsible for their performance."
+  },
+  {
+    id: "pred-2018-sciv-28",
+    question: "What is 'gender equality'?",
+    options: [
+      "Equal rights and opportunities for all genders",
+      "Superiority of one gender",
+      "Different rights based on gender",
+      "Only men have rights"
+    ],
+    correctAnswer: 0,
+    explanation: "Gender equality means that all people, regardless of gender, have equal rights, responsibilities, and opportunities in all areas of life."
+  },
+  {
+    id: "pred-2018-sciv-29",
+    question: "What is 'political ideology'?",
+    options: [
+      "Set of beliefs about how society should function",
+      "Political party only",
+      "Government policy",
+      "Economic system only"
+    ],
+    correctAnswer: 0,
+    explanation: "Political ideology is a set of beliefs about the proper role of government and how society should be organized and governed."
+  },
+  {
+    id: "pred-2018-sciv-30",
+    question: "What is 'civil liberty'?",
+    options: [
+      "Freedoms that protect individuals from government abuse",
+      "Government powers",
+      "Military rights",
+      "Corporate privileges"
+    ],
+    correctAnswer: 0,
+    explanation: "Civil liberties are freedoms that protect individuals from government abuse, such as freedom of speech, religion, and assembly."
+  },
+  {
+    id: "pred-2018-sciv-31",
+    question: "What is 'democracy'?",
+    options: [
+      "System of government by the whole population or elected representatives",
+      "Rule by one person",
+      "Rule by military",
+      "Rule by the wealthy"
+    ],
+    correctAnswer: 0,
+    explanation: "Democracy is a system of government where power is vested in the people, either directly or through elected representatives."
+  },
+  {
+    id: "pred-2018-sciv-32",
+    question: "What is 'human rights'?",
+    options: [
+      "Fundamental rights inherent to all human beings",
+      "Rights only for citizens",
+      "Rights granted by government",
+      "Rights only for wealthy"
+    ],
+    correctAnswer: 0,
+    explanation: "Human rights are rights inherent to all human beings, regardless of nationality, place of residence, sex, or any other status."
+  },
+  {
+    id: "pred-2018-sciv-33",
+    question: "What is 'voting'?",
+    options: [
+      "Formal expression of preference for a candidate or proposal",
+      "Government decision",
+      "Military action",
+      "Court judgment"
+    ],
+    correctAnswer: 0,
+    explanation: "Voting is the formal expression of preference for a candidate or a proposal in an election or referendum."
+  },
+  {
+    id: "pred-2018-sciv-34",
+    question: "What is 'political participation'?",
+    options: [
+      "Involvement in political processes and activities",
+      "Only voting",
+      "Only protesting",
+      "Only joining political parties"
+    ],
+    correctAnswer: 0,
+    explanation: "Political participation includes various activities such as voting, campaigning, protesting, and engaging in public debates."
+  },
+  {
+    id: "pred-2018-sciv-35",
+    question: "What is 'judiciary'?",
+    options: [
+      "Branch of government responsible for interpreting laws",
+      "Branch that makes laws",
+      "Branch that executes laws",
+      "Military branch"
+    ],
+    correctAnswer: 0,
+    explanation: "The judiciary is the branch of government responsible for interpreting laws, resolving disputes, and administering justice."
+  },
+  {
+    id: "pred-2018-sciv-36",
+    question: "What is 'legislature'?",
+    options: [
+      "Branch of government that makes laws",
+      "Branch that interprets laws",
+      "Branch that executes laws",
+      "Military branch"
+    ],
+    correctAnswer: 0,
+    explanation: "The legislature is the branch of government responsible for making laws, typically consisting of a parliament or congress."
+  },
+  {
+    id: "pred-2018-sciv-37",
+    question: "What is 'executive'?",
+    options: [
+      "Branch of government that enforces laws",
+      "Branch that makes laws",
+      "Branch that interprets laws",
+      "Judicial branch"
+    ],
+    correctAnswer: 0,
+    explanation: "The executive branch is responsible for implementing and enforcing laws, typically led by a president or prime minister."
+  },
+  {
+    id: "pred-2018-sciv-38",
+    question: "What is 'election'?",
+    options: [
+      "Formal process of selecting a person for public office",
+      "Military selection",
+      "Court appointment",
+      "Monarch selection"
+    ],
+    correctAnswer: 0,
+    explanation: "An election is a formal decision-making process by which a population chooses an individual to hold public office."
+  },
+  {
+    id: "pred-2018-sciv-39",
+    question: "What is 'political party'?",
+    options: [
+      "Organization of people with similar political goals",
+      "Government organization",
+      "Military group",
+      "Social club"
+    ],
+    correctAnswer: 0,
+    explanation: "A political party is an organized group of people who share similar political views and aim to gain political power."
+  },
+  {
+    id: "pred-2018-sciv-40",
+    question: "What is 'public opinion'?",
+    options: [
+      "Collective attitudes and beliefs of citizens on public issues",
+      "Government opinion",
+      "Media opinion",
+      "Military opinion"
+    ],
+    correctAnswer: 0,
+    explanation: "Public opinion refers to the collective views, attitudes, and beliefs of citizens on public issues and policies."
   }
 ];
 
@@ -2956,6 +5956,246 @@ export const predicted2018SocialScholasticAptitudeQuestions: MatricExamQuestion[
     ],
     correctAnswer: 0,
     explanation: "Eloquent means fluent or persuasive in speaking or writing, which is synonymous with articulate."
+  },
+  {
+    id: "pred-2018-ssat-21",
+    question: "Complete the analogy: Author is to Book as Artist is to ____",
+    options: [
+      "Painting",
+      "Canvas",
+      "Brush",
+      "Gallery"
+    ],
+    correctAnswer: 0,
+    explanation: "An author creates a book, just as an artist creates a painting. This is a creator-creation analogy."
+  },
+  {
+    id: "pred-2018-ssat-22",
+    question: "What is 15% of 200 plus 20% of 150?",
+    options: [
+      "60",
+      "50",
+      "70",
+      "55"
+    ],
+    correctAnswer: 0,
+    explanation: "15% of 200 = 30. 20% of 150 = 30. 30 + 30 = 60."
+  },
+  {
+    id: "pred-2018-ssat-23",
+    question: "If all roses are flowers and some flowers are red, then some roses are definitely red.",
+    options: [
+      "Cannot be determined",
+      "True",
+      "False",
+      "Sometimes true"
+    ],
+    correctAnswer: 0,
+    explanation: "This is a logical fallacy. Some flowers being red doesn't guarantee that any roses are red. We cannot determine this relationship."
+  },
+  {
+    id: "pred-2018-ssat-24",
+    question: "What comes next: 1, 4, 2, 5, 3, 6, ____",
+    options: [
+      "4",
+      "7",
+      "5",
+      "8"
+    ],
+    correctAnswer: 0,
+    explanation: "The pattern alternates: +3, -2, +3, -2, +3. So 6 - 2 = 4."
+  },
+  {
+    id: "pred-2018-ssat-25",
+    question: "Choose the word that is most similar in meaning to 'Candid':",
+    options: [
+      "Frank",
+      "Secretive",
+      "Dishonest",
+      "Shy"
+    ],
+    correctAnswer: 0,
+    explanation: "Candid means truthful and straightforward, which is synonymous with frank."
+  },
+  {
+    id: "pred-2018-ssat-26",
+    question: "Complete the analogy: Clock is to Time as Thermometer is to ____",
+    options: [
+      "Temperature",
+      "Heat",
+      "Weather",
+      "Degree"
+    ],
+    correctAnswer: 0,
+    explanation: "A clock measures time, just as a thermometer measures temperature. This is a tool-measurement analogy."
+  },
+  {
+    id: "pred-2018-ssat-27",
+    question: "What is the volume of a cube with side length 3 cm?",
+    options: [
+      "27 cm³",
+      "9 cm³",
+      "18 cm³",
+      "36 cm³"
+    ],
+    correctAnswer: 0,
+    explanation: "Volume = side³ = 3³ = 27 cm³."
+  },
+  {
+    id: "pred-2018-ssat-28",
+    question: "Choose the word that is most opposite in meaning to 'Optimistic':",
+    options: [
+      "Pessimistic",
+      "Hopeful",
+      "Positive",
+      "Confident"
+    ],
+    correctAnswer: 0,
+    explanation: "Optimistic means hopeful and positive. Pessimistic means expecting the worst or being negative."
+  },
+  {
+    id: "pred-2018-ssat-29",
+    question: "What is the next term: 5, 8, 12, 17, 23, ____",
+    options: [
+      "30",
+      "29",
+      "31",
+      "28"
+    ],
+    correctAnswer: 0,
+    explanation: "The pattern increases by +3, +4, +5, +6. So next is +7: 23 + 7 = 30."
+  },
+  {
+    id: "pred-2018-ssat-30",
+    question: "Complete the analogy: Captain is to Ship as Pilot is to ____",
+    options: [
+      "Airplane",
+      "Airport",
+      "Sky",
+      "Passenger"
+    ],
+    correctAnswer: 0,
+    explanation: "A captain commands a ship, just as a pilot commands an airplane. This is a commander-vehicle analogy."
+  },
+  {
+    id: "pred-2018-ssat-31",
+    question: "What is 25% of 80?",
+    options: [
+      "20",
+      "25",
+      "15",
+      "30"
+    ],
+    correctAnswer: 0,
+    explanation: "25% of 80 = 0.25 × 80 = 20."
+  },
+  {
+    id: "pred-2018-ssat-32",
+    question: "What comes next: 2, 6, 12, 20, 30, ____",
+    options: [
+      "42",
+      "40",
+      "44",
+      "38"
+    ],
+    correctAnswer: 0,
+    explanation: "The pattern increases by +4, +6, +8, +10. So next is +12: 30 + 12 = 42."
+  },
+  {
+    id: "pred-2018-ssat-33",
+    question: "Choose the word that is most similar in meaning to 'Benevolent':",
+    options: [
+      "Kind",
+      "Cruel",
+      "Angry",
+      "Sad"
+    ],
+    correctAnswer: 0,
+    explanation: "Benevolent means well-meaning and kindly, which is synonymous with kind."
+  },
+  {
+    id: "pred-2018-ssat-34",
+    question: "What is the area of a rectangle with length 8 and width 5?",
+    options: [
+      "40",
+      "13",
+      "26",
+      "45"
+    ],
+    correctAnswer: 0,
+    explanation: "Area = length × width = 8 × 5 = 40."
+  },
+  {
+    id: "pred-2018-ssat-35",
+    question: "What is the next term: 1, 4, 9, 16, 25, ____",
+    options: [
+      "36",
+      "35",
+      "30",
+      "40"
+    ],
+    correctAnswer: 0,
+    explanation: "The pattern is perfect squares: 1², 2², 3², 4², 5². Next is 6² = 36."
+  },
+  {
+    id: "pred-2018-ssat-36",
+    question: "Choose the word that is most opposite in meaning to 'Ancient':",
+    options: [
+      "Modern",
+      "Old",
+      "Historic",
+      "Traditional"
+    ],
+    correctAnswer: 0,
+    explanation: "Ancient means very old. Modern means current or recent, which is the opposite."
+  },
+  {
+    id: "pred-2018-ssat-37",
+    question: "What is 1/3 + 1/6?",
+    options: [
+      "1/2",
+      "1/3",
+      "2/3",
+      "1/6"
+    ],
+    correctAnswer: 0,
+    explanation: "1/3 + 1/6 = 2/6 + 1/6 = 3/6 = 1/2."
+  },
+  {
+    id: "pred-2018-ssat-38",
+    question: "Complete the analogy: Pen is to Write as Knife is to ____",
+    options: [
+      "Cut",
+      "Sharp",
+      "Metal",
+      "Handle"
+    ],
+    correctAnswer: 0,
+    explanation: "A pen is used to write, just as a knife is used to cut. This is a tool-function analogy."
+  },
+  {
+    id: "pred-2018-ssat-39",
+    question: "What is the perimeter of a square with side length 6?",
+    options: [
+      "24",
+      "12",
+      "36",
+      "18"
+    ],
+    correctAnswer: 0,
+    explanation: "Perimeter = 4 × side = 4 × 6 = 24."
+  },
+  {
+    id: "pred-2018-ssat-40",
+    question: "Choose the word that is most similar in meaning to 'Prudent':",
+    options: [
+      "Wise",
+      "Careless",
+      "Reckless",
+      "Foolish"
+    ],
+    correctAnswer: 0,
+    explanation: "Prudent means acting with or showing care and thought for the future, which is synonymous with wise."
   }
 ];
 
@@ -3199,5 +6439,245 @@ export const predicted2018SocialHistoryQuestions: MatricExamQuestion[] = [
     ],
     correctAnswer: 0,
     explanation: "The Ethiopian Civil War was fought between the Derg regime and various opposition groups, including the EPRDF which eventually won in 1991."
+  },
+  {
+    id: "pred-2018-hist-21",
+    question: "What was the significance of Emperor Menelik II's reign?",
+    options: [
+      "Modernized Ethiopia and defeated Italy at Adwa",
+      "Only ruled for 5 years",
+      "Was a foreign ruler",
+      "Destroyed Ethiopian culture"
+    ],
+    correctAnswer: 0,
+    explanation: "Emperor Menelik II (1889-1913) modernized Ethiopia, expanded its territory, and led the victory against Italy at the Battle of Adwa in 1896."
+  },
+  {
+    id: "pred-2018-hist-22",
+    question: "What was the Zagwe Dynasty known for?",
+    options: [
+      "Building the rock-hewn churches of Lalibela",
+      "Military conquests",
+      "Trade expansion",
+      "Islamic conversion"
+    ],
+    correctAnswer: 0,
+    explanation: "The Zagwe Dynasty (12th-13th century) is famous for building the rock-hewn churches of Lalibela, now a UNESCO World Heritage Site."
+  },
+  {
+    id: "pred-2018-hist-23",
+    question: "When did Ethiopia adopt Christianity as a state religion?",
+    options: [
+      "4th century (330 AD)",
+      "1st century",
+      "7th century",
+      "10th century"
+    ],
+    correctAnswer: 0,
+    explanation: "Ethiopia adopted Christianity as a state religion in the 4th century under King Ezana, making it one of the oldest Christian nations."
+  },
+  {
+    id: "pred-2018-hist-24",
+    question: "What was the purpose of the Berlin Conference (1884-1885)?",
+    options: [
+      "To partition Africa among European powers",
+      "To free African slaves",
+      "To establish trade routes",
+      "To promote African independence"
+    ],
+    correctAnswer: 0,
+    explanation: "The Berlin Conference was organized by European powers to partition Africa among themselves, with Ethiopia and Liberia being the only independent African nations."
+  },
+  {
+    id: "pred-2018-hist-25",
+    question: "Who was Empress Taytu Betul?",
+    options: [
+      "Wife of Menelik II and key figure in Ethiopian history",
+      "First female emperor",
+      "Military commander only",
+      "Foreign diplomat"
+    ],
+    correctAnswer: 0,
+    explanation: "Empress Taytu Betul was the wife of Menelik II and played a crucial role in Ethiopian politics, particularly during the Battle of Adwa."
+  },
+  {
+    id: "pred-2018-hist-26",
+    question: "What was the significance of the Axumite Kingdom?",
+    options: [
+      "Major ancient civilization and trade empire",
+      "Small tribal kingdom",
+      "European colony",
+      "Islamic state"
+    ],
+    correctAnswer: 0,
+    explanation: "The Axumite Kingdom was a major ancient civilization that controlled trade routes between Rome and India, and was one of the first states to mint coins."
+  },
+  {
+    id: "pred-2018-hist-27",
+    question: "When did Ethiopia join the League of Nations?",
+    options: [
+      "1923",
+      "1918",
+      "1935",
+      "1945"
+    ],
+    correctAnswer: 0,
+    explanation: "Ethiopia joined the League of Nations in 1923, becoming the first African member state."
+  },
+  {
+    id: "pred-2018-hist-28",
+    question: "What was the Solomonic Dynasty?",
+    options: [
+      "Claimed descent from King Solomon and Queen of Sheba",
+      "Ruled only for 50 years",
+      "Was a foreign dynasty",
+      "Established democracy"
+    ],
+    correctAnswer: 0,
+    explanation: "The Solomonic Dynasty claimed descent from the biblical King Solomon and Queen of Sheba, providing religious legitimacy to Ethiopian emperors."
+  },
+  {
+    id: "pred-2018-hist-29",
+    question: "What was the purpose of the Organization of African Unity (OAU)?",
+    options: [
+      "To promote African unity and independence",
+      "To colonize Africa",
+      "To establish European control",
+      "To promote Islam only"
+    ],
+    correctAnswer: 0,
+    explanation: "The OAU was founded in 1963 in Addis Ababa to promote African unity, independence, and cooperation among African states."
+  },
+  {
+    id: "pred-2018-hist-30",
+    question: "What was the role of Ethiopia in World War II?",
+    options: [
+      "Fought against Italian occupation alongside Allied forces",
+      "Remained neutral",
+      "Fought with Axis powers",
+      "Did not participate"
+    ],
+    correctAnswer: 0,
+    explanation: "Ethiopia fought against Italian occupation during WWII, eventually liberating the country in 1941 with British Allied support."
+  },
+  {
+    id: "pred-2018-hist-31",
+    question: "When was the Ethiopian Constitution first adopted?",
+    options: [
+      "1931",
+      "1955",
+      "1987",
+      "1995"
+    ],
+    correctAnswer: 0,
+    explanation: "Ethiopia's first constitution was adopted in 1931 during Emperor Haile Selassie's reign."
+  },
+  {
+    id: "pred-2018-hist-32",
+    question: "What was the purpose of the Italo-Ethiopian War (1935-1936)?",
+    options: [
+      "Italy's attempt to colonize Ethiopia",
+      "Ethiopia's attempt to colonize Italy",
+      "Border dispute only",
+      "Trade conflict"
+    ],
+    correctAnswer: 0,
+    explanation: "Italy sought to colonize Ethiopia in 1935, but was defeated at the Battle of Adwa in 1896 and again faced resistance in 1935-1936."
+  },
+  {
+    id: "pred-2018-hist-33",
+    question: "What is the significance of the year 1974 in Ethiopian history?",
+    options: [
+      "End of the monarchy and beginning of the Derg regime",
+      "Independence from Italy",
+      "Battle of Adwa",
+      "Establishment of modern Ethiopia"
+    ],
+    correctAnswer: 0,
+    explanation: "1974 marked the end of Emperor Haile Selassie's reign and the establishment of the Marxist Derg military regime."
+  },
+  {
+    id: "pred-2018-hist-34",
+    question: "What was the Derg?",
+    options: [
+      "Military junta that ruled Ethiopia from 1974-1991",
+      "Political party",
+      "Traditional council",
+      "Religious organization"
+    ],
+    correctAnswer: 0,
+    explanation: "The Derg was a Marxist-Leninist military junta that ruled Ethiopia from 1974 until 1991."
+  },
+  {
+    id: "pred-2018-hist-35",
+    question: "When did Ethiopia become a federal republic?",
+    options: [
+      "1995",
+      "1974",
+      "1931",
+      "1991"
+    ],
+    correctAnswer: 0,
+    explanation: "Ethiopia adopted a new constitution in 1995, establishing it as a federal democratic republic."
+  },
+  {
+    id: "pred-2018-hist-36",
+    question: "What is the Ethiopian New Year called?",
+    options: [
+      "Enkutatash",
+      "Timket",
+      "Meskel",
+      "Genna"
+    ],
+    correctAnswer: 0,
+    explanation: "Enkutatash is the Ethiopian New Year, celebrated in September."
+  },
+  {
+    id: "pred-2018-hist-37",
+    question: "What is the significance of Lalibela?",
+    options: [
+      "Famous for its rock-hewn churches",
+      "Battle site",
+      "Capital city",
+      "Trade center"
+    ],
+    correctAnswer: 0,
+    explanation: "Lalibela is famous for its 11 rock-hewn churches carved from solid rock in the 12th century."
+  },
+  {
+    id: "pred-2018-hist-38",
+    question: "When did Ethiopia gain independence from Italy?",
+    options: [
+      "1941",
+      "1935",
+      "1896",
+      "1945"
+    ],
+    correctAnswer: 0,
+    explanation: "Ethiopia was liberated from Italian occupation in 1941 with British Allied support during WWII."
+  },
+  {
+    id: "pred-2018-hist-39",
+    question: "What is the Ethiopian calendar system?",
+    options: [
+      "Approximately 7-8 years behind the Gregorian calendar",
+      "Same as Gregorian calendar",
+      "Ahead of Gregorian calendar",
+      "Based on lunar cycles only"
+    ],
+    correctAnswer: 0,
+    explanation: "The Ethiopian calendar is approximately 7-8 years behind the Gregorian calendar and has 13 months."
+  },
+  {
+    id: "pred-2018-hist-40",
+    question: "What was the role of Emperor Tewodros?",
+    options: [
+      "Unified Ethiopia and modernized the country",
+      "Divided Ethiopia",
+      "Surrendered to Italy",
+      "Was a colonial ruler"
+    ],
+    correctAnswer: 0,
+    explanation: "Emperor Tewodros (1855-1868) worked to unify Ethiopia and modernize the country, though his reign ended in conflict."
   }
 ];

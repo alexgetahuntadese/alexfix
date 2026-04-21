@@ -152,8 +152,8 @@ const PredictedMatricPage = () => {
         {/* Natural Science Section */}
         <div className="mb-10">
           <div className="flex items-center gap-3 mb-6">
-            <div className="p-2 rounded-lg bg-blue-500/20 border border-blue-500/30">
-              <BookOpen className="h-5 w-5 text-blue-400" />
+            <div className="p-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30">
+              <BookOpen className="h-5 w-5 text-emerald-400" />
             </div>
             <h2 className="text-2xl font-bold text-white">Natural Science Stream</h2>
           </div>
@@ -164,14 +164,14 @@ const PredictedMatricPage = () => {
                 className="group relative"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-all duration-500" />
+                <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-all duration-500" />
                 <Card
                   className="relative bg-white/[0.04] backdrop-blur-xl border-white/[0.08] hover:bg-white/[0.08] hover:border-white/[0.15] transition-all duration-300 cursor-pointer group h-full"
                   onClick={() => handleSubjectClick('natural', item.subject)}
                 >
                   <CardHeader className="pb-4">
                     <div className="flex items-center gap-4 mb-3">
-                      <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-2xl shadow-lg group-hover:scale-110 transition-all duration-300">
+                      <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center text-2xl shadow-lg group-hover:scale-110 transition-all duration-300">
                         {item.icon}
                       </div>
                       <div className="flex-1">
@@ -187,7 +187,7 @@ const PredictedMatricPage = () => {
                         <span>90% probability</span>
                       </div>
                       <Button
-                        className="w-full bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white shadow-lg group-hover:shadow-blue-500/30 transition-all duration-300"
+                        className="w-full bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white shadow-lg group-hover:shadow-emerald-500/30 transition-all duration-300"
                         onClick={(e) => {
                           e.stopPropagation();
                           handleSubjectClick('natural', item.subject);

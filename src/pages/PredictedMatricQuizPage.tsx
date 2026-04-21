@@ -62,6 +62,26 @@ const PredictedMatricQuizPage = () => {
   const navigate = useNavigate();
   const streamKey = stream ?? 'natural';
   const streamLabel = streamKey === 'social' ? 'Social Science' : 'Natural Science';
+  const isSocialStream = streamKey === 'social';
+  
+  // Color theme based on stream
+  const theme = {
+    primary: isSocialStream ? 'purple' : 'emerald',
+    secondary: isSocialStream ? 'pink' : 'teal',
+    bgGradient: isSocialStream 
+      ? 'from-purple-950 via-pink-900 to-purple-950' 
+      : 'from-emerald-950 via-teal-900 to-emerald-950',
+    gradient: isSocialStream 
+      ? 'from-purple-500 to-pink-600' 
+      : 'from-emerald-500 to-teal-600',
+    gradientHover: isSocialStream 
+      ? 'from-purple-600 hover:to-pink-700' 
+      : 'from-emerald-600 hover:to-teal-700',
+    bgTint: isSocialStream ? 'purple' : 'emerald',
+    borderTint: isSocialStream ? 'purple' : 'emerald',
+    iconColor: isSocialStream ? 'text-purple-400' : 'text-emerald-400',
+  };
+  
   const [questions, setQuestions] = useState<MatricExamQuestion[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -95,7 +115,7 @@ const PredictedMatricQuizPage = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-emerald-950 via-teal-900 to-emerald-950 pt-14 px-4 pb-4 overflow-hidden relative flex items-center justify-center">
+      <div className={`min-h-screen bg-gradient-to-br ${theme.bgGradient} pt-14 px-4 pb-4 overflow-hidden relative flex items-center justify-center`}>
         <StarField />
         <TopBar />
         <div className="text-center text-white relative z-10">
@@ -107,7 +127,7 @@ const PredictedMatricQuizPage = () => {
 
   if (questions.length === 0) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-emerald-950 via-teal-900 to-emerald-950 pt-14 px-4 pb-4 overflow-hidden relative flex items-center justify-center">
+      <div className={`min-h-screen bg-gradient-to-br ${theme.bgGradient} pt-14 px-4 pb-4 overflow-hidden relative flex items-center justify-center`}>
         <StarField />
         <TopBar />
         <div className="text-center text-white relative z-10">
@@ -209,7 +229,7 @@ const PredictedMatricQuizPage = () => {
 
   if (finished) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-emerald-950 via-teal-900 to-emerald-950 pt-14 px-4 pb-4 overflow-hidden relative">
+      <div className={`min-h-screen bg-gradient-to-br ${theme.bgGradient} pt-14 px-4 pb-4 overflow-hidden relative`}>
         <StarField starCount={40} shootingCount={2} />
         <TopBar />
 
@@ -226,7 +246,7 @@ const PredictedMatricQuizPage = () => {
           <Card className="bg-white/[0.04] backdrop-blur-xl border-white/[0.08]">
             <CardContent className="p-8">
               <div className="text-center mb-8">
-                <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center shadow-lg">
+                <div className={`w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br ${theme.gradient} flex items-center justify-center shadow-lg`}>
                   <Target className="h-10 w-10 text-white" />
                 </div>
                 <h2 className="text-3xl font-bold text-white mb-2">Quiz Complete!</h2>
@@ -235,7 +255,7 @@ const PredictedMatricQuizPage = () => {
 
               <div className="grid grid-cols-3 gap-4 mb-8">
                 <div className="text-center p-4 rounded-xl bg-white/5 border border-white/10">
-                  <div className="text-3xl font-bold text-emerald-400 mb-1">{score}</div>
+                  <div className={`text-3xl font-bold text-${theme.primary}-400 mb-1`}>{score}</div>
                   <div className="text-xs text-white/50">Correct</div>
                 </div>
                 <div className="text-center p-4 rounded-xl bg-white/5 border border-white/10">
@@ -243,7 +263,7 @@ const PredictedMatricQuizPage = () => {
                   <div className="text-xs text-white/50">Incorrect</div>
                 </div>
                 <div className="text-center p-4 rounded-xl bg-white/5 border border-white/10">
-                  <div className="text-3xl font-bold text-teal-400 mb-1">{percentage}%</div>
+                  <div className={`text-3xl font-bold text-${theme.secondary}-400 mb-1`}>{percentage}%</div>
                   <div className="text-xs text-white/50">Score</div>
                 </div>
               </div>
@@ -267,7 +287,7 @@ const PredictedMatricQuizPage = () => {
                 </Button>
                 <Button
                   onClick={() => navigate('/predicted-matric')}
-                  className="flex-1 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white"
+                  className={`flex-1 bg-gradient-to-r ${theme.gradient} hover:${theme.gradientHover} text-white`}
                 >
                   Back to Subjects
                 </Button>
@@ -275,12 +295,12 @@ const PredictedMatricQuizPage = () => {
             </CardContent>
           </Card>
 
-          <div className="mt-6 p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30">
+          <div className={`mt-6 p-4 rounded-xl bg-${theme.bgTint}-500/10 border border-${theme.borderTint}-500/30`}>
             <div className="flex items-start gap-3">
-              <Sparkles className="h-5 w-5 text-emerald-400 mt-0.5" />
+              <Sparkles className={`h-5 w-5 ${theme.iconColor} mt-0.5`} />
               <div className="flex-1">
-                <h3 className="text-emerald-300 font-semibold mb-1">90% Probability Questions</h3>
-                <p className="text-emerald-200/70 text-sm">
+                <h3 className={`text-${theme.primary}-300 font-semibold mb-1`}>90% Probability Questions</h3>
+                <p className={`text-${theme.primary}-200/70 text-sm`}>
                   These questions have a 90% probability of appearing in the next matric exam. Review your answers and focus on areas where you need improvement.
                 </p>
               </div>

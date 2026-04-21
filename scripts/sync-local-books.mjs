@@ -173,7 +173,7 @@ for (const grade of grades) {
     const pages = matchOrThrow(html, /<p><strong>Total Pages<\/strong>\s*([^<]+)<\/p>/i, "pages").trim();
     const size = matchOrThrow(html, /<p><strong>File Size<\/strong>\s*([^<]+)<\/p>/i, "file size").trim();
     const pdfUrl = matchOrThrow(html, /<a[^>]+href="(https:\/\/kehulum\.com\/(?:bfile_asset|books_asset)\/[^"]+\.pdf)"/i, "pdf url");
-    const imageUrl = bookJson.image || matchOrThrow(html, /<img class="bkimg-size"[^>]+src="([^"]+)"/i, "cover image");
+    const imageUrl = bookJson.image || matchOrThrow(html, /<img[^>]+class="[^"]*bkimg-size[^"]*"[^>]+src="([^"]+)"/i, "cover image") || matchOrThrow(html, /<img[^>]+src="(https:\/\/kehulum\.com\/[^"]+\.(?:png|jpg|jpeg))"/i, "cover image");
 
     const fileBase = slugToFilename(grade.grade, slug);
     const pdfLocal = `/books/pdfs/${fileBase}.pdf`;
