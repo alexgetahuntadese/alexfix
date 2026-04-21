@@ -1,12 +1,14 @@
 {
-  "name": "Simple Road",
+  "name": "Simple Road - Offline Study App",
   "short_name": "Simple Road",
-  "description": "Offline-friendly study app for Ethiopian students with quizzes, notes, books, and progress tracking.",
+  "description": "Offline-first study app for Ethiopian students with quizzes, notes, books, and progress tracking.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "background_color": "#140b2d",
   "theme_color": "#140b2d",
+  "orientation": "portrait-primary",
+  "prefer_related_applications": false,
   "icons": [
     {
       "src": "/favicon.ico",
@@ -18,6 +20,40 @@
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any"
+    },
+    {
+      "src": "/placeholder.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "study", "quiz"],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Take Quiz",
+      "short_name": "Quiz",
+      "description": "Take a quiz to test your knowledge",
+      "url": "/grades",
+      "icons": [
+        {
+          "src": "/logo.svg",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "View Notes",
+      "short_name": "Notes",
+      "description": "Access study notes offline",
+      "url": "/notes",
+      "icons": [
+        {
+          "src": "/logo.svg",
+          "sizes": "96x96"
+        }
+      ]
     }
   ]
 }

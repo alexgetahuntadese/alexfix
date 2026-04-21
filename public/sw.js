@@ -10,6 +10,15 @@ const APP_SHELL = [
   "/robots.txt",
 ];
 
+// Cache static data files for offline access
+const DATA_FILES = [
+  // Grade 9 data
+  "/src/data/grade9Questions.ts",
+  "/src/data/grade9Subjects.ts",
+  "/src/data/grade9Gamification.ts",
+  // Add more data files as needed
+];
+
 const isSameOrigin = (url) => url.origin === self.location.origin;
 
 const isApiRequest = (request) => {
@@ -20,6 +29,44 @@ const isApiRequest = (request) => {
     url.hostname.includes("parse") ||
     request.headers.get("authorization") !== null
   );
+};
+
+// Network-first strategy for API requests with cache fallback
+const networkFirst = async (request) => {
+  const cache = await caches.open(RUNTIME_CACHE);
+  try {
+    const networkResponse = await fetch(request);
+    if (networkResponse.ok) {
+      await cache.put(request, networkResponse.clone());
+    }
+    return networkResponse;
+  } catch (error) {
+    const cachedResponse = await cache.match(request);
+    if (cachedResponse) {
+      return cachedResponse;
+    }
+    throw error;
+  }
+};
+
+// Stale-while-revalidate strategy for static data
+const staleWhileRevalidate = async (request) => {
+  const cache = await caches.open(RUNTIME_CACHE);
+  const cachedResponse = await cache.match(request);
+  
+  const networkPromise = fetch(request).then((networkResponse) => {
+    if (networkResponse.ok) {
+      cache.put(request, networkResponse.clone());
+    }
+    return networkResponse;
+  }).catch(() => null);
+
+  if (cachedResponse) {
+    networkPromise; // Trigger background update
+    return cachedResponse;
+  }
+
+  return networkPromise;
 };
 
 const isStaticAssetRequest = (request) =>
@@ -116,8 +163,9 @@ const createPartialContentResponse = async (request, cachedResponse) => {
 self.addEventListener("fetch", (event) => {
   const { request } = event;
 
-  // Don't cache API requests - let them fail naturally when offline
+  // Use network-first strategy for API requests with cache fallback
   if (isApiRequest(request)) {
+    event.respondWith(networkFirst(request));
     return;
   }
 
