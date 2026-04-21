@@ -145,6 +145,72 @@ const Index = () => {
         </div>
       </motion.section>
 
+      {/* Predicted Matric Section */}
+      <motion.section
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8, delay: 0.9 }}
+        className="relative px-4 py-16"
+      >
+        <div className="mx-auto max-w-7xl">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1.0 }}
+            className="relative group cursor-pointer"
+          >
+            <Link to="/predicted-matric" className="block">
+              <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-3xl blur-2xl opacity-30 group-hover:opacity-50 transition-all duration-500"></div>
+              <div className="relative bg-gradient-to-br from-emerald-500/20 to-teal-500/20 backdrop-blur-xl p-8 md:p-12 rounded-3xl border border-emerald-400/30 hover:border-emerald-400/50 transition-all duration-300 hover:transform hover:scale-[1.02]">
+                <div className="flex flex-col md:flex-row items-center gap-8">
+                  <div className="flex-shrink-0">
+                    <div className="w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center shadow-2xl group-hover:scale-110 transition-all duration-300">
+                      <Target className="w-12 h-12 md:w-16 md:h-16 text-white" />
+                    </div>
+                  </div>
+                  <div className="flex-1 text-center md:text-left">
+                    <div className="flex items-center justify-center md:justify-start gap-2 mb-3">
+                      <Sparkles className="w-5 h-5 text-emerald-300" />
+                      <span className="px-3 py-1 bg-emerald-500/30 border border-emerald-400/50 rounded-full text-emerald-300 text-sm font-semibold">
+                        90% Predicted
+                      </span>
+                      <span className="px-3 py-1 bg-emerald-500/30 border border-emerald-400/50 rounded-full text-emerald-300 text-sm font-semibold">
+                        2018 E.C.
+                      </span>
+                    </div>
+                    <h3 className="text-3xl md:text-4xl font-bold text-white mb-3">
+                      Next Year's Matric Predictions
+                    </h3>
+                    <p className="text-emerald-200/80 text-lg mb-4 max-w-2xl">
+                      Practice with questions that have a 90% probability of appearing in the next matric exam. Based on analysis of previous years' patterns and frequently tested topics.
+                    </p>
+                    <div className="flex items-center justify-center md:justify-start gap-6 text-emerald-300">
+                      <span className="flex items-center gap-2">
+                        <GraduationCap className="w-5 h-5" />
+                        <span className="font-medium">50+ Questions</span>
+                      </span>
+                      <span className="flex items-center gap-2">
+                        <BookOpen className="w-5 h-5" />
+                        <span className="font-medium">All Streams</span>
+                      </span>
+                      <span className="flex items-center gap-2">
+                        <TrendingUp className="w-5 h-5" />
+                        <span className="font-medium">High Probability</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div className="flex-shrink-0">
+                    <div className="w-16 h-16 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-all duration-300">
+                      <Zap className="w-8 h-8 text-white" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </motion.div>
+        </div>
+      </motion.section>
+
       {/* Elite Features Section */}
       <motion.section
         initial={{ opacity: 0 }}

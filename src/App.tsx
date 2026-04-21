@@ -35,6 +35,8 @@ const BookSubjectsPage = lazy(() => import("./pages/BookSubjectsPage"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
 const LoginPage = lazy(() => import("./pages/LoginPage"));
 const SignUpPage = lazy(() => import("./pages/SignUpPage"));
+const PredictedMatricPage = lazy(() => import("./pages/PredictedMatricPage"));
+const PredictedMatricQuizPage = lazy(() => import("./pages/PredictedMatricQuizPage"));
 
 // Loading component for lazy loaded routes
 const PageLoader = () => (
@@ -194,6 +196,16 @@ const App = () => (
                 <Route path="/signup" element={
                   <Suspense fallback={<PageLoader />}>
                     <SignUpPage />
+                  </Suspense>
+                } />
+                <Route path="/predicted-matric" element={
+                  <Suspense fallback={<PageLoader />}>
+                    <PredictedMatricPage />
+                  </Suspense>
+                } />
+                <Route path="/predicted-matric/:stream/:subject" element={
+                  <Suspense fallback={<PageLoader />}>
+                    <PredictedMatricQuizPage />
                   </Suspense>
                 } />
               </Routes>

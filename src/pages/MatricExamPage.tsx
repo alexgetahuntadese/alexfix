@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { ArrowLeft, Calendar, BookOpen, Clock, TrendingUp, Award, Sparkles } from 'lucide-react';
+import { ArrowLeft, Calendar, BookOpen, Clock, TrendingUp, Award, Sparkles, Target } from 'lucide-react';
 import { getMatricStreamsForYear, getMatricYears } from '@/data/matricExams';
 import TopBar from '@/components/TopBar';
 import StarField from '@/components/StarField';
@@ -35,6 +35,42 @@ const MatricExamPage = () => {
             </div>
             <p className="text-white/50 text-sm">Practice with authentic past exam questions by year</p>
           </div>
+        </div>
+
+        {/* Predicted Questions Card */}
+        <div
+          className="mb-8 group relative cursor-pointer"
+          onClick={() => navigate('/predicted-matric')}
+        >
+          <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl opacity-0 group-hover:opacity-30 blur-xl transition-all duration-500" />
+          <Card className="relative bg-gradient-to-r from-emerald-500/20 to-teal-500/20 backdrop-blur-xl border-emerald-500/30 hover:border-emerald-500/50 transition-all duration-300">
+            <CardContent className="p-6">
+              <div className="flex items-center gap-6">
+                <div className="p-4 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 shadow-lg group-hover:scale-110 transition-all duration-300">
+                  <Target className="h-8 w-8 text-white" />
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center gap-2 mb-2">
+                    <Badge className="bg-gradient-to-r from-emerald-500 to-teal-500 text-white border-0">
+                      <Sparkles className="h-3 w-3 mr-1" />
+                      90% Predicted
+                    </Badge>
+                    <Badge variant="outline" className="border-emerald-500/30 text-emerald-300">
+                      New
+                    </Badge>
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-1">2018 E.C. Predicted Questions</h3>
+                  <p className="text-white/60 text-sm">
+                    Practice with questions that have a 90% probability of appearing in the next matric exam
+                  </p>
+                </div>
+                <Button className="bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white shadow-lg group-hover:shadow-emerald-500/30 transition-all duration-300">
+                  Start Practice
+                  <ArrowLeft className="h-4 w-4 ml-2 rotate-180" />
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
