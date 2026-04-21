@@ -11,9 +11,15 @@ import {
   predicted2018NaturalChemistryQuestions,
   predicted2018NaturalBiologyQuestions,
   predicted2018NaturalEnglishQuestions,
+  predicted2018NaturalCivicsQuestions,
+  predicted2018NaturalScholasticAptitudeQuestions,
   predicted2018SocialMathQuestions,
   predicted2018SocialEnglishQuestions,
   predicted2018SocialHistoryQuestions,
+  predicted2018SocialGeographyQuestions,
+  predicted2018SocialEconomicsQuestions,
+  predicted2018SocialCivicsQuestions,
+  predicted2018SocialScholasticAptitudeQuestions,
 } from '@/data/predicted2018MatricQuestions';
 
 const PredictedMatricPage = () => {
@@ -25,12 +31,18 @@ const PredictedMatricPage = () => {
     { subject: 'Chemistry', questions: predicted2018NaturalChemistryQuestions, icon: '🧪' },
     { subject: 'Biology', questions: predicted2018NaturalBiologyQuestions, icon: '🧬' },
     { subject: 'English', questions: predicted2018NaturalEnglishQuestions, icon: '📚' },
+    { subject: 'Civics', questions: predicted2018NaturalCivicsQuestions, icon: '⚖️' },
+    { subject: 'Scholastic Aptitude Test', questions: predicted2018NaturalScholasticAptitudeQuestions, icon: '🧠' },
   ];
 
   const socialSubjects = [
     { subject: 'Mathematics', questions: predicted2018SocialMathQuestions, icon: '📐' },
     { subject: 'English', questions: predicted2018SocialEnglishQuestions, icon: '📚' },
     { subject: 'History', questions: predicted2018SocialHistoryQuestions, icon: '🏛️' },
+    { subject: 'Geography', questions: predicted2018SocialGeographyQuestions, icon: '🌍' },
+    { subject: 'Economics', questions: predicted2018SocialEconomicsQuestions, icon: '💰' },
+    { subject: 'Civics', questions: predicted2018SocialCivicsQuestions, icon: '⚖️' },
+    { subject: 'Scholastic Aptitude Test', questions: predicted2018SocialScholasticAptitudeQuestions, icon: '🧠' },
   ];
 
   const handleSubjectClick = (stream: string, subject: string) => {

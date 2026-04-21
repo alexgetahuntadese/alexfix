@@ -12,9 +12,15 @@ import {
   predicted2018NaturalChemistryQuestions,
   predicted2018NaturalBiologyQuestions,
   predicted2018NaturalEnglishQuestions,
+  predicted2018NaturalCivicsQuestions,
+  predicted2018NaturalScholasticAptitudeQuestions,
   predicted2018SocialMathQuestions,
   predicted2018SocialEnglishQuestions,
   predicted2018SocialHistoryQuestions,
+  predicted2018SocialGeographyQuestions,
+  predicted2018SocialEconomicsQuestions,
+  predicted2018SocialCivicsQuestions,
+  predicted2018SocialScholasticAptitudeQuestions,
 } from '@/data/predicted2018MatricQuestions';
 import TopBar from '@/components/TopBar';
 import StarField from '@/components/StarField';
@@ -35,6 +41,10 @@ const getPredictedQuestions = (stream: string, subject: string): MatricExamQuest
         return predicted2018NaturalBiologyQuestions;
       case 'english':
         return predicted2018NaturalEnglishQuestions;
+      case 'civics':
+        return predicted2018NaturalCivicsQuestions;
+      case 'scholastic aptitude test':
+        return predicted2018NaturalScholasticAptitudeQuestions;
       default:
         return [];
     }
@@ -46,6 +56,14 @@ const getPredictedQuestions = (stream: string, subject: string): MatricExamQuest
         return predicted2018SocialEnglishQuestions;
       case 'history':
         return predicted2018SocialHistoryQuestions;
+      case 'geography':
+        return predicted2018SocialGeographyQuestions;
+      case 'economics':
+        return predicted2018SocialEconomicsQuestions;
+      case 'civics':
+        return predicted2018SocialCivicsQuestions;
+      case 'scholastic aptitude test':
+        return predicted2018SocialScholasticAptitudeQuestions;
       default:
         return [];
     }

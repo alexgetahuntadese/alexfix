@@ -1111,6 +1111,498 @@ export const predicted2018SocialEnglishQuestions: MatricExamQuestion[] = [
   }
 ];
 
+export const predicted2018SocialGeographyQuestions: MatricExamQuestion[] = [
+  {
+    id: "pred-2018-sgeo-1",
+    question: "What is the largest continent in the world by area?",
+    options: [
+      "Asia",
+      "Africa",
+      "Europe",
+      "North America"
+    ],
+    correctAnswer: 0,
+    explanation: "Asia is the largest continent by area, covering approximately 44.58 million square kilometers."
+  },
+  {
+    id: "pred-2018-sgeo-2",
+    question: "What is the longest river in the world?",
+    options: [
+      "Nile River",
+      "Amazon River",
+      "Yangtze River",
+      "Mississippi River"
+    ],
+    correctAnswer: 0,
+    explanation: "The Nile River in Africa is generally considered the longest river in the world at approximately 6,650 kilometers."
+  },
+  {
+    id: "pred-2018-sgeo-3",
+    question: "What is the capital city of Ethiopia?",
+    options: [
+      "Addis Ababa",
+      "Dire Dawa",
+      "Mekelle",
+      "Bahir Dar"
+    ],
+    correctAnswer: 0,
+    explanation: "Addis Ababa is the capital and largest city of Ethiopia, founded in 1886."
+  },
+  {
+    id: "pred-2018-sgeo-4",
+    question: "What type of climate does Ethiopia have?",
+    options: [
+      "Tropical monsoon climate",
+      "Desert climate",
+      "Temperate climate",
+      "Polar climate"
+    ],
+    correctAnswer: 0,
+    explanation: "Ethiopia has a tropical monsoon climate with variations due to its diverse topography and altitude."
+  },
+  {
+    id: "pred-2018-sgeo-5",
+    question: "What is the Great Rift Valley?",
+    options: [
+      "A geological feature extending from Lebanon to Mozambique",
+      "A mountain range in Europe",
+      "A desert in Africa",
+      "A river in South America"
+    ],
+    correctAnswer: 0,
+    explanation: "The Great Rift Valley is a geological feature that extends from Lebanon in the north to Mozambique in the south, passing through Ethiopia."
+  },
+  {
+    id: "pred-2018-sgeo-6",
+    question: "What is the highest peak in Ethiopia?",
+    options: [
+      "Ras Dashan",
+      "Mount Entoto",
+      "Mount Guna",
+      "Mount Chilalo"
+    ],
+    correctAnswer: 0,
+    explanation: "Ras Dashan is the highest peak in Ethiopia, reaching an elevation of 4,550 meters (14,928 feet)."
+  },
+  {
+    id: "pred-2018-sgeo-7",
+    question: "What is the primary economic activity in the Ethiopian highlands?",
+    options: [
+      "Agriculture",
+      "Mining",
+      "Fishing",
+      "Manufacturing"
+    ],
+    correctAnswer: 0,
+    explanation: "Agriculture is the primary economic activity in the Ethiopian highlands, with crops like teff, coffee, and various vegetables."
+  },
+  {
+    id: "pred-2018-sgeo-8",
+    question: "Which ocean borders Africa?",
+    options: [
+      "Atlantic Ocean",
+      "Pacific Ocean",
+      "Indian Ocean",
+      "Arctic Ocean"
+    ],
+    correctAnswer: 0,
+    explanation: "The Atlantic Ocean borders the western coast of Africa."
+  },
+  {
+    id: "pred-2018-sgeo-9",
+    question: "What is the population of Ethiopia approximately?",
+    options: [
+      "Over 120 million",
+      "Over 80 million",
+      "Over 50 million",
+      "Over 200 million"
+    ],
+    correctAnswer: 0,
+    explanation: "Ethiopia's population is over 120 million, making it the second most populous country in Africa."
+  },
+  {
+    id: "pred-2018-sgeo-10",
+    question: "What is the main cash crop of Ethiopia?",
+    options: [
+      "Coffee",
+      "Tea",
+      "Cocoa",
+      "Rubber"
+    ],
+    correctAnswer: 0,
+    explanation: "Coffee is Ethiopia's main cash crop and the country is believed to be the origin of coffee."
+  }
+];
+
+export const predicted2018SocialEconomicsQuestions: MatricExamQuestion[] = [
+  {
+    id: "pred-2018-secon-1",
+    question: "What is the primary goal of economics?",
+    options: [
+      "To study how societies allocate scarce resources",
+      "To print money",
+      "To control prices",
+      "To manage international trade only"
+    ],
+    correctAnswer: 0,
+    explanation: "Economics studies how societies allocate scarce resources to satisfy unlimited human wants and needs."
+  },
+  {
+    id: "pred-2018-secon-2",
+    question: "What is 'opportunity cost'?",
+    options: [
+      "The value of the next best alternative given up when making a choice",
+      "The cost of production",
+      "The price of a good",
+      "The tax on a product"
+    ],
+    correctAnswer: 0,
+    explanation: "Opportunity cost is the value of the next best alternative that is given up when making a decision."
+  },
+  {
+    id: "pred-2018-secon-3",
+    question: "What is 'supply and demand'?",
+    options: [
+      "Economic model showing relationship between quantity supplied and quantity demanded",
+      "Government price control",
+      "Tax collection method",
+      "Trade agreement"
+    ],
+    correctAnswer: 0,
+    explanation: "Supply and demand is an economic model that shows how price and quantity are determined in a market."
+  },
+  {
+    id: "pred-2018-secon-4",
+    question: "What is 'inflation'?",
+    options: [
+      "A general increase in prices over time",
+      "A decrease in prices",
+      "Economic growth",
+      "Low unemployment"
+    ],
+    correctAnswer: 0,
+    explanation: "Inflation is a general increase in the price level of goods and services over time."
+  },
+  {
+    id: "pred-2018-secon-5",
+    question: "What is 'GDP'?",
+    options: [
+      "Gross Domestic Product - total value of goods and services produced in a country",
+      "General Development Plan",
+      "Government Debt Payment",
+      "Global Development Program"
+    ],
+    correctAnswer: 0,
+    explanation: "GDP (Gross Domestic Product) measures the total value of all goods and services produced within a country in a given period."
+  },
+  {
+    id: "pred-2018-secon-6",
+    question: "What is 'unemployment'?",
+    options: [
+      "People who are actively seeking work but cannot find jobs",
+      "People who don't want to work",
+      "People who are retired",
+      "People who are students"
+    ],
+    correctAnswer: 0,
+    explanation: "Unemployment refers to people who are actively seeking work but are unable to find employment."
+  },
+  {
+    id: "pred-2018-secon-7",
+    question: "What is a 'market economy'?",
+    options: [
+      "Economic system where prices are determined by supply and demand",
+      "Government controls all prices",
+      "No private property allowed",
+      "Central planning only"
+    ],
+    correctAnswer: 0,
+    explanation: "In a market economy, prices and production are determined by supply and demand with minimal government intervention."
+  },
+  {
+    id: "pred-2018-secon-8",
+    question: "What is 'scarcity' in economics?",
+    options: [
+      "Limited resources compared to unlimited wants",
+      "Abundance of resources",
+      "Equal distribution",
+      "Government control"
+    ],
+    correctAnswer: 0,
+    explanation: "Scarcity is the fundamental economic problem of having limited resources to satisfy unlimited human wants."
+  },
+  {
+    id: "pred-2018-secon-9",
+    question: "What is 'taxation'?",
+    options: [
+      "Compulsory payments to government to fund public services",
+      "Voluntary donations",
+      "Private business revenue",
+      "Bank interest"
+    ],
+    correctAnswer: 0,
+    explanation: "Taxation is the compulsory collection of revenue by the government to fund public services and infrastructure."
+  },
+  {
+    id: "pred-2018-secon-10",
+    question: "What is 'international trade'?",
+    options: [
+      "Exchange of goods and services between countries",
+      "Trade within a country",
+      "Government spending",
+      "Local market transactions"
+    ],
+    correctAnswer: 0,
+    explanation: "International trade is the exchange of goods, services, and capital across national borders."
+  }
+];
+
+export const predicted2018SocialCivicsQuestions: MatricExamQuestion[] = [
+  {
+    id: "pred-2018-sciv-1",
+    question: "What is the purpose of government?",
+    options: [
+      "To maintain order, protect rights, and provide public services",
+      "To control citizens only",
+      "To collect taxes only",
+      "To enforce military rule"
+    ],
+    correctAnswer: 0,
+    explanation: "The purpose of government is to maintain social order, protect citizens' rights, and provide essential public services."
+  },
+  {
+    id: "pred-2018-sciv-2",
+    question: "What is 'sovereignty'?",
+    options: [
+      "The supreme authority of a state to govern itself",
+      "Economic power",
+      "Military strength",
+      "International influence"
+    ],
+    correctAnswer: 0,
+    explanation: "Sovereignty is the supreme authority of a state to govern itself without external interference."
+  },
+  {
+    id: "pred-2018-sciv-3",
+    question: "What are 'human rights'?",
+    options: [
+      "Fundamental rights inherent to all human beings",
+      "Rights granted by government",
+      "Rights of citizens only",
+      "Economic privileges"
+    ],
+    correctAnswer: 0,
+    explanation: "Human rights are fundamental rights and freedoms that belong to every person by virtue of being human."
+  },
+  {
+    id: "pred-2018-sciv-4",
+    question: "What is 'democracy'?",
+    options: [
+      "System of government by the whole population through elected representatives",
+      "Rule by one person",
+      "Military rule",
+      "No government"
+    ],
+    correctAnswer: 0,
+    explanation: "Democracy is a system of government where power is held by the people through elected representatives."
+  },
+  {
+    id: "pred-2018-sciv-5",
+    question: "What is the role of the legislative branch?",
+    options: [
+      "To make laws",
+      "To enforce laws",
+      "To interpret laws",
+      "To collect taxes"
+    ],
+    correctAnswer: 0,
+    explanation: "The legislative branch (parliament/congress) is responsible for making and passing laws."
+  },
+  {
+    id: "pred-2018-sciv-6",
+    question: "What is 'political participation'?",
+    options: [
+      "Citizens taking part in political processes like voting and campaigning",
+      "Watching politics on TV",
+      "Reading news only",
+      "Ignoring politics"
+    ],
+    correctAnswer: 0,
+    explanation: "Political participation involves citizens actively engaging in political processes such as voting, campaigning, and public debate."
+  },
+  {
+    id: "pred-2018-sciv-7",
+    question: "What is 'social justice'?",
+    options: [
+      "Fair and just relations between individuals and society",
+      "Economic inequality",
+      "Social discrimination",
+      "Military power"
+    ],
+    correctAnswer: 0,
+    explanation: "Social justice refers to fair and just relations between individuals and society, including fair distribution of wealth and opportunities."
+  },
+  {
+    id: "pred-2018-sciv-8",
+    question: "What is 'civic responsibility'?",
+    options: [
+      "Duties of citizens to contribute to their community",
+      "Rights only",
+      "Government duties only",
+      "Military service only"
+    ],
+    correctAnswer: 0,
+    explanation: "Civic responsibility refers to the duties of citizens to actively participate in their community and contribute to the common good."
+  },
+  {
+    id: "pred-2018-sciv-9",
+    question: "What is 'public policy'?",
+    options: [
+      "Government actions and decisions to address public problems",
+      "Private business decisions",
+      "Individual choices",
+      "International agreements only"
+    ],
+    correctAnswer: 0,
+    explanation: "Public policy consists of government actions, decisions, and laws designed to address societal problems."
+  },
+  {
+    id: "pred-2018-sciv-10",
+    question: "What is the importance of civic education?",
+    options: [
+      "To prepare citizens to participate effectively in democratic society",
+      "To teach only history",
+      "To promote military training",
+      "To control citizens"
+    ],
+    correctAnswer: 0,
+    explanation: "Civic education prepares citizens to participate effectively in democratic processes and understand their rights and responsibilities."
+  }
+];
+
+export const predicted2018SocialScholasticAptitudeQuestions: MatricExamQuestion[] = [
+  {
+    id: "pred-2018-ssat-1",
+    question: "Complete the analogy: Ocean is to Water as Forest is to ____",
+    options: [
+      "Trees",
+      "Animals",
+      "Birds",
+      "Soil"
+    ],
+    correctAnswer: 0,
+    explanation: "An ocean is a body of water, just as a forest is a collection of trees. This is a composition-based analogy."
+  },
+  {
+    id: "pred-2018-ssat-2",
+    question: "If all X are Y and some Y are Z, then some X are definitely Z.",
+    options: [
+      "False",
+      "True",
+      "Cannot be determined",
+      "Sometimes true"
+    ],
+    correctAnswer: 0,
+    explanation: "This is not necessarily true. X could be a subset of Y that doesn't overlap with the 'some Y' that are Z."
+  },
+  {
+    id: "pred-2018-ssat-3",
+    question: "Choose the word that is most similar in meaning to 'Ubiquitous':",
+    options: [
+      "Omnipresent",
+      "Rare",
+      "Unique",
+      "Scarce"
+    ],
+    correctAnswer: 0,
+    explanation: "Ubiquitous means present, appearing, or found everywhere, which is synonymous with omnipresent."
+  },
+  {
+    id: "pred-2018-ssat-4",
+    question: "What number comes next in the sequence: 3, 9, 27, 81, ____",
+    options: [
+      "243",
+      "162",
+      "324",
+      "108"
+    ],
+    correctAnswer: 0,
+    explanation: "The pattern is multiplying by 3: 3×3=9, 9×3=27, 27×3=81, 81×3=243."
+  },
+  {
+    id: "pred-2018-ssat-5",
+    question: "If 3 machines produce 15 toys in 5 hours, how many toys will 6 machines produce in 10 hours?",
+    options: [
+      "60",
+      "30",
+      "45",
+      "75"
+    ],
+    correctAnswer: 0,
+    explanation: "3 machines × 5 hours = 15 toys, so 1 machine produces 1 toy per hour. 6 machines × 10 hours = 60 toys."
+  },
+  {
+    id: "pred-2018-ssat-6",
+    question: "Choose the word that is most opposite in meaning to 'Meticulous':",
+    options: [
+      "Careless",
+      "Careful",
+      "Detailed",
+      "Thorough"
+    ],
+    correctAnswer: 0,
+    explanation: "Meticulous means showing great attention to detail. Careless is the opposite."
+  },
+  {
+    id: "pred-2018-ssat-7",
+    question: "What is the next term in the sequence: 2, 4, 8, 16, 32, ____",
+    options: [
+      "64",
+      "48",
+      "56",
+      "96"
+    ],
+    correctAnswer: 0,
+    explanation: "The pattern is doubling each time: 2×2=4, 4×2=8, 8×2=16, 16×2=32, 32×2=64."
+  },
+  {
+    id: "pred-2018-ssat-8",
+    question: "If a car uses 8 liters of fuel for 100 km, how many liters will it use for 250 km?",
+    options: [
+      "20 liters",
+      "16 liters",
+      "25 liters",
+      "32 liters"
+    ],
+    correctAnswer: 0,
+    explanation: "Fuel consumption is proportional to distance. 8L/100km × 250km = 20L."
+  },
+  {
+    id: "pred-2018-ssat-9",
+    question: "Complete the analogy: Library is to Books as Museum is to ____",
+    options: [
+      "Artifacts",
+      "Visitors",
+      "Tickets",
+      "Building"
+    ],
+    correctAnswer: 0,
+    explanation: "A library houses books, just as a museum houses artifacts. This is a content-based analogy."
+  },
+  {
+    id: "pred-2018-ssat-10",
+    question: "What is the perimeter of a square with side 9 cm?",
+    options: [
+      "36 cm",
+      "18 cm",
+      "81 cm",
+      "27 cm"
+    ],
+    correctAnswer: 0,
+    explanation: "Perimeter of a square = 4 × side = 4 × 9 = 36 cm."
+  }
+];
+
 export const predicted2018SocialHistoryQuestions: MatricExamQuestion[] = [
   {
     id: "pred-2018-hist-1",
