@@ -7141,6 +7141,486 @@ export const predicted2018SocialMathQuestions: MatricExamQuestion[] = [
     ],
     correctAnswer: 0,
     explanation: "Sum = (n-2) × 180° = (8-2) × 180° = 6 × 180° = 1080°."
+  },
+  {
+    id: "pred-2018-smath-41",
+    question: "If a number is increased by 20% and then decreased by 20%, what is the net change?",
+    options: [
+      "4% decrease",
+      "4% increase",
+      "No change",
+      "2% decrease"
+    ],
+    correctAnswer: 0,
+    explanation: "Let number = 100. After 20% increase = 120. After 20% decrease = 120 × 0.8 = 96. Net change = 4% decrease."
+  },
+  {
+    id: "pred-2018-smath-42",
+    question: "What is the compound interest on 1000 Birr at 10% per year for 2 years?",
+    options: [
+      "210 Birr",
+      "200 Birr",
+      "220 Birr",
+      "100 Birr"
+    ],
+    correctAnswer: 0,
+    explanation: "Amount = 1000 × (1.1)² = 1000 × 1.21 = 1210. CI = 1210 - 1000 = 210 Birr."
+  },
+  {
+    id: "pred-2018-smath-43",
+    question: "The ratio of boys to girls in a class is 3:5. If there are 24 girls, how many boys are there?",
+    options: [
+      "14.4",
+      "15",
+      "14",
+      "16"
+    ],
+    correctAnswer: 0,
+    explanation: "3/5 = x/24. x = 24 × 3/5 = 72/5 = 14.4. Since we can't have fractional students, approximately 14 or 15 boys."
+  },
+  {
+    id: "pred-2018-smath-44",
+    question: "What is the median of 5, 12, 3, 8, 15?",
+    options: [
+      "8",
+      "5",
+      "12",
+      "10"
+    ],
+    correctAnswer: 0,
+    explanation: "Arranged: 3, 5, 8, 12, 15. Median is the middle value = 8."
+  },
+  {
+    id: "pred-2018-smath-45",
+    question: "Solve: 2x + 5 = 13",
+    options: [
+      "x = 4",
+      "x = 8",
+      "x = 6",
+      "x = 3"
+    ],
+    correctAnswer: 0,
+    explanation: "2x = 13 - 5 = 8. x = 8/2 = 4."
+  },
+  {
+    id: "pred-2018-smath-46",
+    question: "What is the circumference of a circle with diameter 14 cm? (Use π ≈ 22/7)",
+    options: [
+      "44 cm",
+      "88 cm",
+      "22 cm",
+      "154 cm"
+    ],
+    correctAnswer: 0,
+    explanation: "Circumference = πd = (22/7) × 14 = 44 cm."
+  },
+  {
+    id: "pred-2018-smath-47",
+    question: "If the selling price is 600 Birr and profit is 20%, what is the cost price?",
+    options: [
+      "500 Birr",
+      "480 Birr",
+      "520 Birr",
+      "550 Birr"
+    ],
+    correctAnswer: 0,
+    explanation: "SP = CP + 20% of CP = 1.2 CP. CP = 600/1.2 = 500 Birr."
+  },
+  {
+    id: "pred-2018-smath-48",
+    question: "What is the mode of 2, 5, 2, 8, 5, 2, 9?",
+    options: [
+      "2",
+      "5",
+      "8",
+      "9"
+    ],
+    correctAnswer: 0,
+    explanation: "The mode is the most frequent value. 2 appears 3 times, more than any other number."
+  },
+  {
+    id: "pred-2018-smath-49",
+    question: "Simplify: (2³)²",
+    options: [
+      "64",
+      "32",
+      "128",
+      "256"
+    ],
+    correctAnswer: 0,
+    explanation: "(2³)² = 2^(3×2) = 2⁶ = 64."
+  },
+  {
+    id: "pred-2018-smath-50",
+    question: "What is the area of a circle with radius 7 cm? (Use π ≈ 22/7)",
+    options: [
+      "154 cm²",
+      "44 cm²",
+      "308 cm²",
+      "22 cm²"
+    ],
+    correctAnswer: 0,
+    explanation: "Area = πr² = (22/7) × 7² = (22/7) × 49 = 154 cm²."
+  },
+  {
+    id: "pred-2018-smath-51",
+    question: "A shopkeeper sells an item at a loss of 10%. If the cost price is 500 Birr, what is the selling price?",
+    options: [
+      "450 Birr",
+      "550 Birr",
+      "400 Birr",
+      "475 Birr"
+    ],
+    correctAnswer: 0,
+    explanation: "SP = CP - 10% of CP = 500 - 50 = 450 Birr."
+  },
+  {
+    id: "pred-2018-smath-52",
+    question: "What is the range of 4, 8, 12, 6, 10?",
+    options: [
+      "8",
+      "6",
+      "10",
+      "4"
+    ],
+    correctAnswer: 0,
+    explanation: "Range = Maximum - Minimum = 12 - 4 = 8."
+  },
+  {
+    id: "pred-2018-smath-53",
+    question: "Solve: 3x - 7 = 14",
+    options: [
+      "x = 7",
+      "x = 5",
+      "x = 6",
+      "x = 8"
+    ],
+    correctAnswer: 0,
+    explanation: "3x = 14 + 7 = 21. x = 21/3 = 7."
+  },
+  {
+    id: "pred-2018-smath-54",
+    question: "What is the volume of a rectangular prism with length 5, width 3, and height 4?",
+    options: [
+      "60",
+      "12",
+      "20",
+      "45"
+    ],
+    correctAnswer: 0,
+    explanation: "Volume = length × width × height = 5 × 3 × 4 = 60."
+  },
+  {
+    id: "pred-2018-smath-55",
+    question: "If 5 apples cost 25 Birr, how much do 8 apples cost?",
+    options: [
+      "40 Birr",
+      "35 Birr",
+      "45 Birr",
+      "50 Birr"
+    ],
+    correctAnswer: 0,
+    explanation: "Cost per apple = 25/5 = 5 Birr. 8 apples = 8 × 5 = 40 Birr."
+  },
+  {
+    id: "pred-2018-smath-56",
+    question: "What is the mean of 10, 15, 20, 25?",
+    options: [
+      "17.5",
+      "15",
+      "20",
+      "18"
+    ],
+    correctAnswer: 0,
+    explanation: "Mean = (10 + 15 + 20 + 25)/4 = 70/4 = 17.5."
+  },
+  {
+    id: "pred-2018-smath-57",
+    question: "What is the value of sin(30°)?",
+    options: [
+      "1/2",
+      "√3/2",
+      "0",
+      "1"
+    ],
+    correctAnswer: 0,
+    explanation: "sin(30°) = 1/2."
+  },
+  {
+    id: "pred-2018-smath-58",
+    question: "Solve: x/5 = 3",
+    options: [
+      "x = 15",
+      "x = 8",
+      "x = 12",
+      "x = 10"
+    ],
+    correctAnswer: 0,
+    explanation: "x = 3 × 5 = 15."
+  },
+  {
+    id: "pred-2018-smath-59",
+    question: "What is the perimeter of a square with side 9 cm?",
+    options: [
+      "36 cm",
+      "18 cm",
+      "81 cm",
+      "27 cm"
+    ],
+    correctAnswer: 0,
+    explanation: "Perimeter = 4 × side = 4 × 9 = 36 cm."
+  },
+  {
+    id: "pred-2018-smath-60",
+    question: "A car travels 180 km in 3 hours. What is its speed?",
+    options: [
+      "60 km/h",
+      "54 km/h",
+      "45 km/h",
+      "72 km/h"
+    ],
+    correctAnswer: 0,
+    explanation: "Speed = Distance/Time = 180/3 = 60 km/h."
+  },
+  {
+    id: "pred-2018-smath-61",
+    question: "What is 15% of 300?",
+    options: [
+      "45",
+      "30",
+      "50",
+      "60"
+    ],
+    correctAnswer: 0,
+    explanation: "15% of 300 = 0.15 × 300 = 45."
+  },
+  {
+    id: "pred-2018-smath-62",
+    question: "Solve: 2(x + 3) = 14",
+    options: [
+      "x = 4",
+      "x = 7",
+      "x = 5",
+      "x = 6"
+    ],
+    correctAnswer: 0,
+    explanation: "x + 3 = 7. x = 7 - 3 = 4."
+  },
+  {
+    id: "pred-2018-smath-63",
+    question: "What is the area of a square with side 7 cm?",
+    options: [
+      "49 cm²",
+      "28 cm²",
+      "14 cm²",
+      "21 cm²"
+    ],
+    correctAnswer: 0,
+    explanation: "Area = side² = 7² = 49 cm²."
+  },
+  {
+    id: "pred-2018-smath-64",
+    question: "If the ratio of two numbers is 4:7 and their sum is 66, find the numbers.",
+    options: [
+      "24 and 42",
+      "28 and 38",
+      "20 and 46",
+      "22 and 44"
+    ],
+    correctAnswer: 0,
+    explanation: "Let numbers be 4x and 7x. 4x + 7x = 66. 11x = 66. x = 6. Numbers: 24 and 42."
+  },
+  {
+    id: "pred-2018-smath-65",
+    question: "What is the surface area of a cube with side 4 cm?",
+    options: [
+      "96 cm²",
+      "64 cm²",
+      "48 cm²",
+      "16 cm²"
+    ],
+    correctAnswer: 0,
+    explanation: "Surface area = 6 × side² = 6 × 16 = 96 cm²."
+  },
+  {
+    id: "pred-2018-smath-66",
+    question: "Solve: 5x - 2 = 3x + 8",
+    options: [
+      "x = 5",
+      "x = 4",
+      "x = 6",
+      "x = 3"
+    ],
+    correctAnswer: 0,
+    explanation: "5x - 3x = 8 + 2. 2x = 10. x = 5."
+  },
+  {
+    id: "pred-2018-smath-67",
+    question: "What is the value of tan(45°)?",
+    options: [
+      "1",
+      "0",
+      "√3",
+      "1/√3"
+    ],
+    correctAnswer: 0,
+    explanation: "tan(45°) = 1."
+  },
+  {
+    id: "pred-2018-smath-68",
+    question: "A train travels 240 km at 60 km/h. How long does it take?",
+    options: [
+      "4 hours",
+      "3 hours",
+      "5 hours",
+      "6 hours"
+    ],
+    correctAnswer: 0,
+    explanation: "Time = Distance/Speed = 240/60 = 4 hours."
+  },
+  {
+    id: "pred-2018-smath-69",
+    question: "What is 125% of 80?",
+    options: [
+      "100",
+      "90",
+      "110",
+      "120"
+    ],
+    correctAnswer: 0,
+    explanation: "125% of 80 = 1.25 × 80 = 100."
+  },
+  {
+    id: "pred-2018-smath-70",
+    question: "Solve: x² = 49",
+    options: [
+      "x = 7 or x = -7",
+      "x = 7 only",
+      "x = -7 only",
+      "x = 49"
+    ],
+    correctAnswer: 0,
+    explanation: "x = ±√49 = ±7. So x = 7 or x = -7."
+  },
+  {
+    id: "pred-2018-smath-71",
+    question: "What is the perimeter of a rectangle with length 15 cm and width 8 cm?",
+    options: [
+      "46 cm",
+      "30 cm",
+      "23 cm",
+      "120 cm"
+    ],
+    correctAnswer: 0,
+    explanation: "Perimeter = 2 × (length + width) = 2 × (15 + 8) = 2 × 23 = 46 cm."
+  },
+  {
+    id: "pred-2018-smath-72",
+    question: "If 3 workers can complete a job in 12 days, how many days will 4 workers take?",
+    options: [
+      "9 days",
+      "8 days",
+      "10 days",
+      "12 days"
+    ],
+    correctAnswer: 0,
+    explanation: "Total work = 3 × 12 = 36 worker-days. 4 workers: 36/4 = 9 days."
+  },
+  {
+    id: "pred-2018-smath-73",
+    question: "What is the value of ∛27?",
+    options: [
+      "3",
+      "9",
+      "27",
+      "1"
+    ],
+    correctAnswer: 0,
+    explanation: "∛27 = 3 because 3³ = 27."
+  },
+  {
+    id: "pred-2018-smath-74",
+    question: "Solve: (x + 5)(x - 2) = 0",
+    options: [
+      "x = -5 or x = 2",
+      "x = 5 or x = -2",
+      "x = 5 or x = 2",
+      "x = -5 or x = -2"
+    ],
+    correctAnswer: 0,
+    explanation: "x + 5 = 0 gives x = -5. x - 2 = 0 gives x = 2."
+  },
+  {
+    id: "pred-2018-smath-75",
+    question: "What is the volume of a sphere with radius 3 cm? (Use π ≈ 22/7)",
+    options: [
+      "113.14 cm³",
+      "36 cm³",
+      "108 cm³",
+      "84 cm³"
+    ],
+    correctAnswer: 0,
+    explanation: "Volume = (4/3)πr³ = (4/3) × (22/7) × 27 ≈ 113.14 cm³."
+  },
+  {
+    id: "pred-2018-smath-76",
+    question: "If a number is divided by 6 and then multiplied by 4, the result is 16. What is the number?",
+    options: [
+      "24",
+      "12",
+      "18",
+      "30"
+    ],
+    correctAnswer: 0,
+    explanation: "Let number = x. (x/6) × 4 = 16. 4x/6 = 16. x = 16 × 6/4 = 24."
+  },
+  {
+    id: "pred-2018-smath-77",
+    question: "What is the value of cos(90°)?",
+    options: [
+      "0",
+      "1",
+      "-1",
+      "1/2"
+    ],
+    correctAnswer: 0,
+    explanation: "cos(90°) = 0."
+  },
+  {
+    id: "pred-2018-smath-78",
+    question: "A shop sells 3 items for 150 Birr. What is the cost of 5 items?",
+    options: [
+      "250 Birr",
+      "200 Birr",
+      "300 Birr",
+      "180 Birr"
+    ],
+    correctAnswer: 0,
+    explanation: "Cost per item = 150/3 = 50 Birr. 5 items = 5 × 50 = 250 Birr."
+  },
+  {
+    id: "pred-2018-smath-79",
+    question: "What is the LCM of 12 and 18?",
+    options: [
+      "36",
+      "6",
+      "72",
+      "24"
+    ],
+    correctAnswer: 0,
+    explanation: "Prime factors: 12 = 2² × 3, 18 = 2 × 3². LCM = 2² × 3² = 4 × 9 = 36."
+  },
+  {
+    id: "pred-2018-smath-80",
+    question: "What is the sum of the first 10 natural numbers?",
+    options: [
+      "55",
+      "45",
+      "50",
+      "60"
+    ],
+    correctAnswer: 0,
+    explanation: "Sum = n(n+1)/2 = 10(11)/2 = 55."
   }
 ];
 

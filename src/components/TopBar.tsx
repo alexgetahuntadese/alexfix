@@ -35,8 +35,9 @@ const TopBar = () => {
     { path: '/books', icon: Download, label: 'Books' },
     { path: '/career-simulator', icon: Briefcase, label: 'Career' },
     { path: '/contact', icon: Phone, label: 'Contact' },
-    ...(isAdmin ? [{ path: '/dashboard', icon: User, label: 'Dashboard' }, { path: '/teachers', icon: Users, label: 'Teachers' }] : []),
-  ], [isAdmin]);
+    ...(isAdmin ? [{ path: '/dashboard', icon: User, label: 'Dashboard' }] : []),
+    ...(isAuthenticated ? [{ path: '/teachers', icon: Users, label: 'Teachers' }] : []),
+  ], [isAdmin, isAuthenticated]);
 
   const mobileAccountItems = useMemo(() => [
     ...(isAuthenticated ? [{ path: '/profile', icon: User, label: 'Profile' }] : []),
