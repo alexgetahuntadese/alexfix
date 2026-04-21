@@ -484,6 +484,486 @@ export const predicted2018NaturalMathQuestions: MatricExamQuestion[] = [
     ],
     correctAnswer: 0,
     explanation: "Sum = (n-2) × 180° = (5-2) × 180° = 3 × 180° = 540°."
+  },
+  {
+    id: "pred-2018-math-41",
+    question: "What is log₁₀(100)?",
+    options: [
+      "2",
+      "10",
+      "100",
+      "1"
+    ],
+    correctAnswer: 0,
+    explanation: "log₁₀(100) = 2 because 10² = 100."
+  },
+  {
+    id: "pred-2018-math-42",
+    question: "Simplify: √(-16)",
+    options: [
+      "4i",
+      "-4",
+      "4",
+      "-4i"
+    ],
+    correctAnswer: 0,
+    explanation: "√(-16) = √(16) × √(-1) = 4i, where i is the imaginary unit."
+  },
+  {
+    id: "pred-2018-math-43",
+    question: "What is 5! (5 factorial)?",
+    options: [
+      "120",
+      "25",
+      "60",
+      "20"
+    ],
+    correctAnswer: 0,
+    explanation: "5! = 5 × 4 × 3 × 2 × 1 = 120."
+  },
+  {
+    id: "pred-2018-math-44",
+    question: "Find the mean of 5, 10, 15, 20, 25.",
+    options: [
+      "15",
+      "10",
+      "20",
+      "12"
+    ],
+    correctAnswer: 0,
+    explanation: "Mean = (5+10+15+20+25)/5 = 75/5 = 15."
+  },
+  {
+    id: "pred-2018-math-45",
+    question: "What is the median of 3, 7, 2, 9, 5?",
+    options: [
+      "5",
+      "3",
+      "7",
+      "9"
+    ],
+    correctAnswer: 0,
+    explanation: "Arrange in order: 2, 3, 5, 7, 9. Median is the middle value: 5."
+  },
+  {
+    id: "pred-2018-math-46",
+    question: "What is the mode of 2, 3, 2, 5, 2, 7?",
+    options: [
+      "2",
+      "3",
+      "5",
+      "7"
+    ],
+    correctAnswer: 0,
+    explanation: "Mode is the most frequent value. 2 appears three times, more than any other number."
+  },
+  {
+    id: "pred-2018-math-47",
+    question: "If f(x) = 2x + 3, what is f(5)?",
+    options: [
+      "13",
+      "10",
+      "8",
+      "15"
+    ],
+    correctAnswer: 0,
+    explanation: "f(5) = 2(5) + 3 = 10 + 3 = 13."
+  },
+  {
+    id: "pred-2018-math-48",
+    question: "What is the distance between points (0, 0) and (3, 4)?",
+    options: [
+      "5",
+      "7",
+      "6",
+      "4"
+    ],
+    correctAnswer: 0,
+    explanation: "Distance = √((3-0)² + (4-0)²) = √(9 + 16) = √25 = 5."
+  },
+  {
+    id: "pred-2018-math-49",
+    question: "What is the value of 0! (0 factorial)?",
+    options: [
+      "1",
+      "0",
+      "undefined",
+      "infinity"
+    ],
+    correctAnswer: 0,
+    explanation: "By definition, 0! = 1."
+  },
+  {
+    id: "pred-2018-math-50",
+    question: "Simplify: 2³ × 2⁴",
+    options: [
+      "128",
+      "64",
+      "256",
+      "32"
+    ],
+    correctAnswer: 0,
+    explanation: "2³ × 2⁴ = 2³⁺⁴ = 2⁷ = 128."
+  },
+  {
+    id: "pred-2018-math-51",
+    question: "What is sin(30°)?",
+    options: [
+      "1/2",
+      "√3/2",
+      "1",
+      "0"
+    ],
+    correctAnswer: 0,
+    explanation: "sin(30°) = 1/2."
+  },
+  {
+    id: "pred-2018-math-52",
+    question: "What is cos(30°)?",
+    options: [
+      "√3/2",
+      "1/2",
+      "1",
+      "0"
+    ],
+    correctAnswer: 0,
+    explanation: "cos(30°) = √3/2."
+  },
+  {
+    id: "pred-2018-math-53",
+    question: "Find the sum of the first 10 natural numbers.",
+    options: [
+      "55",
+      "45",
+      "50",
+      "60"
+    ],
+    correctAnswer: 0,
+    explanation: "Sum = n(n+1)/2 = 10(11)/2 = 55."
+  },
+  {
+    id: "pred-2018-math-54",
+    question: "What is the standard deviation of 2, 4, 6, 8?",
+    options: [
+      "2.24",
+      "2",
+      "4",
+      "1.41"
+    ],
+    correctAnswer: 0,
+    explanation: "Mean = 5. Variance = ((2-5)²+(4-5)²+(6-5)²+(8-5)²)/4 = (9+1+1+9)/4 = 5. SD = √5 ≈ 2.24."
+  },
+  {
+    id: "pred-2018-math-55",
+    question: "What is the probability of getting heads on a fair coin?",
+    options: [
+      "1/2",
+      "1/4",
+      "1",
+      "0"
+    ],
+    correctAnswer: 0,
+    explanation: "A fair coin has two equally likely outcomes, so P(heads) = 1/2."
+  },
+  {
+    id: "pred-2018-math-56",
+    question: "Simplify: (x + 3)(x - 3)",
+    options: [
+      "x² - 9",
+      "x² + 9",
+      "x² - 6x + 9",
+      "x² + 6x + 9"
+    ],
+    correctAnswer: 0,
+    explanation: "(x + 3)(x - 3) = x² - 3x + 3x - 9 = x² - 9 (difference of squares)."
+  },
+  {
+    id: "pred-2018-math-57",
+    question: "What is the value of log₂(8)?",
+    options: [
+      "3",
+      "8",
+      "2",
+      "4"
+    ],
+    correctAnswer: 0,
+    explanation: "log₂(8) = 3 because 2³ = 8."
+  },
+  {
+    id: "pred-2018-math-58",
+    question: "Find the area of a circle with radius 7 cm.",
+    options: [
+      "154 cm²",
+      "44 cm²",
+      "49 cm²",
+      "21 cm²"
+    ],
+    correctAnswer: 0,
+    explanation: "Area = πr² = π(7)² = 49π ≈ 154 cm² (using π ≈ 22/7)."
+  },
+  {
+    id: "pred-2018-math-59",
+    question: "What is the circumference of a circle with radius 7 cm?",
+    options: [
+      "44 cm",
+      "154 cm",
+      "49 cm",
+      "14 cm"
+    ],
+    correctAnswer: 0,
+    explanation: "Circumference = 2πr = 2π(7) = 14π ≈ 44 cm (using π ≈ 22/7)."
+  },
+  {
+    id: "pred-2018-math-60",
+    question: "Solve: 2x + 5 = 13",
+    options: [
+      "x = 4",
+      "x = 5",
+      "x = 3",
+      "x = 6"
+    ],
+    correctAnswer: 0,
+    explanation: "2x = 13 - 5 = 8. x = 8/2 = 4."
+  },
+  {
+    id: "pred-2018-math-61",
+    question: "What is the range of the function f(x) = x²?",
+    options: [
+      "All non-negative real numbers",
+      "All real numbers",
+      "Positive real numbers only",
+      "Negative real numbers only"
+    ],
+    correctAnswer: 0,
+    explanation: "f(x) = x² always produces non-negative values (0 and positive numbers)."
+  },
+  {
+    id: "pred-2018-math-62",
+    question: "What is the domain of the function f(x) = √(x - 4)?",
+    options: [
+      "x ≥ 4",
+      "x > 4",
+      "x ≤ 4",
+      "All real numbers"
+    ],
+    correctAnswer: 0,
+    explanation: "The expression under the square root must be non-negative: x - 4 ≥ 0, so x ≥ 4."
+  },
+  {
+    id: "pred-2018-math-63",
+    question: "What is the value of sin(90°)?",
+    options: [
+      "1",
+      "0",
+      "1/2",
+      "√3/2"
+    ],
+    correctAnswer: 0,
+    explanation: "sin(90°) = 1."
+  },
+  {
+    id: "pred-2018-math-64",
+    question: "What is the value of cos(90°)?",
+    options: [
+      "0",
+      "1",
+      "1/2",
+      "√3/2"
+    ],
+    correctAnswer: 0,
+    explanation: "cos(90°) = 0."
+  },
+  {
+    id: "pred-2018-math-65",
+    question: "Find the sum of the first 5 even numbers.",
+    options: [
+      "30",
+      "20",
+      "25",
+      "35"
+    ],
+    correctAnswer: 0,
+    explanation: "First 5 even numbers: 2, 4, 6, 8, 10. Sum = 30."
+  },
+  {
+    id: "pred-2018-math-66",
+    question: "What is the probability of rolling a 6 on a fair die?",
+    options: [
+      "1/6",
+      "1/3",
+      "1/2",
+      "1/4"
+    ],
+    correctAnswer: 0,
+    explanation: "A fair die has 6 equally likely outcomes, so P(6) = 1/6."
+  },
+  {
+    id: "pred-2018-math-67",
+    question: "Simplify: log₁₀(1000)",
+    options: [
+      "3",
+      "10",
+      "100",
+      "1000"
+    ],
+    correctAnswer: 0,
+    explanation: "log₁₀(1000) = 3 because 10³ = 1000."
+  },
+  {
+    id: "pred-2018-math-68",
+    question: "What is the sum of interior angles of a hexagon?",
+    options: [
+      "720°",
+      "540°",
+      "360°",
+      "900°"
+    ],
+    correctAnswer: 0,
+    explanation: "Sum = (n-2) × 180° = (6-2) × 180° = 4 × 180° = 720°."
+  },
+  {
+    id: "pred-2018-math-69",
+    question: "What is the perimeter of a rectangle with length 10 and width 5?",
+    options: [
+      "30",
+      "50",
+      "15",
+      "25"
+    ],
+    correctAnswer: 0,
+    explanation: "Perimeter = 2(l + w) = 2(10 + 5) = 2(15) = 30."
+  },
+  {
+    id: "pred-2018-math-70",
+    question: "What is the volume of a sphere with radius 3 cm?",
+    options: [
+      "36π cm³",
+      "27π cm³",
+      "9π cm³",
+      "18π cm³"
+    ],
+    correctAnswer: 0,
+    explanation: "Volume = (4/3)πr³ = (4/3)π(27) = 36π cm³."
+  },
+  {
+    id: "pred-2018-math-71",
+    question: "Solve: 3x - 7 = 14",
+    options: [
+      "x = 7",
+      "x = 5",
+      "x = 6",
+      "x = 8"
+    ],
+    correctAnswer: 0,
+    explanation: "3x = 14 + 7 = 21. x = 21/3 = 7."
+  },
+  {
+    id: "pred-2018-math-72",
+    question: "What is the y-intercept of y = 2x + 5?",
+    options: [
+      "5",
+      "2",
+      "0",
+      "-5"
+    ],
+    correctAnswer: 0,
+    explanation: "The y-intercept is the constant term when x = 0: y = 2(0) + 5 = 5."
+  },
+  {
+    id: "pred-2018-math-73",
+    question: "What is the x-intercept of y = 2x - 6?",
+    options: [
+      "3",
+      "-3",
+      "6",
+      "-6"
+    ],
+    correctAnswer: 0,
+    explanation: "Set y = 0: 0 = 2x - 6. 2x = 6. x = 3."
+  },
+  {
+    id: "pred-2018-math-74",
+    question: "What is the value of 6! ÷ 4!?",
+    options: [
+      "30",
+      "24",
+      "6",
+      "720"
+    ],
+    correctAnswer: 0,
+    explanation: "6! ÷ 4! = (6×5×4×3×2×1)/(4×3×2×1) = 6×5 = 30."
+  },
+  {
+    id: "pred-2018-math-75",
+    question: "Find the arithmetic mean of 4, 8, 12.",
+    options: [
+      "8",
+      "6",
+      "10",
+      "12"
+    ],
+    correctAnswer: 0,
+    explanation: "Mean = (4+8+12)/3 = 24/3 = 8."
+  },
+  {
+    id: "pred-2018-math-76",
+    question: "What is the geometric mean of 4 and 9?",
+    options: [
+      "6",
+      "6.5",
+      "5",
+      "7"
+    ],
+    correctAnswer: 0,
+    explanation: "Geometric mean = √(4×9) = √36 = 6."
+  },
+  {
+    id: "pred-2018-math-77",
+    question: "Simplify: (a²)³",
+    options: [
+      "a⁶",
+      "a⁵",
+      "a⁸",
+      "a⁹"
+    ],
+    correctAnswer: 0,
+    explanation: "(a²)³ = a²ˣ³ = a⁶."
+  },
+  {
+    id: "pred-2018-math-78",
+    question: "What is the surface area of a cube with side 4 cm?",
+    options: [
+      "96 cm²",
+      "64 cm²",
+      "48 cm²",
+      "16 cm²"
+    ],
+    correctAnswer: 0,
+    explanation: "Surface area = 6s² = 6(4)² = 6(16) = 96 cm²."
+  },
+  {
+    id: "pred-2018-math-79",
+    question: "What is the value of log₅(25)?",
+    options: [
+      "2",
+      "5",
+      "25",
+      "10"
+    ],
+    correctAnswer: 0,
+    explanation: "log₅(25) = 2 because 5² = 25."
+  },
+  {
+    id: "pred-2018-math-80",
+    question: "Find the sum of the first 20 natural numbers.",
+    options: [
+      "210",
+      "200",
+      "190",
+      "220"
+    ],
+    correctAnswer: 0,
+    explanation: "Sum = n(n+1)/2 = 20(21)/2 = 210."
   }
 ];
 
@@ -967,6 +1447,486 @@ export const predicted2018NaturalPhysicsQuestions: MatricExamQuestion[] = [
     ],
     correctAnswer: 0,
     explanation: "Refractive index n = c/v, where c is speed of light in vacuum and v is speed in the medium."
+  },
+  {
+    id: "pred-2018-phy-41",
+    question: "What is the work done when a force of 10 N moves an object 5 m in the direction of the force?",
+    options: [
+      "50 J",
+      "15 J",
+      "2 J",
+      "100 J"
+    ],
+    correctAnswer: 0,
+    explanation: "Work = Force × Distance = 10 N × 5 m = 50 J."
+  },
+  {
+    id: "pred-2018-phy-42",
+    question: "What is the power if 100 J of work is done in 5 seconds?",
+    options: [
+      "20 W",
+      "500 W",
+      "5 W",
+      "100 W"
+    ],
+    correctAnswer: 0,
+    explanation: "Power = Work/Time = 100 J/5 s = 20 W."
+  },
+  {
+    id: "pred-2018-phy-43",
+    question: "What is the mechanical advantage of a machine that lifts 200 N with an effort of 50 N?",
+    options: [
+      "4",
+      "0.25",
+      "10",
+      "2.5"
+    ],
+    correctAnswer: 0,
+    explanation: "Mechanical Advantage = Load/Effort = 200/50 = 4."
+  },
+  {
+    id: "pred-2018-phy-44",
+    question: "What is the efficiency if output work is 80 J and input work is 100 J?",
+    options: [
+      "80%",
+      "100%",
+      "125%",
+      "20%"
+    ],
+    correctAnswer: 0,
+    explanation: "Efficiency = (Output/Input) × 100% = (80/100) × 100% = 80%."
+  },
+  {
+    id: "pred-2018-phy-45",
+    question: "What is the temperature in Celsius if it is 300 K?",
+    options: [
+      "27°C",
+      "-27°C",
+      "573°C",
+      "0°C"
+    ],
+    correctAnswer: 0,
+    explanation: "Celsius = Kelvin - 273 = 300 - 273 = 27°C."
+  },
+  {
+    id: "pred-2018-phy-46",
+    question: "What is the specific heat capacity if 1000 J raises 2 kg of water by 1°C?",
+    options: [
+      "500 J/kg°C",
+      "1000 J/kg°C",
+      "2000 J/kg°C",
+      "250 J/kg°C"
+    ],
+    correctAnswer: 0,
+    explanation: "Specific heat = Q/(m×ΔT) = 1000/(2×1) = 500 J/kg°C."
+  },
+  {
+    id: "pred-2018-phy-47",
+    question: "What is the frequency of a wave with wavelength 2 m and speed 10 m/s?",
+    options: [
+      "5 Hz",
+      "20 Hz",
+      "0.2 Hz",
+      "10 Hz"
+    ],
+    correctAnswer: 0,
+    explanation: "Frequency = Speed/Wavelength = 10/2 = 5 Hz."
+  },
+  {
+    id: "pred-2018-phy-48",
+    question: "What is the period of a wave with frequency 10 Hz?",
+    options: [
+      "0.1 s",
+      "10 s",
+      "1 s",
+      "0.01 s"
+    ],
+    correctAnswer: 0,
+    explanation: "Period = 1/Frequency = 1/10 = 0.1 s."
+  },
+  {
+    id: "pred-2018-phy-49",
+    question: "What is the speed of sound in air at room temperature?",
+    options: [
+      "343 m/s",
+      "300 m/s",
+      "400 m/s",
+      "350 m/s"
+    ],
+    correctAnswer: 0,
+    explanation: "The speed of sound in air at room temperature (20°C) is approximately 343 m/s."
+  },
+  {
+    id: "pred-2018-phy-50",
+    question: "What is the angle of incidence if the angle of reflection is 30°?",
+    options: [
+      "30°",
+      "60°",
+      "90°",
+      "0°"
+    ],
+    correctAnswer: 0,
+    explanation: "According to the law of reflection, angle of incidence = angle of reflection = 30°."
+  },
+  {
+    id: "pred-2018-phy-51",
+    question: "What is the focal length of a convex lens with power 2 diopters?",
+    options: [
+      "0.5 m",
+      "2 m",
+      "0.25 m",
+      "1 m"
+    ],
+    correctAnswer: 0,
+    explanation: "Focal length = 1/Power = 1/2 = 0.5 m."
+  },
+  {
+    id: "pred-2018-phy-52",
+    question: "What is the resistance of a wire with resistivity 10 Ωm, length 2 m, and cross-sectional area 0.1 m²?",
+    options: [
+      "200 Ω",
+      "20 Ω",
+      "0.5 Ω",
+      "50 Ω"
+    ],
+    correctAnswer: 0,
+    explanation: "Resistance = ρL/A = 10 × 2/0.1 = 200 Ω."
+  },
+  {
+    id: "pred-2018-phy-53",
+    question: "What is the current through a 100 Ω resistor with 10 V across it?",
+    options: [
+      "0.1 A",
+      "1 A",
+      "10 A",
+      "1000 A"
+    ],
+    correctAnswer: 0,
+    explanation: "I = V/R = 10/100 = 0.1 A."
+  },
+  {
+    id: "pred-2018-phy-54",
+    question: "What is the potential energy of a 2 kg object at height 10 m? (g = 10 m/s²)",
+    options: [
+      "200 J",
+      "20 J",
+      "100 J",
+      "400 J"
+    ],
+    correctAnswer: 0,
+    explanation: "PE = mgh = 2 × 10 × 10 = 200 J."
+  },
+  {
+    id: "pred-2018-phy-55",
+    question: "What is the kinetic energy of a 5 kg object moving at 4 m/s?",
+    options: [
+      "40 J",
+      "20 J",
+      "80 J",
+      "10 J"
+    ],
+    correctAnswer: 0,
+    explanation: "KE = (1/2)mv² = (1/2) × 5 × 16 = 40 J."
+  },
+  {
+    id: "pred-2018-phy-56",
+    question: "What is the centripetal force on a 2 kg object moving at 5 m/s in a circle of radius 2 m?",
+    options: [
+      "25 N",
+      "5 N",
+      "10 N",
+      "12.5 N"
+    ],
+    correctAnswer: 0,
+    explanation: "F = mv²/r = 2 × 25/2 = 25 N."
+  },
+  {
+    id: "pred-2018-phy-57",
+    question: "What is the gravitational force between two 10 kg masses 1 m apart? (G = 6.67×10⁻¹¹ Nm²/kg²)",
+    options: [
+      "6.67×10⁻⁹ N",
+      "6.67×10⁻¹¹ N",
+      "6.67×10⁻⁷ N",
+      "6.67×10⁻¹³ N"
+    ],
+    correctAnswer: 0,
+    explanation: "F = Gm₁m₂/r² = 6.67×10⁻¹¹ × 10 × 10/1 = 6.67×10⁻⁹ N."
+  },
+  {
+    id: "pred-2018-phy-58",
+    question: "What is the pressure exerted by a 100 N force on area 0.5 m²?",
+    options: [
+      "200 Pa",
+      "50 Pa",
+      "100 Pa",
+      "500 Pa"
+    ],
+    correctAnswer: 0,
+    explanation: "Pressure = Force/Area = 100/0.5 = 200 Pa."
+  },
+  {
+    id: "pred-2018-phy-59",
+    question: "What is the density of a 5 kg object with volume 0.01 m³?",
+    options: [
+      "500 kg/m³",
+      "50 kg/m³",
+      "5000 kg/m³",
+      "0.5 kg/m³"
+    ],
+    correctAnswer: 0,
+    explanation: "Density = Mass/Volume = 5/0.01 = 500 kg/m³."
+  },
+  {
+    id: "pred-2018-phy-60",
+    question: "What is Archimedes' principle about?",
+    options: [
+      "Buoyant force equals weight of displaced fluid",
+      "Pressure increases with depth",
+      "Fluid flows from high to low pressure",
+      "Objects float in water"
+    ],
+    correctAnswer: 0,
+    explanation: "Archimedes' principle states that the buoyant force on an object equals the weight of the fluid it displaces."
+  },
+  {
+    id: "pred-2018-phy-61",
+    question: "What is the wavelength of a 100 Hz sound wave? (Speed of sound = 340 m/s)",
+    options: [
+      "3.4 m",
+      "34 m",
+      "0.34 m",
+      "340 m"
+    ],
+    correctAnswer: 0,
+    explanation: "Wavelength = Speed/Frequency = 340/100 = 3.4 m."
+  },
+  {
+    id: "pred-2018-phy-62",
+    question: "What is the critical angle for light going from water (n=1.33) to air (n=1)?",
+    options: [
+      "48.8°",
+      "41.8°",
+      "90°",
+      "45°"
+    ],
+    correctAnswer: 0,
+    explanation: "Critical angle = sin⁻¹(n₂/n₁) = sin⁻¹(1/1.33) = 48.8°."
+  },
+  {
+    id: "pred-2018-phy-63",
+    question: "What is the electric field 2 m from a 10 C point charge? (k = 9×10⁹ Nm²/C²)",
+    options: [
+      "2.25×10⁹ N/C",
+      "4.5×10⁹ N/C",
+      "5×10⁸ N/C",
+      "9×10⁹ N/C"
+    ],
+    correctAnswer: 0,
+    explanation: "E = kQ/r² = 9×10⁹ × 10/4 = 2.25×10⁹ N/C."
+  },
+  {
+    id: "pred-2018-phy-64",
+    question: "What is the magnetic field at the center of a circular loop?",
+    options: [
+      "Maximum",
+      "Zero",
+      "Minimum",
+      "Infinite"
+    ],
+    correctAnswer: 0,
+    explanation: "The magnetic field is maximum at the center of a circular current-carrying loop."
+  },
+  {
+    id: "pred-2018-phy-65",
+    question: "What is the energy of a photon with frequency 10¹⁴ Hz? (h = 6.63×10⁻³⁴ J·s)",
+    options: [
+      "6.63×10⁻²⁰ J",
+      "6.63×10⁻³⁴ J",
+      "6.63×10⁻²⁰ eV",
+      "6.63×10⁻³⁴ eV"
+    ],
+    correctAnswer: 0,
+    explanation: "E = hf = 6.63×10⁻³⁴ × 10¹⁴ = 6.63×10⁻²⁰ J."
+  },
+  {
+    id: "pred-2018-phy-66",
+    question: "What is the de Broglie wavelength of a particle?",
+    options: [
+      "λ = h/p",
+      "λ = p/h",
+      "λ = hf",
+      "λ = hc/E"
+    ],
+    correctAnswer: 0,
+    explanation: "The de Broglie wavelength is given by λ = h/p, where h is Planck's constant and p is momentum."
+  },
+  {
+    id: "pred-2018-phy-67",
+    question: "What is the unit of electric potential?",
+    options: [
+      "Volt",
+      "Ampere",
+      "Coulomb",
+      "Watt"
+    ],
+    correctAnswer: 0,
+    explanation: "The unit of electric potential is the Volt (V)."
+  },
+  {
+    id: "pred-2018-phy-68",
+    question: "What is the unit of magnetic flux?",
+    options: [
+      "Weber",
+      "Tesla",
+      "Henry",
+      "Ampere"
+    ],
+    correctAnswer: 0,
+    explanation: "The unit of magnetic flux is the Weber (Wb)."
+  },
+  {
+    id: "pred-2018-phy-69",
+    question: "What is the SI unit of frequency?",
+    options: [
+      "Hertz",
+      "Second",
+      "Meter",
+      "Joule"
+    ],
+    correctAnswer: 0,
+    explanation: "The SI unit of frequency is Hertz (Hz)."
+  },
+  {
+    id: "pred-2018-phy-70",
+    question: "What is the escape velocity from Earth's surface?",
+    options: [
+      "11.2 km/s",
+      "9.8 km/s",
+      "7.9 km/s",
+      "15 km/s"
+    ],
+    correctAnswer: 0,
+    explanation: "The escape velocity from Earth's surface is approximately 11.2 km/s."
+  },
+  {
+    id: "pred-2018-phy-71",
+    question: "What is the orbital velocity of a satellite near Earth's surface?",
+    options: [
+      "7.9 km/s",
+      "11.2 km/s",
+      "3.1 km/s",
+      "9.8 km/s"
+    ],
+    correctAnswer: 0,
+    explanation: "The orbital velocity near Earth's surface is approximately 7.9 km/s."
+  },
+  {
+    id: "pred-2018-phy-72",
+    question: "What is the principle of conservation of energy?",
+    options: [
+      "Energy cannot be created or destroyed",
+      "Energy can be created but not destroyed",
+      "Energy can be destroyed but not created",
+      "Energy is always increasing"
+    ],
+    correctAnswer: 0,
+    explanation: "The law of conservation of energy states that energy cannot be created or destroyed, only transformed."
+  },
+  {
+    id: "pred-2018-phy-73",
+    question: "What is the Doppler effect?",
+    options: [
+      "Change in frequency due to relative motion",
+      "Change in amplitude",
+      "Change in wavelength only",
+      "No change in frequency"
+    ],
+    correctAnswer: 0,
+    explanation: "The Doppler effect is the change in frequency of a wave due to relative motion between source and observer."
+  },
+  {
+    id: "pred-2018-phy-74",
+    question: "What is the speed of electromagnetic waves in vacuum?",
+    options: [
+      "3×10⁸ m/s",
+      "3×10⁶ m/s",
+      "3×10¹⁰ m/s",
+      "3×10⁴ m/s"
+    ],
+    correctAnswer: 0,
+    explanation: "The speed of electromagnetic waves in vacuum is 3×10⁸ m/s."
+  },
+  {
+    id: "pred-2018-phy-75",
+    question: "What is the unit of capacitance?",
+    options: [
+      "Farad",
+      "Coulomb",
+      "Volt",
+      "Henry"
+    ],
+    correctAnswer: 0,
+    explanation: "The unit of capacitance is the Farad (F)."
+  },
+  {
+    id: "pred-2018-phy-76",
+    question: "What is the unit of inductance?",
+    options: [
+      "Henry",
+      "Farad",
+      "Weber",
+      "Tesla"
+    ],
+    correctAnswer: 0,
+    explanation: "The unit of inductance is the Henry (H)."
+  },
+  {
+    id: "pred-2018-phy-77",
+    question: "What is the resistance of two 10 Ω resistors in series?",
+    options: [
+      "20 Ω",
+      "5 Ω",
+      "10 Ω",
+      "100 Ω"
+    ],
+    correctAnswer: 0,
+    explanation: "In series, resistances add: R = R₁ + R₂ = 10 + 10 = 20 Ω."
+  },
+  {
+    id: "pred-2018-phy-78",
+    question: "What is the resistance of two 10 Ω resistors in parallel?",
+    options: [
+      "5 Ω",
+      "20 Ω",
+      "10 Ω",
+      "2.5 Ω"
+    ],
+    correctAnswer: 0,
+    explanation: "In parallel: 1/R = 1/R₁ + 1/R₂ = 1/10 + 1/10 = 2/10. R = 5 Ω."
+  },
+  {
+    id: "pred-2018-phy-79",
+    question: "What is the principle of a transformer?",
+    options: [
+      "Mutual induction",
+      "Self induction",
+      "Electromagnetic induction",
+      "Electrostatic induction"
+    ],
+    correctAnswer: 0,
+    explanation: "A transformer works on the principle of mutual induction between two coils."
+  },
+  {
+    id: "pred-2018-phy-80",
+    question: "What is the efficiency of an ideal transformer?",
+    options: [
+      "100%",
+      "50%",
+      "0%",
+      "75%"
+    ],
+    correctAnswer: 0,
+    explanation: "An ideal transformer has 100% efficiency with no energy loss."
   }
 ];
 
@@ -1450,6 +2410,486 @@ export const predicted2018NaturalChemistryQuestions: MatricExamQuestion[] = [
     ],
     correctAnswer: 0,
     explanation: "Water consists of two hydrogen atoms bonded to one oxygen atom: H₂O."
+  },
+  {
+    id: "pred-2018-chem-41",
+    question: "What is the molar volume of a gas at STP?",
+    options: [
+      "22.4 L",
+      "24.5 L",
+      "20.0 L",
+      "18.0 L"
+    ],
+    correctAnswer: 0,
+    explanation: "At standard temperature and pressure (STP), one mole of any gas occupies 22.4 liters."
+  },
+  {
+    id: "pred-2018-chem-42",
+    question: "What is Boyle's Law?",
+    options: [
+      "Pressure and volume are inversely proportional at constant temperature",
+      "Volume and temperature are directly proportional at constant pressure",
+      "Pressure and temperature are directly proportional at constant volume",
+      "Pressure and volume are directly proportional"
+    ],
+    correctAnswer: 0,
+    explanation: "Boyle's Law states that at constant temperature, pressure and volume of a gas are inversely proportional (P₁V₁ = P₂V₂)."
+  },
+  {
+    id: "pred-2018-chem-43",
+    question: "What is Charles's Law?",
+    options: [
+      "Volume and temperature are directly proportional at constant pressure",
+      "Pressure and volume are inversely proportional at constant temperature",
+      "Pressure and temperature are directly proportional at constant volume",
+      "Volume and pressure are directly proportional"
+    ],
+    correctAnswer: 0,
+    explanation: "Charles's Law states that at constant pressure, volume and absolute temperature of a gas are directly proportional (V₁/T₁ = V₂/T₂)."
+  },
+  {
+    id: "pred-2018-chem-44",
+    question: "What is the ideal gas equation?",
+    options: [
+      "PV = nRT",
+      "PV = nT",
+      "PT = nRV",
+      "PV = R/T"
+    ],
+    correctAnswer: 0,
+    explanation: "The ideal gas equation is PV = nRT, where P is pressure, V is volume, n is moles, R is the gas constant, and T is temperature."
+  },
+  {
+    id: "pred-2018-chem-45",
+    question: "What is molarity?",
+    options: [
+      "Moles of solute per liter of solution",
+      "Grams of solute per liter of solution",
+      "Moles of solute per kilogram of solvent",
+      "Grams of solute per kilogram of solvent"
+    ],
+    correctAnswer: 0,
+    explanation: "Molarity (M) is defined as moles of solute per liter of solution."
+  },
+  {
+    id: "pred-2018-chem-46",
+    question: "What is the molarity of a solution with 2 moles of solute in 4 liters of solution?",
+    options: [
+      "0.5 M",
+      "2 M",
+      "0.25 M",
+      "8 M"
+    ],
+    correctAnswer: 0,
+    explanation: "Molarity = moles/volume = 2/4 = 0.5 M."
+  },
+  {
+    id: "pred-2018-chem-47",
+    question: "What is Le Chatelier's principle?",
+    options: [
+      "System adjusts to counteract changes in equilibrium",
+      "Reaction always goes to completion",
+      "Catalysts change equilibrium position",
+      "Temperature doesn't affect equilibrium"
+    ],
+    correctAnswer: 0,
+    explanation: "Le Chatelier's principle states that if a system at equilibrium is disturbed, it will shift to counteract the change and restore equilibrium."
+  },
+  {
+    id: "pred-2018-chem-48",
+    question: "What is a strong acid?",
+    options: [
+      "Completely dissociates in water",
+      "Partially dissociates in water",
+      "Does not dissociate in water",
+      "Neutral in water"
+    ],
+    correctAnswer: 0,
+    explanation: "A strong acid completely dissociates in water, releasing all its hydrogen ions."
+  },
+  {
+    id: "pred-2018-chem-49",
+    question: "What is the pH of a 0.001 M HCl solution?",
+    options: [
+      "3",
+      "2",
+      "4",
+      "1"
+    ],
+    correctAnswer: 0,
+    explanation: "HCl is strong acid, so [H⁺] = 0.001 M = 10⁻³ M. pH = -log(10⁻³) = 3."
+  },
+  {
+    id: "pred-2018-chem-50",
+    question: "What is oxidation?",
+    options: [
+      "Loss of electrons",
+      "Gain of electrons",
+      "Loss of protons",
+      "Gain of protons"
+    ],
+    correctAnswer: 0,
+    explanation: "Oxidation is the loss of electrons during a chemical reaction."
+  },
+  {
+    id: "pred-2018-chem-51",
+    question: "What is reduction?",
+    options: [
+      "Gain of electrons",
+      "Loss of electrons",
+      "Loss of protons",
+      "Gain of protons"
+    ],
+    correctAnswer: 0,
+    explanation: "Reduction is the gain of electrons during a chemical reaction."
+  },
+  {
+    id: "pred-2018-chem-52",
+    question: "What is the oxidation state of oxygen in most compounds?",
+    options: [
+      "-2",
+      "+2",
+      "0",
+      "-1"
+    ],
+    correctAnswer: 0,
+    explanation: "Oxygen typically has an oxidation state of -2 in most compounds, except in peroxides (-1) and with fluorine."
+  },
+  {
+    id: "pred-2018-chem-53",
+    question: "What is the functional group of alcohols?",
+    options: [
+      "-OH (hydroxyl)",
+      "-COOH (carboxyl)",
+      "-CHO (aldehyde)",
+      "-CO (carbonyl)"
+    ],
+    correctAnswer: 0,
+    explanation: "Alcohols contain the hydroxyl (-OH) functional group."
+  },
+  {
+    id: "pred-2018-chem-54",
+    question: "What is the functional group of carboxylic acids?",
+    options: [
+      "-COOH (carboxyl)",
+      "-OH (hydroxyl)",
+      "-CHO (aldehyde)",
+      "-NH₂ (amino)"
+    ],
+    correctAnswer: 0,
+    explanation: "Carboxylic acids contain the carboxyl (-COOH) functional group."
+  },
+  {
+    id: "pred-2018-chem-55",
+    question: "What is the general formula for alkanes?",
+    options: [
+      "CₙH₂ₙ₊₂",
+      "CₙH₂ₙ",
+      "CₙH₂ₙ₋₂",
+      "CₙH₂ₙ₊₁"
+    ],
+    correctAnswer: 0,
+    explanation: "Alkanes have the general formula CₙH₂ₙ₊₂, where n is the number of carbon atoms."
+  },
+  {
+    id: "pred-2018-chem-56",
+    question: "What is the general formula for alkenes?",
+    options: [
+      "CₙH₂ₙ",
+      "CₙH₂ₙ₊₂",
+      "CₙH₂ₙ₋₂",
+      "CₙH₂ₙ₊₁"
+    ],
+    correctAnswer: 0,
+    explanation: "Alkenes have the general formula CₙH₂ₙ, where n is the number of carbon atoms."
+  },
+  {
+    id: "pred-2018-chem-57",
+    question: "What is electronegativity?",
+    options: [
+      "Ability of an atom to attract electrons",
+      "Ability to lose electrons",
+      "Number of valence electrons",
+      "Atomic mass"
+    ],
+    correctAnswer: 0,
+    explanation: "Electronegativity is the ability of an atom to attract shared electrons in a chemical bond."
+  },
+  {
+    id: "pred-2018-chem-58",
+    question: "Which element has the highest electronegativity?",
+    options: [
+      "Fluorine",
+      "Oxygen",
+      "Chlorine",
+      "Nitrogen"
+    ],
+    correctAnswer: 0,
+    explanation: "Fluorine has the highest electronegativity value of 4.0 on the Pauling scale."
+  },
+  {
+    id: "pred-2018-chem-59",
+    question: "What type of bond forms between atoms with similar electronegativities?",
+    options: [
+      "Covalent bond",
+      "Ionic bond",
+      "Metallic bond",
+      "Hydrogen bond"
+    ],
+    correctAnswer: 0,
+    explanation: "When atoms have similar electronegativities, they share electrons equally, forming a covalent bond."
+  },
+  {
+    id: "pred-2018-chem-60",
+    question: "What is the octet rule?",
+    options: [
+      "Atoms tend to have 8 valence electrons",
+      "Atoms tend to have 8 protons",
+      "Atoms tend to have 8 neutrons",
+      "Atoms tend to have 8 total electrons"
+    ],
+    correctAnswer: 0,
+    explanation: "The octet rule states that atoms tend to gain, lose, or share electrons to achieve a full valence shell of 8 electrons."
+  },
+  {
+    id: "pred-2018-chem-61",
+    question: "What is enthalpy?",
+    options: [
+      "Total heat content of a system",
+      "Total energy of a system",
+      "Randomness of a system",
+      "Pressure of a system"
+    ],
+    correctAnswer: 0,
+    explanation: "Enthalpy (H) is the total heat content of a system at constant pressure."
+  },
+  {
+    id: "pred-2018-chem-62",
+    question: "What is an exothermic reaction?",
+    options: [
+      "Releases heat to surroundings",
+      "Absorbs heat from surroundings",
+      "No heat exchange",
+      "Only occurs at high temperature"
+    ],
+    correctAnswer: 0,
+    explanation: "An exothermic reaction releases heat to the surroundings, resulting in a negative enthalpy change."
+  },
+  {
+    id: "pred-2018-chem-63",
+    question: "What is an endothermic reaction?",
+    options: [
+      "Absorbs heat from surroundings",
+      "Releases heat to surroundings",
+      "No heat exchange",
+      "Only occurs at low temperature"
+    ],
+    correctAnswer: 0,
+    explanation: "An endothermic reaction absorbs heat from the surroundings, resulting in a positive enthalpy change."
+  },
+  {
+    id: "pred-2018-chem-64",
+    question: "What is entropy?",
+    options: [
+      "Measure of disorder or randomness",
+      "Measure of heat content",
+      "Measure of pressure",
+      "Measure of volume"
+    ],
+    correctAnswer: 0,
+    explanation: "Entropy (S) is a measure of the disorder or randomness of a system."
+  },
+  {
+    id: "pred-2018-chem-65",
+    question: "What is the second law of thermodynamics?",
+    options: [
+      "Entropy of the universe always increases",
+      "Energy is conserved",
+      "Matter is conserved",
+      "Temperature is constant"
+    ],
+    correctAnswer: 0,
+    explanation: "The second law of thermodynamics states that the total entropy of an isolated system always increases over time."
+  },
+  {
+    id: "pred-2018-chem-66",
+    question: "What is an electrolyte?",
+    options: [
+      "Substance that conducts electricity when dissolved",
+      "Substance that does not conduct electricity",
+      "Pure metal",
+      "Insulator"
+    ],
+    correctAnswer: 0,
+    explanation: "An electrolyte is a substance that produces ions when dissolved in water, allowing it to conduct electricity."
+  },
+  {
+    id: "pred-2018-chem-67",
+    question: "What is the anode in an electrochemical cell?",
+    options: [
+      "Electrode where oxidation occurs",
+      "Electrode where reduction occurs",
+      "Salt bridge",
+      "Electrolyte solution"
+    ],
+    correctAnswer: 0,
+    explanation: "The anode is the electrode where oxidation (loss of electrons) occurs in an electrochemical cell."
+  },
+  {
+    id: "pred-2018-chem-68",
+    question: "What is the cathode in an electrochemical cell?",
+    options: [
+      "Electrode where reduction occurs",
+      "Electrode where oxidation occurs",
+      "Salt bridge",
+      "Electrolyte solution"
+    ],
+    correctAnswer: 0,
+    explanation: "The cathode is the electrode where reduction (gain of electrons) occurs in an electrochemical cell."
+  },
+  {
+    id: "pred-2018-chem-69",
+    question: "What is radioactivity?",
+    options: [
+      "Spontaneous emission of radiation from unstable nuclei",
+      "Chemical reaction",
+      "Physical change of state",
+      "Nuclear fusion"
+    ],
+    correctAnswer: 0,
+    explanation: "Radioactivity is the spontaneous emission of radiation from unstable atomic nuclei."
+  },
+  {
+    id: "pred-2018-chem-70",
+    question: "What is alpha radiation?",
+    options: [
+      "Helium nucleus (2 protons, 2 neutrons)",
+      "High-energy electron",
+      "High-energy photon",
+      "Neutron"
+    ],
+    correctAnswer: 0,
+    explanation: "Alpha radiation consists of helium nuclei (2 protons and 2 neutrons) and has low penetration power."
+  },
+  {
+    id: "pred-2018-chem-71",
+    question: "What is beta radiation?",
+    options: [
+      "High-energy electron",
+      "Helium nucleus",
+      "High-energy photon",
+      "Neutron"
+    ],
+    correctAnswer: 0,
+    explanation: "Beta radiation consists of high-energy electrons emitted from the nucleus during beta decay."
+  },
+  {
+    id: "pred-2018-chem-72",
+    question: "What is gamma radiation?",
+    options: [
+      "High-energy photon",
+      "Helium nucleus",
+      "High-energy electron",
+      "Neutron"
+    ],
+    correctAnswer: 0,
+    explanation: "Gamma radiation consists of high-energy photons and has high penetration power."
+  },
+  {
+    id: "pred-2018-chem-73",
+    question: "What is half-life?",
+    options: [
+      "Time for half of radioactive atoms to decay",
+      "Time for all atoms to decay",
+      "Time for half of energy to be released",
+      "Time for half of mass to be lost"
+    ],
+    correctAnswer: 0,
+    explanation: "Half-life is the time required for half of the radioactive atoms in a sample to undergo radioactive decay."
+  },
+  {
+    id: "pred-2018-chem-74",
+    question: "What is the molecular formula of glucose?",
+    options: [
+      "C₆H₁₂O₆",
+      "C₆H₆O₆",
+      "C₁₂H₂₂O₁₁",
+      "CH₂O"
+    ],
+    correctAnswer: 0,
+    explanation: "Glucose has the molecular formula C₆H₁₂O₆."
+  },
+  {
+    id: "pred-2018-chem-75",
+    question: "What is the molecular formula of methane?",
+    options: [
+      "CH₄",
+      "C₂H₆",
+      "CH₃",
+      "C₄H₁₀"
+    ],
+    correctAnswer: 0,
+    explanation: "Methane (CH₄) is the simplest alkane with one carbon atom and four hydrogen atoms."
+  },
+  {
+    id: "pred-2018-chem-76",
+    question: "What is the molecular formula of ethane?",
+    options: [
+      "C₂H₆",
+      "CH₄",
+      "C₃H₈",
+      "C₄H₁₀"
+    ],
+    correctAnswer: 0,
+    explanation: "Ethane (C₂H₆) is an alkane with two carbon atoms and six hydrogen atoms."
+  },
+  {
+    id: "pred-2018-chem-77",
+    question: "What is a saturated hydrocarbon?",
+    options: [
+      "Contains only single bonds between carbon atoms",
+      "Contains double bonds",
+      "Contains triple bonds",
+      "Contains no hydrogen"
+    ],
+    correctAnswer: 0,
+    explanation: "A saturated hydrocarbon (alkane) contains only single bonds between carbon atoms and is saturated with hydrogen."
+  },
+  {
+    id: "pred-2018-chem-78",
+    question: "What is an unsaturated hydrocarbon?",
+    options: [
+      "Contains double or triple bonds between carbon atoms",
+      "Contains only single bonds",
+      "Contains no carbon",
+      "Contains only hydrogen"
+    ],
+    correctAnswer: 0,
+    explanation: "An unsaturated hydrocarbon contains double or triple bonds between carbon atoms (alkenes or alkynes)."
+  },
+  {
+    id: "pred-2018-chem-79",
+    question: "What is the molecular formula of ethene (ethylene)?",
+    options: [
+      "C₂H₄",
+      "C₂H₆",
+      "C₂H₂",
+      "C₃H₆"
+    ],
+    correctAnswer: 0,
+    explanation: "Ethene (C₂H₄) is the simplest alkene with a double bond between two carbon atoms."
+  },
+  {
+    id: "pred-2018-chem-80",
+    question: "What is the molecular formula of ethyne (acetylene)?",
+    options: [
+      "C₂H₂",
+      "C₂H₄",
+      "C₂H₆",
+      "C₃H₄"
+    ],
+    correctAnswer: 0,
+    explanation: "Ethyne (C₂H₂) is the simplest alkyne with a triple bond between two carbon atoms."
   }
 ];
 
@@ -1933,6 +3373,486 @@ export const predicted2018NaturalBiologyQuestions: MatricExamQuestion[] = [
     ],
     correctAnswer: 0,
     explanation: "The digestive system breaks down food into smaller molecules that can be absorbed and used by the body for energy, growth, and repair."
+  },
+  {
+    id: "pred-2018-bio-41",
+    question: "What is mitosis?",
+    options: [
+      "Cell division producing identical daughter cells",
+      "Cell division producing gametes",
+      "Cell death",
+      "Cell growth"
+    ],
+    correctAnswer: 0,
+    explanation: "Mitosis is the process of cell division that produces two genetically identical daughter cells."
+  },
+  {
+    id: "pred-2018-bio-42",
+    question: "What is meiosis?",
+    options: [
+      "Cell division producing gametes with half the chromosomes",
+      "Cell division producing identical cells",
+      "Cell growth",
+      "Cell repair"
+    ],
+    correctAnswer: 0,
+    explanation: "Meiosis is a type of cell division that produces gametes (sperm and egg) with half the number of chromosomes."
+  },
+  {
+    id: "pred-2018-bio-43",
+    question: "What are the phases of mitosis in order?",
+    options: [
+      "Prophase, Metaphase, Anaphase, Telophase",
+      "Metaphase, Prophase, Anaphase, Telophase",
+      "Prophase, Anaphase, Metaphase, Telophase",
+      "Telophase, Anaphase, Metaphase, Prophase"
+    ],
+    correctAnswer: 0,
+    explanation: "The phases of mitosis in order are Prophase, Metaphase, Anaphase, and Telophase."
+  },
+  {
+    id: "pred-2018-bio-44",
+    question: "What is a gene?",
+    options: [
+      "Segment of DNA that codes for a trait",
+      "Segment of RNA",
+      "Protein",
+      "Cell organelle"
+    ],
+    correctAnswer: 0,
+    explanation: "A gene is a segment of DNA that contains the instructions for making a specific protein or trait."
+  },
+  {
+    id: "pred-2018-bio-45",
+    question: "What is an allele?",
+    options: [
+      "Alternative form of a gene",
+      "Type of chromosome",
+      "Type of cell",
+      "Type of protein"
+    ],
+    correctAnswer: 0,
+    explanation: "An allele is an alternative form of a gene that can produce different variations of a trait."
+  },
+  {
+    id: "pred-2018-bio-46",
+    question: "What is Mendel's first law (Law of Segregation)?",
+    options: [
+      "Alleles separate during gamete formation",
+      "Genes assort independently",
+      "Dominant traits always appear",
+      "Recessive traits never appear"
+    ],
+    correctAnswer: 0,
+    explanation: "The Law of Segregation states that alleles separate during gamete formation, so each gamete receives only one allele."
+  },
+  {
+    id: "pred-2018-bio-47",
+    question: "What is Mendel's second law (Law of Independent Assortment)?",
+    options: [
+      "Genes for different traits assort independently",
+      "Alleles always stay together",
+      "Dominant genes always segregate",
+      "Recessive genes are always hidden"
+    ],
+    correctAnswer: 0,
+    explanation: "The Law of Independent Assortment states that genes for different traits are inherited independently of each other."
+  },
+  {
+    id: "pred-2018-bio-48",
+    question: "What is a dominant allele?",
+    options: [
+      "Allele that masks the expression of a recessive allele",
+      "Allele that is always hidden",
+      "Allele that causes disease",
+      "Allele that is rare"
+    ],
+    correctAnswer: 0,
+    explanation: "A dominant allele masks the expression of a recessive allele when both are present."
+  },
+  {
+    id: "pred-2018-bio-49",
+    question: "What is a recessive allele?",
+    options: [
+      "Allele that is only expressed when two copies are present",
+      "Allele that always shows",
+      "Allele that is dominant",
+      "Allele that is never expressed"
+    ],
+    correctAnswer: 0,
+    explanation: "A recessive allele is only expressed when two copies are present (homozygous recessive)."
+  },
+  {
+    id: "pred-2018-bio-50",
+    question: "What is genotype?",
+    options: [
+      "Genetic makeup of an organism",
+      "Physical appearance",
+      "Environmental factors",
+      "Cell type"
+    ],
+    correctAnswer: 0,
+    explanation: "Genotype refers to the genetic makeup of an organism, including all its alleles."
+  },
+  {
+    id: "pred-2018-bio-51",
+    question: "What is phenotype?",
+    options: [
+      "Observable physical characteristics",
+      "Genetic makeup",
+      "Environmental factors only",
+      "Cell structure"
+    ],
+    correctAnswer: 0,
+    explanation: "Phenotype refers to the observable physical characteristics of an organism resulting from genotype and environment."
+  },
+  {
+    id: "pred-2018-bio-52",
+    question: "What is homozygous?",
+    options: [
+      "Having two identical alleles for a gene",
+      "Having two different alleles",
+      "Having one allele",
+      "Having no alleles"
+    ],
+    correctAnswer: 0,
+    explanation: "Homozygous means having two identical alleles for a particular gene (e.g., AA or aa)."
+  },
+  {
+    id: "pred-2018-bio-53",
+    question: "What is heterozygous?",
+    options: [
+      "Having two different alleles for a gene",
+      "Having two identical alleles",
+      "Having one allele",
+      "Having no alleles"
+    ],
+    correctAnswer: 0,
+    explanation: "Heterozygous means having two different alleles for a particular gene (e.g., Aa)."
+  },
+  {
+    id: "pred-2018-bio-54",
+    question: "What is natural selection?",
+    options: [
+      "Process where organisms with favorable traits survive and reproduce",
+      "Random genetic changes",
+      "Artificial breeding",
+      "Environmental stability"
+    ],
+    correctAnswer: 0,
+    explanation: "Natural selection is the process where organisms with traits better suited to their environment survive and reproduce more successfully."
+  },
+  {
+    id: "pred-2018-bio-55",
+    question: "What is evolution?",
+    options: [
+      "Change in heritable traits over generations",
+      "Individual changes during lifetime",
+      "Random mutations only",
+      "Environmental changes only"
+    ],
+    correctAnswer: 0,
+    explanation: "Evolution is the change in heritable characteristics of biological populations over successive generations."
+  },
+  {
+    id: "pred-2018-bio-56",
+    question: "What is an ecosystem?",
+    options: [
+      "Community of organisms and their environment",
+      "Single organism",
+      "Group of same species",
+      "Laboratory setting"
+    ],
+    correctAnswer: 0,
+    explanation: "An ecosystem is a community of living organisms interacting with each other and their physical environment."
+  },
+  {
+    id: "pred-2018-bio-57",
+    question: "What is a food chain?",
+    options: [
+      "Linear sequence of organisms where each eats the one below",
+      "Circular food web",
+      "Single organism diet",
+      "Plant only system"
+    ],
+    correctAnswer: 0,
+    explanation: "A food chain is a linear sequence showing how energy and nutrients move from producers to consumers."
+  },
+  {
+    id: "pred-2018-bio-58",
+    question: "What is a producer in an ecosystem?",
+    options: [
+      "Organism that makes its own food (usually plants)",
+      "Organism that eats other organisms",
+      "Organism that decomposes matter",
+      "Organism that consumes waste"
+    ],
+    correctAnswer: 0,
+    explanation: "Producers (autotrophs) are organisms that make their own food, typically through photosynthesis."
+  },
+  {
+    id: "pred-2018-bio-59",
+    question: "What is a consumer in an ecosystem?",
+    options: [
+      "Organism that obtains energy by eating other organisms",
+      "Organism that makes its own food",
+      "Organism that decomposes matter",
+      "Organism that produces oxygen"
+    ],
+    correctAnswer: 0,
+    explanation: "Consumers (heterotrophs) are organisms that obtain energy by eating other organisms."
+  },
+  {
+    id: "pred-2018-bio-60",
+    question: "What is a decomposer?",
+    options: [
+      "Organism that breaks down dead organic matter",
+      "Organism that makes its own food",
+      "Organism that eats only plants",
+      "Organism that eats only animals"
+    ],
+    correctAnswer: 0,
+    explanation: "Decomposers break down dead organic matter and recycle nutrients back into the ecosystem."
+  },
+  {
+    id: "pred-2018-bio-61",
+    question: "What is the function of the respiratory system?",
+    options: [
+      "Exchange oxygen and carbon dioxide",
+      "Digest food",
+      "Pump blood",
+      "Filter waste"
+    ],
+    correctAnswer: 0,
+    explanation: "The respiratory system facilitates the exchange of oxygen and carbon dioxide between the body and the environment."
+  },
+  {
+    id: "pred-2018-bio-62",
+    question: "What is the function of the circulatory system?",
+    options: [
+      "Transport blood, nutrients, and waste",
+      "Digest food",
+      "Exchange gases",
+      "Control movement"
+    ],
+    correctAnswer: 0,
+    explanation: "The circulatory system transports blood, oxygen, nutrients, and waste products throughout the body."
+  },
+  {
+    id: "pred-2018-bio-63",
+    question: "What is the function of the nervous system?",
+    options: [
+      "Control and coordinate body activities",
+      "Digest food",
+      "Pump blood",
+      "Exchange gases"
+    ],
+    correctAnswer: 0,
+    explanation: "The nervous system controls and coordinates body activities through electrical signals."
+  },
+  {
+    id: "pred-2018-bio-64",
+    question: "What is the function of the endocrine system?",
+    options: [
+      "Produce hormones to regulate body functions",
+      "Digest food",
+      "Pump blood",
+      "Exchange gases"
+    ],
+    correctAnswer: 0,
+    explanation: "The endocrine system produces hormones that regulate metabolism, growth, and other body functions."
+  },
+  {
+    id: "pred-2018-bio-65",
+    question: "What is the function of the excretory system?",
+    options: [
+      "Remove waste products from the body",
+      "Digest food",
+      "Pump blood",
+      "Produce hormones"
+    ],
+    correctAnswer: 0,
+    explanation: "The excretory system removes waste products and excess substances from the body."
+  },
+  {
+    id: "pred-2018-bio-66",
+    question: "What is the function of chlorophyll?",
+    options: [
+      "Absorb light energy for photosynthesis",
+      "Transport water",
+      "Store food",
+      "Produce oxygen directly"
+    ],
+    correctAnswer: 0,
+    explanation: "Chlorophyll is the green pigment in plants that absorbs light energy for photosynthesis."
+  },
+  {
+    id: "pred-2018-bio-67",
+    question: "What is the function of xylem in plants?",
+    options: [
+      "Transport water and minerals from roots",
+      "Transport food from leaves",
+      "Produce food",
+      "Store water"
+    ],
+    correctAnswer: 0,
+    explanation: "Xylem is the vascular tissue that transports water and minerals from roots to the rest of the plant."
+  },
+  {
+    id: "pred-2018-bio-68",
+    question: "What is the function of phloem in plants?",
+    options: [
+      "Transport food from leaves to other parts",
+      "Transport water from roots",
+      "Produce food",
+      "Store food"
+    ],
+    correctAnswer: 0,
+    explanation: "Phloem is the vascular tissue that transports food (sugars) from leaves to other parts of the plant."
+  },
+  {
+    id: "pred-2018-bio-69",
+    question: "What is transpiration?",
+    options: [
+      "Loss of water vapor from plant leaves",
+      "Absorption of water by roots",
+      "Production of food",
+      "Transport of minerals"
+    ],
+    correctAnswer: 0,
+    explanation: "Transpiration is the process by which plants lose water vapor through small pores called stomata."
+  },
+  {
+    id: "pred-2018-bio-70",
+    question: "What is a virus?",
+    options: [
+      "Non-living infectious agent that requires a host",
+      "Living single-celled organism",
+      "Multicellular organism",
+      "Beneficial bacteria"
+    ],
+    correctAnswer: 0,
+    explanation: "A virus is a non-living infectious agent that can only reproduce inside a host cell."
+  },
+  {
+    id: "pred-2018-bio-71",
+    question: "What is a bacterium?",
+    options: [
+      "Single-celled prokaryotic organism",
+      "Multicellular organism",
+      "Virus",
+      "Fungi"
+    ],
+    correctAnswer: 0,
+    explanation: "Bacteria are single-celled prokaryotic organisms that lack a nucleus."
+  },
+  {
+    id: "pred-2018-bio-72",
+    question: "What is a fungus?",
+    options: [
+      "Eukaryotic organism that absorbs nutrients from organic matter",
+      "Prokaryotic organism",
+      "Photosynthetic organism",
+      "Single-celled animal"
+    ],
+    correctAnswer: 0,
+    explanation: "Fungi are eukaryotic organisms that absorb nutrients from organic matter, including plants, animals, and decaying material."
+  },
+  {
+    id: "pred-2018-bio-73",
+    question: "What is the function of the immune system?",
+    options: [
+      "Defend the body against pathogens",
+      "Digest food",
+      "Pump blood",
+      "Exchange gases"
+    ],
+    correctAnswer: 0,
+    explanation: "The immune system defends the body against infections, diseases, and foreign invaders."
+  },
+  {
+    id: "pred-2018-bio-74",
+    question: "What is an antibody?",
+    options: [
+      "Protein that recognizes and neutralizes pathogens",
+      "Pathogen itself",
+      "Type of cell",
+      "Type of virus"
+    ],
+    correctAnswer: 0,
+    explanation: "Antibodies are proteins produced by the immune system that recognize and neutralize pathogens."
+  },
+  {
+    id: "pred-2018-bio-75",
+    question: "What is a vaccine?",
+    options: [
+      "Biological preparation that provides immunity",
+      "Medication for bacterial infection",
+      "Surgical procedure",
+      "Diagnostic tool"
+    ],
+    correctAnswer: 0,
+    explanation: "A vaccine is a biological preparation that provides immunity to a particular disease."
+  },
+  {
+    id: "pred-2018-bio-76",
+    question: "What is biotechnology?",
+    options: [
+      "Use of living organisms to develop products",
+      "Study of rocks",
+      "Study of stars",
+      "Study of chemicals only"
+    ],
+    correctAnswer: 0,
+    explanation: "Biotechnology is the use of living organisms, cells, or biological systems to develop products."
+  },
+  {
+    id: "pred-2018-bio-77",
+    question: "What is genetic engineering?",
+    options: [
+      "Direct manipulation of an organism's genes",
+      "Study of inheritance only",
+      "Natural selection",
+      "Random mutation"
+    ],
+    correctAnswer: 0,
+    explanation: "Genetic engineering is the direct manipulation of an organism's genes using biotechnology."
+  },
+  {
+    id: "pred-2018-bio-78",
+    question: "What is DNA replication?",
+    options: [
+      "Process of copying DNA before cell division",
+      "Process of making RNA",
+      "Process of making proteins",
+      "Process of cell death"
+    ],
+    correctAnswer: 0,
+    explanation: "DNA replication is the process of copying DNA before cell division to ensure each daughter cell gets a copy."
+  },
+  {
+    id: "pred-2018-bio-79",
+    question: "What is transcription?",
+    options: [
+      "Process of copying DNA into RNA",
+      "Process of making proteins",
+      "Process of DNA replication",
+      "Process of cell division"
+    ],
+    correctAnswer: 0,
+    explanation: "Transcription is the process of copying a segment of DNA into RNA."
+  },
+  {
+    id: "pred-2018-bio-80",
+    question: "What is translation?",
+    options: [
+      "Process of making proteins from mRNA",
+      "Process of making RNA from DNA",
+      "Process of DNA replication",
+      "Process of cell division"
+    ],
+    correctAnswer: 0,
+    explanation: "Translation is the process of synthesizing proteins from mRNA using ribosomes."
   }
 ];
 
@@ -2416,6 +4336,486 @@ export const predicted2018NaturalCivicsQuestions: MatricExamQuestion[] = [
     ],
     correctAnswer: 0,
     explanation: "Public opinion refers to the collective views, attitudes, and beliefs of citizens on public issues and policies."
+  },
+  {
+    id: "pred-2018-civ-41",
+    question: "What is 'citizenship'?",
+    options: [
+      "Legal status of being a member of a country",
+      "Living in a country",
+      "Working in a country",
+      "Visiting a country"
+    ],
+    correctAnswer: 0,
+    explanation: "Citizenship is the legal status of being a member of a particular country, with associated rights and responsibilities."
+  },
+  {
+    id: "pred-2018-civ-42",
+    question: "What is the United Nations (UN)?",
+    options: [
+      "International organization for maintaining peace and security",
+      "Regional African organization",
+      "European trade organization",
+      "Military alliance"
+    ],
+    correctAnswer: 0,
+    explanation: "The United Nations is an international organization established to maintain international peace and security."
+  },
+  {
+    id: "pred-2018-civ-43",
+    question: "What is the African Union (AU)?",
+    options: [
+      "Continental union of African countries",
+      "European organization",
+      "Asian organization",
+      "American organization"
+    ],
+    correctAnswer: 0,
+    explanation: "The African Union is a continental union consisting of 55 member states in Africa."
+  },
+  {
+    id: "pred-2018-civ-44",
+    question: "What is a 'constitutional monarchy'?",
+    options: [
+      "Monarchy with limited powers by constitution",
+      "Absolute monarchy",
+      "Republic",
+      "Dictatorship"
+    ],
+    correctAnswer: 0,
+    explanation: "A constitutional monarchy is a form of government where a monarch acts as head of state within the limits of a constitution."
+  },
+  {
+    id: "pred-2018-civ-45",
+    question: "What is a 'republic'?",
+    options: [
+      "State where citizens elect representatives",
+      "State ruled by a monarch",
+      "State ruled by military",
+      "State with no government"
+    ],
+    correctAnswer: 0,
+    explanation: "A republic is a form of government where the country is considered a public matter and citizens elect representatives."
+  },
+  {
+    id: "pred-2018-civ-46",
+    question: "What is 'civic responsibility'?",
+    options: [
+      "Duties citizens owe to their community",
+      "Rights citizens have",
+      "Government duties",
+      "Military obligations only"
+    ],
+    correctAnswer: 0,
+    explanation: "Civic responsibility refers to the duties and obligations that citizens have to their community and society."
+  },
+  {
+    id: "pred-2018-civ-47",
+    question: "What is 'taxation'?",
+    options: [
+      "Mandatory financial charge by government",
+      "Voluntary donation",
+      "Private payment",
+      "Charitable giving"
+    ],
+    correctAnswer: 0,
+    explanation: "Taxation is the compulsory levy by government on income, goods, or services to fund public expenditures."
+  },
+  {
+    id: "pred-2018-civ-48",
+    question: "What is 'due process'?",
+    options: [
+      "Fair treatment through judicial system",
+      "Quick judgment",
+      "No legal process",
+      "Military trial"
+    ],
+    correctAnswer: 0,
+    explanation: "Due process is the legal requirement that the state must respect all legal rights owed to a person."
+  },
+  {
+    id: "pred-2018-civ-49",
+    question: "What is 'judicial review'?",
+    options: [
+      "Power of courts to review constitutionality of laws",
+      "Review of court decisions",
+      "Review of government spending",
+      "Review of military actions"
+    ],
+    correctAnswer: 0,
+    explanation: "Judicial review is the power of courts to examine and determine the constitutionality of laws and government actions."
+  },
+  {
+    id: "pred-2018-civ-50",
+    question: "What is 'sovereignty'?",
+    options: [
+      "Supreme authority of a state to govern itself",
+      "Power of individuals",
+      "Power of corporations",
+      "Power of international organizations"
+    ],
+    correctAnswer: 0,
+    explanation: "Sovereignty is the full right and power of a governing body to govern itself without outside interference."
+  },
+  {
+    id: "pred-2018-civ-51",
+    question: "What is 'federalism'?",
+    options: [
+      "Division of power between central and regional governments",
+      "Centralized power",
+      "No government",
+      "Military rule"
+    ],
+    correctAnswer: 0,
+    explanation: "Federalism is a system of government where power is divided between a central government and regional governments."
+  },
+  {
+    id: "pred-2018-civ-52",
+    question: "What is 'unitary government'?",
+    options: [
+      "Central government holds all power",
+      "Divided power",
+      "No central government",
+      "Regional governments only"
+    ],
+    correctAnswer: 0,
+    explanation: "A unitary government is one where the central government holds all the power and regional governments have limited authority."
+  },
+  {
+    id: "pred-2018-civ-53",
+    question: "What is 'parliamentary system'?",
+    options: [
+      "Executive derives legitimacy from legislature",
+      "Executive separate from legislature",
+      "No legislature",
+      "Military government"
+    ],
+    correctAnswer: 0,
+    explanation: "In a parliamentary system, the executive branch derives its legitimacy from and is accountable to the legislature."
+  },
+  {
+    id: "pred-2018-civ-54",
+    question: "What is 'presidential system'?",
+    options: [
+      "Executive and legislature are separate branches",
+      "Executive part of legislature",
+      "No executive",
+      "Military rule"
+    ],
+    correctAnswer: 0,
+    explanation: "In a presidential system, the executive branch is separate from and independent of the legislative branch."
+  },
+  {
+    id: "pred-2018-civ-55",
+    question: "What is 'civic education'?",
+    options: [
+      "Learning about rights and responsibilities as citizens",
+      "Military training",
+      "Job training",
+      "Technical education"
+    ],
+    correctAnswer: 0,
+    explanation: "Civic education teaches citizens about their rights, responsibilities, and how to participate in democratic processes."
+  },
+  {
+    id: "pred-2018-civ-56",
+    question: "What is 'social contract'?",
+    options: [
+      "Agreement between people and government",
+      "Contract between businesses",
+      "Marriage contract",
+      "Employment contract"
+    ],
+    correctAnswer: 0,
+    explanation: "The social contract is the theory that people consent to surrender some freedoms to a government in exchange for protection."
+  },
+  {
+    id: "pred-2018-civ-57",
+    question: "What is 'lobbying'?",
+    options: [
+      "Attempting to influence government decisions",
+      "Working in a lobby",
+      "Building construction",
+      "Hotel management"
+    ],
+    correctAnswer: 0,
+    explanation: "Lobbying is the act of attempting to influence decisions made by government officials."
+  },
+  {
+    id: "pred-2018-civ-58",
+    question: "What is 'civil disobedience'?",
+    options: [
+      "Refusal to obey certain laws as protest",
+      "Obeying all laws",
+      "Military action",
+      "Violent protest"
+    ],
+    correctAnswer: 0,
+    explanation: "Civil disobedience is the refusal to obey certain laws as a form of peaceful protest against unjust policies."
+  },
+  {
+    id: "pred-2018-civ-59",
+    question: "What is 'political ideology'?",
+    options: [
+      "Set of beliefs about how society should function",
+      "Political party only",
+      "Government policy",
+      "Economic system only"
+    ],
+    correctAnswer: 0,
+    explanation: "Political ideology is a set of beliefs about the proper role of government and how society should be organized."
+  },
+  {
+    id: "pred-2018-civ-60",
+    question: "What is 'liberalism'?",
+    options: [
+      "Political philosophy emphasizing individual rights",
+      "Emphasizing government control",
+      "Emphasizing military power",
+      "Emphasizing tradition only"
+    ],
+    correctAnswer: 0,
+    explanation: "Liberalism is a political philosophy that emphasizes individual rights, liberty, and limited government."
+  },
+  {
+    id: "pred-2018-civ-61",
+    question: "What is 'conservatism'?",
+    options: [
+      "Political philosophy emphasizing tradition and stability",
+      "Emphasizing radical change",
+      "Emphasizing no government",
+      "Emphasizing individual rights only"
+    ],
+    correctAnswer: 0,
+    explanation: "Conservatism is a political philosophy that values tradition, stability, and gradual change."
+  },
+  {
+    id: "pred-2018-civ-62",
+    question: "What is 'socialism'?",
+    options: [
+      "Economic system where production is socially owned",
+      "Private ownership only",
+      "No government",
+      "Pure capitalism"
+    ],
+    correctAnswer: 0,
+    explanation: "Socialism is an economic and political system where the means of production are socially owned."
+  },
+  {
+    id: "pred-2018-civ-63",
+    question: "What is 'capitalism'?",
+    options: [
+      "Economic system based on private ownership",
+      "Government ownership",
+      "No private property",
+      "State planning"
+    ],
+    correctAnswer: 0,
+    explanation: "Capitalism is an economic system based on private ownership of the means of production and market competition."
+  },
+  {
+    id: "pred-2018-civ-64",
+    question: "What is 'globalization'?",
+    options: [
+      "Increasing interconnectedness of world economies",
+      "Isolation of countries",
+      "No international trade",
+      "Local economies only"
+    ],
+    correctAnswer: 0,
+    explanation: "Globalization is the process of increasing interconnectedness and interdependence of world economies and societies."
+  },
+  {
+    id: "pred-2018-civ-65",
+    question: "What is 'sustainable development'?",
+    options: [
+      "Development meeting present needs without compromising future",
+      "Rapid development",
+      "Resource depletion",
+      "No development"
+    ],
+    correctAnswer: 0,
+    explanation: "Sustainable development is development that meets present needs without compromising the ability of future generations."
+  },
+  {
+    id: "pred-2018-civ-66",
+    question: "What is 'environmental protection'?",
+    options: [
+      "Protecting natural environment from pollution",
+      "Destroying nature",
+      "No environmental laws",
+      "Unlimited resource use"
+    ],
+    correctAnswer: 0,
+    explanation: "Environmental protection involves safeguarding the natural environment from pollution and degradation."
+  },
+  {
+    id: "pred-2018-civ-67",
+    question: "What is 'human development'?",
+    options: [
+      "Improving human well-being and capabilities",
+      "Economic growth only",
+      "Industrial development",
+      "Urban development"
+    ],
+    correctAnswer: 0,
+    explanation: "Human development focuses on improving people's well-being, capabilities, and quality of life."
+  },
+  {
+    id: "pred-2018-civ-68",
+    question: "What is 'gender equality'?",
+    options: [
+      "Equal rights and opportunities for all genders",
+      "Superiority of one gender",
+      "Different rights based on gender",
+      "Only men have rights"
+    ],
+    correctAnswer: 0,
+    explanation: "Gender equality means that all people, regardless of gender, have equal rights, responsibilities, and opportunities."
+  },
+  {
+    id: "pred-2018-civ-69",
+    question: "What is 'child rights'?",
+    options: [
+      "Rights specific to children under international law",
+      "Adult rights",
+      "No special rights",
+      "Parental rights only"
+    ],
+    correctAnswer: 0,
+    explanation: "Children's rights are special rights that protect children under international conventions like the UN Convention on the Rights of the Child."
+  },
+  {
+    id: "pred-2018-civ-70",
+    question: "What is 'freedom of speech'?",
+    options: [
+      "Right to express opinions without government censorship",
+      "Government control of speech",
+      "No speech allowed",
+      "Only government speech"
+    ],
+    correctAnswer: 0,
+    explanation: "Freedom of speech is the right to express opinions without censorship, restraint, or legal penalty."
+  },
+  {
+    id: "pred-2018-civ-71",
+    question: "What is 'freedom of assembly'?",
+    options: [
+      "Right to gather peacefully",
+      "No gatherings allowed",
+      "Only government gatherings",
+      "Military only"
+    ],
+    correctAnswer: 0,
+    explanation: "Freedom of assembly is the right to gather peacefully for political, social, or other purposes."
+  },
+  {
+    id: "pred-2018-civ-72",
+    question: "What is 'freedom of religion'?",
+    options: [
+      "Right to practice any religion or none",
+      "State religion only",
+      "No religion allowed",
+      "One religion mandatory"
+    ],
+    correctAnswer: 0,
+    explanation: "Freedom of religion is the right to practice, change, or have no religion without government interference."
+  },
+  {
+    id: "pred-2018-civ-73",
+    question: "What is 'freedom of the press'?",
+    options: [
+      "Right to publish without government censorship",
+      "Government control of media",
+      "No media allowed",
+      "Only state media"
+    ],
+    correctAnswer: 0,
+    explanation: "Freedom of the press is the right to publish news and opinions without government censorship."
+  },
+  {
+    id: "pred-2018-civ-74",
+    question: "What is 'right to education'?",
+    options: [
+      "Right to access education",
+      "No education right",
+      "Only rich can educate",
+      "Government can deny education"
+    ],
+    correctAnswer: 0,
+    explanation: "The right to education is a human right that ensures all people have access to education."
+  },
+  {
+    id: "pred-2018-civ-75",
+    question: "What is 'right to healthcare'?",
+    options: [
+      "Right to access medical services",
+      "No healthcare right",
+      "Only for wealthy",
+      "Optional right"
+    ],
+    correctAnswer: 0,
+    explanation: "The right to healthcare is the right to access medical services without discrimination."
+  },
+  {
+    id: "pred-2018-civ-76",
+    question: "What is 'rule of law'?",
+    options: [
+      "All individuals and institutions subject to law",
+      "Only citizens subject to law",
+      "Government above law",
+      "No law applies to leaders"
+    ],
+    correctAnswer: 0,
+    explanation: "Rule of law means that all individuals and institutions, including the government, are subject to and accountable under the law."
+  },
+  {
+    id: "pred-2018-civ-77",
+    question: "What is 'independence of judiciary'?",
+    options: [
+      "Courts free from government influence",
+      "Government controls courts",
+      "Courts serve politicians",
+      "No judiciary"
+    ],
+    correctAnswer: 0,
+    explanation: "Judicial independence means courts are free from government influence or pressure in their decisions."
+  },
+  {
+    id: "pred-2018-civ-78",
+    question: "What is 'checks and balances'?",
+    options: [
+      "System preventing any branch from becoming too powerful",
+      "No branch control",
+      "One branch controls all",
+      "No separation of powers"
+    ],
+    correctAnswer: 0,
+    explanation: "Checks and balances is a system that prevents any one branch of government from becoming too powerful."
+  },
+  {
+    id: "pred-2018-civ-79",
+    question: "What is 'devolution'?",
+    options: [
+      "Transfer of power from central to regional government",
+      "Centralizing power",
+      "No regional government",
+      "Military rule"
+    ],
+    correctAnswer: 0,
+    explanation: "Devolution is the transfer of power from central government to regional or local governments."
+  },
+  {
+    id: "pred-2018-civ-80",
+    question: "What is 'grassroots democracy'?",
+    options: [
+      "Democracy starting at local community level",
+      "Only national democracy",
+      "Top-down democracy",
+      "Elites only"
+    ],
+    correctAnswer: 0,
+    explanation: "Grassroots democracy refers to democratic processes that start at the local community level and move upward."
   }
 ];
 
@@ -2899,6 +5299,486 @@ export const predicted2018NaturalScholasticAptitudeQuestions: MatricExamQuestion
     ],
     correctAnswer: 0,
     explanation: "Prudent means acting with or showing care and thought for the future, which is synonymous with wise."
+  },
+  {
+    id: "pred-2018-sat-41",
+    question: "Complete the analogy: Doctor is to Hospital as Teacher is to ____",
+    options: [
+      "School",
+      "Hospital",
+      "Clinic",
+      "Office"
+    ],
+    correctAnswer: 0,
+    explanation: "A doctor works in a hospital, just as a teacher works in a school. This is a profession-workplace analogy."
+  },
+  {
+    id: "pred-2018-sat-42",
+    question: "What comes next: 3, 9, 27, 81, ____",
+    options: [
+      "243",
+      "162",
+      "243",
+      "324"
+    ],
+    correctAnswer: 0,
+    explanation: "The pattern multiplies by 3: 3×3=9, 9×3=27, 27×3=81, 81×3=243."
+  },
+  {
+    id: "pred-2018-sat-43",
+    question: "What is 15% of 200?",
+    options: [
+      "30",
+      "25",
+      "35",
+      "20"
+    ],
+    correctAnswer: 0,
+    explanation: "15% of 200 = 0.15 × 200 = 30."
+  },
+  {
+    id: "pred-2018-sat-44",
+    question: "Complete the analogy: Library is to Books as Museum is to ____",
+    options: [
+      "Artifacts",
+      "Books",
+      "Music",
+      "Games"
+    ],
+    correctAnswer: 0,
+    explanation: "A library contains books, just as a museum contains artifacts. This is a container-content analogy."
+  },
+  {
+    id: "pred-2018-sat-45",
+    question: "What comes next: 1, 4, 9, 16, 25, ____",
+    options: [
+      "36",
+      "30",
+      "40",
+      "49"
+    ],
+    correctAnswer: 0,
+    explanation: "The pattern is perfect squares: 1²=1, 2²=4, 3²=9, 4²=16, 5²=25, 6²=36."
+  },
+  {
+    id: "pred-2018-sat-46",
+    question: "What is the area of a rectangle with length 8 and width 5?",
+    options: [
+      "40",
+      "13",
+      "26",
+      "45"
+    ],
+    correctAnswer: 0,
+    explanation: "Area = length × width = 8 × 5 = 40."
+  },
+  {
+    id: "pred-2018-sat-47",
+    question: "Choose the word that is most opposite in meaning to 'Ancient':",
+    options: [
+      "Modern",
+      "Old",
+      "Historic",
+      "Classic"
+    ],
+    correctAnswer: 0,
+    explanation: "Ancient means very old, while modern means current or recent. They are opposites."
+  },
+  {
+    id: "pred-2018-sat-48",
+    question: "Complete the analogy: Fish is to Water as Bird is to ____",
+    options: [
+      "Air",
+      "Water",
+      "Land",
+      "Tree"
+    ],
+    correctAnswer: 0,
+    explanation: "Fish live in water, just as birds live in air. This is a creature-habitat analogy."
+  },
+  {
+    id: "pred-2018-sat-49",
+    question: "What comes next: 2, 4, 8, 16, 32, ____",
+    options: [
+      "64",
+      "48",
+      "96",
+      "128"
+    ],
+    correctAnswer: 0,
+    explanation: "The pattern doubles each time: 2×2=4, 4×2=8, 8×2=16, 16×2=32, 32×2=64."
+  },
+  {
+    id: "pred-2018-sat-50",
+    question: "What is the sum of angles in a triangle?",
+    options: [
+      "180°",
+      "90°",
+      "360°",
+      "270°"
+    ],
+    correctAnswer: 0,
+    explanation: "The sum of interior angles in any triangle is always 180 degrees."
+  },
+  {
+    id: "pred-2018-sat-51",
+    question: "Choose the word that is most similar in meaning to 'Candid':",
+    options: [
+      "Honest",
+      "Secretive",
+      "Dishonest",
+      "Hidden"
+    ],
+    correctAnswer: 0,
+    explanation: "Candid means truthful and straightforward, which is synonymous with honest."
+  },
+  {
+    id: "pred-2018-sat-52",
+    question: "Complete the analogy: Author is to Book as Artist is to ____",
+    options: [
+      "Painting",
+      "Book",
+      "Music",
+      "Dance"
+    ],
+    correctAnswer: 0,
+    explanation: "An author creates books, just as an artist creates paintings. This is a creator-creation analogy."
+  },
+  {
+    id: "pred-2018-sat-53",
+    question: "What comes next: 10, 20, 30, 40, 50, ____",
+    options: [
+      "60",
+      "55",
+      "65",
+      "70"
+    ],
+    correctAnswer: 0,
+    explanation: "The pattern increases by 10 each time: 10+10=20, 20+10=30, 30+10=40, 40+10=50, 50+10=60."
+  },
+  {
+    id: "pred-2018-sat-54",
+    question: "What is the perimeter of a rectangle with length 10 and width 4?",
+    options: [
+      "28",
+      "14",
+      "40",
+      "20"
+    ],
+    correctAnswer: 0,
+    explanation: "Perimeter = 2 × (length + width) = 2 × (10 + 4) = 2 × 14 = 28."
+  },
+  {
+    id: "pred-2018-sat-55",
+    question: "Choose the word that is most opposite in meaning to 'Generous':",
+    options: [
+      "Stingy",
+      "Kind",
+      "Giving",
+      "Charitable"
+    ],
+    correctAnswer: 0,
+    explanation: "Generous means willing to give, while stingy means unwilling to give. They are opposites."
+  },
+  {
+    id: "pred-2018-sat-56",
+    question: "Complete the analogy: Key is to Lock as Password is to ____",
+    options: [
+      "Computer",
+      "Key",
+      "Door",
+      "Safe"
+    ],
+    correctAnswer: 0,
+    explanation: "A key opens a lock, just as a password unlocks a computer. This is an access tool analogy."
+  },
+  {
+    id: "pred-2018-sat-57",
+    question: "What comes next: 1, 8, 27, 64, 125, ____",
+    options: [
+      "216",
+      "200",
+      "180",
+      "250"
+    ],
+    correctAnswer: 0,
+    explanation: "The pattern is cubes: 1³=1, 2³=8, 3³=27, 4³=64, 5³=125, 6³=216."
+  },
+  {
+    id: "pred-2018-sat-58",
+    question: "What is the area of a triangle with base 10 and height 6?",
+    options: [
+      "30",
+      "60",
+      "16",
+      "36"
+    ],
+    correctAnswer: 0,
+    explanation: "Area = ½ × base × height = ½ × 10 × 6 = 30."
+  },
+  {
+    id: "pred-2018-sat-59",
+    question: "Choose the word that is most similar in meaning to 'Meticulous':",
+    options: [
+      "Careful",
+      "Careless",
+      "Rough",
+      "Quick"
+    ],
+    correctAnswer: 0,
+    explanation: "Meticulous means showing great attention to detail, which is synonymous with careful."
+  },
+  {
+    id: "pred-2018-sat-60",
+    question: "Complete the analogy: Earth is to Sun as Moon is to ____",
+    options: [
+      "Earth",
+      "Sun",
+      "Star",
+      "Planet"
+    ],
+    correctAnswer: 0,
+    explanation: "The Earth orbits the Sun, just as the Moon orbits the Earth. This is an orbital relationship analogy."
+  },
+  {
+    id: "pred-2018-sat-61",
+    question: "What comes next: 100, 90, 80, 70, 60, ____",
+    options: [
+      "50",
+      "55",
+      "45",
+      "40"
+    ],
+    correctAnswer: 0,
+    explanation: "The pattern decreases by 10 each time: 100-10=90, 90-10=80, 80-10=70, 70-10=60, 60-10=50."
+  },
+  {
+    id: "pred-2018-sat-62",
+    question: "What is the volume of a cube with side length 3?",
+    options: [
+      "27",
+      "9",
+      "18",
+      "36"
+    ],
+    correctAnswer: 0,
+    explanation: "Volume = side³ = 3³ = 27."
+  },
+  {
+    id: "pred-2018-sat-63",
+    question: "Choose the word that is most opposite in meaning to 'Optimistic':",
+    options: [
+      "Pessimistic",
+      "Hopeful",
+      "Positive",
+      "Cheerful"
+    ],
+    correctAnswer: 0,
+    explanation: "Optimistic means hopeful about the future, while pessimistic means expecting the worst. They are opposites."
+  },
+  {
+    id: "pred-2018-sat-64",
+    question: "Complete the analogy: Seed is to Plant as Egg is to ____",
+    options: [
+      "Bird",
+      "Chicken",
+      "Nest",
+      "Tree"
+    ],
+    correctAnswer: 0,
+    explanation: "A seed grows into a plant, just as an egg develops into a bird. This is a growth/development analogy."
+  },
+  {
+    id: "pred-2018-sat-65",
+    question: "What comes next: 1, 2, 4, 7, 11, 16, ____",
+    options: [
+      "22",
+      "21",
+      "23",
+      "20"
+    ],
+    correctAnswer: 0,
+    explanation: "The pattern increases by +1, +2, +3, +4, +5. So next is +6: 16 + 6 = 22."
+  },
+  {
+    id: "pred-2018-sat-66",
+    question: "What is the circumference of a circle with radius 7? (Use π ≈ 22/7)",
+    options: [
+      "44",
+      "14",
+      "22",
+      "154"
+    ],
+    correctAnswer: 0,
+    explanation: "Circumference = 2πr = 2 × (22/7) × 7 = 44."
+  },
+  {
+    id: "pred-2018-sat-67",
+    question: "Choose the word that is most similar in meaning to 'Diligent':",
+    options: [
+      "Hardworking",
+      "Lazy",
+      "Idle",
+      "Careless"
+    ],
+    correctAnswer: 0,
+    explanation: "Diligent means having or showing care and conscientiousness in one's work, which is synonymous with hardworking."
+  },
+  {
+    id: "pred-2018-sat-68",
+    question: "Complete the analogy: Day is to Night as Summer is to ____",
+    options: [
+      "Winter",
+      "Spring",
+      "Autumn",
+      "Fall"
+    ],
+    correctAnswer: 0,
+    explanation: "Day and night are opposites, just as summer and winter are opposite seasons. This is an opposite analogy."
+  },
+  {
+    id: "pred-2018-sat-69",
+    question: "What comes next: 2, 3, 5, 8, 13, 21, ____",
+    options: [
+      "34",
+      "32",
+      "33",
+      "35"
+    ],
+    correctAnswer: 0,
+    explanation: "The pattern is Fibonacci: each number is the sum of the two previous: 2+3=5, 3+5=8, 5+8=13, 8+13=21, 13+21=34."
+  },
+  {
+    id: "pred-2018-sat-70",
+    question: "What is the area of a circle with radius 5? (Use π ≈ 3.14)",
+    options: [
+      "78.5",
+      "31.4",
+      "15.7",
+      "157"
+    ],
+    correctAnswer: 0,
+    explanation: "Area = πr² = 3.14 × 5² = 3.14 × 25 = 78.5."
+  },
+  {
+    id: "pred-2018-sat-71",
+    question: "Choose the word that is most opposite in meaning to 'Benevolent':",
+    options: [
+      "Malevolent",
+      "Kind",
+      "Generous",
+      "Charitable"
+    ],
+    correctAnswer: 0,
+    explanation: "Benevolent means well-meaning and kindly, while malevolent means having or showing a wish to do evil. They are opposites."
+  },
+  {
+    id: "pred-2018-sat-72",
+    question: "Complete the analogy: Wheel is to Car as Wing is to ____",
+    options: [
+      "Airplane",
+      "Car",
+      "Bird",
+      "Ship"
+    ],
+    correctAnswer: 0,
+    explanation: "A wheel is part of a car, just as a wing is part of an airplane. This is a part-whole analogy."
+  },
+  {
+    id: "pred-2018-sat-73",
+    question: "What comes next: 0.5, 1, 1.5, 2, 2.5, ____",
+    options: [
+      "3",
+      "2.75",
+      "3.5",
+      "2.25"
+    ],
+    correctAnswer: 0,
+    explanation: "The pattern increases by 0.5 each time: 0.5+0.5=1, 1+0.5=1.5, 1.5+0.5=2, 2+0.5=2.5, 2.5+0.5=3."
+  },
+  {
+    id: "pred-2018-sat-74",
+    question: "What is the perimeter of a triangle with sides 5, 12, and 13?",
+    options: [
+      "30",
+      "26",
+      "28",
+      "25"
+    ],
+    correctAnswer: 0,
+    explanation: "Perimeter = 5 + 12 + 13 = 30."
+  },
+  {
+    id: "pred-2018-sat-75",
+    question: "Choose the word that is most similar in meaning to 'Vigilant':",
+    options: [
+      "Watchful",
+      "Sleepy",
+      "Careless",
+      "Relaxed"
+    ],
+    correctAnswer: 0,
+    explanation: "Vigilant means keeping careful watch for possible danger or difficulties, which is synonymous with watchful."
+  },
+  {
+    id: "pred-2018-sat-76",
+    question: "Complete the analogy: Clock is to Time as Thermometer is to ____",
+    options: [
+      "Temperature",
+      "Time",
+      "Weather",
+      "Heat"
+    ],
+    correctAnswer: 0,
+    explanation: "A clock measures time, just as a thermometer measures temperature. This is an instrument-measurement analogy."
+  },
+  {
+    id: "pred-2018-sat-77",
+    question: "What comes next: 1, 3, 6, 10, 15, 21, ____",
+    options: [
+      "28",
+      "27",
+      "29",
+      "30"
+    ],
+    correctAnswer: 0,
+    explanation: "The pattern increases by +2, +3, +4, +5, +6. So next is +7: 21 + 7 = 28."
+  },
+  {
+    id: "pred-2018-sat-78",
+    question: "What is 33 1/3% of 90?",
+    options: [
+      "30",
+      "33",
+      "27",
+      "36"
+    ],
+    correctAnswer: 0,
+    explanation: "33 1/3% = 1/3. 1/3 of 90 = 90 ÷ 3 = 30."
+  },
+  {
+    id: "pred-2018-sat-79",
+    question: "Choose the word that is most opposite in meaning to 'Eloquent':",
+    options: [
+      "Inarticulate",
+      "Fluent",
+      "Articulate",
+      "Expressive"
+    ],
+    correctAnswer: 0,
+    explanation: "Eloquent means fluent or persuasive in speaking or writing, while inarticulate means unable to express ideas clearly. They are opposites."
+  },
+  {
+    id: "pred-2018-sat-80",
+    question: "Complete the analogy: Music is to Ear as Painting is to ____",
+    options: [
+      "Eye",
+      "Ear",
+      "Nose",
+      "Hand"
+    ],
+    correctAnswer: 0,
+    explanation: "Music is perceived by the ear, just as painting is perceived by the eye. This is a sense-perception analogy."
   }
 ];
 
@@ -3298,6 +6178,486 @@ export const predicted2018NaturalEnglishQuestions: MatricExamQuestion[] = [
     ],
     correctAnswer: 0,
     explanation: "The past participle of 'write' is 'written'. It is used with auxiliary verbs like 'have' or 'had'."
+  },
+  {
+    id: "pred-2018-eng-41",
+    question: "Choose the correct word: 'She ___ to the store yesterday.'",
+    options: [
+      "went",
+      "go",
+      "goes",
+      "gone"
+    ],
+    correctAnswer: 0,
+    explanation: "'Went' is the past tense of 'go'. The action happened yesterday, so past tense is needed."
+  },
+  {
+    id: "pred-2018-eng-42",
+    question: "What is the plural of 'person'?",
+    options: [
+      "people",
+      "persons",
+      "person",
+      "people"
+    ],
+    correctAnswer: 0,
+    explanation: "'People' is the common plural of 'person'."
+  },
+  {
+    id: "pred-2018-eng-43",
+    question: "Which word is a pronoun?",
+    options: [
+      "they",
+      "their",
+      "them",
+      "themselves"
+    ],
+    correctAnswer: 0,
+    explanation: "'They' is a pronoun used to refer to people or things previously mentioned."
+  },
+  {
+    id: "pred-2018-eng-44",
+    question: "What is the comparative form of 'beautiful'?",
+    options: [
+      "more beautiful",
+      "beautifuler",
+      "beautifuller",
+      "most beautiful"
+    ],
+    correctAnswer: 0,
+    explanation: "For longer adjectives like 'beautiful', we use 'more' to form the comparative."
+  },
+  {
+    id: "pred-2018-eng-45",
+    question: "Choose the correct preposition: 'I am interested ___ science.'",
+    options: [
+      "in",
+      "at",
+      "on",
+      "to"
+    ],
+    correctAnswer: 0,
+    explanation: "The correct preposition with 'interested' is 'in'."
+  },
+  {
+    id: "pred-2018-eng-46",
+    question: "What is the meaning of the prefix 'un-'?",
+    options: [
+      "Not",
+      "Before",
+      "After",
+      "Between"
+    ],
+    correctAnswer: 0,
+    explanation: "The prefix 'un-' means not, as in 'unhappy' (not happy)."
+  },
+  {
+    id: "pred-2018-eng-47",
+    question: "What type of noun is 'freedom'?",
+    options: [
+      "Abstract noun",
+      "Concrete noun",
+      "Proper noun",
+      "Collective noun"
+    ],
+    correctAnswer: 0,
+    explanation: "'Freedom' is an abstract noun because it represents an idea or concept that cannot be physically touched."
+  },
+  {
+    id: "pred-2018-eng-48",
+    question: "Choose the correct word: 'They ___ playing football now.'",
+    options: [
+      "are",
+      "is",
+      "was",
+      "were"
+    ],
+    correctAnswer: 0,
+    explanation: "'They' is plural and the action is happening now (present continuous), so we use 'are'."
+  },
+  {
+    id: "pred-2018-eng-49",
+    question: "What is the superlative form of 'beautiful'?",
+    options: [
+      "most beautiful",
+      "beautifuler",
+      "more beautiful",
+      "beautifulest"
+    ],
+    correctAnswer: 0,
+    explanation: "For longer adjectives like 'beautiful', we use 'most' to form the superlative."
+  },
+  {
+    id: "pred-2018-eng-50",
+    question: "Which sentence is in the active voice?",
+    options: [
+      "The teacher explained the lesson.",
+      "The lesson was explained by the teacher.",
+      "The lesson is being explained by the teacher.",
+      "The lesson has been explained by the teacher."
+    ],
+    correctAnswer: 0,
+    explanation: "Active voice: subject performs the action. 'The teacher explained the lesson' is active (teacher performs the explaining)."
+  },
+  {
+    id: "pred-2018-eng-51",
+    question: "What is the past tense of 'teach'?",
+    options: [
+      "taught",
+      "teached",
+      "teaching",
+      "teaches"
+    ],
+    correctAnswer: 0,
+    explanation: "The past tense of 'teach' is the irregular verb 'taught'."
+  },
+  {
+    id: "pred-2018-eng-52",
+    question: "What is the plural of 'tooth'?",
+    options: [
+      "teeth",
+      "tooths",
+      "tooth",
+      "teeths"
+    ],
+    correctAnswer: 0,
+    explanation: "'Teeth' is the irregular plural of 'tooth'."
+  },
+  {
+    id: "pred-2018-eng-53",
+    question: "Which word is a conjunction?",
+    options: [
+      "although",
+      "quickly",
+      "quick",
+      "quickness"
+    ],
+    correctAnswer: 0,
+    explanation: "'Although' is a conjunction used to connect ideas. 'Quickly' is an adverb, 'quick' is an adjective, 'quickness' is a noun."
+  },
+  {
+    id: "pred-2018-eng-54",
+    question: "What is the comparative form of 'little'?",
+    options: [
+      "less",
+      "littler",
+      "more little",
+      "littlest"
+    ],
+    correctAnswer: 0,
+    explanation: "'Little' is an irregular adjective. Its comparative form is 'less'."
+  },
+  {
+    id: "pred-2018-eng-55",
+    question: "Choose the correct preposition: 'She is good ___ mathematics.'",
+    options: [
+      "at",
+      "in",
+      "on",
+      "to"
+    ],
+    correctAnswer: 0,
+    explanation: "The correct preposition with 'good' when referring to skills is 'at'."
+  },
+  {
+    id: "pred-2018-eng-56",
+    question: "What is the meaning of the suffix '-ful'?",
+    options: [
+      "Full of",
+      "Without",
+      "Small",
+      "Large"
+    ],
+    correctAnswer: 0,
+    explanation: "The suffix '-ful' means full of, as in 'hopeful' (full of hope)."
+  },
+  {
+    id: "pred-2018-eng-57",
+    question: "What type of noun is 'class'?",
+    options: [
+      "Collective noun",
+      "Proper noun",
+      "Abstract noun",
+      "Concrete noun"
+    ],
+    correctAnswer: 0,
+    explanation: "'Class' is a collective noun because it refers to a group of students considered as a single unit."
+  },
+  {
+    id: "pred-2018-eng-58",
+    question: "Choose the correct word: 'I ___ my homework yesterday.'",
+    options: [
+      "did",
+      "do",
+      "does",
+      "done"
+    ],
+    correctAnswer: 0,
+    explanation: "'Did' is the past tense of 'do'. The action happened yesterday, so past tense is needed."
+  },
+  {
+    id: "pred-2018-eng-59",
+    question: "What is the superlative form of 'little'?",
+    options: [
+      "least",
+      "littler",
+      "less",
+      "littlest"
+    ],
+    correctAnswer: 0,
+    explanation: "'Little' is an irregular adjective. Its superlative form is 'least'."
+  },
+  {
+    id: "pred-2018-eng-60",
+    question: "Which sentence is in the passive voice?",
+    options: [
+      "The cake was baked by my mother.",
+      "My mother baked the cake.",
+      "My mother is baking the cake.",
+      "My mother has baked the cake."
+    ],
+    correctAnswer: 0,
+    explanation: "Passive voice: subject receives the action. 'The cake was baked by my mother' is passive (cake receives the action)."
+  },
+  {
+    id: "pred-2018-eng-61",
+    question: "What is the past participle of 'eat'?",
+    options: [
+      "eaten",
+      "ate",
+      "eating",
+      "eats"
+    ],
+    correctAnswer: 0,
+    explanation: "The past participle of 'eat' is 'eaten'. It is used with auxiliary verbs like 'have' or 'had'."
+  },
+  {
+    id: "pred-2018-eng-62",
+    question: "What is the plural of 'foot'?",
+    options: [
+      "feet",
+      "foots",
+      "foot",
+      "feets"
+    ],
+    correctAnswer: 0,
+    explanation: "'Feet' is the irregular plural of 'foot'."
+  },
+  {
+    id: "pred-2018-eng-63",
+    question: "Which word is an adjective?",
+    options: [
+      "happy",
+      "happily",
+      "happiness",
+      "happen"
+    ],
+    correctAnswer: 0,
+    explanation: "'Happy' is an adjective describing a noun. 'Happily' is an adverb, 'happiness' is a noun, 'happen' is a verb."
+  },
+  {
+    id: "pred-2018-eng-64",
+    question: "What is the comparative form of 'far'?",
+    options: [
+      "farther",
+      "farrer",
+      "more far",
+      "farest"
+    ],
+    correctAnswer: 0,
+    explanation: "'Far' is an irregular adjective. Its comparative form is 'farther' (or 'further' for distance)."
+  },
+  {
+    id: "pred-2018-eng-65",
+    question: "Choose the correct preposition: 'He is afraid ___ dogs.'",
+    options: [
+      "of",
+      "at",
+      "in",
+      "to"
+    ],
+    correctAnswer: 0,
+    explanation: "The correct preposition with 'afraid' is 'of'."
+  },
+  {
+    id: "pred-2018-eng-66",
+    question: "What is the meaning of the prefix 'mis-'?",
+    options: [
+      "Wrong or badly",
+      "Before",
+      "After",
+      "Not"
+    ],
+    correctAnswer: 0,
+    explanation: "The prefix 'mis-' means wrong or badly, as in 'misunderstand' (understand wrongly)."
+  },
+  {
+    id: "pred-2018-eng-67",
+    question: "What type of noun is 'beauty'?",
+    options: [
+      "Abstract noun",
+      "Concrete noun",
+      "Proper noun",
+      "Collective noun"
+    ],
+    correctAnswer: 0,
+    explanation: "'Beauty' is an abstract noun because it represents a quality that cannot be physically touched."
+  },
+  {
+    id: "pred-2018-eng-68",
+    question: "Choose the correct word: 'She ___ to Paris last year.'",
+    options: [
+      "went",
+      "go",
+      "goes",
+      "gone"
+    ],
+    correctAnswer: 0,
+    explanation: "'Went' is the past tense of 'go'. The action happened last year, so past tense is needed."
+  },
+  {
+    id: "pred-2018-eng-69",
+    question: "What is the superlative form of 'far'?",
+    options: [
+      "farthest",
+      "farrer",
+      "more far",
+      "farther"
+    ],
+    correctAnswer: 0,
+    explanation: "'Far' is an irregular adjective. Its superlative form is 'farthest' (or 'furthest' for distance)."
+  },
+  {
+    id: "pred-2018-eng-70",
+    question: "Which sentence is in the active voice?",
+    options: [
+      "The cat chased the mouse.",
+      "The mouse was chased by the cat.",
+      "The mouse is being chased by the cat.",
+      "The mouse has been chased by the cat."
+    ],
+    correctAnswer: 0,
+    explanation: "Active voice: subject performs the action. 'The cat chased the mouse' is active (cat performs the chasing)."
+  },
+  {
+    id: "pred-2018-eng-71",
+    question: "What is the past tense of 'buy'?",
+    options: [
+      "bought",
+      "buyed",
+      "buying",
+      "buys"
+    ],
+    correctAnswer: 0,
+    explanation: "The past tense of 'buy' is the irregular verb 'bought'."
+  },
+  {
+    id: "pred-2018-eng-72",
+    question: "What is the plural of 'man'?",
+    options: [
+      "men",
+      "mans",
+      "man",
+      "mens"
+    ],
+    correctAnswer: 0,
+    explanation: "'Men' is the irregular plural of 'man'."
+  },
+  {
+    id: "pred-2018-eng-73",
+    question: "Which word is a noun?",
+    options: [
+      "happiness",
+      "happy",
+      "happily",
+      "happen"
+    ],
+    correctAnswer: 0,
+    explanation: "'Happiness' is a noun. 'Happy' is an adjective, 'happily' is an adverb, 'happen' is a verb."
+  },
+  {
+    id: "pred-2018-eng-74",
+    question: "What is the comparative form of 'much'?",
+    options: [
+      "more",
+      "mucher",
+      "most",
+      "more much"
+    ],
+    correctAnswer: 0,
+    explanation: "'Much' is an irregular adjective. Its comparative form is 'more'."
+  },
+  {
+    id: "pred-2018-eng-75",
+    question: "Choose the correct preposition: 'She is married ___ him.'",
+    options: [
+      "to",
+      "with",
+      "at",
+      "in"
+    ],
+    correctAnswer: 0,
+    explanation: "The correct preposition with 'married' is 'to'."
+  },
+  {
+    id: "pred-2018-eng-76",
+    question: "What is the meaning of the suffix '-ness'?",
+    options: [
+      "State or quality",
+      "Without",
+      "Full of",
+      "Small"
+    ],
+    correctAnswer: 0,
+    explanation: "The suffix '-ness' means state or quality, as in 'kindness' (quality of being kind)."
+  },
+  {
+    id: "pred-2018-eng-77",
+    question: "What type of noun is 'audience'?",
+    options: [
+      "Collective noun",
+      "Proper noun",
+      "Abstract noun",
+      "Concrete noun"
+    ],
+    correctAnswer: 0,
+    explanation: "'Audience' is a collective noun because it refers to a group of listeners considered as a single unit."
+  },
+  {
+    id: "pred-2018-eng-78",
+    question: "Choose the correct word: 'We ___ the movie last night.'",
+    options: [
+      "saw",
+      "see",
+      "sees",
+      "seen"
+    ],
+    correctAnswer: 0,
+    explanation: "'Saw' is the past tense of 'see'. The action happened last night, so past tense is needed."
+  },
+  {
+    id: "pred-2018-eng-79",
+    question: "What is the superlative form of 'much'?",
+    options: [
+      "most",
+      "more",
+      "mucher",
+      "most much"
+    ],
+    correctAnswer: 0,
+    explanation: "'Much' is an irregular adjective. Its superlative form is 'most'."
+  },
+  {
+    id: "pred-2018-eng-80",
+    question: "Which sentence is in the passive voice?",
+    options: [
+      "The letter was written by John.",
+      "John wrote the letter.",
+      "John is writing the letter.",
+      "John has written the letter."
+    ],
+    correctAnswer: 0,
+    explanation: "Passive voice: subject receives the action. 'The letter was written by John' is passive (letter receives the action)."
   }
 ];
 

@@ -1,6 +1,6 @@
 import { useState, useMemo, memo } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { User, Home, GraduationCap, BookOpen, Briefcase, FileText, Menu, X, CreditCard, Download, LogOut, LogIn, ChevronDown, Phone, Target } from 'lucide-react';
+import { User, Home, GraduationCap, BookOpen, Briefcase, FileText, Menu, X, CreditCard, Download, LogOut, LogIn, ChevronDown, Phone, Target, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
@@ -35,7 +35,7 @@ const TopBar = () => {
     { path: '/books', icon: Download, label: 'Books' },
     { path: '/career-simulator', icon: Briefcase, label: 'Career' },
     { path: '/contact', icon: Phone, label: 'Contact' },
-    ...(isAdmin ? [{ path: '/dashboard', icon: User, label: 'Dashboard' }] : []),
+    ...(isAdmin ? [{ path: '/dashboard', icon: User, label: 'Dashboard' }, { path: '/teachers', icon: Users, label: 'Teachers' }] : []),
   ], [isAdmin]);
 
   const mobileAccountItems = useMemo(() => [

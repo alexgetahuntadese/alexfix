@@ -312,7 +312,7 @@ const PredictedMatricQuizPage = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-950 via-teal-900 to-emerald-950 pt-14 px-4 pb-4 overflow-hidden relative">
+    <div className={`min-h-screen bg-gradient-to-br ${theme.bgGradient} pt-14 px-4 pb-4 overflow-hidden relative`}>
       <StarField starCount={40} shootingCount={2} />
       <TopBar />
 
@@ -327,7 +327,7 @@ const PredictedMatricQuizPage = () => {
             <ArrowLeft className="h-5 w-5" />
           </Button>
           <div className="flex items-center gap-3">
-            <Badge className="bg-gradient-to-r from-emerald-500 to-teal-500 text-white border-0">
+            <Badge className={`bg-gradient-to-r ${theme.gradient} text-white border-0`}>
               <Sparkles className="h-3 w-3 mr-1" />
               90% Predicted
             </Badge>
@@ -349,8 +349,8 @@ const PredictedMatricQuizPage = () => {
           <CardContent className="p-6">
             <div className="mb-6">
               <div className="flex items-start gap-3 mb-4">
-                <div className="p-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30">
-                  <Brain className="h-5 w-5 text-emerald-400" />
+                <div className={`p-2 rounded-lg bg-${theme.bgTint}-500/20 border border-${theme.borderTint}-500/30`}>
+                  <Brain className={`h-5 w-5 ${theme.iconColor}`} />
                 </div>
                 <div className="flex-1">
                   <h3 className="text-white font-semibold mb-1">Question {currentIndex + 1}</h3>
@@ -381,7 +381,7 @@ const PredictedMatricQuizPage = () => {
                     disabled={selectedAnswer !== null}
                     className={`w-full text-left p-4 rounded-xl border transition-all duration-200 ${
                       variant === 'correct'
-                        ? 'bg-emerald-500/20 border-emerald-500 text-emerald-300'
+                        ? `bg-${theme.primary}-500/20 border-${theme.primary}-500 text-${theme.primary}-300`
                         : variant === 'incorrect'
                         ? 'bg-red-500/20 border-red-500 text-red-300'
                         : isSelected
@@ -392,7 +392,7 @@ const PredictedMatricQuizPage = () => {
                     <div className="flex items-start gap-3">
                       <div className={`w-6 h-6 rounded-full border-2 flex items-center justify-center flex-shrink-0 mt-0.5 ${
                         variant === 'correct'
-                          ? 'border-emerald-500 bg-emerald-500 text-white'
+                          ? `border-${theme.primary}-500 bg-${theme.primary}-500 text-white`
                           : variant === 'incorrect'
                           ? 'border-red-500 bg-red-500 text-white'
                           : isSelected
@@ -410,12 +410,12 @@ const PredictedMatricQuizPage = () => {
             </div>
 
             {showExplanation && currentQuestion.explanation && (
-              <div className="mt-6 p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30">
+              <div className={`mt-6 p-4 rounded-xl bg-${theme.bgTint}-500/10 border border-${theme.borderTint}-500/30`}>
                 <div className="flex items-start gap-3">
-                  <Lightbulb className="h-5 w-5 text-emerald-400 mt-0.5 flex-shrink-0" />
+                  <Lightbulb className={`h-5 w-5 ${theme.iconColor} mt-0.5 flex-shrink-0`} />
                   <div className="flex-1">
-                    <h4 className="text-emerald-300 font-semibold mb-2">Explanation</h4>
-                    <p className="text-emerald-200/80 text-sm leading-relaxed">
+                    <h4 className={`text-${theme.primary}-300 font-semibold mb-2`}>Explanation</h4>
+                    <p className={`text-${theme.primary}-200/80 text-sm leading-relaxed`}>
                       {renderRichText(currentQuestion.explanation, 'explanation')}
                     </p>
                   </div>
@@ -430,14 +430,14 @@ const PredictedMatricQuizPage = () => {
             onClick={handlePrevious}
             disabled={currentIndex === 0}
             variant="outline"
-            className="flex-1 border-white/20 text-white hover:bg-white/10 disabled:opacity-50"
+            className="flex-1 border-white/20 text-white hover:bg-white/10 disabled:opacity-50 disabled:cursor-not-allowed"
           >
             Previous
           </Button>
           {selectedAnswer !== null ? (
             <Button
               onClick={handleNext}
-              className="flex-1 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white"
+              className={`flex-1 bg-gradient-to-r ${theme.gradient} hover:${theme.gradientHover} text-white shadow-lg`}
             >
               {currentIndex + 1 === questions.length ? 'Finish' : 'Next'}
               <ChevronRight className="h-4 w-4 ml-2" />
@@ -454,12 +454,12 @@ const PredictedMatricQuizPage = () => {
           )}
         </div>
 
-        <div className="mt-6 p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30">
+        <div className={`mt-6 p-4 rounded-xl bg-${theme.bgTint}-500/10 border border-${theme.borderTint}-500/30`}>
           <div className="flex items-start gap-3">
-            <Clock className="h-5 w-5 text-emerald-400 mt-0.5" />
+            <Clock className={`h-5 w-5 ${theme.iconColor} mt-0.5`} />
             <div className="flex-1">
-              <h3 className="text-emerald-300 font-semibold mb-1">90% Probability</h3>
-              <p className="text-emerald-200/70 text-sm">
+              <h3 className={`text-${theme.primary}-300 font-semibold mb-1`}>90% Probability</h3>
+              <p className={`text-${theme.primary}-200/70 text-sm`}>
                 This question has a 90% probability of appearing in the next matric exam based on analysis of previous years' patterns.
               </p>
             </div>
