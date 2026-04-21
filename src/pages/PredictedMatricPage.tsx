@@ -1,57 +1,102 @@
 import { useNavigate } from 'react-router-dom';
+import { memo, useMemo, useState, useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ArrowLeft, TrendingUp, Sparkles, Target, BookOpen, Clock, CheckCircle } from 'lucide-react';
 import TopBar from '@/components/TopBar';
 import StarField from '@/components/StarField';
-import {
-  predicted2018NaturalMathQuestions,
-  predicted2018NaturalPhysicsQuestions,
-  predicted2018NaturalChemistryQuestions,
-  predicted2018NaturalBiologyQuestions,
-  predicted2018NaturalEnglishQuestions,
-  predicted2018NaturalCivicsQuestions,
-  predicted2018NaturalScholasticAptitudeQuestions,
-  predicted2018SocialMathQuestions,
-  predicted2018SocialEnglishQuestions,
-  predicted2018SocialHistoryQuestions,
-  predicted2018SocialGeographyQuestions,
-  predicted2018SocialEconomicsQuestions,
-  predicted2018SocialCivicsQuestions,
-  predicted2018SocialScholasticAptitudeQuestions,
-} from '@/data/predicted2018MatricQuestions';
+
+// Lazy load question data to reduce initial bundle size
+const getPredictedQuestions = () => {
+  return import('@/data/predicted2018MatricQuestions').then(module => ({
+    naturalMath: module.predicted2018NaturalMathQuestions,
+    naturalPhysics: module.predicted2018NaturalPhysicsQuestions,
+    naturalChemistry: module.predicted2018NaturalChemistryQuestions,
+    naturalBiology: module.predicted2018NaturalBiologyQuestions,
+    naturalEnglish: module.predicted2018NaturalEnglishQuestions,
+    naturalCivics: module.predicted2018NaturalCivicsQuestions,
+    naturalScholastic: module.predicted2018NaturalScholasticAptitudeQuestions,
+    socialMath: module.predicted2018SocialMathQuestions,
+    socialEnglish: module.predicted2018SocialEnglishQuestions,
+    socialHistory: module.predicted2018SocialHistoryQuestions,
+    socialGeography: module.predicted2018SocialGeographyQuestions,
+    socialEconomics: module.predicted2018SocialEconomicsQuestions,
+    socialCivics: module.predicted2018SocialCivicsQuestions,
+    socialScholastic: module.predicted2018SocialScholasticAptitudeQuestions,
+  }));
+};
+
+// Subject metadata (lightweight, doesn't include question data)
+const naturalSubjectsMetadata = [
+  { subject: 'Mathematics', icon: '📐' },
+  { subject: 'Physics', icon: '⚛️' },
+  { subject: 'Chemistry', icon: '🧪' },
+  { subject: 'Biology', icon: '🧬' },
+  { subject: 'English', icon: '📚' },
+  { subject: 'Civics', icon: '⚖️' },
+  { subject: 'Scholastic Aptitude Test', icon: '🧠' },
+] as const;
+
+const socialSubjectsMetadata = [
+  { subject: 'Mathematics', icon: '📐' },
+  { subject: 'English', icon: '📚' },
+  { subject: 'History', icon: '🏛️' },
+  { subject: 'Geography', icon: '🌍' },
+  { subject: 'Economics', icon: '💰' },
+  { subject: 'Civics', icon: '⚖️' },
+  { subject: 'Scholastic Aptitude Test', icon: '🧠' },
+] as const;
 
 const PredictedMatricPage = () => {
   const navigate = useNavigate();
+  const [questionData, setQuestionData] = useState<any>(null);
 
-  const naturalSubjects = [
-    { subject: 'Mathematics', questions: predicted2018NaturalMathQuestions, icon: '📐' },
-    { subject: 'Physics', questions: predicted2018NaturalPhysicsQuestions, icon: '⚛️' },
-    { subject: 'Chemistry', questions: predicted2018NaturalChemistryQuestions, icon: '🧪' },
-    { subject: 'Biology', questions: predicted2018NaturalBiologyQuestions, icon: '🧬' },
-    { subject: 'English', questions: predicted2018NaturalEnglishQuestions, icon: '📚' },
-    { subject: 'Civics', questions: predicted2018NaturalCivicsQuestions, icon: '⚖️' },
-    { subject: 'Scholastic Aptitude Test', questions: predicted2018NaturalScholasticAptitudeQuestions, icon: '🧠' },
-  ];
+  useEffect(() => {
+    getPredictedQuestions().then(data => setQuestionData(data));
+  }, []);
 
-  const socialSubjects = [
-    { subject: 'Mathematics', questions: predicted2018SocialMathQuestions, icon: '📐' },
-    { subject: 'English', questions: predicted2018SocialEnglishQuestions, icon: '📚' },
-    { subject: 'History', questions: predicted2018SocialHistoryQuestions, icon: '🏛️' },
-    { subject: 'Geography', questions: predicted2018SocialGeographyQuestions, icon: '🌍' },
-    { subject: 'Economics', questions: predicted2018SocialEconomicsQuestions, icon: '💰' },
-    { subject: 'Civics', questions: predicted2018SocialCivicsQuestions, icon: '⚖️' },
-    { subject: 'Scholastic Aptitude Test', questions: predicted2018SocialScholasticAptitudeQuestions, icon: '🧠' },
-  ];
+  const naturalSubjects = useMemo(() => {
+    if (!questionData) return [];
+    return [
+      { subject: 'Mathematics', questions: questionData.naturalMath, icon: '📐' },
+      { subject: 'Physics', questions: questionData.naturalPhysics, icon: '⚛️' },
+      { subject: 'Chemistry', questions: questionData.naturalChemistry, icon: '🧪' },
+      { subject: 'Biology', questions: questionData.naturalBiology, icon: '🧬' },
+      { subject: 'English', questions: questionData.naturalEnglish, icon: '📚' },
+      { subject: 'Civics', questions: questionData.naturalCivics, icon: '⚖️' },
+      { subject: 'Scholastic Aptitude Test', questions: questionData.naturalScholastic, icon: '🧠' },
+    ];
+  }, [questionData]);
+
+  const socialSubjects = useMemo(() => {
+    if (!questionData) return [];
+    return [
+      { subject: 'Mathematics', questions: questionData.socialMath, icon: '📐' },
+      { subject: 'English', questions: questionData.socialEnglish, icon: '📚' },
+      { subject: 'History', questions: questionData.socialHistory, icon: '🏛️' },
+      { subject: 'Geography', questions: questionData.socialGeography, icon: '🌍' },
+      { subject: 'Economics', questions: questionData.socialEconomics, icon: '💰' },
+      { subject: 'Civics', questions: questionData.socialCivics, icon: '⚖️' },
+      { subject: 'Scholastic Aptitude Test', questions: questionData.socialScholastic, icon: '🧠' },
+    ];
+  }, [questionData]);
 
   const handleSubjectClick = (stream: string, subject: string) => {
     navigate(`/predicted-matric/${stream}/${subject}`);
   };
 
+  if (!questionData) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-indigo-950 via-purple-900 to-indigo-950 flex items-center justify-center">
+        <div className="text-white">Loading...</div>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-950 via-purple-900 to-indigo-950 pt-14 px-4 pb-4 md:p-8 md:pt-14 overflow-hidden relative">
-      <StarField starCount={40} shootingCount={2} />
+      <StarField />
       <TopBar />
 
       <div className="max-w-6xl mx-auto relative z-10">
@@ -231,4 +276,4 @@ const PredictedMatricPage = () => {
   );
 };
 
-export default PredictedMatricPage;
+export default memo(PredictedMatricPage);

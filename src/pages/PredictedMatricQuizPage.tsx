@@ -1,4 +1,4 @@
-import { Fragment, useState } from 'react';
+import { Fragment, useState, useEffect, memo, useMemo } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -6,64 +6,50 @@ import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
 import { ArrowLeft, CheckCircle2, XCircle, ChevronRight, Clock, Target, Brain, Lightbulb, RotateCcw, Eye, Sparkles } from 'lucide-react';
 import { MatricExamQuestion } from '@/data/matricExams';
-import {
-  predicted2018NaturalMathQuestions,
-  predicted2018NaturalPhysicsQuestions,
-  predicted2018NaturalChemistryQuestions,
-  predicted2018NaturalBiologyQuestions,
-  predicted2018NaturalEnglishQuestions,
-  predicted2018NaturalCivicsQuestions,
-  predicted2018NaturalScholasticAptitudeQuestions,
-  predicted2018SocialMathQuestions,
-  predicted2018SocialEnglishQuestions,
-  predicted2018SocialHistoryQuestions,
-  predicted2018SocialGeographyQuestions,
-  predicted2018SocialEconomicsQuestions,
-  predicted2018SocialCivicsQuestions,
-  predicted2018SocialScholasticAptitudeQuestions,
-} from '@/data/predicted2018MatricQuestions';
 import TopBar from '@/components/TopBar';
 import StarField from '@/components/StarField';
 
-const getPredictedQuestions = (stream: string, subject: string): MatricExamQuestion[] => {
+// Lazy load question data to reduce initial bundle size
+const getPredictedQuestions = async (stream: string, subject: string): Promise<MatricExamQuestion[]> => {
+  const module = await import('@/data/predicted2018MatricQuestions');
   const streamKey = stream.toLowerCase();
   const subjectLower = subject.toLowerCase();
 
   if (streamKey === 'natural') {
     switch (subjectLower) {
       case 'mathematics':
-        return predicted2018NaturalMathQuestions;
+        return module.predicted2018NaturalMathQuestions;
       case 'physics':
-        return predicted2018NaturalPhysicsQuestions;
+        return module.predicted2018NaturalPhysicsQuestions;
       case 'chemistry':
-        return predicted2018NaturalChemistryQuestions;
+        return module.predicted2018NaturalChemistryQuestions;
       case 'biology':
-        return predicted2018NaturalBiologyQuestions;
+        return module.predicted2018NaturalBiologyQuestions;
       case 'english':
-        return predicted2018NaturalEnglishQuestions;
+        return module.predicted2018NaturalEnglishQuestions;
       case 'civics':
-        return predicted2018NaturalCivicsQuestions;
+        return module.predicted2018NaturalCivicsQuestions;
       case 'scholastic aptitude test':
-        return predicted2018NaturalScholasticAptitudeQuestions;
+        return module.predicted2018NaturalScholasticAptitudeQuestions;
       default:
         return [];
     }
   } else if (streamKey === 'social') {
     switch (subjectLower) {
       case 'mathematics':
-        return predicted2018SocialMathQuestions;
+        return module.predicted2018SocialMathQuestions;
       case 'english':
-        return predicted2018SocialEnglishQuestions;
+        return module.predicted2018SocialEnglishQuestions;
       case 'history':
-        return predicted2018SocialHistoryQuestions;
+        return module.predicted2018SocialHistoryQuestions;
       case 'geography':
-        return predicted2018SocialGeographyQuestions;
+        return module.predicted2018SocialGeographyQuestions;
       case 'economics':
-        return predicted2018SocialEconomicsQuestions;
+        return module.predicted2018SocialEconomicsQuestions;
       case 'civics':
-        return predicted2018SocialCivicsQuestions;
+        return module.predicted2018SocialCivicsQuestions;
       case 'scholastic aptitude test':
-        return predicted2018SocialScholasticAptitudeQuestions;
+        return module.predicted2018SocialScholasticAptitudeQuestions;
       default:
         return [];
     }
@@ -76,22 +62,53 @@ const PredictedMatricQuizPage = () => {
   const navigate = useNavigate();
   const streamKey = stream ?? 'natural';
   const streamLabel = streamKey === 'social' ? 'Social Science' : 'Natural Science';
-  const questions = getPredictedQuestions(streamKey, subject ?? '');
-  const scoreableQuestions = questions.filter((question) => question.correctAnswer >= 0).length;
+  const [questions, setQuestions] = useState<MatricExamQuestion[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    getPredictedQuestions(streamKey, subject ?? '').then(data => {
+      setQuestions(data);
+      setLoading(false);
+    });
+  }, [streamKey, subject]);
+
+  const scoreableQuestions = useMemo(() => questions.filter((question) => question.correctAnswer >= 0).length, [questions]);
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [showExplanation, setShowExplanation] = useState(false);
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
-  const [answers, setAnswers] = useState<(number | null)[]>(new Array(questions.length).fill(null));
-  const answeredCount = answers.filter(a => a !== null).length;
+  const [answers, setAnswers] = useState<(number | null)[]>([]);
+  const answeredCount = useMemo(() => answers.filter(a => a !== null).length, [answers]);
   const [showCorrectAnswer, setShowCorrectAnswer] = useState(false);
+
+  // Reset answers when questions change
+  useEffect(() => {
+    setAnswers(new Array(questions.length).fill(null));
+    setCurrentIndex(0);
+    setSelectedAnswer(null);
+    setShowExplanation(false);
+    setScore(0);
+    setFinished(false);
+  }, [questions]);
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-emerald-950 via-teal-900 to-emerald-950 pt-14 px-4 pb-4 overflow-hidden relative flex items-center justify-center">
+        <StarField />
+        <TopBar />
+        <div className="text-center text-white relative z-10">
+          <p className="text-xl">Loading questions...</p>
+        </div>
+      </div>
+    );
+  }
 
   if (questions.length === 0) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-emerald-950 via-teal-900 to-emerald-950 pt-14 px-4 pb-4 overflow-hidden relative flex items-center justify-center">
-        <StarField starCount={30} shootingCount={2} />
+        <StarField />
         <TopBar />
         <div className="text-center text-white relative z-10">
           <p className="text-xl mb-4">No predicted questions available for {subject} ({streamLabel})</p>
@@ -433,4 +450,4 @@ const PredictedMatricQuizPage = () => {
   );
 };
 
-export default PredictedMatricQuizPage;
+export default memo(PredictedMatricQuizPage);

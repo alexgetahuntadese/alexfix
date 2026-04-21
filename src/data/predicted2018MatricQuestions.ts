@@ -19,15 +19,15 @@ export const predicted2018NaturalMathQuestions: MatricExamQuestion[] = [
   },
   {
     id: "pred-2018-math-2",
-    question: "Solve the equation: log₂(x + 3) + log₂(x - 1) = 3.",
+    question: "Solve the equation: log₂(x) + log₂(x - 2) = 3.",
     options: [
-      "x = 5",
+      "x = 4",
       "x = 3",
-      "x = 1",
-      "x = 7"
+      "x = 2",
+      "x = 5"
     ],
     correctAnswer: 0,
-    explanation: "Using logarithm properties: log₂((x+3)(x-1)) = 3, so (x+3)(x-1) = 8. Expanding: x² + 2x - 3 = 8, so x² + 2x - 11 = 0. Solving: x = (-2 ± √(4 + 44))/2 = (-2 ± √48)/2 = (-2 ± 4√3)/2 = -1 ± 2√3. Only x = -1 + 2√3 ≈ 2.46 is valid (must be >1), but checking the options, x=5 satisfies (8)(4) = 32 = 2⁵, so the correct approach yields x=5."
+    explanation: "Using logarithm properties: log₂(x(x-2)) = 3, so x(x-2) = 8. Expanding: x² - 2x = 8, so x² - 2x - 8 = 0. Factoring: (x-4)(x+2) = 0. x = 4 or x = -2. Since x > 0 and x-2 > 0, x = 4 is the only valid solution."
   },
   {
     id: "pred-2018-math-3",

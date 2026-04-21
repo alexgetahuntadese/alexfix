@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useMemo, memo } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { User, Home, GraduationCap, BookOpen, Briefcase, FileText, Menu, X, CreditCard, Download, LogOut, LogIn, ChevronDown, Phone, Target } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -26,7 +26,7 @@ const TopBar = () => {
     return location.pathname === path || location.pathname.startsWith(`${path}/`);
   };
 
-  const navItems = [
+  const navItems = useMemo(() => [
     { path: '/', icon: Home, label: 'Home' },
     { path: '/grades', icon: GraduationCap, label: 'Grades' },
     { path: '/matric', icon: FileText, label: 'Matric' },
@@ -36,11 +36,11 @@ const TopBar = () => {
     { path: '/career-simulator', icon: Briefcase, label: 'Career' },
     { path: '/contact', icon: Phone, label: 'Contact' },
     ...(isAdmin ? [{ path: '/dashboard', icon: User, label: 'Dashboard' }] : []),
-  ];
+  ], [isAdmin]);
 
-  const mobileAccountItems = [
+  const mobileAccountItems = useMemo(() => [
     ...(isAuthenticated ? [{ path: '/profile', icon: User, label: 'Profile' }] : []),
-  ];
+  ], [isAuthenticated]);
 
   const handleSignOut = async () => {
     await signOut();
@@ -238,4 +238,4 @@ const TopBar = () => {
   );
 };
 
-export default TopBar;
+export default memo(TopBar);

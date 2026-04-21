@@ -20,7 +20,7 @@ const generateShootingStars = (count: number) =>
     totalDelay: Math.random() * 12 + i * 5,
   }));
 
-const StarField = memo(({ starCount = 50, shootingCount = 3 }: { starCount?: number; shootingCount?: number }) => {
+const StarField = memo(({ starCount = 25, shootingCount = 1 }: { starCount?: number; shootingCount?: number }) => {
   const stars = useMemo(() => generateStars(starCount), [starCount]);
   const shootingStars = useMemo(() => generateShootingStars(shootingCount), [shootingCount]);
 
