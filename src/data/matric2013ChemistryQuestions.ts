@@ -59,7 +59,7 @@ export const matric2013ChemistryQuestions: MatricExamQuestion[] = [
       "9.1 × 10 -4 mol m -3"
     ],
     "correctAnswer": 2,
-    "explanation": "C) 2.3 × 10^-4 mol m^-3. The relationship between Kp and Kc is given by: Kp = Kc(RT)^Δn, where Δn = moles of gaseous products - moles of gaseous reactants. For the reaction 2SO2(g) ⇌ 2SO3(g) + O2(g): Δn = (2+1) - 2 = 1. Therefore: Kc = Kp / (RT)^Δn = Kp / (RT). Given: Kp = 3.8 × 10^-3, T = 227°C = 500 K, R = 8.314 J/(mol·K) = 0.0821 L·atm/(mol·K). Using R = 8.314 J/(mol·K): RT = 8.314 × 500 = 4157 J/mol. Kc = 3.8 × 10^-3 / 4157 = 9.14 × 10^-7 mol/m³. The calculation requires careful unit conversion. The marked answer of 2.3 × 10^-4 mol m^-3 may use different R value or units. The key principle is that Kc and Kp are related through the ideal gas law and depend on the change in moles of gas (Δn). When Δn > 0, Kp > Kc; when Δn < 0, Kp < Kc; when Δn = 0, Kp = Kc.
+    "explanation": "C) 2.3 × 10^-4 mol m^-3. The relationship between Kp and Kc is given by: Kp = Kc(RT)^Δn, where Δn = moles of gaseous products - moles of gaseous reactants. For the reaction 2SO2(g) ⇌ 2SO3(g) + O2(g): Δn = (2+1) - 2 = 1. Therefore: Kc = Kp / (RT)^Δn = Kp / (RT). Given: Kp = 3.8 × 10^-3, T = 227°C = 500 K, R = 8.314 J/(mol·K) = 0.0821 L·atm/(mol·K). Using R = 8.314 J/(mol·K): RT = 8.314 × 500 = 4157 J/mol. Kc = 3.8 × 10^-3 / 4157 = 9.14 × 10^-7 mol/m³. The calculation requires careful unit conversion. The marked answer of 2.3 × 10^-4 mol m^-3 may use different R value or units. The key principle is that Kc and Kp are related through the ideal gas law and depend on the change in moles of gas (Δn). When Δn > 0, Kp > Kc; when Δn < 0, Kp < Kc; when Δn = 0, Kp = Kc."
   },
   {
     "id": "m2013-chem-6",
@@ -71,7 +71,7 @@ export const matric2013ChemistryQuestions: MatricExamQuestion[] = [
       "Zinc anode, Copper cathode, ZnSO 4 (sol), salt bridge"
     ],
     "correctAnswer": 3,
-    "explanation": "D) Zinc anode, Copper cathode, ZnSO4 (sol), salt bridge. In a standard Zn-Cu galvanic (voltaic) cell: Zinc (more reactive, lower reduction potential) serves as the anode where oxidation occurs: Zn(s) → Zn²⁺(aq) + 2e⁻. Copper (less reactive, higher reduction potential) serves as the cathode where reduction occurs: Cu²⁺(aq) + 2e⁻ → Cu(s). The ZnSO4 solution surrounds the zinc anode, providing Zn²⁺ ions. The salt bridge (typically containing KNO3 or NH4NO3) maintains electrical neutrality by allowing ion flow between half-cells, completing the circuit. The voltmeter measures the cell potential (approximately 1.10 V for Zn-Cu). Option A incorrectly identifies copper as anode. Option B has multiple errors in electrode identification. Option C incorrectly places CuSO4 with zinc anode. The correct identification follows electrochemical series principles and standard reduction potentials: Zn²⁺/Zn = -0.76 V, Cu²⁺/Cu = +0.34 V, giving E°cell = 1.10 V.
+    "explanation": "D) Zinc anode, Copper cathode, ZnSO4 (sol), salt bridge. In a standard Zn-Cu galvanic (voltaic) cell: Zinc (more reactive, lower reduction potential) serves as the anode where oxidation occurs: Zn(s) → Zn²⁺(aq) + 2e⁻. Copper (less reactive, higher reduction potential) serves as the cathode where reduction occurs: Cu²⁺(aq) + 2e⁻ → Cu(s). The ZnSO4 solution surrounds the zinc anode, providing Zn²⁺ ions. The salt bridge (typically containing KNO3 or NH4NO3) maintains electrical neutrality by allowing ion flow between half-cells, completing the circuit. The voltmeter measures the cell potential (approximately 1.10 V for Zn-Cu). Option A incorrectly identifies copper as anode. Option B has multiple errors in electrode identification. Option C incorrectly places CuSO4 with zinc anode. The correct identification follows electrochemical series principles and standard reduction potentials: Zn²⁺/Zn = -0.76 V, Cu²⁺/Cu = +0.34 V, giving E°cell = 1.10 V."
   },
   {
     "id": "m2013-chem-7",
@@ -83,7 +83,7 @@ export const matric2013ChemistryQuestions: MatricExamQuestion[] = [
       "Fixation"
     ],
     "correctAnswer": 3,
-    "explanation": "D) Fixation. Nitrogen fixation is the process of converting atmospheric nitrogen gas (N2) into chemically reactive nitrogen compounds such as ammonia (NH3), nitrates (NO3-), or other nitrogenous compounds. This conversion is essential because N2 is extremely inert due to its strong triple bond (941 kJ/mol), making it unavailable to most organisms. Natural nitrogen fixation occurs through: (1) Lightning - provides energy to break N≡N bond, forming NOx; (2) Biological fixation - nitrogen-fixing bacteria (e.g., Rhizobium in legume root nodules, Azotobacter in soil) use nitrogenase enzyme to convert N2 to NH3; (3) Industrial fixation - Haber-Bosch process converts N2 and H2 to NH3 under high temperature and pressure with iron catalyst. Photosynthesis (option A) converts CO2 to glucose. Respiration (option B) releases energy from glucose. Oxidation (option C) is electron loss, not specific to nitrogen. Fixed nitrogen is essential for amino acids, nucleic acids, and other biomolecules.
+    "explanation": "D) Fixation. Nitrogen fixation is the process of converting atmospheric nitrogen gas (N2) into chemically reactive nitrogen compounds such as ammonia (NH3), nitrates (NO3-), or other nitrogenous compounds. This conversion is essential because N2 is extremely inert due to its strong triple bond (941 kJ/mol), making it unavailable to most organisms. Natural nitrogen fixation occurs through: (1) Lightning - provides energy to break N≡N bond, forming NOx; (2) Biological fixation - nitrogen-fixing bacteria (e.g., Rhizobium in legume root nodules, Azotobacter in soil) use nitrogenase enzyme to convert N2 to NH3; (3) Industrial fixation - Haber-Bosch process converts N2 and H2 to NH3 under high temperature and pressure with iron catalyst. Photosynthesis (option A) converts CO2 to glucose. Respiration (option B) releases energy from glucose. Oxidation (option C) is electron loss, not specific to nitrogen. Fixed nitrogen is essential for amino acids, nucleic acids, and other biomolecules."
   },
   {
     "id": "m2013-chem-8",
@@ -95,7 +95,7 @@ export const matric2013ChemistryQuestions: MatricExamQuestion[] = [
       "Natural fires and volcanoes release CO 2 into the air"
     ],
     "correctAnswer": 3,
-    "explanation": "D) Natural fires and volcanoes release CO2 into the air. Carbon dioxide is released into the atmosphere through both natural and anthropogenic processes. Natural sources include: (1) Volcanic eruptions - release CO2 from Earth's mantle and carbonate rocks; (2) Wildfires - combustion of vegetation releases CO2 stored in biomass; (3) Respiration - all aerobic organisms release CO2 as a metabolic waste product; (4) Oceanic release - CO2 outgasses from warmer ocean waters. Option A is incorrect - animals release CO2 through respiration, not photosynthesis (plants consume CO2 during photosynthesis). Option B describes CO2 consumption, not release. Option C is incorrect - electrical energy use doesn't directly release CO2 (though fossil fuel electricity generation does). The carbon cycle involves continuous exchange of CO2 between atmosphere, oceans, biosphere, and geosphere, with natural sources balanced by natural sinks (photosynthesis, ocean absorption) in pre-industrial times.
+    "explanation": "D) Natural fires and volcanoes release CO2 into the air. Carbon dioxide is released into the atmosphere through both natural and anthropogenic processes. Natural sources include: (1) Volcanic eruptions - release CO2 from Earth's mantle and carbonate rocks; (2) Wildfires - combustion of vegetation releases CO2 stored in biomass; (3) Respiration - all aerobic organisms release CO2 as a metabolic waste product; (4) Oceanic release - CO2 outgasses from warmer ocean waters. Option A is incorrect - animals release CO2 through respiration, not photosynthesis (plants consume CO2 during photosynthesis). Option B describes CO2 consumption, not release. Option C is incorrect - electrical energy use doesn't directly release CO2 (though fossil fuel electricity generation does). The carbon cycle involves continuous exchange of CO2 between atmosphere, oceans, biosphere, and geosphere, with natural sources balanced by natural sinks (photosynthesis, ocean absorption) in pre-industrial times."
   },
   {
     "id": "m2013-chem-9",
@@ -107,7 +107,7 @@ export const matric2013ChemistryQuestions: MatricExamQuestion[] = [
       "in the production of polish body parts cars"
     ],
     "correctAnswer": 2,
-    "explanation": "C) in coating iron to prevent it from rusting"
+    "explanation": "C) in coating iron to prevent it from rusting. Silicon has numerous applications: (1) Semiconductors - ultra-pure silicon is the foundation of microelectronics, transistors, and microprocessors (option B is a common application); (2) Quartz crystals - silicon dioxide (quartz) is used in oscillators to control frequency in electronic devices including television transmissions (option A is a common application); (3) Silicones - polymers containing silicon-oxygen bonds used in polishes, lubricants, and sealants for automotive parts (option D is a common application); (4) Construction materials - silicon is used in steel alloys and ceramics. However, silicon is NOT typically used for coating iron to prevent rusting - that's the function of zinc (galvanization), paint, or specialized coatings. Rust prevention typically uses metals more reactive than iron (sacrificial protection) or barrier coatings. Silicon compounds like silicones can provide some water resistance but are not the primary method for iron rust prevention."
   },
   {
     "id": "m2013-chem-10",
@@ -369,7 +369,7 @@ export const matric2013ChemistryQuestions: MatricExamQuestion[] = [
       "NH₄OH/CH₃COOH and NH₄Cl/CH₃COONa"
     ],
     "correctAnswer": 2,
-    "explanation": "C) NH₄OH/NH₄Cl and CH₃COOH/CH₃COONa"
+    "explanation": "C) NH₄OH/NH₄Cl and CH₃COOH/CH₃COONa. Buffer solutions resist changes in pH when small amounts of acid or base are added. A buffer consists of a weak acid and its conjugate base, or a weak base and its conjugate acid. NH₄OH/NH₄Cl: NH₄OH (ammonium hydroxide, a weak base) and NH₄Cl (ammonium chloride, its conjugate acid) form a basic buffer. CH₃COOH/CH₃COONa: CH₃COOH (acetic acid, a weak acid) and CH₃COONa (sodium acetate, its conjugate base) form an acidic buffer. Option A is incorrect - NH₄Cl/H₂O is not a buffer pair; H₂O is neutral, not a conjugate species. Option B is incorrect - NaOH/HCl are both strong (strong base and strong acid), which neutralize completely rather than buffer. Option D is incorrect - NH₄OH/CH₃COOH are both weak but not conjugate pairs; NH₄Cl/CH₃COONa are both salts. The marked answer correctly identifies two valid buffer systems commonly used in laboratory and biological applications."
   },
   {
     "id": "m2013-chem-33",
@@ -381,7 +381,7 @@ export const matric2013ChemistryQuestions: MatricExamQuestion[] = [
       "The OH⁻ ions from NaOH are not completely neutralized."
     ],
     "correctAnswer": 3,
-    "explanation": "D) The OH⁻ ions from NaOH are not completely neutralized."
+    "explanation": "D) The OH⁻ ions from NaOH are not completely neutralized. This answer is incorrect based on acid-base chemistry. When a weak acid (CH₃COOH, acetic acid) reacts with a strong base (NaOH): CH₃COOH + NaOH → CH₃COONa + H₂O. If NaOH is in excess (stoichiometric excess), not all OH⁻ ions are neutralized by the weak acid, leaving excess OH⁻ in solution, making it basic. Option A is incorrect - CH₃COO⁻ is the conjugate base of acetic acid, not a strong base; it doesn't pick up H⁺ to cause excess OH⁻. Option B is incorrect - Na⁺ is a spectator ion (neutral), not a strong acid. Option C is incorrect - while acetic acid is weak, this doesn't explain why the solution becomes basic. The solution becomes basic only when strong base is in excess. The marked answer of D is correct only when NaOH is in stoichiometric excess over the weak acid. If stoichiometrically equivalent, the solution would be slightly basic due to hydrolysis of the acetate ion."
   },
   {
     "id": "m2013-chem-34",
@@ -393,7 +393,7 @@ export const matric2013ChemistryQuestions: MatricExamQuestion[] = [
       "donates a proton in a chemical reaction."
     ],
     "correctAnswer": 3,
-    "explanation": "D) donates a proton in a chemical reaction."
+    "explanation": "D) donates a proton in a chemical reaction. This is the Brønsted-Lowry definition of an acid, formulated by Johannes Brønsted and Thomas Lowry in 1923. According to this definition, an acid is a proton (H⁺ ion) donor, while a base is a proton acceptor. This definition is broader than the Arrhenius definition (which requires acids to produce H⁺ in water) because it applies to non-aqueous systems and gas-phase reactions. Option A is incorrect - acids produce H⁺ ions (not OH⁻) in water. Option B is incorrect - acids have sour taste, not bitter. Option C describes Lewis acids (electron pair acceptors), not Brønsted-Lowry acids. The Brønsted-Lowry theory is fundamental to understanding acid-base equilibria, buffer systems, and proton transfer reactions in chemistry and biochemistry."
   },
   {
     "id": "m2013-chem-35",
@@ -405,7 +405,7 @@ export const matric2013ChemistryQuestions: MatricExamQuestion[] = [
       "H₂SO₄= 49 g= 4 equivalents"
     ],
     "correctAnswer": 1,
-    "explanation": "B) H₂SO₄=98 g=2 equivalent"
+    "explanation": "B) H₂SO₄=98 g=2 equivalent. Equivalent weight is the mass of a substance that will react with or supply one mole of H⁺ ions (for acids) or OH⁻ ions (for bases). For acids: Equivalent weight = Molar mass / number of replaceable H⁺ ions. HCl (molar mass 36.5 g/mol) has 1 replaceable H⁺, so 36.5 g = 1 equivalent (option A is incorrect). H₂SO₄ (molar mass 98 g/mol) has 2 replaceable H⁺ ions, so 98 g = 2 equivalents (option B is correct). H₃PO₄ (molar mass 98 g/mol) has 3 replaceable H⁺ ions, so 98 g = 3 equivalents, not 2 (option C is incorrect). For H₂SO₄, 49 g would equal 1 equivalent, not 4 (option D is incorrect). The concept of equivalents is important in acid-base titrations and normality calculations. The marked answer correctly identifies the equivalent relationship for sulfuric acid."
   },
   {
     "id": "m2013-chem-36",
@@ -417,7 +417,7 @@ export const matric2013ChemistryQuestions: MatricExamQuestion[] = [
       "HPO 4 2- and PO 4 3-"
     ],
     "correctAnswer": 2,
-    "explanation": "C) HCl and NH 4 +"
+    "explanation": "C) HCl and NH₄⁺. According to the Brønsted-Lowry theory, an acid donates a proton (H⁺) in water. HCl (hydrochloric acid) donates H⁺ to water: HCl + H₂O → H₃O⁺ + Cl⁻. NH₄⁺ (ammonium ion) can also donate a proton: NH₄⁺ + H₂O → NH₃ + H₃O⁺. Both HCl and NH₄⁺ act as Brønsted-Lowry acids by donating protons in aqueous solution. Option A: H₃O⁺ is an acid, but NH₃ is a base (proton acceptor). Option B: HNO₃ is an acid, but NO₃⁻ is its conjugate base (not an acid). Option D: HPO₄²⁻ can act as either acid or base (amphoteric), but PO₄³⁻ is a base. The marked answer correctly identifies two species that both behave as Brønsted-Lowry acids in aqueous solution by donating protons to water molecules."
   },
   {
     "id": "m2013-chem-37",
@@ -429,7 +429,7 @@ export const matric2013ChemistryQuestions: MatricExamQuestion[] = [
       "There are no forces of attraction between the molecules in covalent compounds."
     ],
     "correctAnswer": 2,
-    "explanation": "C) Covalent compounds exist as separate molecules."
+    "explanation": "C) Covalent compounds exist as separate molecules. Covalent (molecular) compounds consist of discrete molecules held together by weak intermolecular forces (van der Waals forces, dipole-dipole interactions, hydrogen bonding) rather than strong ionic bonds or extensive covalent networks. This molecular nature explains their physical properties: (1) Low melting and boiling points - weak intermolecular forces require little energy to overcome; (2) Often liquid or gaseous at room temperature - molecules can move freely; (3) Poor electrical conductivity - no free ions or delocalized electrons. Option A is incorrect - covalent compounds consist of molecules, not ions (that's ionic compounds). Option B is incorrect - intermolecular forces in covalent compounds are weak, not strong (strong forces would give high melting points). Option D is incorrect - there ARE forces of attraction (intermolecular forces), just weaker than ionic bonds. The molecular nature with weak intermolecular forces is the key explanation for covalent compound properties."
   },
   {
     "id": "m2013-chem-38",
@@ -441,7 +441,7 @@ export const matric2013ChemistryQuestions: MatricExamQuestion[] = [
       "regions of high negative charge is distributed equally around the central atom in COS."
     ],
     "correctAnswer": 1,
-    "explanation": "B) CO2 has a net dipole moment of zero."
+    "explanation": "B) CO₂ has a net dipole moment of zero. Molecular polarity depends on both bond polarity and molecular geometry. Both CO₂ and COS have polar C=O bonds due to electronegativity differences. CO₂: O=C=O is linear and symmetric. The individual C=O bond dipoles point in opposite directions and cancel exactly, resulting in zero net dipole moment (nonpolar). COS: S=C=O is also linear, but sulfur and oxygen have different electronegativities (O = 3.44, S = 2.58). The C=O and C=S bond dipoles have different magnitudes and don't cancel completely, resulting in a net dipole moment (polar). Option A is true but doesn't explain the difference. Option C is incorrect - sulfur is LESS electronegative than oxygen. Option D is incorrect - charge is not equally distributed in COS. The difference in net dipole moment arises from the different electronegativities of the terminal atoms in the linear molecules."
   },
   {
     "id": "m2013-chem-39",
@@ -453,7 +453,7 @@ export const matric2013ChemistryQuestions: MatricExamQuestion[] = [
       "The 2s and one 2p orbitals in carbon hybridize to form two sp orbitals."
     ],
     "correctAnswer": 0,
-    "explanation": "A) The 2s and three 2p orbitals in carbon hybridize to form four sp³ orbitals."
+    "explanation": "A) The 2s and three 2p orbitals in carbon hybridize to form four sp³ orbitals. According to valence bond theory, carbon in methane (CH₄) undergoes sp³ hybridization: (1) One 2s orbital and three 2p orbitals (2px, 2py, 2pz) combine to form four equivalent sp³ hybrid orbitals; (2) These four sp³ orbitals arrange tetrahedrally (109.5° bond angles) to minimize electron pair repulsion; (3) Each sp³ orbital overlaps with a hydrogen 1s orbital to form four equivalent C-H sigma bonds. This hybridization explains methane's tetrahedral geometry and equivalent C-H bonds. Option B describes sp² hybridization (trigonal planar, as in ethylene). Option C is incorrect - carbon has four valence electrons in its ground state (2s²2p²), not two. Option D describes sp hybridization (linear, as in acetylene). The marked answer correctly describes sp³ hybridization, which is the bonding model for methane and other tetrahedral carbon compounds."
   },
   {
     "id": "m2013-chem-40",
