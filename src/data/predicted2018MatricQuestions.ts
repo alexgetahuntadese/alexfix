@@ -9067,6 +9067,486 @@ export const predicted2018SocialGeographyQuestions: MatricExamQuestion[] = [
     ],
     correctAnswer: 0,
     explanation: "Coffee is Ethiopia's main export crop, with the country being the birthplace of Arabica coffee."
+  },
+  {
+    id: "pred-2018-sgeo-41",
+    question: "What is the largest ocean in the world?",
+    options: [
+      "Pacific Ocean",
+      "Atlantic Ocean",
+      "Indian Ocean",
+      "Arctic Ocean"
+    ],
+    correctAnswer: 0,
+    explanation: "The Pacific Ocean is the largest and deepest ocean, covering about 63 million square miles."
+  },
+  {
+    id: "pred-2018-sgeo-42",
+    question: "What is the smallest country in the world by area?",
+    options: [
+      "Vatican City",
+      "Monaco",
+      "San Marino",
+      "Liechtenstein"
+    ],
+    correctAnswer: 0,
+    explanation: "Vatican City is the smallest independent state by area, covering only 0.44 square kilometers."
+  },
+  {
+    id: "pred-2018-sgeo-43",
+    question: "What is the most populous country in the world?",
+    options: [
+      "India",
+      "China",
+      "United States",
+      "Indonesia"
+    ],
+    correctAnswer: 0,
+    explanation: "India is currently the most populous country in the world with over 1.4 billion people."
+  },
+  {
+    id: "pred-2018-sgeo-44",
+    question: "What is the tallest mountain in the world?",
+    options: [
+      "Mount Everest",
+      "K2",
+      "Mount Kilimanjaro",
+      "Mount McKinley"
+    ],
+    correctAnswer: 0,
+    explanation: "Mount Everest is the tallest mountain in the world at 8,848.86 meters above sea level."
+  },
+  {
+    id: "pred-2018-sgeo-45",
+    question: "What is the largest country in the world by area?",
+    options: [
+      "Russia",
+      "Canada",
+      "China",
+      "United States"
+    ],
+    correctAnswer: 0,
+    explanation: "Russia is the largest country by area, covering over 17 million square kilometers."
+  },
+  {
+    id: "pred-2018-sgeo-46",
+    question: "What is the equator?",
+    options: [
+      "An imaginary line dividing the Earth into Northern and Southern Hemispheres",
+      "A line dividing East and West",
+      "A mountain range",
+      "A river"
+    ],
+    correctAnswer: 0,
+    explanation: "The equator is an imaginary line at 0° latitude that divides the Earth into Northern and Southern Hemispheres."
+  },
+  {
+    id: "pred-2018-sgeo-47",
+    question: "What is a plateau?",
+    options: [
+      "A flat elevated landform",
+      "A deep valley",
+      "A coastal plain",
+      "A volcanic peak"
+    ],
+    correctAnswer: 0,
+    explanation: "A plateau is a flat, elevated landform that rises sharply above the surrounding area on at least one side."
+  },
+  {
+    id: "pred-2018-sgeo-48",
+    question: "What is the Prime Meridian?",
+    options: [
+      "The line of 0° longitude",
+      "The line of 0° latitude",
+      "The equator",
+      "The International Date Line"
+    ],
+    correctAnswer: 0,
+    explanation: "The Prime Meridian is the line of 0° longitude, passing through Greenwich, London, and divides the Earth into Eastern and Western Hemispheres."
+  },
+  {
+    id: "pred-2018-sgeo-49",
+    question: "What is the Tropic of Cancer?",
+    options: [
+      "The northernmost latitude where the sun can be directly overhead",
+      "The southernmost latitude where the sun can be directly overhead",
+      "The equator",
+      "The Arctic Circle"
+    ],
+    correctAnswer: 0,
+    explanation: "The Tropic of Cancer at 23.5°N is the northernmost latitude where the sun can appear directly overhead."
+  },
+  {
+    id: "pred-2018-sgeo-50",
+    question: "What is the Tropic of Capricorn?",
+    options: [
+      "The southernmost latitude where the sun can be directly overhead",
+      "The northernmost latitude where the sun can be directly overhead",
+      "The equator",
+      "The Antarctic Circle"
+    ],
+    correctAnswer: 0,
+    explanation: "The Tropic of Capricorn at 23.5°S is the southernmost latitude where the sun can appear directly overhead."
+  },
+  {
+    id: "pred-2018-sgeo-51",
+    question: "What is the difference between weather and climate?",
+    options: [
+      "Weather is short-term; climate is long-term",
+      "Climate is short-term; weather is long-term",
+      "They are the same",
+      "Weather affects land; climate affects ocean"
+    ],
+    correctAnswer: 0,
+    explanation: "Weather refers to day-to-day atmospheric conditions, while climate is the average weather pattern over a long period (typically 30+ years)."
+  },
+  {
+    id: "pred-2018-sgeo-52",
+    question: "What is a delta?",
+    options: [
+      "A landform formed at the mouth of a river",
+      "A mountain peak",
+      "A desert",
+      "A volcanic island"
+    ],
+    correctAnswer: 0,
+    explanation: "A delta is a landform created by sediment deposited where a river flows into an ocean or lake."
+  },
+  {
+    id: "pred-2018-sgeo-53",
+    question: "What is the largest lake in Africa?",
+    options: [
+      "Lake Victoria",
+      "Lake Tanganyika",
+      "Lake Malawi",
+      "Lake Albert"
+    ],
+    correctAnswer: 0,
+    explanation: "Lake Victoria is the largest lake in Africa by surface area and the largest tropical lake in the world."
+  },
+  {
+    id: "pred-2018-sgeo-54",
+    question: "What is the Sahel region?",
+    options: [
+      "A semi-arid transition zone south of the Sahara",
+      "A rainforest region",
+      "A mountain range",
+      "A coastal plain"
+    ],
+    correctAnswer: 0,
+    explanation: "The Sahel is the ecoclimatic and biogeographic zone of transition in Africa between the Sahara to the north and the Sudanian Savanna to the south."
+  },
+  {
+    id: "pred-2018-sgeo-55",
+    question: "What is the Congo Basin?",
+    options: [
+      "The drainage basin of the Congo River",
+      "A mountain range",
+      "A desert region",
+      "A coastal area"
+    ],
+    correctAnswer: 0,
+    explanation: "The Congo Basin is the drainage basin of the Congo River and the second largest rainforest in the world after the Amazon."
+  },
+  {
+    id: "pred-2018-sgeo-56",
+    question: "What is the highest mountain in Africa?",
+    options: [
+      "Mount Kilimanjaro",
+      "Mount Kenya",
+      "Mount Cameroon",
+      "Rwenzori Mountains"
+    ],
+    correctAnswer: 0,
+    explanation: "Mount Kilimanjaro in Tanzania is the highest mountain in Africa at 5,895 meters above sea level."
+  },
+  {
+    id: "pred-2018-sgeo-57",
+    question: "What is the Great Barrier Reef?",
+    options: [
+      "The world's largest coral reef system",
+      "A mountain range",
+      "A desert",
+      "A river system"
+    ],
+    correctAnswer: 0,
+    explanation: "The Great Barrier Reef off the coast of Australia is the world's largest coral reef system."
+  },
+  {
+    id: "pred-2018-sgeo-58",
+    question: "What is the Amazon Rainforest?",
+    options: [
+      "The world's largest tropical rainforest",
+      "A desert region",
+      "A mountain range",
+      "A grassland"
+    ],
+    correctAnswer: 0,
+    explanation: "The Amazon Rainforest in South America is the world's largest tropical rainforest, covering about 5.5 million square kilometers."
+  },
+  {
+    id: "pred-2018-sgeo-59",
+    question: "What is the Arctic Circle?",
+    options: [
+      "The latitude above which the sun does not set on summer solstice",
+      "The equator",
+      "The Tropic of Cancer",
+      "The Antarctic Circle"
+    ],
+    correctAnswer: 0,
+    explanation: "The Arctic Circle at approximately 66.5°N is the latitude above which the sun does not set on the summer solstice."
+  },
+  {
+    id: "pred-2018-sgeo-60",
+    question: "What is the Antarctic Circle?",
+    options: [
+      "The latitude below which the sun does not rise on winter solstice",
+      "The equator",
+      "The Tropic of Capricorn",
+      "The Arctic Circle"
+    ],
+    correctAnswer: 0,
+    explanation: "The Antarctic Circle at approximately 66.5°S is the latitude below which the sun does not rise on the winter solstice."
+  },
+  {
+    id: "pred-2018-sgeo-61",
+    question: "What is a monsoon?",
+    options: [
+      "A seasonal wind pattern bringing heavy rainfall",
+      "A type of mountain",
+      "A desert wind",
+      "A ocean current"
+    ],
+    correctAnswer: 0,
+    explanation: "A monsoon is a seasonal wind pattern that brings heavy rainfall, particularly in South and Southeast Asia."
+  },
+  {
+    id: "pred-2018-sgeo-62",
+    question: "What is the Himalayas?",
+    options: [
+      "The highest mountain range in the world",
+      "A desert region",
+      "A river system",
+      "A coastal plain"
+    ],
+    correctAnswer: 0,
+    explanation: "The Himalayas in Asia is the highest mountain range in the world, containing Mount Everest and other 8,000-meter peaks."
+  },
+  {
+    id: "pred-2018-sgeo-63",
+    question: "What is the Andes?",
+    options: [
+      "The longest continental mountain range in the world",
+      "A river",
+      "A desert",
+      "A coastal plain"
+    ],
+    correctAnswer: 0,
+    explanation: "The Andes in South America is the longest continental mountain range in the world, stretching about 7,000 kilometers."
+  },
+  {
+    id: "pred-2018-sgeo-64",
+    question: "What is the Gulf Stream?",
+    options: [
+      "A warm ocean current in the Atlantic",
+      "A river in the Gulf of Mexico",
+      "A desert wind",
+      "A mountain range"
+    ],
+    correctAnswer: 0,
+    explanation: "The Gulf Stream is a powerful warm ocean current in the Atlantic Ocean that influences climate in Europe and North America."
+  },
+  {
+    id: "pred-2018-sgeo-65",
+    question: "What is the difference between a map and a globe?",
+    options: [
+      "A map is flat; a globe is spherical",
+      "A globe is flat; a map is spherical",
+      "They are the same",
+      "A map shows only land; a globe shows only water"
+    ],
+    correctAnswer: 0,
+    explanation: "A map is a flat representation of Earth's surface, while a globe is a spherical model that accurately shows the Earth's shape."
+  },
+  {
+    id: "pred-2018-sgeo-66",
+    question: "What is a scale on a map?",
+    options: [
+      "The ratio of distance on the map to actual distance",
+      "The size of the map",
+      "The direction indicator",
+      "The legend"
+    ],
+    correctAnswer: 0,
+    explanation: "A map scale shows the relationship between distances on the map and actual distances on the ground."
+  },
+  {
+    id: "pred-2018-sgeo-67",
+    question: "What is a compass rose?",
+    options: [
+      "A symbol showing cardinal directions on a map",
+      "A flower pattern",
+      "A mountain symbol",
+      "A river symbol"
+    ],
+    correctAnswer: 0,
+    explanation: "A compass rose is a figure on a map or nautical chart used to display the orientation of the cardinal directions."
+  },
+  {
+    id: "pred-2018-sgeo-68",
+    question: "What is urbanization?",
+    options: [
+      "The movement of people from rural to urban areas",
+      "The movement from urban to rural areas",
+      "Building farms",
+      "Deforestation"
+    ],
+    correctAnswer: 0,
+    explanation: "Urbanization is the process by which large numbers of people become permanently concentrated in relatively small areas, forming cities."
+  },
+  {
+    id: "pred-2018-sgeo-69",
+    question: "What is a megalopolis?",
+    options: [
+      "A large urban region formed by the merging of metropolitan areas",
+      "A single large city",
+      "A rural area",
+      "A desert region"
+    ],
+    correctAnswer: 0,
+    explanation: "A megalopolis is a very large urban region formed by the merging of several metropolitan areas."
+  },
+  {
+    id: "pred-2018-sgeo-70",
+    question: "What is the difference between renewable and non-renewable resources?",
+    options: [
+      "Renewable can be replenished; non-renewable cannot",
+      "Non-renewable can be replenished; renewable cannot",
+      "They are the same",
+      "Renewable are only found in cities"
+    ],
+    correctAnswer: 0,
+    explanation: "Renewable resources like solar and wind can be naturally replenished, while non-renewable resources like fossil fuels cannot."
+  },
+  {
+    id: "pred-2018-sgeo-71",
+    question: "What is the Simien Mountains in Ethiopia known for?",
+    options: [
+      "UNESCO World Heritage Site with unique wildlife",
+      "Desert landscape",
+      "Coastal beaches",
+      "Oil reserves"
+    ],
+    correctAnswer: 0,
+    explanation: "The Simien Mountains are a UNESCO World Heritage Site known for their unique wildlife including the Walia ibex and Gelada baboon."
+  },
+  {
+    id: "pred-2018-sgeo-72",
+    question: "What is the Awash River in Ethiopia?",
+    options: [
+      "A major river flowing into the Afar Depression",
+      "The longest river in Africa",
+      "A coastal river",
+      "A seasonal stream"
+    ],
+    correctAnswer: 0,
+    explanation: "The Awash River is a major river in Ethiopia that flows into the Afar Depression and never reaches the sea."
+  },
+  {
+    id: "pred-2018-sgeo-73",
+    question: "What is the Omo River in Ethiopia known for?",
+    options: [
+      "Flowing into Lake Turkana and supporting diverse ecosystems",
+      "Being the longest river in Ethiopia",
+      "Flowing into the Red Sea",
+      "Being a seasonal river only"
+    ],
+    correctAnswer: 0,
+    explanation: "The Omo River flows south into Lake Turkana and supports diverse ecosystems and indigenous communities."
+  },
+  {
+    id: "pred-2018-sgeo-74",
+    question: "What is the Bale Mountains in Ethiopia known for?",
+    options: [
+      "High-altitude ecosystem with endemic species",
+      "Desert landscape",
+      "Coastal region",
+      "Oil production"
+    ],
+    correctAnswer: 0,
+    explanation: "The Bale Mountains contain the largest area of Afroalpine habitat in Africa and many endemic species."
+  },
+  {
+    id: "pred-2018-sgeo-75",
+    question: "What is the Shebelle River?",
+    options: [
+      "A river flowing through Ethiopia and Somalia",
+      "A river only in Ethiopia",
+      "A river only in Somalia",
+      "A coastal river in Kenya"
+    ],
+    correctAnswer: 0,
+    explanation: "The Shebelle River flows from Ethiopia through Somalia and is an important water source for both countries."
+  },
+  {
+    id: "pred-2018-sgeo-76",
+    question: "What is the main environmental challenge in the Sahel region?",
+    options: [
+      "Desertification",
+      "Flooding",
+      "Earthquakes",
+      "Volcanic eruptions"
+    ],
+    correctAnswer: 0,
+    explanation: "Desertification is the main environmental challenge in the Sahel, caused by climate change and overgrazing."
+  },
+  {
+    id: "pred-2018-sgeo-77",
+    question: "What is the difference between subsistence farming and commercial farming?",
+    options: [
+      "Subsistence is for family consumption; commercial is for sale",
+      "Commercial is for family; subsistence is for sale",
+      "They are the same",
+      "Subsistence uses machines; commercial uses manual labor"
+    ],
+    correctAnswer: 0,
+    explanation: "Subsistence farming produces food primarily for the farmer's family, while commercial farming produces crops for sale."
+  },
+  {
+    id: "pred-2018-sgeo-78",
+    question: "What is the Horn of Africa?",
+    options: [
+      "A peninsula in Northeast Africa including Ethiopia, Somalia, Eritrea, and Djibouti",
+      "A mountain range",
+      "A desert region",
+      "A coastal area in West Africa"
+    ],
+    correctAnswer: 0,
+    explanation: "The Horn of Africa is a peninsula in Northeast Africa that includes Ethiopia, Somalia, Eritrea, and Djibouti."
+  },
+  {
+    id: "pred-2018-sgeo-79",
+    question: "What is the significance of the Red Sea to Ethiopia?",
+    options: [
+      "Ethiopia has access to the Red Sea through Eritrea and Djibouti",
+      "Ethiopia has no access to the Red Sea",
+      "The Red Sea is a river in Ethiopia",
+      "The Red Sea is a lake in Ethiopia"
+    ],
+    correctAnswer: 0,
+    explanation: "Ethiopia lost its direct access to the Red Sea after Eritrea's independence but uses ports in Eritrea and Djibouti."
+  },
+  {
+    id: "pred-2018-sgeo-80",
+    question: "What is the main economic activity in the Ethiopian lowlands?",
+    options: [
+      "Pastoralism and livestock herding",
+      "Industrial manufacturing",
+      "Fishing",
+      "Forestry"
+    ],
+    correctAnswer: 0,
+    explanation: "Pastoralism and livestock herding are the main economic activities in the Ethiopian lowlands due to the arid climate."
   }
 ];
 
