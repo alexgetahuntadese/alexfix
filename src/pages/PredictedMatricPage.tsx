@@ -90,7 +90,7 @@ const PredictedMatricPage = () => {
       setPendingSubject(null);
     } else {
       setPinError(true);
-      alert('Incorrect PIN. Please try again.');
+      alert('Incorrect PIN. Access requires payment.\n\n💳 Payment Required\nAmount: 125 ETB\nCBE Bank: 1000282751279\nAccount Name: Alexander Getahun\nTelebirr: 0949835147 (Merry Getahun)\nContact: 0992010092 / 0914546032\nAvailable anytime');
     }
   };
 

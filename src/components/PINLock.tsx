@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Lock, X, Shield, Sparkles } from 'lucide-react';
@@ -11,10 +11,45 @@ interface PINLockProps {
   error?: boolean;
 }
 
+// Generate a device fingerprint using browser characteristics
+const generateDeviceFingerprint = (): string => {
+  const fingerprint = {
+    userAgent: navigator.userAgent,
+    language: navigator.language,
+    platform: navigator.platform,
+    screenResolution: `${screen.width}x${screen.height}`,
+    colorDepth: screen.colorDepth,
+    timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+    hardwareConcurrency: navigator.hardwareConcurrency || 0,
+    deviceMemory: (navigator as any).deviceMemory || 0,
+  };
+  
+  // Create a hash from the fingerprint data
+  const str = JSON.stringify(fingerprint);
+  let hash = 0;
+  for (let i = 0; i < str.length; i++) {
+    const char = str.charCodeAt(i);
+    hash = ((hash << 5) - hash) + char;
+    hash = hash & hash; // Convert to 32bit integer
+  }
+  return Math.abs(hash).toString(36);
+};
+
+// Storage keys for device binding
+const PIN_DEVICE_KEY = 'pin_device_binding';
+
 const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false, error: externalError }: PINLockProps) => {
   const [pin, setPin] = useState('');
   const [internalError, setInternalError] = useState(false);
   const error = externalError || internalError;
+  const [deviceMismatch, setDeviceMismatch] = useState(false);
+
+  useEffect(() => {
+    // Clear device mismatch error when PIN changes
+    if (pin.length === 0) {
+      setDeviceMismatch(false);
+    }
+  }, [pin]);
 
   const theme = {
     primary: isSocialStream ? 'purple' : 'emerald',
@@ -39,7 +74,36 @@ const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false, erro
       if (newPin.length === 4) {
         // Auto-submit when 4 digits are entered
         setTimeout(() => {
-          onUnlock(newPin);
+          const currentDeviceFingerprint = generateDeviceFingerprint();
+          const storedBinding = localStorage.getItem(PIN_DEVICE_KEY);
+          
+          if (storedBinding) {
+            const binding = JSON.parse(storedBinding);
+            // Check if PIN matches and device matches
+            if (binding.pin === newPin) {
+              if (binding.deviceFingerprint === currentDeviceFingerprint) {
+                // Same device, PIN matches - allow access
+                onUnlock(newPin);
+              } else {
+                // PIN matches but different device - reject
+                setDeviceMismatch(true);
+                setInternalError(true);
+                setPin('');
+              }
+            } else {
+              // PIN doesn't match - reject
+              setInternalError(true);
+              setPin('');
+            }
+          } else {
+            // First time using this PIN - bind to current device
+            localStorage.setItem(PIN_DEVICE_KEY, JSON.stringify({
+              pin: newPin,
+              deviceFingerprint: currentDeviceFingerprint,
+              timestamp: Date.now()
+            }));
+            onUnlock(newPin);
+          }
         }, 100);
       }
     }
@@ -48,13 +112,22 @@ const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false, erro
   const handleClear = () => {
     setPin('');
     setInternalError(false);
+    setDeviceMismatch(false);
   };
 
   const handleDelete = () => {
     if (pin.length > 0) {
       setPin(pin.slice(0, -1));
       setInternalError(false);
+      setDeviceMismatch(false);
     }
+  };
+
+  const handleResetDeviceBinding = () => {
+    localStorage.removeItem(PIN_DEVICE_KEY);
+    setPin('');
+    setInternalError(false);
+    setDeviceMismatch(false);
   };
 
   return (
@@ -98,9 +171,32 @@ const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false, erro
 
           {error && (
             <div className="mb-4 p-3 rounded-lg bg-red-500/20 border border-red-500/30">
-              <p className="text-red-400 text-center text-sm font-medium">
-                Incorrect PIN. Please try again.
+              <p className="text-red-400 text-center text-sm font-medium mb-2">
+                {deviceMismatch 
+                  ? 'PIN is bound to another device. Reset to use on this device.'
+                  : 'Incorrect PIN. Access requires payment.'}
               </p>
+              {deviceMismatch && (
+                <button
+                  onClick={handleResetDeviceBinding}
+                  className="mt-2 text-xs text-red-300 hover:text-red-200 underline"
+                >
+                  Reset Device Binding
+                </button>
+              )}
+              {!deviceMismatch && (
+                <div className="mt-3 p-3 rounded-lg bg-amber-500/10 border border-amber-500/30">
+                  <p className="text-amber-300 text-xs font-semibold mb-2 text-center">💳 Payment Required</p>
+                  <div className="space-y-1 text-xs text-amber-200/80">
+                    <p><strong>Amount:</strong> 125 ETB</p>
+                    <p><strong>CBE Bank:</strong> 1000282751279</p>
+                    <p><strong>Account Name:</strong> Alexander Getahun</p>
+                    <p><strong>Telebirr:</strong> 0949835147 (Merry Getahun)</p>
+                    <p className="mt-2"><strong>Contact:</strong> 0992010092 / 0914546032</p>
+                    <p className="text-amber-200/60 italic">Available anytime</p>
+                  </div>
+                </div>
+              )}
             </div>
           )}
 

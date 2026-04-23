@@ -81,7 +81,6 @@ const MatricQuizPage = () => {
   const handleAnswer = (index: number) => {
     if (selectedAnswer !== null) return;
     setSelectedAnswer(index);
-    setShowExplanation(true);
     
     // Update answers array
     const newAnswers = [...answers];
@@ -99,7 +98,8 @@ const MatricQuizPage = () => {
     } else {
       setCurrentIndex((i) => i + 1);
       setSelectedAnswer(answers[currentIndex + 1] || null);
-      setShowExplanation(answers[currentIndex + 1] !== null);
+      setShowExplanation(false);
+      setShowCorrectAnswer(false);
     }
   };
 
@@ -125,7 +125,7 @@ const MatricQuizPage = () => {
     if (currentIndex > 0) {
       setCurrentIndex((i) => i - 1);
       setSelectedAnswer(answers[currentIndex - 1] || null);
-      setShowExplanation(answers[currentIndex - 1] !== null);
+      setShowExplanation(false);
       setShowCorrectAnswer(false);
     }
   };
@@ -248,7 +248,8 @@ const MatricQuizPage = () => {
                     onClick={() => {
                       setCurrentIndex(questionIndex);
                       setSelectedAnswer(answers[questionIndex] || null);
-                      setShowExplanation(answers[questionIndex] !== null);
+                      setShowExplanation(false);
+                      setShowCorrectAnswer(false);
                     }}
                     className={`w-8 h-8 rounded-full text-xs font-medium transition-all duration-200 ${
                       isCurrent

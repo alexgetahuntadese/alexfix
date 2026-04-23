@@ -212,7 +212,6 @@ const PredictedMatricQuizPage = () => {
   const handleAnswer = (index: number) => {
     if (selectedAnswer !== null) return;
     setSelectedAnswer(index);
-    setShowExplanation(true);
     
     const newAnswers = [...answers];
     newAnswers[currentIndex] = index;
@@ -238,7 +237,8 @@ const PredictedMatricQuizPage = () => {
     if (currentIndex > 0) {
       setCurrentIndex((i) => i - 1);
       setSelectedAnswer(answers[currentIndex - 1]);
-      setShowExplanation(answers[currentIndex - 1] !== null);
+      setShowExplanation(false);
+      setShowCorrectAnswer(false);
     }
   };
 
@@ -254,7 +254,8 @@ const PredictedMatricQuizPage = () => {
   const handleJumpToQuestion = (index: number) => {
     setCurrentIndex(index);
     setSelectedAnswer(answers[index]);
-    setShowExplanation(answers[index] !== null);
+    setShowExplanation(false);
+    setShowCorrectAnswer(false);
   };
 
   const percentage = scoreableQuestions > 0 ? Math.round((score / scoreableQuestions) * 100) : 0;
@@ -489,7 +490,10 @@ const PredictedMatricQuizPage = () => {
             </Button>
           ) : (
             <Button
-              onClick={() => setShowCorrectAnswer(true)}
+              onClick={() => {
+                setShowCorrectAnswer(true);
+                setShowExplanation(true);
+              }}
               variant="outline"
               className="flex-1 border-white/20 text-white hover:bg-white/10 hover:border-white/30 transition-all duration-200"
             >
