@@ -66,6 +66,7 @@ const PredictedMatricQuizPage = () => {
   const isSocialStream = streamKey === 'social';
   const [showPINLock, setShowPINLock] = useState(false);
   const [isUnlocked, setIsUnlocked] = useState(false);
+  const [pinError, setPinError] = useState(false);
 
   // Check if subject requires PIN lock (not Mathematics or History)
   const subjectLower = subject?.toLowerCase() || '';
@@ -80,11 +81,13 @@ const PredictedMatricQuizPage = () => {
   }, [requiresPIN]);
 
   const handlePINUnlock = (pin: string) => {
-    const correctPIN = '1234';
+    const correctPIN = '1325';
     if (pin === correctPIN) {
-      setShowPINLock(false);
+      setPinError(false);
       setIsUnlocked(true);
+      setShowPINLock(false);
     } else {
+      setPinError(true);
       alert('Incorrect PIN. Please try again.');
     }
   };
@@ -92,27 +95,6 @@ const PredictedMatricQuizPage = () => {
   const handlePINCancel = () => {
     navigate('/predicted-matric');
   };
-
-  // Show PIN lock if required and not yet unlocked
-  if (showPINLock) {
-    return (
-      <div className={`min-h-screen bg-gradient-to-br ${isSocialStream ? 'from-purple-950 via-pink-900 to-purple-950' : 'from-emerald-950 via-teal-900 to-emerald-950'} pt-14 px-4 pb-4 overflow-hidden relative`}>
-        <StarField />
-        <TopBar />
-        <PINLock
-          onUnlock={handlePINUnlock}
-          onCancel={handlePINCancel}
-          subjectName={subject}
-          isSocialStream={isSocialStream}
-        />
-      </div>
-    );
-  }
-
-  // Don't render quiz until unlocked
-  if (!isUnlocked) {
-    return null;
-  }
   
   // Color theme based on stream
   const theme = {

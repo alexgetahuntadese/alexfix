@@ -8,11 +8,13 @@ interface PINLockProps {
   onCancel?: () => void;
   subjectName?: string;
   isSocialStream?: boolean;
+  error?: boolean;
 }
 
-const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false }: PINLockProps) => {
+const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false, error: externalError }: PINLockProps) => {
   const [pin, setPin] = useState('');
-  const [error, setError] = useState(false);
+  const [internalError, setInternalError] = useState(false);
+  const error = externalError || internalError;
 
   const theme = {
     primary: isSocialStream ? 'purple' : 'emerald',
@@ -45,13 +47,13 @@ const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false }: PI
 
   const handleClear = () => {
     setPin('');
-    setError(false);
+    setInternalError(false);
   };
 
   const handleDelete = () => {
     if (pin.length > 0) {
       setPin(pin.slice(0, -1));
-      setError(false);
+      setInternalError(false);
     }
   };
 

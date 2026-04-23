@@ -11,20 +11,20 @@ import PINLock from '@/components/PINLock';
 // Lazy load question data to reduce initial bundle size
 const getPredictedQuestions = () => {
   return import('@/data/predicted2018MatricQuestions').then(module => ({
-    naturalMath: module.predicted2018NaturalMathQuestions,
-    naturalPhysics: module.predicted2018NaturalPhysicsQuestions,
-    naturalChemistry: module.predicted2018NaturalChemistryQuestions,
-    naturalBiology: module.predicted2018NaturalBiologyQuestions,
-    naturalEnglish: module.predicted2018NaturalEnglishQuestions,
-    naturalCivics: module.predicted2018NaturalCivicsQuestions,
-    naturalScholastic: module.predicted2018NaturalScholasticAptitudeQuestions,
-    socialMath: module.predicted2018SocialMathQuestions,
-    socialEnglish: module.predicted2018SocialEnglishQuestions,
-    socialHistory: module.predicted2018SocialHistoryQuestions,
-    socialGeography: module.predicted2018SocialGeographyQuestions,
-    socialEconomics: module.predicted2018SocialEconomicsQuestions,
-    socialCivics: module.predicted2018SocialCivicsQuestions,
-    socialScholastic: module.predicted2018SocialScholasticAptitudeQuestions,
+    naturalMath: module.predicted2018NaturalMathQuestions || [],
+    naturalPhysics: module.predicted2018NaturalPhysicsQuestions || [],
+    naturalChemistry: module.predicted2018NaturalChemistryQuestions || [],
+    naturalBiology: module.predicted2018NaturalBiologyQuestions || [],
+    naturalEnglish: module.predicted2018NaturalEnglishQuestions || [],
+    naturalCivics: module.predicted2018NaturalCivicsQuestions || [],
+    naturalScholastic: module.predicted2018NaturalScholasticAptitudeQuestions || [],
+    socialMath: module.predicted2018SocialMathQuestions || [],
+    socialEnglish: module.predicted2018SocialEnglishQuestions || [],
+    socialHistory: module.predicted2018SocialHistoryQuestions || [],
+    socialGeography: module.predicted2018SocialGeographyQuestions || [],
+    socialEconomics: module.predicted2018SocialEconomicsQuestions || [],
+    socialCivics: module.predicted2018SocialCivicsQuestions || [],
+    socialScholastic: module.predicted2018SocialScholasticAptitudeQuestions || [],
   }));
 };
 
@@ -54,9 +54,16 @@ const PredictedMatricPage = () => {
   const [questionData, setQuestionData] = useState<any>(null);
   const [showPINLock, setShowPINLock] = useState(false);
   const [pendingSubject, setPendingSubject] = useState<{ stream: string; subject: string } | null>(null);
+  const [pinError, setPinError] = useState(false);
+  const [loadingError, setLoadingError] = useState<string | null>(null);
 
   useEffect(() => {
-    getPredictedQuestions().then(data => setQuestionData(data));
+    getPredictedQuestions()
+      .then(data => setQuestionData(data))
+      .catch(err => {
+        console.error('Error loading question data:', err);
+        setLoadingError('Failed to load question data');
+      });
   }, []);
 
   const handleSubjectClick = (stream: string, subject: string) => {
@@ -67,22 +74,22 @@ const PredictedMatricPage = () => {
       navigate(`/predicted-matric/${stream}/${subject}`);
     } else {
       setPendingSubject({ stream, subject });
+      setPinError(false);
       setShowPINLock(true);
     }
   };
 
   const handlePINUnlock = (pin: string) => {
     // Verify PIN (you can change this to your desired PIN)
-    const correctPIN = '1234';
+    const correctPIN = '1325';
     
     if (pin === correctPIN && pendingSubject) {
+      setPinError(false);
       setShowPINLock(false);
       navigate(`/predicted-matric/${pendingSubject.stream}/${pendingSubject.subject}`);
       setPendingSubject(null);
     } else {
-      // Show error - the PINLock component handles this
-      // For now, we'll just close and let user try again
-      // In a real implementation, you'd pass an error state to PINLock
+      setPinError(true);
       alert('Incorrect PIN. Please try again.');
     }
   };
@@ -117,6 +124,17 @@ const PredictedMatricPage = () => {
       { subject: 'Scholastic Aptitude Test', questions: questionData.socialScholastic, icon: '🧠' },
     ];
   }, [questionData]);
+
+  if (loadingError) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-indigo-950 via-purple-900 to-indigo-950 flex items-center justify-center">
+        <div className="text-white text-center">
+          <p className="text-xl mb-4">Error loading questions</p>
+          <p className="text-white/50">{loadingError}</p>
+        </div>
+      </div>
+    );
+  }
 
   if (!questionData) {
     return (
@@ -310,6 +328,8 @@ const PredictedMatricPage = () => {
           onUnlock={handlePINUnlock}
           onCancel={handlePINCancel}
           subjectName={pendingSubject?.subject}
+          isSocialStream={pendingSubject?.stream === 'social'}
+          error={pinError}
         />
       )}
     </div>
