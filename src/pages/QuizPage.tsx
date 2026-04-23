@@ -133,8 +133,12 @@ const getQuestionsForSubject = (subject: string, chapter: string, difficulty: st
   try {
     // Handle Grade 9
     if (grade === '9') {
-      // Use the full chapter name as-is (the bank is built with full chapter names)
-      return getGrade9Questions(subject, chapter, difficulty.toLowerCase() as 'easy' | 'medium' | 'hard', count).map(q => ({
+      // Clean the chapter name to match the format used in grade9Questions.ts
+      const cleanChapterName = chapter
+        .replace(/^Unit\s+\d+:\s*/i, "")
+        .replace(/^Chapter\s+\d+:\s*/i, "")
+        .trim();
+      return getGrade9Questions(subject, cleanChapterName, difficulty.toLowerCase() as 'easy' | 'medium' | 'hard', count).map(q => ({
         id: q.id,
         question: q.question,
         options: q.options,

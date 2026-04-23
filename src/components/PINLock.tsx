@@ -1,17 +1,33 @@
 import { useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Lock, X } from 'lucide-react';
+import { Lock, X, Shield, Sparkles } from 'lucide-react';
 
 interface PINLockProps {
   onUnlock: (pin: string) => void;
   onCancel?: () => void;
   subjectName?: string;
+  isSocialStream?: boolean;
 }
 
-const PINLock = ({ onUnlock, onCancel, subjectName }: PINLockProps) => {
+const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false }: PINLockProps) => {
   const [pin, setPin] = useState('');
   const [error, setError] = useState(false);
+
+  const theme = {
+    primary: isSocialStream ? 'purple' : 'emerald',
+    secondary: isSocialStream ? 'pink' : 'teal',
+    gradient: isSocialStream 
+      ? 'from-purple-500 via-pink-500 to-purple-600' 
+      : 'from-emerald-500 via-teal-500 to-emerald-600',
+    gradientHover: isSocialStream 
+      ? 'from-purple-600 via-pink-600 to-purple-700' 
+      : 'from-emerald-600 via-teal-600 to-emerald-700',
+    bgTint: isSocialStream ? 'purple' : 'emerald',
+    borderTint: isSocialStream ? 'purple' : 'emerald',
+    iconColor: isSocialStream ? 'text-purple-400' : 'text-emerald-400',
+    glowColor: isSocialStream ? 'shadow-purple-500/50' : 'shadow-emerald-500/50',
+  };
 
   const handleDigitClick = (digit: string) => {
     if (pin.length < 4) {

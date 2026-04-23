@@ -509,8 +509,10 @@ export const bank: Record<string, Record<string, Grade9Question[]>> = {};
 grade9Subjects.forEach((subject) => {
   bank[subject.name] = {};
   subject.chapters.forEach((chapter) => {
-    bank[subject.name][chapter] =
-      curatedGrade9QuestionBanks[subject.name]?.[chapter] ||
+    // Use cleaned chapter name as the key for consistency
+    const cleanedChapter = cleanTitle(chapter);
+    bank[subject.name][cleanedChapter] =
+      curatedGrade9QuestionBanks[subject.name]?.[cleanedChapter] ||
       buildChapterQuestions(subject.name, chapter);
   });
 });

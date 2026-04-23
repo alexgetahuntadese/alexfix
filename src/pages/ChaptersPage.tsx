@@ -718,7 +718,12 @@ const ChaptersPage = () => {
       if (subjectData) {
         return subjectData.chapters.map((chapter, index) => ({
           ...(() => {
-            const counts = getGrade9ChapterQuestionCounts(decodedSubject, chapter);
+            // Clean the chapter name to match the bank keys
+            const cleanChapterName = chapter
+              .replace(/^Unit\s+\d+:\s*/i, "")
+              .replace(/^Chapter\s+\d+:\s*/i, "")
+              .trim();
+            const counts = getGrade9ChapterQuestionCounts(decodedSubject, cleanChapterName);
             const total = counts.easy + counts.medium + counts.hard;
             return {
               questionsCount: total,
