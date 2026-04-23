@@ -133,6 +133,7 @@ const getQuestionsForSubject = (subject: string, chapter: string, difficulty: st
   try {
     // Handle Grade 9
     if (grade === '9') {
+      // Use the full chapter name as-is (the bank is built with full chapter names)
       return getGrade9Questions(subject, chapter, difficulty.toLowerCase() as 'easy' | 'medium' | 'hard', count).map(q => ({
         id: q.id,
         question: q.question,
@@ -728,6 +729,21 @@ const QuizPage = () => {
   const normalizedChapterId = decodeURIComponent(chapterId ?? '');
   const chapterIndex = chapterTitles.findIndex((title) => title === normalizedChapterId);
   const lockedChapter = chapterIndex >= 0 && !premiumAccess && !isFreeChapter(chapterIndex);
+
+  // For Grade 9, also try matching with cleaned title (without "Unit 1: " prefix)
+  let actualChapterId = normalizedChapterId;
+  if (grade === '9' && chapterIndex === -1) {
+    const cleanTitle = (chapter: string) =>
+      chapter
+        .replace(/^Unit\s+\d+:\s*/i, "")
+        .replace(/^Chapter\s+\d+:\s*/i, "")
+        .trim();
+    const cleanedChapterId = cleanTitle(normalizedChapterId);
+    const cleanedChapterIndex = chapterTitles.findIndex((title) => cleanTitle(title) === cleanedChapterId);
+    if (cleanedChapterIndex >= 0) {
+      actualChapterId = chapterTitles[cleanedChapterIndex];
+    }
+  }
 
   if (lockedChapter) {
     return <Navigate to="/payment" replace />;

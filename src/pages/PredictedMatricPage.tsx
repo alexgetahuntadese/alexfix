@@ -6,6 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { ArrowLeft, TrendingUp, Sparkles, Target, BookOpen, Clock, CheckCircle } from 'lucide-react';
 import TopBar from '@/components/TopBar';
 import StarField from '@/components/StarField';
+import PINLock from '@/components/PINLock';
 
 // Lazy load question data to reduce initial bundle size
 const getPredictedQuestions = () => {
@@ -51,10 +52,45 @@ const socialSubjectsMetadata = [
 const PredictedMatricPage = () => {
   const navigate = useNavigate();
   const [questionData, setQuestionData] = useState<any>(null);
+  const [showPINLock, setShowPINLock] = useState(false);
+  const [pendingSubject, setPendingSubject] = useState<{ stream: string; subject: string } | null>(null);
 
   useEffect(() => {
     getPredictedQuestions().then(data => setQuestionData(data));
   }, []);
+
+  const handleSubjectClick = (stream: string, subject: string) => {
+    const subjectLower = subject.toLowerCase();
+    
+    // Skip PIN for Mathematics and History
+    if (subjectLower === 'mathematics' || subjectLower === 'history') {
+      navigate(`/predicted-matric/${stream}/${subject}`);
+    } else {
+      setPendingSubject({ stream, subject });
+      setShowPINLock(true);
+    }
+  };
+
+  const handlePINUnlock = (pin: string) => {
+    // Verify PIN (you can change this to your desired PIN)
+    const correctPIN = '1234';
+    
+    if (pin === correctPIN && pendingSubject) {
+      setShowPINLock(false);
+      navigate(`/predicted-matric/${pendingSubject.stream}/${pendingSubject.subject}`);
+      setPendingSubject(null);
+    } else {
+      // Show error - the PINLock component handles this
+      // For now, we'll just close and let user try again
+      // In a real implementation, you'd pass an error state to PINLock
+      alert('Incorrect PIN. Please try again.');
+    }
+  };
+
+  const handlePINCancel = () => {
+    setShowPINLock(false);
+    setPendingSubject(null);
+  };
 
   const naturalSubjects = useMemo(() => {
     if (!questionData) return [];
@@ -81,10 +117,6 @@ const PredictedMatricPage = () => {
       { subject: 'Scholastic Aptitude Test', questions: questionData.socialScholastic, icon: '🧠' },
     ];
   }, [questionData]);
-
-  const handleSubjectClick = (stream: string, subject: string) => {
-    navigate(`/predicted-matric/${stream}/${subject}`);
-  };
 
   if (!questionData) {
     return (
@@ -272,6 +304,14 @@ const PredictedMatricPage = () => {
           </div>
         </div>
       </div>
+
+      {showPINLock && (
+        <PINLock
+          onUnlock={handlePINUnlock}
+          onCancel={handlePINCancel}
+          subjectName={pendingSubject?.subject}
+        />
+      )}
     </div>
   );
 };

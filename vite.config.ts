@@ -51,11 +51,38 @@ export default defineConfig(({ mode }) => ({
               return 'utils';
             }
           }
+          // Split large data files into separate chunks
+          if (id.includes('/data/')) {
+            if (id.includes('grade12')) {
+              return 'data-grade12';
+            }
+            if (id.includes('grade11')) {
+              return 'data-grade11';
+            }
+            if (id.includes('grade10')) {
+              return 'data-grade10';
+            }
+            if (id.includes('grade9')) {
+              return 'data-grade9';
+            }
+            if (id.includes('matric')) {
+              return 'data-matric';
+            }
+            return 'data';
+          }
         },
       },
     },
-    chunkSizeWarningLimit: 1000,
+    chunkSizeWarningLimit: 1500,
     sourcemap: mode === 'development',
+    target: 'esnext',
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: mode === 'production',
+        drop_debugger: mode === 'production',
+      },
+    },
   },
   optimizeDeps: {
     include: ['react', 'react-dom', 'react-router-dom', '@tanstack/react-query'],

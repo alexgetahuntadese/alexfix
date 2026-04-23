@@ -8,6 +8,7 @@ import { ArrowLeft, CheckCircle2, XCircle, ChevronRight, Clock, Target, Brain, L
 import { MatricExamQuestion } from '@/data/matricExams';
 import TopBar from '@/components/TopBar';
 import StarField from '@/components/StarField';
+import PINLock from '@/components/PINLock';
 
 // Lazy load question data to reduce initial bundle size
 const getPredictedQuestions = async (stream: string, subject: string): Promise<MatricExamQuestion[]> => {
@@ -63,6 +64,54 @@ const PredictedMatricQuizPage = () => {
   const streamKey = stream ?? 'natural';
   const streamLabel = streamKey === 'social' ? 'Social Science' : 'Natural Science';
   const isSocialStream = streamKey === 'social';
+  const [showPINLock, setShowPINLock] = useState(false);
+  const [isUnlocked, setIsUnlocked] = useState(false);
+
+  // Check if subject requires PIN lock (not Mathematics or History)
+  const subjectLower = subject?.toLowerCase() || '';
+  const requiresPIN = subjectLower !== 'mathematics' && subjectLower !== 'history';
+
+  useEffect(() => {
+    if (requiresPIN) {
+      setShowPINLock(true);
+    } else {
+      setIsUnlocked(true);
+    }
+  }, [requiresPIN]);
+
+  const handlePINUnlock = (pin: string) => {
+    const correctPIN = '1234';
+    if (pin === correctPIN) {
+      setShowPINLock(false);
+      setIsUnlocked(true);
+    } else {
+      alert('Incorrect PIN. Please try again.');
+    }
+  };
+
+  const handlePINCancel = () => {
+    navigate('/predicted-matric');
+  };
+
+  // Show PIN lock if required and not yet unlocked
+  if (showPINLock) {
+    return (
+      <div className={`min-h-screen bg-gradient-to-br ${isSocialStream ? 'from-purple-950 via-pink-900 to-purple-950' : 'from-emerald-950 via-teal-900 to-emerald-950'} pt-14 px-4 pb-4 overflow-hidden relative`}>
+        <StarField />
+        <TopBar />
+        <PINLock
+          onUnlock={handlePINUnlock}
+          onCancel={handlePINCancel}
+          subjectName={subject}
+        />
+      </div>
+    );
+  }
+
+  // Don't render quiz until unlocked
+  if (!isUnlocked) {
+    return null;
+  }
   
   // Color theme based on stream
   const theme = {

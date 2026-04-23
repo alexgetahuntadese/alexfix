@@ -49,11 +49,32 @@ const PageLoader = () => (
   </div>
 );
 
+// Prefetch critical routes on hover for faster navigation
+const PrefetchLink = ({ to, children, ...props }: any) => {
+  const navigate = useNavigate();
+  const handleMouseEnter = () => {
+    // Prefetch the route when user hovers
+    import(/* @vite-ignore */ `./pages/${to}`).catch(() => {});
+  };
+  return (
+    <a
+      {...props}
+      onMouseEnter={handleMouseEnter}
+      onClick={(e) => {
+        e.preventDefault();
+        navigate(to);
+      }}
+    >
+      {children}
+    </a>
+  );
+};
+
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
-      staleTime: 5 * 60 * 1000, // 5 minutes
-      gcTime: 10 * 60 * 1000, // 10 minutes (formerly cacheTime)
+      staleTime: 15 * 60 * 1000, // 15 minutes (increased from 5)
+      gcTime: 30 * 60 * 1000, // 30 minutes (increased from 10)
       retry: (failureCount, error) => {
         // Don't retry if offline
         if (!navigator.onLine) return false;

@@ -10030,6 +10030,486 @@ export const predicted2018SocialEconomicsQuestions: MatricExamQuestion[] = [
     ],
     correctAnswer: 0,
     explanation: "Economic growth is an increase in the production of goods and services over a specific period, typically measured by GDP."
+  },
+  {
+    id: "pred-2018-secon-41",
+    question: "What is 'inflation'?",
+    options: [
+      "A general increase in prices and fall in purchasing power",
+      "A decrease in prices",
+      "No change in prices",
+      "Economic growth"
+    ],
+    correctAnswer: 0,
+    explanation: "Inflation is the rate at which the general level of prices for goods and services is rising, causing purchasing power to fall."
+  },
+  {
+    id: "pred-2018-secon-42",
+    question: "What is 'deflation'?",
+    options: [
+      "A general decrease in prices and increase in purchasing power",
+      "A general increase in prices",
+      "No change in prices",
+      "Economic stability"
+    ],
+    correctAnswer: 0,
+    explanation: "Deflation is a decrease in the general price level of goods and services, the opposite of inflation."
+  },
+  {
+    id: "pred-2018-secon-43",
+    question: "What is 'recession'?",
+    options: [
+      "A significant decline in economic activity across the economy",
+      "Economic growth",
+      "Price stability",
+      "High employment"
+    ],
+    correctAnswer: 0,
+    explanation: "A recession is a significant decline in economic activity spread across the economy, typically lasting more than a few months."
+  },
+  {
+    id: "pred-2018-secon-44",
+    question: "What is 'fiscal policy'?",
+    options: [
+      "Government use of taxation and spending to influence the economy",
+      "Central bank policy on money supply",
+      "Private sector investment decisions",
+      "International trade agreements"
+    ],
+    correctAnswer: 0,
+    explanation: "Fiscal policy refers to government use of taxation and spending to influence the economy."
+  },
+  {
+    id: "pred-2018-secon-45",
+    question: "What is 'monetary policy'?",
+    options: [
+      "Central bank's management of money supply and interest rates",
+      "Government taxation policy",
+      "Private sector investment",
+      "International trade policy"
+    ],
+    correctAnswer: 0,
+    explanation: "Monetary policy is the process by which a central bank manages the money supply and interest rates to achieve economic objectives."
+  },
+  {
+    id: "pred-2018-secon-46",
+    question: "What is 'balance of trade'?",
+    options: [
+      "Difference between a country's exports and imports",
+      "Government budget balance",
+      "Bank account balance",
+      "Trade deficit only"
+    ],
+    correctAnswer: 0,
+    explanation: "Balance of trade is the difference between the value of a country's exports and imports of goods."
+  },
+  {
+    id: "pred-2018-secon-47",
+    question: "What is 'foreign direct investment (FDI)'?",
+    options: [
+      "Investment by a company in business interests in another country",
+      "Domestic investment only",
+      "Government spending",
+      "Consumer spending"
+    ],
+    correctAnswer: 0,
+    explanation: "FDI is an investment made by a company or entity based in one country into business interests located in another country."
+  },
+  {
+    id: "pred-2018-secon-48",
+    question: "What is 'human capital'?",
+    options: [
+      "The skills, knowledge, and experience possessed by workers",
+      "Physical capital only",
+      "Financial capital only",
+      "Natural resources"
+    ],
+    correctAnswer: 0,
+    explanation: "Human capital refers to the skills, knowledge, and experience possessed by an individual or population, viewed in terms of their value to an organization or country."
+  },
+  {
+    id: "pred-2018-secon-49",
+    question: "What is 'gross national income (GNI)'?",
+    options: [
+      "Total income earned by a nation's citizens and businesses",
+      "Domestic production only",
+      "Export value only",
+      "Import value only"
+    ],
+    correctAnswer: 0,
+    explanation: "GNI is the total income earned by a nation's citizens and businesses, including income from abroad."
+  },
+  {
+    id: "pred-2018-secon-50",
+    question: "What is 'purchasing power parity (PPP)'?",
+    options: [
+      "Economic theory comparing different currencies' purchasing power",
+      "Exchange rate only",
+      "Trade balance",
+      "Inflation rate"
+    ],
+    correctAnswer: 0,
+    explanation: "PPP is an economic theory that compares different countries' currencies through a basket of goods approach."
+  },
+  {
+    id: "pred-2018-secon-51",
+    question: "What is 'subsidy'?",
+    options: [
+      "Government financial assistance to producers or consumers",
+      "Tax on producers",
+      "Consumer payment",
+      "Export duty"
+    ],
+    correctAnswer: 0,
+    explanation: "A subsidy is a government transfer or payment to individuals or firms, usually intended to reduce the cost of goods or services."
+  },
+  {
+    id: "pred-2018-secon-52",
+    question: "What is 'tariff'?",
+    options: [
+      "Tax on imported goods",
+      "Tax on exported goods",
+      "Domestic tax",
+      "Consumer tax"
+    ],
+    correctAnswer: 0,
+    explanation: "A tariff is a tax imposed by a government on imported goods and services."
+  },
+  {
+    id: "pred-2018-secon-53",
+    question: "What is 'quota' in international trade?",
+    options: [
+      "Limit on the quantity of goods that can be imported",
+      "Tax on imports",
+      "Export requirement",
+      "Trade agreement"
+    ],
+    correctAnswer: 0,
+    explanation: "A quota is a trade restriction that limits the quantity of goods that can be imported or exported during a specific time period."
+  },
+  {
+    id: "pred-2018-secon-54",
+    question: "What is 'devaluation'?",
+    options: [
+      "Official reduction in the value of a currency relative to other currencies",
+      "Increase in currency value",
+      "No change in value",
+      "Currency appreciation"
+    ],
+    correctAnswer: 0,
+    explanation: "Devaluation is the deliberate downward adjustment of a country's currency value relative to another currency."
+  },
+  {
+    id: "pred-2018-secon-55",
+    question: "What is 'public debt'?",
+    options: [
+      "Total amount of money owed by the government",
+      "Private sector debt",
+      "Corporate debt",
+      "Individual debt"
+    ],
+    correctAnswer: 0,
+    explanation: "Public debt is the total amount of money that a government owes to creditors, including domestic and foreign lenders."
+  },
+  {
+    id: "pred-2018-secon-56",
+    question: "What is 'GDP per capita'?",
+    options: [
+      "GDP divided by the population of a country",
+      "Total GDP only",
+      "GDP growth rate",
+      "GDP minus imports"
+    ],
+    correctAnswer: 0,
+    explanation: "GDP per capita is a measure of a country's economic output that accounts for its population, calculated by dividing GDP by the population."
+  },
+  {
+    id: "pred-2018-secon-57",
+    question: "What is 'economic development'?",
+    options: [
+      "Process of improving economic well-being and quality of life",
+      "Economic growth only",
+      "Population increase",
+      "Industrialization only"
+    ],
+    correctAnswer: 0,
+    explanation: "Economic development is the process by which a nation improves the economic, political, and social well-being of its people."
+  },
+  {
+    id: "pred-2018-secon-58",
+    question: "What is 'infrastructure'?",
+    options: [
+      "Basic physical and organizational structures needed for economic activity",
+      "Natural resources only",
+      "Human resources only",
+      "Financial markets only"
+    ],
+    correctAnswer: 0,
+    explanation: "Infrastructure refers to the fundamental facilities and systems serving a country, city, or area, including transportation, communication, and utilities."
+  },
+  {
+    id: "pred-2018-secon-59",
+    question: "What is 'entrepreneurship'?",
+    options: [
+      "The process of starting and running a new business",
+      "Working for a company",
+      "Government employment",
+      "Agricultural work only"
+    ],
+    correctAnswer: 0,
+    explanation: "Entrepreneurship is the activity of setting up a business or businesses, taking on financial risks in the hope of profit."
+  },
+  {
+    id: "pred-2018-secon-60",
+    question: "What is 'sustainable development'?",
+    options: [
+      "Development that meets present needs without compromising future generations",
+      "Rapid economic growth at any cost",
+      "Resource depletion",
+      "Environmental destruction"
+    ],
+    correctAnswer: 0,
+    explanation: "Sustainable development is development that meets the needs of the present without compromising the ability of future generations to meet their own needs."
+  },
+  {
+    id: "pred-2018-secon-61",
+    question: "What is 'interest rate'?",
+    options: [
+      "The cost of borrowing money or return on saving",
+      "Tax rate",
+      "Profit margin",
+      "Exchange rate"
+    ],
+    correctAnswer: 0,
+    explanation: "Interest rate is the amount charged, expressed as a percentage of principal, by a lender to a borrower for the use of assets."
+  },
+  {
+    id: "pred-2018-secon-62",
+    question: "What is 'central bank'?",
+    options: [
+      "The main monetary authority of a country",
+      "Commercial bank",
+      "Investment bank",
+      "Private bank"
+    ],
+    correctAnswer: 0,
+    explanation: "A central bank is the main monetary authority of a country that manages currency, money supply, and interest rates."
+  },
+  {
+    id: "pred-2018-secon-63",
+    question: "What is 'money supply'?",
+    options: [
+      "Total amount of monetary assets available in an economy",
+      "Bank reserves only",
+      "Currency in circulation only",
+      "Gold reserves"
+    ],
+    correctAnswer: 0,
+    explanation: "Money supply is the total amount of monetary assets available in an economy at a specific time."
+  },
+  {
+    id: "pred-2018-secon-64",
+    question: "What is 'exchange rate'?",
+    options: [
+      "The value of one currency expressed in terms of another",
+      "Interest rate",
+      "Inflation rate",
+      "Tax rate"
+    ],
+    correctAnswer: 0,
+    explanation: "Exchange rate is the value of one nation's currency versus the currency of another nation or economic region."
+  },
+  {
+    id: "pred-2018-secon-65",
+    question: "What is 'export'?",
+    options: [
+      "Goods and services produced domestically and sold abroad",
+      "Goods produced abroad and sold domestically",
+      "Domestic sales only",
+      "Government purchases"
+    ],
+    correctAnswer: 0,
+    explanation: "Exports are goods and services that are produced domestically and sold to foreign buyers."
+  },
+  {
+    id: "pred-2018-secon-66",
+    question: "What is 'import'?",
+    options: [
+      "Goods and services produced abroad and purchased domestically",
+      "Goods produced domestically and sold abroad",
+      "Domestic production only",
+      "Government sales"
+    ],
+    correctAnswer: 0,
+    explanation: "Imports are goods and services that are purchased from foreign countries and brought into a country."
+  },
+  {
+    id: "pred-2018-secon-67",
+    question: "What is 'trade surplus'?",
+    options: [
+      "When exports exceed imports",
+      "When imports exceed exports",
+      "When exports equal imports",
+      "When there is no trade"
+    ],
+    correctAnswer: 0,
+    explanation: "A trade surplus occurs when a country's exports exceed its imports."
+  },
+  {
+    id: "pred-2018-secon-68",
+    question: "What is 'trade deficit'?",
+    options: [
+      "When imports exceed exports",
+      "When exports exceed imports",
+      "When exports equal imports",
+      "When there is no trade"
+    ],
+    correctAnswer: 0,
+    explanation: "A trade deficit occurs when a country's imports exceed its exports."
+  },
+  {
+    id: "pred-2018-secon-69",
+    question: "What is 'industrialization'?",
+    options: [
+      "The process of social and economic change that transforms a country from an agrarian to an industrial economy",
+      "Agricultural development",
+      "Service sector growth only",
+      "Deindustrialization"
+    ],
+    correctAnswer: 0,
+    explanation: "Industrialization is the transition from an agricultural economy to one dominated by manufacturing and industry."
+  },
+  {
+    id: "pred-2018-secon-70",
+    question: "What is 'urbanization'?",
+    options: [
+      "The process by which people move from rural to urban areas",
+      "Movement from urban to rural areas",
+      "Population decline",
+      "Agricultural expansion"
+    ],
+    correctAnswer: 0,
+    explanation: "Urbanization is the process by which large numbers of people become permanently concentrated in relatively small areas, forming cities."
+  },
+  {
+    id: "pred-2018-secon-71",
+    question: "What is the main economic activity in Ethiopia?",
+    options: [
+      "Agriculture",
+      "Manufacturing",
+      "Services",
+      "Mining"
+    ],
+    correctAnswer: 0,
+    explanation: "Agriculture is the main economic activity in Ethiopia, employing the majority of the population and contributing significantly to GDP."
+  },
+  {
+    id: "pred-2018-secon-72",
+    question: "What is Ethiopia's main export?",
+    options: [
+      "Coffee",
+      "Gold",
+      "Oil",
+      "Textiles"
+    ],
+    correctAnswer: 0,
+    explanation: "Coffee is Ethiopia's main export, accounting for a significant portion of the country's foreign exchange earnings."
+  },
+  {
+    id: "pred-2018-secon-73",
+    question: "What is 'Growth and Transformation Plan (GTP)' in Ethiopia?",
+    options: [
+      "A national development strategy to accelerate economic growth",
+      "Agricultural policy only",
+      "Educational program",
+      "Health initiative"
+    ],
+    correctAnswer: 0,
+    explanation: "The GTP was Ethiopia's national development strategy aimed at accelerating economic growth and transforming the country into a middle-income economy."
+  },
+  {
+    id: "pred-2018-secon-74",
+    question: "What is 'microfinance'?",
+    options: [
+      "Financial services for low-income individuals and small businesses",
+      "Large corporate banking",
+      "Government borrowing",
+      "International trade finance"
+    ],
+    correctAnswer: 0,
+    explanation: "Microfinance provides financial services such as loans, savings, and insurance to low-income individuals and small businesses."
+  },
+  {
+    id: "pred-2018-secon-75",
+    question: "What is 'informal sector'?",
+    options: [
+      "Economic activities that are not regulated or taxed by government",
+      "Government-regulated businesses",
+      "Large corporations",
+      "International companies"
+    ],
+    correctAnswer: 0,
+    explanation: "The informal sector consists of economic activities that are not registered, regulated, or taxed by the government."
+  },
+  {
+    id: "pred-2018-secon-76",
+    question: "What is 'remittance'?",
+    options: [
+      "Money sent by foreign workers to their home country",
+      "Government aid",
+      "Foreign investment",
+      "Export earnings"
+    ],
+    correctAnswer: 0,
+    explanation: "Remittances are funds sent by migrant workers to their families or communities in their home countries."
+  },
+  {
+    id: "pred-2018-secon-77",
+    question: "What is 'economic integration'?",
+    options: [
+      "The unification of economic policies between different regions",
+      "Economic isolation",
+      "Trade barriers",
+      "Currency devaluation"
+    ],
+    correctAnswer: 0,
+    explanation: "Economic integration refers to the unification of economic policies between different regions through the elimination of trade barriers."
+  },
+  {
+    id: "pred-2018-secon-78",
+    question: "What is the African Union's economic goal?",
+    options: [
+      "To promote economic integration and development in Africa",
+      "To isolate African countries",
+      "To increase trade barriers",
+      "To promote conflict"
+    ],
+    correctAnswer: 0,
+    explanation: "The African Union aims to promote economic integration, development, and cooperation among African countries."
+  },
+  {
+    id: "pred-2018-secon-79",
+    question: "What is 'comparative advantage'?",
+    options: [
+      "The ability to produce goods at a lower opportunity cost than others",
+      "Producing everything domestically",
+      "Importing all goods",
+      "Having no trade"
+    ],
+    correctAnswer: 0,
+    explanation: "Comparative advantage is the ability of a country to produce a particular good or service at a lower opportunity cost than another country."
+  },
+  {
+    id: "pred-2018-secon-80",
+    question: "What is 'economic liberalization'?",
+    options: [
+      "Reducing government restrictions on economic activities",
+      "Increasing government control",
+      "Nationalizing industries",
+      "Imposing trade barriers"
+    ],
+    correctAnswer: 0,
+    explanation: "Economic liberalization refers to reducing government regulations and restrictions on economic activities to promote free markets."
   }
 ];
 
@@ -10513,6 +10993,486 @@ export const predicted2018SocialCivicsQuestions: MatricExamQuestion[] = [
     ],
     correctAnswer: 0,
     explanation: "Public opinion refers to the collective views, attitudes, and beliefs of citizens on public issues and policies."
+  },
+  {
+    id: "pred-2018-sciv-41",
+    question: "What is 'separation of powers'?",
+    options: [
+      "Division of government responsibilities into distinct branches",
+      "Combining all powers in one branch",
+      "Military control of government",
+      "No government structure"
+    ],
+    correctAnswer: 0,
+    explanation: "Separation of powers divides government responsibilities among different branches to prevent concentration of power."
+  },
+  {
+    id: "pred-2018-sciv-42",
+    question: "What is 'checks and balances'?",
+    options: [
+      "System where each branch can limit the powers of others",
+      "Unlimited power for one branch",
+      "No government oversight",
+      "Military control"
+    ],
+    correctAnswer: 0,
+    explanation: "Checks and balances is a system that allows each branch of government to limit the powers of the others."
+  },
+  {
+    id: "pred-2018-sciv-43",
+    question: "What is 'constitution'?",
+    options: [
+      "Supreme law of a country that establishes government structure",
+      "Ordinary law",
+      "Temporary rule",
+      "Military decree"
+    ],
+    correctAnswer: 0,
+    explanation: "A constitution is the fundamental law that establishes the framework of government and defines citizens' rights."
+  },
+  {
+    id: "pred-2018-sciv-44",
+    question: "What is 'federalism'?",
+    options: [
+      "Division of power between central and regional governments",
+      "Centralized government only",
+      "No government structure",
+      "Regional independence only"
+    ],
+    correctAnswer: 0,
+    explanation: "Federalism is a system of government where power is divided between a central authority and constituent political units."
+  },
+  {
+    id: "pred-2018-sciv-45",
+    question: "What is 'unitary government'?",
+    options: [
+      "System where central government holds all power",
+      "Power divided between central and regional",
+      "No central government",
+      "Regional governments have all power"
+    ],
+    correctAnswer: 0,
+    explanation: "A unitary government is a system where all governmental power is vested in a single, central authority."
+  },
+  {
+    id: "pred-2018-sciv-46",
+    question: "What is 'parliamentary system'?",
+    options: [
+      "System where executive derives legitimacy from legislature",
+      "System with separate executive and legislature",
+      "Military rule",
+      "Monarchy only"
+    ],
+    correctAnswer: 0,
+    explanation: "In a parliamentary system, the executive branch derives its legitimacy from and is accountable to the legislature."
+  },
+  {
+    id: "pred-2018-sciv-47",
+    question: "What is 'presidential system'?",
+    options: [
+      "System where executive and legislature are separate",
+      "Executive and legislature combined",
+      "No executive branch",
+      "Military rule"
+    ],
+    correctAnswer: 0,
+    explanation: "A presidential system separates the executive and legislative branches, with the president elected independently of the legislature."
+  },
+  {
+    id: "pred-2018-sciv-48",
+    question: "What is 'rule of law'?",
+    options: [
+      "Principle that all are subject to law",
+      "Rule by military",
+      "Rule by majority only",
+      "No legal system"
+    ],
+    correctAnswer: 0,
+    explanation: "Rule of law means that all individuals and institutions are subject to and accountable under the law."
+  },
+  {
+    id: "pred-2018-sciv-49",
+    question: "What is 'civil society'?",
+    options: [
+      "Organizations independent of government that promote public interests",
+      "Government organizations",
+      "Military groups",
+      "Political parties only"
+    ],
+    correctAnswer: 0,
+    explanation: "Civil society consists of non-governmental organizations and institutions that operate independently of the state."
+  },
+  {
+    id: "pred-2018-sciv-50",
+    question: "What is 'civic responsibility'?",
+    options: [
+      "Duties of citizens to contribute to their community",
+      "Government duties only",
+      "Military service only",
+      "No citizen obligations"
+    ],
+    correctAnswer: 0,
+    explanation: "Civic responsibility refers to the duties and obligations of citizens to participate in and contribute to their community."
+  },
+  {
+    id: "pred-2018-sciv-51",
+    question: "What is 'citizenship'?",
+    options: [
+      "Legal status of being a member of a country with rights and duties",
+      "Living in a country",
+      "Working in a country",
+      "Visiting a country"
+    ],
+    correctAnswer: 0,
+    explanation: "Citizenship is the legal status of being a member of a particular country, with associated rights and responsibilities."
+  },
+  {
+    id: "pred-2018-sciv-52",
+    question: "What is 'naturalization'?",
+    options: [
+      "Process by which a foreign citizen becomes a citizen of another country",
+      "Birth citizenship",
+      "Temporary residency",
+      "Tourist visa"
+    ],
+    correctAnswer: 0,
+    explanation: "Naturalization is the legal process by which a foreign citizen becomes a citizen of another country."
+  },
+  {
+    id: "pred-2018-sciv-53",
+    question: "What is 'suffrage'?",
+    options: [
+      "The right to vote in political elections",
+      "Right to work",
+      "Right to education",
+      "Right to property"
+    ],
+    correctAnswer: 0,
+    explanation: "Suffrage is the right to vote in political elections, a fundamental democratic right."
+  },
+  {
+    id: "pred-2018-sciv-54",
+    question: "What is 'political ideology'?",
+    options: [
+      "Set of beliefs about the proper role of government",
+      "Religious beliefs",
+      "Economic beliefs only",
+      "Social customs"
+    ],
+    correctAnswer: 0,
+    explanation: "Political ideology is a set of beliefs about the proper role and scope of government in society."
+  },
+  {
+    id: "pred-2018-sciv-55",
+    question: "What is 'liberalism'?",
+    options: [
+      "Political philosophy emphasizing individual rights and limited government",
+      "Unlimited government power",
+      "No individual rights",
+      "Military rule"
+    ],
+    correctAnswer: 0,
+    explanation: "Liberalism is a political philosophy that emphasizes individual rights, limited government, and free markets."
+  },
+  {
+    id: "pred-2018-sciv-56",
+    question: "What is 'conservatism'?",
+    options: [
+      "Political philosophy emphasizing tradition and social stability",
+      "Radical change",
+      "No tradition",
+      "Complete government control"
+    ],
+    correctAnswer: 0,
+    explanation: "Conservatism is a political philosophy that values tradition, social stability, and gradual change."
+  },
+  {
+    id: "pred-2018-sciv-57",
+    question: "What is 'socialism'?",
+    options: [
+      "Economic system where means of production are socially owned",
+      "Private ownership only",
+      "No government",
+      "Military economy"
+    ],
+    correctAnswer: 0,
+    explanation: "Socialism is an economic and political system where the means of production are owned collectively or by the state."
+  },
+  {
+    id: "pred-2018-sciv-58",
+    question: "What is 'capitalism'?",
+    options: [
+      "Economic system based on private ownership and profit",
+      "State ownership only",
+      "No private property",
+      "Military economy"
+    ],
+    correctAnswer: 0,
+    explanation: "Capitalism is an economic system based on private ownership of the means of production and their operation for profit."
+  },
+  {
+    id: "pred-2018-sciv-59",
+    question: "What is 'dictatorship'?",
+    options: [
+      "Form of government where power is concentrated in one person",
+      "Democratic government",
+      "Power divided among branches",
+      "No government"
+    ],
+    correctAnswer: 0,
+    explanation: "A dictatorship is a form of government where power is concentrated in the hands of a single leader or small group."
+  },
+  {
+    id: "pred-2018-sciv-60",
+    question: "What is 'totalitarianism'?",
+    options: [
+      "Political system where state recognizes no limits to its authority",
+      "Limited government power",
+      "Democratic system",
+      "Federal system"
+    ],
+    correctAnswer: 0,
+    explanation: "Totalitarianism is a political system where the state recognizes no limits to its authority and seeks to control all aspects of life."
+  },
+  {
+    id: "pred-2018-sciv-61",
+    question: "What is 'United Nations'?",
+    options: [
+      "International organization promoting peace and cooperation",
+      "Regional organization only",
+      "Military alliance",
+      "Trade bloc"
+    ],
+    correctAnswer: 0,
+    explanation: "The United Nations is an international organization founded to promote peace, security, and cooperation among nations."
+  },
+  {
+    id: "pred-2018-sciv-62",
+    question: "What is 'African Union'?",
+    options: [
+      "Continental union of African states",
+      "Asian organization",
+      "European organization",
+      "American organization"
+    ],
+    correctAnswer: 0,
+    explanation: "The African Union is a continental union consisting of 55 member states in Africa."
+  },
+  {
+    id: "pred-2018-sciv-63",
+    question: "What is 'diplomacy'?",
+    options: [
+      "Practice of conducting negotiations between countries",
+      "Military action",
+      "Economic sanctions only",
+      "Trade only"
+    ],
+    correctAnswer: 0,
+    explanation: "Diplomacy is the art and practice of conducting negotiations between representatives of states or groups."
+  },
+  {
+    id: "pred-2018-sciv-64",
+    question: "What is 'treaty'?",
+    options: [
+      "Formal agreement between countries",
+      "Domestic law",
+      "Military order",
+      "Trade policy"
+    ],
+    correctAnswer: 0,
+    explanation: "A treaty is a formal, legally binding agreement between two or more sovereign states."
+  },
+  {
+    id: "pred-2018-sciv-65",
+    question: "What is 'ambassador'?",
+    options: [
+      "Official representative of a country in another country",
+      "Military officer",
+      "Business representative",
+      "Tourist"
+    ],
+    correctAnswer: 0,
+    explanation: "An ambassador is a high-ranking diplomat who represents a country in a foreign country."
+  },
+  {
+    id: "pred-2018-sciv-66",
+    question: "What is 'human rights'?",
+    options: [
+      "Fundamental rights inherent to all human beings",
+      "Rights granted by government",
+      "Rights of citizens only",
+      "Economic privileges"
+    ],
+    correctAnswer: 0,
+    explanation: "Human rights are fundamental rights and freedoms that belong to every person by virtue of being human."
+  },
+  {
+    id: "pred-2018-sciv-67",
+    question: "What is 'Universal Declaration of Human Rights'?",
+    options: [
+      "UN document outlining fundamental human rights",
+      "National law",
+      "Military document",
+      "Trade agreement"
+    ],
+    correctAnswer: 0,
+    explanation: "The Universal Declaration of Human Rights is a UN document that outlines fundamental human rights to be universally protected."
+  },
+  {
+    id: "pred-2018-sciv-68",
+    question: "What is 'gender equality'?",
+    options: [
+      "Equal rights and opportunities regardless of gender",
+      "Preferential treatment for men",
+      "Preferential treatment for women",
+      "No gender consideration"
+    ],
+    correctAnswer: 0,
+    explanation: "Gender equality means equal rights, responsibilities, and opportunities for all people regardless of gender."
+  },
+  {
+    id: "pred-2018-sciv-69",
+    question: "What is 'civil disobedience'?",
+    options: [
+      "Refusal to obey certain laws as a form of protest",
+      "Violent rebellion",
+      "Military coup",
+      "Supporting all laws"
+    ],
+    correctAnswer: 0,
+    explanation: "Civil disobedience is the refusal to obey certain laws as a form of peaceful political protest."
+  },
+  {
+    id: "pred-2018-sciv-70",
+    question: "What is 'freedom of speech'?",
+    options: [
+      "Right to express opinions without censorship",
+      "Right to remain silent",
+      "Right to vote",
+      "Right to property"
+    ],
+    correctAnswer: 0,
+    explanation: "Freedom of speech is the right to express opinions without censorship, restraint, or legal penalty."
+  },
+  {
+    id: "pred-2018-sciv-71",
+    question: "What is 'freedom of assembly'?",
+    options: [
+      "Right to gather peacefully for political purposes",
+      "Right to private property",
+      "Right to vote",
+      "Right to work"
+    ],
+    correctAnswer: 0,
+    explanation: "Freedom of assembly is the right to hold public meetings and form associations without government interference."
+  },
+  {
+    id: "pred-2018-sciv-72",
+    question: "What is 'freedom of religion'?",
+    options: [
+      "Right to practice any religion or none",
+      "State religion only",
+      "No religion allowed",
+      "Government-controlled religion"
+    ],
+    correctAnswer: 0,
+    explanation: "Freedom of religion is the right to practice any religion or none at all, without government interference."
+  },
+  {
+    id: "pred-2018-sciv-73",
+    question: "What is 'due process'?",
+    options: [
+      "Fair treatment through judicial system",
+      "Unfair trial",
+      "No legal process",
+      "Military justice"
+    ],
+    correctAnswer: 0,
+    explanation: "Due process is the legal requirement that the state must respect all legal rights owed to a person."
+  },
+  {
+    id: "pred-2018-sciv-74",
+    question: "What is 'Ethiopian Constitution'?",
+    options: [
+      "Supreme law of Ethiopia established in 1995",
+      "Temporary document",
+      "Military decree",
+      "Regional law only"
+    ],
+    correctAnswer: 0,
+    explanation: "The Ethiopian Constitution is the supreme law of Ethiopia, adopted in 1995, establishing a federal democratic republic."
+  },
+  {
+    id: "pred-2018-sciv-75",
+    question: "What is the form of government in Ethiopia?",
+    options: [
+      "Federal parliamentary republic",
+      "Monarchy",
+      "Military dictatorship",
+      "Unitary state"
+    ],
+    correctAnswer: 0,
+    explanation: "Ethiopia is a federal parliamentary republic, with power divided between federal and regional governments."
+  },
+  {
+    id: "pred-2018-sciv-76",
+    question: "What is the House of Peoples' Representatives in Ethiopia?",
+    options: [
+      "Lower house of the Ethiopian parliament",
+      "Upper house of parliament",
+      "Executive branch",
+      "Judicial branch"
+    ],
+    correctAnswer: 0,
+    explanation: "The House of Peoples' Representatives is the lower house of the Ethiopian Federal Parliamentary Assembly."
+  },
+  {
+    id: "pred-2018-sciv-77",
+    question: "What is the House of Federation in Ethiopia?",
+    options: [
+      "Upper house of the Ethiopian parliament representing regional states",
+      "Lower house of parliament",
+      "Executive branch",
+      "Judicial branch"
+    ],
+    correctAnswer: 0,
+    explanation: "The House of Federation is the upper house of the Ethiopian parliament, representing the regional states."
+  },
+  {
+    id: "pred-2018-sciv-78",
+    question: "What is 'regional state' in Ethiopia?",
+    options: [
+      "Administrative division with significant autonomy",
+      "Central government district",
+      "Military zone",
+      "City administration"
+    ],
+    correctAnswer: 0,
+    explanation: "Ethiopia is divided into regional states that have significant autonomy under the federal system."
+  },
+  {
+    id: "pred-2018-sciv-79",
+    question: "What is 'ethnic federalism' in Ethiopia?",
+    options: [
+      "Federal system based on ethnic boundaries",
+      "Geographic federalism",
+      "No federalism",
+      "Centralized system"
+    ],
+    correctAnswer: 0,
+    explanation: "Ethiopia practices ethnic federalism, where regional states are organized along ethnic lines."
+  },
+  {
+    id: "pred-2018-sciv-80",
+    question: "What is the role of the Prime Minister in Ethiopia?",
+    options: [
+      "Head of government and chief executive",
+      "Head of state",
+      "Military commander",
+      "Judicial head"
+    ],
+    correctAnswer: 0,
+    explanation: "The Prime Minister of Ethiopia is the head of government and chief executive, holding the most political power."
   }
 ];
 
@@ -10996,6 +11956,486 @@ export const predicted2018SocialScholasticAptitudeQuestions: MatricExamQuestion[
     ],
     correctAnswer: 0,
     explanation: "Prudent means acting with or showing care and thought for the future, which is synonymous with wise."
+  },
+  {
+    id: "pred-2018-ssat-41",
+    question: "Complete the analogy: Book is to Read as Music is to ____",
+    options: [
+      "Listen",
+      "Hear",
+      "Sound",
+      "Song"
+    ],
+    correctAnswer: 0,
+    explanation: "A book is meant to be read, just as music is meant to be listened to. This is an object-action analogy."
+  },
+  {
+    id: "pred-2018-ssat-42",
+    question: "What comes next: 3, 6, 12, 24, 48, ____",
+    options: [
+      "96",
+      "72",
+      "84",
+      "90"
+    ],
+    correctAnswer: 0,
+    explanation: "The pattern doubles each time: ×2, ×2, ×2, ×2. Next is 48 × 2 = 96."
+  },
+  {
+    id: "pred-2018-ssat-43",
+    question: "Choose the word that is most opposite in meaning to 'Generous':",
+    options: [
+      "Stingy",
+      "Kind",
+      "Giving",
+      "Charitable"
+    ],
+    correctAnswer: 0,
+    explanation: "Generous means willing to give. Stingy means unwilling to give, which is the opposite."
+  },
+  {
+    id: "pred-2018-ssat-44",
+    question: "What is 15% of 200?",
+    options: [
+      "30",
+      "25",
+      "35",
+      "20"
+    ],
+    correctAnswer: 0,
+    explanation: "15% of 200 = 0.15 × 200 = 30."
+  },
+  {
+    id: "pred-2018-ssat-45",
+    question: "Complete the analogy: Doctor is to Hospital as Teacher is to ____",
+    options: [
+      "School",
+      "Class",
+      "Student",
+      "Book"
+    ],
+    correctAnswer: 0,
+    explanation: "A doctor works in a hospital, just as a teacher works in a school. This is a profession-workplace analogy."
+  },
+  {
+    id: "pred-2018-ssat-46",
+    question: "What comes next: 1, 1, 2, 3, 5, 8, ____",
+    options: [
+      "13",
+      "11",
+      "12",
+      "14"
+    ],
+    correctAnswer: 0,
+    explanation: "This is the Fibonacci sequence where each number is the sum of the two preceding ones: 5 + 8 = 13."
+  },
+  {
+    id: "pred-2018-ssat-47",
+    question: "Choose the word that is most similar in meaning to 'Diligent':",
+    options: [
+      "Hardworking",
+      "Lazy",
+      "Careless",
+      "Slow"
+    ],
+    correctAnswer: 0,
+    explanation: "Diligent means having or showing care and conscientiousness in one's work, which is synonymous with hardworking."
+  },
+  {
+    id: "pred-2018-ssat-48",
+    question: "What is the volume of a cube with side length 4?",
+    options: [
+      "64",
+      "16",
+      "48",
+      "32"
+    ],
+    correctAnswer: 0,
+    explanation: "Volume = side³ = 4³ = 64."
+  },
+  {
+    id: "pred-2018-ssat-49",
+    question: "Complete the analogy: Fish is to Water as Bird is to ____",
+    options: [
+      "Air",
+      "Tree",
+      "Nest",
+      "Sky"
+    ],
+    correctAnswer: 0,
+    explanation: "Fish live in water, just as birds live in the air. This is a creature-habitat analogy."
+  },
+  {
+    id: "pred-2018-ssat-50",
+    question: "What comes next: 2, 5, 11, 23, 47, ____",
+    options: [
+      "95",
+      "94",
+      "93",
+      "96"
+    ],
+    correctAnswer: 0,
+    explanation: "The pattern is ×2 + 1: 2×2+1=5, 5×2+1=11, 11×2+1=23, 23×2+1=47. Next is 47×2+1=95."
+  },
+  {
+    id: "pred-2018-ssat-51",
+    question: "Choose the word that is most opposite in meaning to 'Humble':",
+    options: [
+      "Arrogant",
+      "Modest",
+      "Shy",
+      "Quiet"
+    ],
+    correctAnswer: 0,
+    explanation: "Humble means having a modest view of one's importance. Arrogant means having an exaggerated sense of importance, which is the opposite."
+  },
+  {
+    id: "pred-2018-ssat-52",
+    question: "What is 3/4 of 80?",
+    options: [
+      "60",
+      "50",
+      "70",
+      "40"
+    ],
+    correctAnswer: 0,
+    explanation: "3/4 of 80 = (3 × 80) / 4 = 240 / 4 = 60."
+  },
+  {
+    id: "pred-2018-ssat-53",
+    question: "Complete the analogy: Library is to Books as Museum is to ____",
+    options: [
+      "Artifacts",
+      "Visitors",
+      "Building",
+      "History"
+    ],
+    correctAnswer: 0,
+    explanation: "A library houses books, just as a museum houses artifacts. This is a place-collection analogy."
+  },
+  {
+    id: "pred-2018-ssat-54",
+    question: "What comes next: 10, 20, 30, 40, 50, ____",
+    options: [
+      "60",
+      "55",
+      "65",
+      "70"
+    ],
+    correctAnswer: 0,
+    explanation: "The pattern increases by 10 each time: +10, +10, +10, +10. Next is 50 + 10 = 60."
+  },
+  {
+    id: "pred-2018-ssat-55",
+    question: "Choose the word that is most similar in meaning to 'Courageous':",
+    options: [
+      "Brave",
+      "Fearful",
+      "Cowardly",
+      "Timid"
+    ],
+    correctAnswer: 0,
+    explanation: "Courageous means not deterred by danger or pain, which is synonymous with brave."
+  },
+  {
+    id: "pred-2018-ssat-56",
+    question: "What is the circumference of a circle with radius 7? (Use π ≈ 22/7)",
+    options: [
+      "44",
+      "154",
+      "22",
+      "88"
+    ],
+    correctAnswer: 0,
+    explanation: "Circumference = 2πr = 2 × (22/7) × 7 = 44."
+  },
+  {
+    id: "pred-2018-ssat-57",
+    question: "Complete the analogy: Day is to Night as Summer is to ____",
+    options: [
+      "Winter",
+      "Spring",
+      "Autumn",
+      "Season"
+    ],
+    correctAnswer: 0,
+    explanation: "Day and night are opposites, just as summer and winter are opposite seasons."
+  },
+  {
+    id: "pred-2018-ssat-58",
+    question: "What comes next: 64, 32, 16, 8, 4, ____",
+    options: [
+      "2",
+      "1",
+      "3",
+      "0"
+    ],
+    correctAnswer: 0,
+    explanation: "The pattern halves each time: ÷2, ÷2, ÷2, ÷2. Next is 4 ÷ 2 = 2."
+  },
+  {
+    id: "pred-2018-ssat-59",
+    question: "Choose the word that is most opposite in meaning to 'Optimistic':",
+    options: [
+      "Pessimistic",
+      "Hopeful",
+      "Positive",
+      "Confident"
+    ],
+    correctAnswer: 0,
+    explanation: "Optimistic means hopeful and confident about the future. Pessimistic means seeing the worst aspect of things, which is the opposite."
+  },
+  {
+    id: "pred-2018-ssat-60",
+    question: "What is 125% of 40?",
+    options: [
+      "50",
+      "45",
+      "55",
+      "48"
+    ],
+    correctAnswer: 0,
+    explanation: "125% of 40 = 1.25 × 40 = 50."
+  },
+  {
+    id: "pred-2018-ssat-61",
+    question: "Complete the analogy: Seed is to Tree as Egg is to ____",
+    options: [
+      "Bird",
+      "Nest",
+      "Chicken",
+      "Shell"
+    ],
+    correctAnswer: 0,
+    explanation: "A seed grows into a tree, just as an egg develops into a bird. This is a beginning-product analogy."
+  },
+  {
+    id: "pred-2018-ssat-62",
+    question: "What comes next: 1, 8, 27, 64, 125, ____",
+    options: [
+      "216",
+      "200",
+      "215",
+      "220"
+    ],
+    correctAnswer: 0,
+    explanation: "The pattern is cubes: 1³, 2³, 3³, 4³, 5³. Next is 6³ = 216."
+  },
+  {
+    id: "pred-2018-ssat-63",
+    question: "Choose the word that is most similar in meaning to 'Meticulous':",
+    options: [
+      "Careful",
+      "Careless",
+      "Rough",
+      "Quick"
+    ],
+    correctAnswer: 0,
+    explanation: "Meticulous means showing great attention to detail, which is synonymous with careful."
+  },
+  {
+    id: "pred-2018-ssat-64",
+    question: "What is the area of a triangle with base 10 and height 6?",
+    options: [
+      "30",
+      "60",
+      "20",
+      "40"
+    ],
+    correctAnswer: 0,
+    explanation: "Area = (base × height) / 2 = (10 × 6) / 2 = 30."
+  },
+  {
+    id: "pred-2018-ssat-65",
+    question: "Complete the analogy: Clock is to Time as Thermometer is to ____",
+    options: [
+      "Temperature",
+      "Heat",
+      "Weather",
+      "Degree"
+    ],
+    correctAnswer: 0,
+    explanation: "A clock measures time, just as a thermometer measures temperature. This is an instrument-measurement analogy."
+  },
+  {
+    id: "pred-2018-ssat-66",
+    question: "What comes next: 2, 4, 8, 16, 32, ____",
+    options: [
+      "64",
+      "48",
+      "56",
+      "72"
+    ],
+    correctAnswer: 0,
+    explanation: "The pattern doubles each time: ×2, ×2, ×2, ×2. Next is 32 × 2 = 64."
+  },
+  {
+    id: "pred-2018-ssat-67",
+    question: "Choose the word that is most opposite in meaning to 'Sincere':",
+    options: [
+      "Insincere",
+      "Honest",
+      "Genuine",
+      "Truthful"
+    ],
+    correctAnswer: 0,
+    explanation: "Sincere means genuine and honest. Insincere means not genuine or honest, which is the opposite."
+  },
+  {
+    id: "pred-2018-ssat-68",
+    question: "What is 2/5 of 50?",
+    options: [
+      "20",
+      "25",
+      "15",
+      "30"
+    ],
+    correctAnswer: 0,
+    explanation: "2/5 of 50 = (2 × 50) / 5 = 100 / 5 = 20."
+  },
+  {
+    id: "pred-2018-ssat-69",
+    question: "Complete the analogy: Car is to Road as Boat is to ____",
+    options: [
+      "Water",
+      "Sea",
+      "Ocean",
+      "River"
+    ],
+    correctAnswer: 0,
+    explanation: "A car travels on a road, just as a boat travels on water. This is a vehicle-medium analogy."
+  },
+  {
+    id: "pred-2018-ssat-70",
+    question: "What comes next: 5, 10, 20, 40, 80, ____",
+    options: [
+      "160",
+      "120",
+      "140",
+      "100"
+    ],
+    correctAnswer: 0,
+    explanation: "The pattern doubles each time: ×2, ×2, ×2, ×2. Next is 80 × 2 = 160."
+  },
+  {
+    id: "pred-2018-ssat-71",
+    question: "Choose the word that is most similar in meaning to 'Eloquent':",
+    options: [
+      "Articulate",
+      "Silent",
+      "Quiet",
+      "Mumbling"
+    ],
+    correctAnswer: 0,
+    explanation: "Eloquent means fluent or persuasive in speaking or writing, which is synonymous with articulate."
+  },
+  {
+    id: "pred-2018-ssat-72",
+    question: "What is the perimeter of a rectangle with length 12 and width 5?",
+    options: [
+      "34",
+      "60",
+      "24",
+      "17"
+    ],
+    correctAnswer: 0,
+    explanation: "Perimeter = 2 × (length + width) = 2 × (12 + 5) = 2 × 17 = 34."
+  },
+  {
+    id: "pred-2018-ssat-73",
+    question: "Complete the analogy: Author is to Book as Artist is to ____",
+    options: [
+      "Painting",
+      "Gallery",
+      "Brush",
+      "Canvas"
+    ],
+    correctAnswer: 0,
+    explanation: "An author creates a book, just as an artist creates a painting. This is a creator-creation analogy."
+  },
+  {
+    id: "pred-2018-ssat-74",
+    question: "What comes next: 100, 90, 80, 70, 60, ____",
+    options: [
+      "50",
+      "40",
+      "55",
+      "45"
+    ],
+    correctAnswer: 0,
+    explanation: "The pattern decreases by 10 each time: -10, -10, -10, -10. Next is 60 - 10 = 50."
+  },
+  {
+    id: "pred-2018-ssat-75",
+    question: "Choose the word that is most opposite in meaning to 'Compassionate':",
+    options: [
+      "Cruel",
+      "Kind",
+      "Caring",
+      "Sympathetic"
+    ],
+    correctAnswer: 0,
+    explanation: "Compassionate means feeling or showing sympathy and concern for others. Cruel means the opposite."
+  },
+  {
+    id: "pred-2018-ssat-76",
+    question: "What is 33 1/3% of 90?",
+    options: [
+      "30",
+      "33",
+      "27",
+      "36"
+    ],
+    correctAnswer: 0,
+    explanation: "33 1/3% = 1/3. 1/3 of 90 = 90 / 3 = 30."
+  },
+  {
+    id: "pred-2018-ssat-77",
+    question: "Complete the analogy: Key is to Lock as Password is to ____",
+    options: [
+      "Computer",
+      "Account",
+      "Login",
+      "Security"
+    ],
+    correctAnswer: 0,
+    explanation: "A key opens a lock, just as a password unlocks a computer account. This is an access mechanism analogy."
+  },
+  {
+    id: "pred-2018-ssat-78",
+    question: "What comes next: 1, 2, 4, 7, 11, 16, ____",
+    options: [
+      "22",
+      "21",
+      "23",
+      "20"
+    ],
+    correctAnswer: 0,
+    explanation: "The pattern increases by +1, +2, +3, +4, +5. Next is +6: 16 + 6 = 22."
+  },
+  {
+    id: "pred-2018-ssat-79",
+    question: "Choose the word that is most similar in meaning to 'Vibrant':",
+    options: [
+      "Lively",
+      "Dull",
+      "Boring",
+      "Quiet"
+    ],
+    correctAnswer: 0,
+    explanation: "Vibrant means full of energy and life, which is synonymous with lively."
+  },
+  {
+    id: "pred-2018-ssat-80",
+    question: "What is the surface area of a cube with side length 3?",
+    options: [
+      "54",
+      "27",
+      "36",
+      "9"
+    ],
+    correctAnswer: 0,
+    explanation: "Surface area = 6 × side² = 6 × 9 = 54."
   }
 ];
 
@@ -11479,5 +12919,485 @@ export const predicted2018SocialHistoryQuestions: MatricExamQuestion[] = [
     ],
     correctAnswer: 0,
     explanation: "Emperor Tewodros (1855-1868) worked to unify Ethiopia and modernize the country, though his reign ended in conflict."
+  },
+  {
+    id: "pred-2018-hist-41",
+    question: "What was the significance of Emperor Menelik II?",
+    options: [
+      "Defeated Italy at Battle of Adwa and modernized Ethiopia",
+      "Surrendered to Italy",
+      "Was a colonial ruler",
+      "Divided Ethiopia"
+    ],
+    correctAnswer: 0,
+    explanation: "Emperor Menelik II (1889-1913) defeated Italy at the Battle of Adwa in 1896 and modernized Ethiopia with infrastructure and education."
+  },
+  {
+    id: "pred-2018-hist-42",
+    question: "What was the Solomonic Dynasty?",
+    options: [
+      "Ethiopian imperial dynasty claiming descent from King Solomon",
+      "Egyptian dynasty",
+      "European dynasty",
+      "Arab dynasty"
+    ],
+    correctAnswer: 0,
+    explanation: "The Solomonic Dynasty was the Ethiopian imperial dynasty that claimed descent from King Solomon and the Queen of Sheba, ruling from 1270 to 1974."
+  },
+  {
+    id: "pred-2018-hist-43",
+    question: "What was the significance of Aksum?",
+    options: [
+      "Ancient Ethiopian kingdom and major trading power",
+      "Modern city only",
+      "European kingdom",
+      "Asian empire"
+    ],
+    correctAnswer: 0,
+    explanation: "The Kingdom of Aksum was an ancient Ethiopian kingdom that was a major trading power from the 1st to 7th centuries AD."
+  },
+  {
+    id: "pred-2018-hist-44",
+    question: "What was the Scramble for Africa?",
+    options: [
+      "European colonization of Africa in the late 19th century",
+      "African unification movement",
+      "African independence war",
+      "Trade agreement"
+    ],
+    correctAnswer: 0,
+    explanation: "The Scramble for Africa was the rapid colonization of Africa by European powers in the late 19th century."
+  },
+  {
+    id: "pred-2018-hist-45",
+    question: "What was the Berlin Conference (1884-1885)?",
+    options: [
+      "European meeting to divide Africa among colonial powers",
+      "African independence conference",
+      "Ethiopian peace conference",
+      "Trade agreement"
+    ],
+    correctAnswer: 0,
+    explanation: "The Berlin Conference was where European powers met to divide Africa among themselves without African representation."
+  },
+  {
+    id: "pred-2018-hist-46",
+    question: "What was the significance of Ethiopia's independence during the Scramble for Africa?",
+    options: [
+      "Ethiopia was one of few African nations to resist colonization",
+      "Ethiopia was colonized",
+      "Ethiopia was a European colony",
+      "Ethiopia did not exist"
+    ],
+    correctAnswer: 0,
+    explanation: "Ethiopia was one of the few African nations that successfully resisted European colonization during the Scramble for Africa."
+  },
+  {
+    id: "pred-2018-hist-47",
+    question: "What was the Atlantic Slave Trade?",
+    options: [
+      "Forced transportation of Africans to the Americas",
+      "African internal trade",
+      "European migration",
+      "Asian trade route"
+    ],
+    correctAnswer: 0,
+    explanation: "The Atlantic Slave Trade was the forced transportation of millions of Africans to the Americas as slaves from the 16th to 19th centuries."
+  },
+  {
+    id: "pred-2018-hist-48",
+    question: "What was the significance of the Haitian Revolution?",
+    options: [
+      "First successful slave revolt establishing an independent state",
+      "European victory",
+      "African colonization",
+      "Trade agreement"
+    ],
+    correctAnswer: 0,
+    explanation: "The Haitian Revolution (1791-1804) was the first successful slave revolt, leading to the establishment of Haiti as an independent state."
+  },
+  {
+    id: "pred-2018-hist-49",
+    question: "What was Pan-Africanism?",
+    options: [
+      "Movement for African unity and liberation",
+      "European movement",
+      "Colonial movement",
+      "Trade organization"
+    ],
+    correctAnswer: 0,
+    explanation: "Pan-Africanism was a movement that aimed to encourage and strengthen bonds of solidarity between all people of African descent."
+  },
+  {
+    id: "pred-2018-hist-50",
+    question: "Who was Marcus Garvey?",
+    options: [
+      "Jamaican political leader promoting Pan-Africanism",
+      "European colonial leader",
+      "Ethiopian emperor",
+      "American president"
+    ],
+    correctAnswer: 0,
+    explanation: "Marcus Garvey was a Jamaican political leader who promoted Pan-Africanism and Black nationalism in the early 20th century."
+  },
+  {
+    id: "pred-2018-hist-51",
+    question: "What was the significance of World War I?",
+    options: [
+      "Global conflict from 1914-1918 involving major powers",
+      "Regional conflict only",
+      "African war only",
+      "Trade dispute"
+    ],
+    correctAnswer: 0,
+    explanation: "World War I (1914-1918) was a global conflict involving major world powers and reshaped political boundaries."
+  },
+  {
+    id: "pred-2018-hist-52",
+    question: "What was the League of Nations?",
+    options: [
+      "First worldwide intergovernmental organization for peace",
+      "Military alliance",
+      "Trade organization",
+      "Colonial organization"
+    ],
+    correctAnswer: 0,
+    explanation: "The League of Nations was the first worldwide intergovernmental organization established after WWI to maintain world peace."
+  },
+  {
+    id: "pred-2018-hist-53",
+    question: "What was the significance of World War II?",
+    options: [
+      "Global conflict from 1939-1945 involving most nations",
+      "Regional conflict only",
+      "European war only",
+      "Trade dispute"
+    ],
+    correctAnswer: 0,
+    explanation: "World War II (1939-1945) was the deadliest conflict in human history, involving most of the world's nations."
+  },
+  {
+    id: "pred-2018-hist-54",
+    question: "What was the United Nations?",
+    options: [
+      "International organization founded in 1945 to promote peace",
+      "Military alliance",
+      "Trade organization",
+      "Colonial organization"
+    ],
+    correctAnswer: 0,
+    explanation: "The United Nations was founded in 1945 after WWII to promote international cooperation and peace."
+  },
+  {
+    id: "pred-2018-hist-55",
+    question: "What was the Cold War?",
+    options: [
+      "Geopolitical tension between US and Soviet Union after WWII",
+      "Hot war between US and USSR",
+      "European conflict only",
+      "Trade war"
+    ],
+    correctAnswer: 0,
+    explanation: "The Cold War was a period of geopolitical tension between the United States and the Soviet Union after World War II."
+  },
+  {
+    id: "pred-2018-hist-56",
+    question: "What was decolonization?",
+    options: [
+      "Process of colonies gaining independence",
+      "Process of colonization",
+      "Military conquest",
+      "Trade expansion"
+    ],
+    correctAnswer: 0,
+    explanation: "Decolonization was the process by which colonies became independent, particularly after World War II."
+  },
+  {
+    id: "pred-2018-hist-57",
+    question: "What was the significance of Ghana's independence in 1957?",
+    options: [
+      "First sub-Saharan African nation to gain independence",
+      "Last African independence",
+      "European independence",
+      "Asian independence"
+    ],
+    correctAnswer: 0,
+    explanation: "Ghana (formerly Gold Coast) was the first sub-Saharan African nation to gain independence from colonial rule in 1957."
+  },
+  {
+    id: "pred-2018-hist-58",
+    question: "What was apartheid?",
+    options: [
+      "System of racial segregation in South Africa",
+      "System of equality",
+      "Traditional African system",
+      "European system only"
+    ],
+    correctAnswer: 0,
+    explanation: "Apartheid was a system of institutionalized racial segregation and discrimination in South Africa from 1948 to 1994."
+  },
+  {
+    id: "pred-2018-hist-59",
+    question: "Who was Nelson Mandela?",
+    options: [
+      "South African anti-apartheid leader and first black president",
+      "European colonial leader",
+      "Ethiopian emperor",
+      "American president"
+    ],
+    correctAnswer: 0,
+    explanation: "Nelson Mandela was a South African anti-apartheid revolutionary who became the country's first black president in 1994."
+  },
+  {
+    id: "pred-2018-hist-60",
+    question: "What was the significance of the Ethiopian Revolution of 1974?",
+    options: [
+      "Overthrew the monarchy and established a Marxist regime",
+      "Established democracy",
+      "Ended Italian occupation",
+      "Restored the monarchy"
+    ],
+    correctAnswer: 0,
+    explanation: "The 1974 Ethiopian Revolution overthrew Emperor Haile Selassie and established the Marxist Derg military regime."
+  },
+  {
+    id: "pred-2018-hist-61",
+    question: "What was the Ethiopian Civil War?",
+    options: [
+      "Conflict between Derg regime and various rebel groups (1974-1991)",
+      "War with Italy",
+      "War with Egypt",
+      "Internal tribal conflict"
+    ],
+    correctAnswer: 0,
+    explanation: "The Ethiopian Civil War (1974-1991) was fought between the Derg regime and various rebel groups including the EPRDF."
+  },
+  {
+    id: "pred-2018-hist-62",
+    question: "What was the significance of 1991 in Ethiopian history?",
+    options: [
+      "End of Derg regime and establishment of transitional government",
+      "Battle of Adwa",
+      "Italian occupation",
+      "Monarchy restoration"
+    ],
+    correctAnswer: 0,
+    explanation: "In 1991, the Derg regime was defeated and a transitional government was established, leading to the 1995 constitution."
+  },
+  {
+    id: "pred-2018-hist-63",
+    question: "What was the significance of the Great Depression?",
+    options: [
+      "Severe worldwide economic downturn in the 1930s",
+      "Political revolution",
+      "Military conflict",
+      "Natural disaster"
+    ],
+    correctAnswer: 0,
+    explanation: "The Great Depression was a severe worldwide economic depression that lasted from 1929 to the late 1930s."
+  },
+  {
+    id: "pred-2018-hist-64",
+    question: "What was the Industrial Revolution?",
+    options: [
+      "Transition to new manufacturing processes in the 18th-19th centuries",
+      "Agricultural revolution",
+      "Political revolution",
+      "Military revolution"
+    ],
+    correctAnswer: 0,
+    explanation: "The Industrial Revolution was the transition to new manufacturing processes in Europe and the US from about 1760 to 1840."
+  },
+  {
+    id: "pred-2018-hist-65",
+    question: "What was the Renaissance?",
+    options: [
+      "Cultural movement in Europe from 14th-17th centuries",
+      "Political movement",
+      "Military movement",
+      "Religious movement only"
+    ],
+    correctAnswer: 0,
+    explanation: "The Renaissance was a cultural movement that began in Italy in the 14th century and spread to Europe, marking the transition from medieval to modern times."
+  },
+  {
+    id: "pred-2018-hist-66",
+    question: "What was the French Revolution?",
+    options: [
+      "Revolution in France (1789-1799) that overthrew the monarchy",
+      "Revolution in America",
+      "Revolution in Ethiopia",
+      "Revolution in England"
+    ],
+    correctAnswer: 0,
+    explanation: "The French Revolution (1789-1799) overthrew the French monarchy and established a republic, spreading ideas of liberty and equality."
+  },
+  {
+    id: "pred-2018-hist-67",
+    question: "What was the American Revolution?",
+    options: [
+      "War (1775-1783) in which American colonies gained independence from Britain",
+      "Civil war in America",
+      "War with France",
+      "War with Spain"
+    ],
+    correctAnswer: 0,
+    explanation: "The American Revolution was the war in which the Thirteen Colonies gained independence from Great Britain, forming the United States."
+  },
+  {
+    id: "pred-2018-hist-68",
+    question: "What was the significance of the discovery of the New World?",
+    options: [
+      "Christopher Columbus's voyage led to European colonization of Americas",
+      "Discovery of Africa",
+      "Discovery of Asia",
+      "Discovery of Europe"
+    ],
+    correctAnswer: 0,
+    explanation: "Christopher Columbus's 1492 voyage led to European awareness of the Americas and subsequent colonization."
+  },
+  {
+    id: "pred-2018-hist-69",
+    question: "What was the significance of the invention of writing?",
+    options: [
+      "Enabled record-keeping and development of civilizations",
+      "Military advancement only",
+      "Agricultural development only",
+      "Trade only"
+    ],
+    correctAnswer: 0,
+    explanation: "The invention of writing around 3200 BC enabled record-keeping, literature, and the development of complex civilizations."
+  },
+  {
+    id: "pred-2018-hist-70",
+    question: "What was the significance of the Neolithic Revolution?",
+    options: [
+      "Transition from hunting-gathering to agriculture",
+      "Industrial revolution",
+      "Political revolution",
+      "Military revolution"
+    ],
+    correctAnswer: 0,
+    explanation: "The Neolithic Revolution was the transition from hunting and gathering to agriculture and settlement, beginning around 10,000 BC."
+  },
+  {
+    id: "pred-2018-hist-71",
+    question: "What was the significance of the Silk Road?",
+    options: [
+      "Ancient trade route connecting East and West",
+      "Military route",
+      "Religious pilgrimage route only",
+      "Agricultural route"
+    ],
+    correctAnswer: 0,
+    explanation: "The Silk Road was an ancient network of trade routes connecting East Asia with the Mediterranean, facilitating cultural and economic exchange."
+  },
+  {
+    id: "pred-2018-hist-72",
+    question: "What was the significance of the printing press?",
+    options: [
+      "Revolutionized the spread of information and knowledge",
+      "Military invention",
+      "Agricultural tool",
+      "Transportation invention"
+    ],
+    correctAnswer: 0,
+    explanation: "The printing press invented by Gutenberg in the 15th century revolutionized the spread of information and contributed to the Renaissance and Reformation."
+  },
+  {
+    id: "pred-2018-hist-73",
+    question: "What was the significance of the Ethiopian Orthodox Church?",
+    options: [
+      "One of the oldest Christian churches and central to Ethiopian culture",
+      "European church",
+      "Modern church only",
+      "Political party"
+    ],
+    correctAnswer: 0,
+    explanation: "The Ethiopian Orthodox Church is one of the oldest Christian churches, dating to the 4th century, and is central to Ethiopian culture and history."
+  },
+  {
+    id: "pred-2018-hist-74",
+    question: "What was the significance of Queen of Sheba?",
+    options: [
+      "Legendary figure associated with Ethiopia and King Solomon",
+      "European queen",
+      "Asian queen",
+      "Mythical creature"
+    ],
+    correctAnswer: 0,
+    explanation: "The Queen of Sheba is a legendary figure who, according to tradition, visited King Solomon and is associated with Ethiopian royal lineage."
+  },
+  {
+    id: "pred-2018-hist-75",
+    question: "What was the significance of Gondar?",
+    options: [
+      "Capital of Ethiopia in the 17th-18th centuries known for castles",
+      "Battle site",
+      "Modern city only",
+      "Trade center only"
+    ],
+    correctAnswer: 0,
+    explanation: "Gondar was the capital of Ethiopia from 1636 to 1855, known for its castles and as a center of Ethiopian culture."
+  },
+  {
+    id: "pred-2018-hist-76",
+    question: "What was the significance of the Zagwe Dynasty?",
+    options: [
+      "Ethiopian dynasty that ruled after Aksum and built Lalibela churches",
+      "European dynasty",
+      "Asian dynasty",
+      "Modern dynasty"
+    ],
+    correctAnswer: 0,
+    explanation: "The Zagwe Dynasty (12th-13th centuries) ruled Ethiopia after the Aksumite Kingdom and is famous for building the rock-hewn churches of Lalibela."
+  },
+  {
+    id: "pred-2018-hist-77",
+    question: "What was the significance of Fasilides Castle?",
+    options: [
+      "Part of the Royal Enclosure in Gondar, UNESCO World Heritage Site",
+      "Battle fortification",
+      "Modern building",
+      "Trade center"
+    ],
+    correctAnswer: 0,
+    explanation: "Fasilides Castle is part of the Royal Enclosure in Gondar, a UNESCO World Heritage Site and symbol of Ethiopian architecture."
+  },
+  {
+    id: "pred-2018-hist-78",
+    question: "What was the significance of the Ethiopian resistance to Italian occupation?",
+    options: [
+      "Inspired anti-colonial movements across Africa",
+      "Failed resistance",
+      "European victory",
+      "No significance"
+    ],
+    correctAnswer: 0,
+    explanation: "Ethiopia's resistance to Italian occupation, especially the victory at Adwa, inspired anti-colonial movements across Africa."
+  },
+  {
+    id: "pred-2018-hist-79",
+    question: "What was the significance of Haile Selassie?",
+    options: [
+      "Emperor who modernized Ethiopia and promoted African unity",
+      "Military dictator",
+      "Colonial ruler",
+      "Traditional king only"
+    ],
+    correctAnswer: 0,
+    explanation: "Emperor Haile Selassie (1930-1974) modernized Ethiopia, promoted African unity, and was a symbol of Pan-Africanism."
+  },
+  {
+    id: "pred-2018-hist-80",
+    question: "What was the significance of Axumite civilization?",
+    options: [
+      "Major ancient civilization that developed Ge'ez script and Christianity",
+      "Minor civilization",
+      "European civilization",
+      "Asian civilization"
+    ],
+    correctAnswer: 0,
+    explanation: "The Axumite civilization was a major ancient power that developed the Ge'ez script, adopted Christianity, and controlled trade routes."
   }
 ];
