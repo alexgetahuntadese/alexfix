@@ -8104,6 +8104,486 @@ export const predicted2018SocialEnglishQuestions: MatricExamQuestion[] = [
     ],
     correctAnswer: 0,
     explanation: "Active voice: subject performs the action. 'The student read the book' is active (student performs the reading)."
+  },
+  {
+    id: "pred-2018-seng-41",
+    question: "What is the past tense of 'teach'?",
+    options: [
+      "taught",
+      "teached",
+      "teaching",
+      "teaches"
+    ],
+    correctAnswer: 0,
+    explanation: "The past tense of 'teach' is the irregular verb 'taught'."
+  },
+  {
+    id: "pred-2018-seng-42",
+    question: "What is the plural of 'foot'?",
+    options: [
+      "feet",
+      "foots",
+      "foot",
+      "feets"
+    ],
+    correctAnswer: 0,
+    explanation: "'Feet' is the irregular plural of 'foot'."
+  },
+  {
+    id: "pred-2018-seng-43",
+    question: "Which word is an adjective?",
+    options: [
+      "happy",
+      "happily",
+      "happiness",
+      "happen"
+    ],
+    correctAnswer: 0,
+    explanation: "'Happy' is an adjective describing a noun. 'Happily' is an adverb, 'happiness' is a noun, 'happen' is a verb."
+  },
+  {
+    id: "pred-2018-seng-44",
+    question: "What is the comparative form of 'little'?",
+    options: [
+      "less",
+      "littler",
+      "more little",
+      "littlest"
+    ],
+    correctAnswer: 0,
+    explanation: "'Little' is an irregular adjective. Its comparative form is 'less'."
+  },
+  {
+    id: "pred-2018-seng-45",
+    question: "Choose the correct preposition: 'She is good ___ mathematics.'",
+    options: [
+      "at",
+      "in",
+      "on",
+      "to"
+    ],
+    correctAnswer: 0,
+    explanation: "The correct preposition with 'good' when referring to skills is 'at'."
+  },
+  {
+    id: "pred-2018-seng-46",
+    question: "What is the meaning of the suffix '-ful'?",
+    options: [
+      "Full of",
+      "Without",
+      "Small",
+      "Large"
+    ],
+    correctAnswer: 0,
+    explanation: "The suffix '-ful' means full of, as in 'hopeful' (full of hope)."
+  },
+  {
+    id: "pred-2018-seng-47",
+    question: "What type of noun is 'class'?",
+    options: [
+      "Collective noun",
+      "Proper noun",
+      "Abstract noun",
+      "Concrete noun"
+    ],
+    correctAnswer: 0,
+    explanation: "'Class' is a collective noun because it refers to a group of students considered as a single unit."
+  },
+  {
+    id: "pred-2018-seng-48",
+    question: "Choose the correct word: 'I ___ my homework yesterday.'",
+    options: [
+      "did",
+      "do",
+      "does",
+      "done"
+    ],
+    correctAnswer: 0,
+    explanation: "'Did' is the past tense of 'do'. The action happened yesterday, so past tense is needed."
+  },
+  {
+    id: "pred-2018-seng-49",
+    question: "What is the superlative form of 'little'?",
+    options: [
+      "least",
+      "littler",
+      "less",
+      "littlest"
+    ],
+    correctAnswer: 0,
+    explanation: "'Little' is an irregular adjective. Its superlative form is 'least'."
+  },
+  {
+    id: "pred-2018-seng-50",
+    question: "Which sentence is in the passive voice?",
+    options: [
+      "The cake was baked by my mother.",
+      "My mother baked the cake.",
+      "My mother is baking the cake.",
+      "My mother has baked the cake."
+    ],
+    correctAnswer: 0,
+    explanation: "Passive voice: subject receives the action. 'The cake was baked by my mother' is passive (cake receives the action)."
+  },
+  {
+    id: "pred-2018-seng-51",
+    question: "What is the past participle of 'eat'?",
+    options: [
+      "eaten",
+      "ate",
+      "eating",
+      "eats"
+    ],
+    correctAnswer: 0,
+    explanation: "The past participle of 'eat' is 'eaten'. It is used with auxiliary verbs like 'have' or 'had'."
+  },
+  {
+    id: "pred-2018-seng-52",
+    question: "What is the plural of 'man'?",
+    options: [
+      "men",
+      "mans",
+      "man",
+      "mens"
+    ],
+    correctAnswer: 0,
+    explanation: "'Men' is the irregular plural of 'man'."
+  },
+  {
+    id: "pred-2018-seng-53",
+    question: "Which word is a noun?",
+    options: [
+      "happiness",
+      "happy",
+      "happily",
+      "happen"
+    ],
+    correctAnswer: 0,
+    explanation: "'Happiness' is a noun. 'Happy' is an adjective, 'happily' is an adverb, 'happen' is a verb."
+  },
+  {
+    id: "pred-2018-seng-54",
+    question: "What is the comparative form of 'much'?",
+    options: [
+      "more",
+      "mucher",
+      "most",
+      "more much"
+    ],
+    correctAnswer: 0,
+    explanation: "'Much' is an irregular adjective. Its comparative form is 'more'."
+  },
+  {
+    id: "pred-2018-seng-55",
+    question: "Choose the correct preposition: 'She is married ___ him.'",
+    options: [
+      "to",
+      "with",
+      "at",
+      "in"
+    ],
+    correctAnswer: 0,
+    explanation: "The correct preposition with 'married' is 'to'."
+  },
+  {
+    id: "pred-2018-seng-56",
+    question: "What is the meaning of the suffix '-ness'?",
+    options: [
+      "State or quality",
+      "Without",
+      "Full of",
+      "Small"
+    ],
+    correctAnswer: 0,
+    explanation: "The suffix '-ness' means state or quality, as in 'kindness' (quality of being kind)."
+  },
+  {
+    id: "pred-2018-seng-57",
+    question: "What type of noun is 'audience'?",
+    options: [
+      "Collective noun",
+      "Proper noun",
+      "Abstract noun",
+      "Concrete noun"
+    ],
+    correctAnswer: 0,
+    explanation: "'Audience' is a collective noun because it refers to a group of listeners considered as a single unit."
+  },
+  {
+    id: "pred-2018-seng-58",
+    question: "Choose the correct word: 'We ___ the movie last night.'",
+    options: [
+      "saw",
+      "see",
+      "sees",
+      "seen"
+    ],
+    correctAnswer: 0,
+    explanation: "'Saw' is the past tense of 'see'. The action happened last night, so past tense is needed."
+  },
+  {
+    id: "pred-2018-seng-59",
+    question: "What is the superlative form of 'much'?",
+    options: [
+      "most",
+      "more",
+      "mucher",
+      "most much"
+    ],
+    correctAnswer: 0,
+    explanation: "'Much' is an irregular adjective. Its superlative form is 'most'."
+  },
+  {
+    id: "pred-2018-seng-60",
+    question: "Which sentence is in the passive voice?",
+    options: [
+      "The letter was written by John.",
+      "John wrote the letter.",
+      "John is writing the letter.",
+      "John has written the letter."
+    ],
+    correctAnswer: 0,
+    explanation: "Passive voice: subject receives the action. 'The letter was written by John' is passive (letter receives the action)."
+  },
+  {
+    id: "pred-2018-seng-61",
+    question: "What is the past tense of 'buy'?",
+    options: [
+      "bought",
+      "buyed",
+      "buying",
+      "buys"
+    ],
+    correctAnswer: 0,
+    explanation: "The past tense of 'buy' is the irregular verb 'bought'."
+  },
+  {
+    id: "pred-2018-seng-62",
+    question: "What is the plural of 'person'?",
+    options: [
+      "people",
+      "persons",
+      "person",
+      "people"
+    ],
+    correctAnswer: 0,
+    explanation: "'People' is the common plural of 'person'."
+  },
+  {
+    id: "pred-2018-seng-63",
+    question: "Which word is a pronoun?",
+    options: [
+      "they",
+      "their",
+      "them",
+      "themselves"
+    ],
+    correctAnswer: 0,
+    explanation: "'They' is a pronoun used to refer to people or things previously mentioned."
+  },
+  {
+    id: "pred-2018-seng-64",
+    question: "What is the comparative form of 'beautiful'?",
+    options: [
+      "more beautiful",
+      "beautifuler",
+      "beautifuller",
+      "most beautiful"
+    ],
+    correctAnswer: 0,
+    explanation: "For longer adjectives like 'beautiful', we use 'more' to form the comparative."
+  },
+  {
+    id: "pred-2018-seng-65",
+    question: "Choose the correct preposition: 'I am interested ___ science.'",
+    options: [
+      "in",
+      "at",
+      "on",
+      "to"
+    ],
+    correctAnswer: 0,
+    explanation: "The correct preposition with 'interested' is 'in'."
+  },
+  {
+    id: "pred-2018-seng-66",
+    question: "What is the meaning of the prefix 'un-'?",
+    options: [
+      "Not",
+      "Before",
+      "After",
+      "Between"
+    ],
+    correctAnswer: 0,
+    explanation: "The prefix 'un-' means not, as in 'unhappy' (not happy)."
+  },
+  {
+    id: "pred-2018-seng-67",
+    question: "What type of noun is 'freedom'?",
+    options: [
+      "Abstract noun",
+      "Concrete noun",
+      "Proper noun",
+      "Collective noun"
+    ],
+    correctAnswer: 0,
+    explanation: "'Freedom' is an abstract noun because it represents an idea or concept that cannot be physically touched."
+  },
+  {
+    id: "pred-2018-seng-68",
+    question: "Choose the correct word: 'They ___ playing football now.'",
+    options: [
+      "are",
+      "is",
+      "was",
+      "were"
+    ],
+    correctAnswer: 0,
+    explanation: "'They' is plural and the action is happening now (present continuous), so we use 'are'."
+  },
+  {
+    id: "pred-2018-seng-69",
+    question: "What is the superlative form of 'beautiful'?",
+    options: [
+      "most beautiful",
+      "beautifuler",
+      "more beautiful",
+      "beautifulest"
+    ],
+    correctAnswer: 0,
+    explanation: "For longer adjectives like 'beautiful', we use 'most' to form the superlative."
+  },
+  {
+    id: "pred-2018-seng-70",
+    question: "Which sentence is in the active voice?",
+    options: [
+      "The teacher explained the lesson.",
+      "The lesson was explained by the teacher.",
+      "The lesson is being explained by the teacher.",
+      "The lesson has been explained by the teacher."
+    ],
+    correctAnswer: 0,
+    explanation: "Active voice: subject performs the action. 'The teacher explained the lesson' is active (teacher performs the explaining)."
+  },
+  {
+    id: "pred-2018-seng-71",
+    question: "What is the past tense of 'begin'?",
+    options: [
+      "began",
+      "begun",
+      "beginning",
+      "begined"
+    ],
+    correctAnswer: 0,
+    explanation: "The past tense of 'begin' is the irregular verb 'began'."
+  },
+  {
+    id: "pred-2018-seng-72",
+    question: "What is the plural of 'mouse'?",
+    options: [
+      "mice",
+      "mouses",
+      "mices",
+      "mouse"
+    ],
+    correctAnswer: 0,
+    explanation: "'Mice' is the irregular plural of 'mouse'."
+  },
+  {
+    id: "pred-2018-seng-73",
+    question: "Which word is an adverb?",
+    options: [
+      "quickly",
+      "quick",
+      "quickness",
+      "quicken"
+    ],
+    correctAnswer: 0,
+    explanation: "'Quickly' is an adverb describing how an action is performed. 'Quick' is an adjective, 'quickness' is a noun, 'quicken' is a verb."
+  },
+  {
+    id: "pred-2018-seng-74",
+    question: "What is the comparative form of 'bad'?",
+    options: [
+      "worse",
+      "badder",
+      "more bad",
+      "baddest"
+    ],
+    correctAnswer: 0,
+    explanation: "'Bad' is an irregular adjective. Its comparative form is 'worse'."
+  },
+  {
+    id: "pred-2018-seng-75",
+    question: "Choose the correct conjunction: 'I like coffee, ___ I prefer tea.'",
+    options: [
+      "but",
+      "and",
+      "or",
+      "because"
+    ],
+    correctAnswer: 0,
+    explanation: "'But' shows contrast. I like coffee, but I prefer tea."
+  },
+  {
+    id: "pred-2018-seng-76",
+    question: "What is the meaning of the suffix '-less'?",
+    options: [
+      "Without",
+      "Full of",
+      "Small",
+      "Large"
+    ],
+    correctAnswer: 0,
+    explanation: "The suffix '-less' means without, as in 'hopeless' (without hope)."
+  },
+  {
+    id: "pred-2018-seng-77",
+    question: "What type of noun is 'beauty'?",
+    options: [
+      "Abstract noun",
+      "Concrete noun",
+      "Proper noun",
+      "Collective noun"
+    ],
+    correctAnswer: 0,
+    explanation: "'Beauty' is an abstract noun because it represents a quality that cannot be physically touched."
+  },
+  {
+    id: "pred-2018-seng-78",
+    question: "Choose the correct word: 'She ___ to Paris last year.'",
+    options: [
+      "went",
+      "go",
+      "goes",
+      "gone"
+    ],
+    correctAnswer: 0,
+    explanation: "'Went' is the past tense of 'go'. The action happened last year, so past tense is needed."
+  },
+  {
+    id: "pred-2018-seng-79",
+    question: "What is the superlative form of 'bad'?",
+    options: [
+      "worst",
+      "badder",
+      "more bad",
+      "baddest"
+    ],
+    correctAnswer: 0,
+    explanation: "'Bad' is an irregular adjective. Its superlative form is 'worst'."
+  },
+  {
+    id: "pred-2018-seng-80",
+    question: "Which sentence is in the passive voice?",
+    options: [
+      "The song was sung by the choir.",
+      "The choir sang the song.",
+      "The choir is singing the song.",
+      "The choir has sung the song."
+    ],
+    correctAnswer: 0,
+    explanation: "Passive voice: subject receives the action. 'The song was sung by the choir' is passive (song receives the action)."
   }
 ];
 
