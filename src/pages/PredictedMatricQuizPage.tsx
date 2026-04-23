@@ -349,6 +349,18 @@ const PredictedMatricQuizPage = () => {
       <StarField starCount={40} shootingCount={2} />
       <TopBar />
 
+      {showPINLock && (
+        <PINLock
+          onUnlock={handlePINUnlock}
+          onCancel={handlePINCancel}
+          subjectName={subject}
+          isSocialStream={isSocialStream}
+          error={pinError}
+        />
+      )}
+
+      {!showPINLock && isUnlocked && (
+
       <div className="max-w-3xl mx-auto relative z-10 mt-8">
         <div className="flex items-center justify-between mb-6">
           <Button
@@ -499,6 +511,7 @@ const PredictedMatricQuizPage = () => {
           </div>
         </div>
       </div>
+      )}
     </div>
   );
 };
