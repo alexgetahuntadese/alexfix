@@ -43,32 +43,14 @@ const TeachersDashboard = lazy(() => import("./pages/TeachersDashboard"));
 const PageLoader = () => (
   <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-purple-950 via-violet-900 to-purple-950">
     <div className="flex flex-col items-center gap-4 text-white">
-      <Loader2 className="h-8 w-8 animate-spin" />
-      <span className="text-sm">Loading...</span>
+      <Loader2 className="h-12 w-12 animate-spin" />
+      <div className="flex flex-col items-center gap-2">
+        <span className="text-lg font-medium">Loading...</span>
+        <span className="text-sm text-white/60">Preparing your experience</span>
+      </div>
     </div>
   </div>
 );
-
-// Prefetch critical routes on hover for faster navigation
-const PrefetchLink = ({ to, children, ...props }: any) => {
-  const navigate = useNavigate();
-  const handleMouseEnter = () => {
-    // Prefetch the route when user hovers
-    import(/* @vite-ignore */ `./pages/${to}`).catch(() => {});
-  };
-  return (
-    <a
-      {...props}
-      onMouseEnter={handleMouseEnter}
-      onClick={(e) => {
-        e.preventDefault();
-        navigate(to);
-      }}
-    >
-      {children}
-    </a>
-  );
-};
 
 const queryClient = new QueryClient({
   defaultOptions: {
