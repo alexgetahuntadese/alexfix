@@ -57,17 +57,20 @@ const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false }: PI
 
   return (
     <div className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50 p-4">
-      <Card className="bg-white/[0.08] backdrop-blur-xl border-white/[0.1] w-full max-w-sm">
+      <Card className={`bg-white/[0.08] backdrop-blur-xl border-white/[0.1] w-full max-w-sm shadow-2xl ${theme.glowColor}`}>
         <CardContent className="p-6">
           <div className="text-center mb-6">
-            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center shadow-lg">
-              <Lock className="h-8 w-8 text-white" />
+            <div className={`w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br ${theme.gradient} flex items-center justify-center shadow-lg ${theme.glowColor} animate-pulse`}>
+              <Shield className="h-10 w-10 text-white" />
             </div>
-            <h2 className="text-xl font-bold text-white mb-2">Enter PIN Code</h2>
+            <h2 className="text-2xl font-bold text-white mb-2">Enter PIN Code</h2>
             {subjectName && (
-              <p className="text-white/50 text-sm">
-                Unlock {subjectName}
-              </p>
+              <div className="flex items-center justify-center gap-2">
+                <Sparkles className={`h-4 w-4 ${theme.iconColor}`} />
+                <p className="text-white/50 text-sm">
+                  Unlock {subjectName}
+                </p>
+              </div>
             )}
           </div>
 
@@ -76,35 +79,37 @@ const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false }: PI
             {[0, 1, 2, 3].map((index) => (
               <div
                 key={index}
-                className={`w-12 h-12 rounded-lg border-2 flex items-center justify-center transition-all duration-200 ${
+                className={`w-14 h-14 rounded-xl border-2 flex items-center justify-center transition-all duration-300 ${
                   error
-                    ? 'border-red-500 bg-red-500/20'
+                    ? 'border-red-500 bg-red-500/20 shadow-red-500/30 shadow-lg'
                     : pin[index]
-                    ? 'border-indigo-500 bg-indigo-500/20'
+                    ? `border-${theme.primary}-500 bg-${theme.primary}-500/20 ${theme.glowColor} shadow-lg`
                     : 'border-white/20 bg-white/5'
                 }`}
               >
                 {pin[index] && (
-                  <div className="w-3 h-3 rounded-full bg-indigo-400" />
+                  <div className={`w-4 h-4 rounded-full bg-gradient-to-br ${theme.gradient} shadow-lg`} />
                 )}
               </div>
             ))}
           </div>
 
           {error && (
-            <p className="text-red-400 text-center text-sm mb-4">
-              Incorrect PIN. Please try again.
-            </p>
+            <div className="mb-4 p-3 rounded-lg bg-red-500/20 border border-red-500/30">
+              <p className="text-red-400 text-center text-sm font-medium">
+                Incorrect PIN. Please try again.
+              </p>
+            </div>
           )}
 
           {/* Number Pad */}
-          <div className="grid grid-cols-3 gap-2 mb-4">
+          <div className="grid grid-cols-3 gap-3 mb-4">
             {['1', '2', '3', '4', '5', '6', '7', '8', '9'].map((digit) => (
               <Button
                 key={digit}
                 onClick={() => handleDigitClick(digit)}
                 variant="outline"
-                className="h-14 text-xl font-semibold border-white/20 text-white hover:bg-white/10"
+                className={`h-16 text-2xl font-semibold border-white/20 text-white bg-white/10 hover:bg-white/20 hover:border-${theme.primary}-500/50 transition-all duration-200`}
               >
                 {digit}
               </Button>
@@ -112,21 +117,21 @@ const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false }: PI
             <Button
               onClick={handleClear}
               variant="outline"
-              className="h-14 border-white/20 text-white/60 hover:bg-white/10"
+              className="h-16 border-white/20 text-white/60 bg-white/10 hover:bg-white/20 hover:border-red-500/50 transition-all duration-200"
             >
               Clear
             </Button>
             <Button
               onClick={() => handleDigitClick('0')}
               variant="outline"
-              className="h-14 text-xl font-semibold border-white/20 text-white hover:bg-white/10"
+              className="h-16 text-2xl font-semibold border-white/20 text-white bg-white/10 hover:bg-white/20 hover:border-${theme.primary}-500/50 transition-all duration-200"
             >
               0
             </Button>
             <Button
               onClick={handleDelete}
               variant="outline"
-              className="h-14 border-white/20 text-white/60 hover:bg-white/10"
+              className="h-16 border-white/20 text-white/60 bg-white/10 hover:bg-white/20 hover:border-red-500/50 transition-all duration-200"
             >
               <X className="h-5 w-5" />
             </Button>
@@ -136,7 +141,7 @@ const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false }: PI
             <Button
               onClick={onCancel}
               variant="ghost"
-              className="w-full text-white/60 hover:text-white hover:bg-white/10"
+              className="w-full text-white/60 hover:text-white hover:bg-white/10 transition-all duration-200"
             >
               Cancel
             </Button>

@@ -103,6 +103,7 @@ const PredictedMatricQuizPage = () => {
           onUnlock={handlePINUnlock}
           onCancel={handlePINCancel}
           subjectName={subject}
+          isSocialStream={isSocialStream}
         />
       </div>
     );
@@ -121,14 +122,15 @@ const PredictedMatricQuizPage = () => {
       ? 'from-purple-950 via-pink-900 to-purple-950' 
       : 'from-emerald-950 via-teal-900 to-emerald-950',
     gradient: isSocialStream 
-      ? 'from-purple-500 to-pink-600' 
-      : 'from-emerald-500 to-teal-600',
+      ? 'from-purple-500 via-pink-500 to-purple-600' 
+      : 'from-emerald-500 via-teal-500 to-emerald-600',
     gradientHover: isSocialStream 
-      ? 'from-purple-600 hover:to-pink-700' 
-      : 'from-emerald-600 hover:to-teal-700',
+      ? 'from-purple-600 via-pink-600 to-purple-700' 
+      : 'from-emerald-600 via-teal-600 to-emerald-700',
     bgTint: isSocialStream ? 'purple' : 'emerald',
     borderTint: isSocialStream ? 'purple' : 'emerald',
     iconColor: isSocialStream ? 'text-purple-400' : 'text-emerald-400',
+    glowColor: isSocialStream ? 'shadow-purple-500/50' : 'shadow-emerald-500/50',
   };
   
   const [questions, setQuestions] = useState<MatricExamQuestion[]>([]);
@@ -292,18 +294,18 @@ const PredictedMatricQuizPage = () => {
             <ArrowLeft className="h-5 w-5" />
           </Button>
 
-          <Card className="bg-white/[0.04] backdrop-blur-xl border-white/[0.08]">
+          <Card className={`bg-white/[0.04] backdrop-blur-xl border-white/[0.08] ${theme.glowColor}`}>
             <CardContent className="p-8">
               <div className="text-center mb-8">
-                <div className={`w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br ${theme.gradient} flex items-center justify-center shadow-lg`}>
-                  <Target className="h-10 w-10 text-white" />
+                <div className={`w-24 h-24 mx-auto mb-6 rounded-full bg-gradient-to-br ${theme.gradient} flex items-center justify-center shadow-lg ${theme.glowColor} animate-pulse`}>
+                  <Target className="h-12 w-12 text-white" />
                 </div>
                 <h2 className="text-3xl font-bold text-white mb-2">Quiz Complete!</h2>
                 <p className="text-white/50">{subject} - {streamLabel}</p>
               </div>
 
               <div className="grid grid-cols-3 gap-4 mb-8">
-                <div className="text-center p-4 rounded-xl bg-white/5 border border-white/10">
+                <div className={`text-center p-4 rounded-xl bg-${theme.bgTint}-500/10 border border-${theme.borderTint}-500/30 ${theme.glowColor}`}>
                   <div className={`text-3xl font-bold text-${theme.primary}-400 mb-1`}>{score}</div>
                   <div className="text-xs text-white/50">Correct</div>
                 </div>
@@ -311,7 +313,7 @@ const PredictedMatricQuizPage = () => {
                   <div className="text-3xl font-bold text-white mb-1">{scoreableQuestions - score}</div>
                   <div className="text-xs text-white/50">Incorrect</div>
                 </div>
-                <div className="text-center p-4 rounded-xl bg-white/5 border border-white/10">
+                <div className={`text-center p-4 rounded-xl bg-${theme.secondary}-500/10 border border-${theme.secondary}-500/30 ${theme.glowColor}`}>
                   <div className={`text-3xl font-bold text-${theme.secondary}-400 mb-1`}>{percentage}%</div>
                   <div className="text-xs text-white/50">Score</div>
                 </div>
@@ -322,21 +324,21 @@ const PredictedMatricQuizPage = () => {
                   <span className="text-white/50">Progress</span>
                   <span className="text-white font-medium">{answeredCount}/{questions.length} answered</span>
                 </div>
-                <Progress value={progress} className="h-2" />
+                <Progress value={progress} className={`h-2 bg-white/10 [&>div]:bg-gradient-to-r ${theme.gradient}`} />
               </div>
 
               <div className="flex gap-3">
                 <Button
                   onClick={handleReset}
                   variant="outline"
-                  className="flex-1 border-white/20 text-white hover:bg-white/10"
+                  className="flex-1 border-white/20 text-white hover:bg-white/10 hover:border-white/30 transition-all duration-200"
                 >
                   <RotateCcw className="h-4 w-4 mr-2" />
                   Retake Quiz
                 </Button>
                 <Button
                   onClick={() => navigate('/predicted-matric')}
-                  className={`flex-1 bg-gradient-to-r ${theme.gradient} hover:${theme.gradientHover} text-white`}
+                  className={`flex-1 bg-gradient-to-r ${theme.gradient} hover:${theme.gradientHover} text-white shadow-lg ${theme.glowColor} transition-all duration-200`}
                 >
                   Back to Subjects
                 </Button>
@@ -344,7 +346,7 @@ const PredictedMatricQuizPage = () => {
             </CardContent>
           </Card>
 
-          <div className={`mt-6 p-4 rounded-xl bg-${theme.bgTint}-500/10 border border-${theme.borderTint}-500/30`}>
+          <div className={`mt-6 p-4 rounded-xl bg-${theme.bgTint}-500/10 border border-${theme.borderTint}-500/30 ${theme.glowColor}`}>
             <div className="flex items-start gap-3">
               <Sparkles className={`h-5 w-5 ${theme.iconColor} mt-0.5`} />
               <div className="flex-1">
@@ -391,14 +393,14 @@ const PredictedMatricQuizPage = () => {
             <span className="text-white/50">Progress</span>
             <span className="text-white font-medium">{answeredCount} answered</span>
           </div>
-          <Progress value={progress} className="h-2" />
+          <Progress value={progress} className={`h-2 bg-white/10 [&>div]:bg-gradient-to-r ${theme.gradient}`} />
         </div>
 
-        <Card className="bg-white/[0.04] backdrop-blur-xl border-white/[0.08] mb-6">
+        <Card className={`bg-white/[0.04] backdrop-blur-xl border-white/[0.08] mb-6 ${theme.glowColor}`}>
           <CardContent className="p-6">
             <div className="mb-6">
               <div className="flex items-start gap-3 mb-4">
-                <div className={`p-2 rounded-lg bg-${theme.bgTint}-500/20 border border-${theme.borderTint}-500/30`}>
+                <div className={`p-2 rounded-lg bg-${theme.bgTint}-500/20 border border-${theme.borderTint}-500/30 ${theme.glowColor}`}>
                   <Brain className={`h-5 w-5 ${theme.iconColor}`} />
                 </div>
                 <div className="flex-1">
@@ -430,20 +432,20 @@ const PredictedMatricQuizPage = () => {
                     disabled={selectedAnswer !== null}
                     className={`w-full text-left p-4 rounded-xl border transition-all duration-200 ${
                       variant === 'correct'
-                        ? `bg-${theme.primary}-500/20 border-${theme.primary}-500 text-${theme.primary}-300`
+                        ? `bg-${theme.primary}-500/20 border-${theme.primary}-500 text-${theme.primary}-300 ${theme.glowColor} shadow-lg`
                         : variant === 'incorrect'
-                        ? 'bg-red-500/20 border-red-500 text-red-300'
+                        ? 'bg-red-500/20 border-red-500 text-red-300 shadow-red-500/30 shadow-lg'
                         : isSelected
-                        ? 'bg-white/10 border-white/20 text-white'
-                        : 'bg-white/5 border-white/10 text-white/70 hover:bg-white/10'
+                        ? 'bg-white/10 border-white/20 text-white shadow-lg'
+                        : 'bg-white/5 border-white/10 text-white/70 hover:bg-white/10 hover:border-white/20'
                     } ${selectedAnswer !== null ? 'cursor-not-allowed' : 'cursor-pointer'}`}
                   >
                     <div className="flex items-start gap-3">
                       <div className={`w-6 h-6 rounded-full border-2 flex items-center justify-center flex-shrink-0 mt-0.5 ${
                         variant === 'correct'
-                          ? `border-${theme.primary}-500 bg-${theme.primary}-500 text-white`
+                          ? `border-${theme.primary}-500 bg-gradient-to-br ${theme.gradient} text-white shadow-lg`
                           : variant === 'incorrect'
-                          ? 'border-red-500 bg-red-500 text-white'
+                          ? 'border-red-500 bg-red-500 text-white shadow-lg'
                           : isSelected
                           ? 'border-white/40 bg-white/20 text-white'
                           : 'border-white/20'
@@ -459,7 +461,7 @@ const PredictedMatricQuizPage = () => {
             </div>
 
             {showExplanation && currentQuestion.explanation && (
-              <div className={`mt-6 p-4 rounded-xl bg-${theme.bgTint}-500/10 border border-${theme.borderTint}-500/30`}>
+              <div className={`mt-6 p-4 rounded-xl bg-${theme.bgTint}-500/10 border border-${theme.borderTint}-500/30 ${theme.glowColor}`}>
                 <div className="flex items-start gap-3">
                   <Lightbulb className={`h-5 w-5 ${theme.iconColor} mt-0.5 flex-shrink-0`} />
                   <div className="flex-1">
@@ -479,14 +481,14 @@ const PredictedMatricQuizPage = () => {
             onClick={handlePrevious}
             disabled={currentIndex === 0}
             variant="outline"
-            className="flex-1 border-white/20 text-white hover:bg-white/10 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="flex-1 border-white/20 text-white hover:bg-white/10 hover:border-white/30 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200"
           >
             Previous
           </Button>
           {selectedAnswer !== null ? (
             <Button
               onClick={handleNext}
-              className={`flex-1 bg-gradient-to-r ${theme.gradient} hover:${theme.gradientHover} text-white shadow-lg`}
+              className={`flex-1 bg-gradient-to-r ${theme.gradient} hover:${theme.gradientHover} text-white shadow-lg ${theme.glowColor} transition-all duration-200`}
             >
               {currentIndex + 1 === questions.length ? 'Finish' : 'Next'}
               <ChevronRight className="h-4 w-4 ml-2" />
@@ -495,7 +497,7 @@ const PredictedMatricQuizPage = () => {
             <Button
               onClick={() => setShowCorrectAnswer(true)}
               variant="outline"
-              className="flex-1 border-white/20 text-white hover:bg-white/10"
+              className="flex-1 border-white/20 text-white hover:bg-white/10 hover:border-white/30 transition-all duration-200"
             >
               <Eye className="h-4 w-4 mr-2" />
               Show Answer
@@ -503,7 +505,7 @@ const PredictedMatricQuizPage = () => {
           )}
         </div>
 
-        <div className={`mt-6 p-4 rounded-xl bg-${theme.bgTint}-500/10 border border-${theme.borderTint}-500/30`}>
+        <div className={`mt-6 p-4 rounded-xl bg-${theme.bgTint}-500/10 border border-${theme.borderTint}-500/30 ${theme.glowColor}`}>
           <div className="flex items-start gap-3">
             <Clock className={`h-5 w-5 ${theme.iconColor} mt-0.5`} />
             <div className="flex-1">
