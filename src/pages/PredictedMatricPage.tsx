@@ -80,17 +80,13 @@ const PredictedMatricPage = () => {
   };
 
   const handlePINUnlock = (pin: string) => {
-    // Verify PIN (you can change this to your desired PIN)
-    const correctPIN = '1325';
-    
-    if (pin === correctPIN && pendingSubject) {
+    if (pin === '1325' && pendingSubject) {
       setPinError(false);
       setShowPINLock(false);
       navigate(`/predicted-matric/${pendingSubject.stream}/${pendingSubject.subject}`);
       setPendingSubject(null);
     } else {
       setPinError(true);
-      alert('Incorrect PIN. Access requires payment.\n\n💳 Payment Required\nAmount: 125 ETB\nCBE Bank: 1000282751279\nAccount Name: Alexander Getahun\nTelebirr: 0949835147 (Merry Getahun)\nContact: 0992010092 / 0914546032\nAvailable anytime');
     }
   };
 

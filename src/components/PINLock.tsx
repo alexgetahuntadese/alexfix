@@ -78,9 +78,25 @@ const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false, erro
         setIsValidating(true);
         
         try {
-          // Universal PIN bypass
-          if (newPin === '1325') {
-            console.log('Universal PIN 1325 accepted');
+          // PIN formula: (1325 + 131*n) % 10000
+          // Check if entered PIN matches formula for any n
+          const enteredPIN = parseInt(newPin, 10);
+          console.log('Checking PIN:', newPin, 'as number:', enteredPIN);
+          let isValidFormulaPIN = false;
+          
+          for (let n = 0; n < 100; n++) {
+            const calculatedPIN = (1325 + 131 * n) % 10000;
+            console.log(`n=${n}, calculatedPIN=${calculatedPIN}`);
+            if (calculatedPIN === enteredPIN) {
+              isValidFormulaPIN = true;
+              console.log('PIN accepted (formula 1325 + 131*n):', newPin, 'for n:', n);
+              break;
+            }
+          }
+          
+          console.log('isValidFormulaPIN:', isValidFormulaPIN);
+          
+          if (isValidFormulaPIN) {
             onUnlock(newPin);
             setIsValidating(false);
             return;

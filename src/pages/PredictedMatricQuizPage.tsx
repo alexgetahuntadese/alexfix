@@ -8,7 +8,6 @@ import { ArrowLeft, CheckCircle2, XCircle, ChevronRight, Clock, Target, Brain, L
 import { MatricExamQuestion } from '@/data/matricExams';
 import TopBar from '@/components/TopBar';
 import StarField from '@/components/StarField';
-import PINLock from '@/components/PINLock';
 
 // Lazy load question data to reduce initial bundle size
 const getPredictedQuestions = async (stream: string, subject: string): Promise<MatricExamQuestion[]> => {
@@ -64,37 +63,6 @@ const PredictedMatricQuizPage = () => {
   const streamKey = stream ?? 'natural';
   const streamLabel = streamKey === 'social' ? 'Social Science' : 'Natural Science';
   const isSocialStream = streamKey === 'social';
-  const [showPINLock, setShowPINLock] = useState(false);
-  const [isUnlocked, setIsUnlocked] = useState(false);
-  const [pinError, setPinError] = useState(false);
-
-  // Check if subject requires PIN lock (not Mathematics or History)
-  const subjectLower = subject?.toLowerCase() || '';
-  const requiresPIN = subjectLower !== 'mathematics' && subjectLower !== 'history';
-
-  useEffect(() => {
-    if (requiresPIN) {
-      setShowPINLock(true);
-    } else {
-      setIsUnlocked(true);
-    }
-  }, [requiresPIN]);
-
-  const handlePINUnlock = (pin: string) => {
-    const correctPIN = '1325';
-    if (pin === correctPIN) {
-      setPinError(false);
-      setIsUnlocked(true);
-      setShowPINLock(false);
-    } else {
-      setPinError(true);
-      alert('Incorrect PIN. Please try again.');
-    }
-  };
-
-  const handlePINCancel = () => {
-    navigate('/predicted-matric');
-  };
   
   // Color theme based on stream
   const theme = {
@@ -350,18 +318,6 @@ const PredictedMatricQuizPage = () => {
       <StarField starCount={40} shootingCount={2} />
       <TopBar />
 
-      {showPINLock && (
-        <PINLock
-          onUnlock={handlePINUnlock}
-          onCancel={handlePINCancel}
-          subjectName={subject}
-          isSocialStream={isSocialStream}
-          error={pinError}
-        />
-      )}
-
-      {!showPINLock && isUnlocked && (
-
       <div className="max-w-3xl mx-auto relative z-10 mt-8">
         <div className="flex items-center justify-between mb-6">
           <Button
@@ -515,7 +471,6 @@ const PredictedMatricQuizPage = () => {
           </div>
         </div>
       </div>
-      )}
     </div>
   );
 };
