@@ -61,21 +61,49 @@ const DashboardPage = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
       {/* Header */}
       <header className="border-b border-white/10 bg-white/5 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
-          <div className="flex items-center gap-3">
-            <AppLogo compact />
-            <span className="text-lg font-semibold text-white">Dashboard</span>
+        <div className="mx-auto max-w-7xl px-4 py-4">
+          <div className="flex items-center justify-between mb-4">
+            <div className="flex items-center gap-3">
+              <AppLogo compact />
+              <span className="text-lg font-semibold text-white">Dashboard</span>
+            </div>
+            <div className="flex items-center gap-4">
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => navigate("/profile")}
+                className="text-white/70 hover:text-white hover:bg-white/10"
+              >
+                <User className="mr-2 h-4 w-4" />
+                Profile
+              </Button>
+            </div>
           </div>
-          <div className="flex items-center gap-4">
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={() => navigate("/profile")}
-              className="text-white/70 hover:text-white hover:bg-white/10"
-            >
-              <User className="mr-2 h-4 w-4" />
-              Profile
-            </Button>
+          
+          {/* Menu Cards */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            {quickActions.map((action) => {
+              const Icon = action.icon;
+              return (
+                <Card
+                  key={action.title}
+                  className="cursor-pointer border-white/10 bg-white/5 backdrop-blur-xl transition-all hover:bg-white/10 hover:scale-105"
+                  onClick={() => navigate(action.route)}
+                >
+                  <CardContent className="p-4">
+                    <div className="flex items-center gap-3">
+                      <div className={`rounded-lg bg-gradient-to-br ${action.color} p-2`}>
+                        <Icon className="h-4 w-4 text-white" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold text-white text-sm">{action.title}</h3>
+                        <p className="text-xs text-white/60">{action.description}</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </header>
@@ -140,48 +168,6 @@ const DashboardPage = () => {
               </div>
             </CardContent>
           </Card>
-        </motion.div>
-
-        {/* Quick Actions Grid */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="mb-8"
-        >
-          <h2 className="mb-4 text-xl font-semibold text-white">Quick Actions</h2>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {quickActions.map((action, index) => {
-              const Icon = action.icon;
-              return (
-                <motion.div
-                  key={action.title}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
-                  whileHover={{ scale: 1.02, y: -4 }}
-                  whileTap={{ scale: 0.98 }}
-                >
-                  <Card
-                    className="cursor-pointer border-white/10 bg-white/5 backdrop-blur-xl transition-colors hover:bg-white/10"
-                    onClick={() => navigate(action.route)}
-                  >
-                    <CardContent className="p-6">
-                      <div className={`mb-4 inline-flex rounded-xl bg-gradient-to-br ${action.color} p-3`}>
-                        <Icon className="h-6 w-6 text-white" />
-                      </div>
-                      <h3 className="font-semibold text-white">{action.title}</h3>
-                      <p className="mt-1 text-sm text-white/60">{action.description}</p>
-                      <div className="mt-4 flex items-center text-sm text-cyan-400">
-                        <span>Go to {action.title}</span>
-                        <ArrowRight className="ml-1 h-4 w-4" />
-                      </div>
-                    </CardContent>
-                  </Card>
-                </motion.div>
-              );
-            })}
-          </div>
         </motion.div>
 
         {/* Recent Activity */}

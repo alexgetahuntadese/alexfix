@@ -1,547 +1,73 @@
 import { motion, memo } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Sparkles, TrendingUp, Award, Target, Zap, Shield, Crown, Star, GraduationCap, BookOpen } from "lucide-react";
+import { Sparkles, Zap } from "lucide-react";
 
 const Index = () => {
+  const menuItems = [
+    { title: "Grades", route: "/grades" },
+    { title: "Notes", route: "/notes" },
+    { title: "Matric", route: "/matric" },
+    { title: "2018 Predicted Matric", route: "/predicted-matric" },
+    { title: "Career", route: "/career-simulator" },
+  ];
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 relative overflow-hidden">
-      {/* Animated Background Elements - Optimized with fewer elements */}
-      <div className="absolute inset-0">
-        <div className="absolute top-20 left-20 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
-        <div className="absolute top-40 right-20 w-96 h-96 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-2000"></div>
-      </div>
-      
-      {/* Hero Section */}
-      <motion.section
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+      {/* Logo Section */}
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        className="relative px-4 py-24 md:py-32"
+        transition={{ duration: 0.3 }}
+        className="px-4 py-12 text-center"
       >
-        <div className="mx-auto max-w-7xl text-center relative z-10">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="mb-12"
-          >
-            <div className="relative inline-flex items-center justify-center">
-              <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-orange-600 rounded-2xl blur-2xl opacity-50 animate-pulse"></div>
-              <div className="relative w-32 h-32 mx-auto bg-gradient-to-br from-amber-400 via-orange-500 to-amber-600 rounded-2xl flex items-center justify-center shadow-2xl border border-amber-300/20">
-                <Crown className="w-16 h-16 text-white" />
-              </div>
-            </div>
-          </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="mb-6"
-          >
-            <div className="flex items-center justify-center gap-3 mb-4">
-              <img src="/logo.svg" alt="Simple Road" className="w-12 h-12 md:w-16 md:h-16" />
-              <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-amber-400 via-orange-400 to-amber-400 bg-clip-text text-transparent">
-                Simple Road
-              </h1>
-              <img src="/logo.svg" alt="Simple Road" className="w-12 h-12 md:w-16 md:h-16" />
-            </div>
-            <div className="flex items-center justify-center gap-2 mb-6">
-              <Sparkles className="w-6 h-6 text-amber-300" />
-              <p className="text-2xl md:text-3xl text-amber-200 font-semibold">
-                Elite Education Platform
-              </p>
-              <Sparkles className="w-6 h-6 text-amber-300" />
-            </div>
-            
-            {/* Clear Value Proposition Headline */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.35 }}
-              className="mb-8"
-            >
-              <div className="bg-gradient-to-r from-amber-500/20 to-orange-500/20 backdrop-blur-xl rounded-2xl p-6 border border-amber-400/30 max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-3 leading-tight">
-                  Ethiopia's Free Exam & Quiz Platform
-                </h2>
-                <p className="text-xl md:text-2xl text-amber-200 font-semibold mb-4">
-                  for Grade 9–12 Students
-                </p>
-                <div className="bg-gradient-to-r from-red-500/20 to-orange-500/20 rounded-xl p-4 border border-red-400/30 mb-4">
-                  <div className="flex items-center justify-center gap-3">
-                    <Award className="w-6 h-6 text-red-300" />
-                    <p className="text-2xl font-bold text-white">
-                      Grade 12 National Ethiopian Exam Preparation
-                    </p>
-                    <Award className="w-6 h-6 text-red-300" />
-                  </div>
-                </div>
-                <div className="flex items-center justify-center gap-6 text-amber-300">
-                  <span className="flex items-center gap-2">
-                    <GraduationCap className="w-5 h-5" />
-                    <span className="font-medium">Exams</span>
-                  </span>
-                  <span className="flex items-center gap-2">
-                    <Target className="w-5 h-5" />
-                    <span className="font-medium">Quizzes</span>
-                  </span>
-                  <span className="flex items-center gap-2">
-                    <BookOpen className="w-5 h-5" />
-                    <span className="font-medium">Books</span>
-                  </span>
-                </div>
-              </div>
-            </motion.div>
-          </motion.div>
-          
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="mb-8 text-xl md:text-2xl text-amber-100/80 max-w-3xl mx-auto leading-relaxed"
-          >
-            Where <span className="text-amber-300 font-bold">Excellence</span> Meets <span className="text-amber-300 font-bold">Opportunity</span>
-          </motion.p>
-          
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            className="mb-12 text-lg md:text-xl text-amber-100/60 max-w-2xl mx-auto"
-          >
-            Premium Ethiopian Student Learning Experience
-          </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex flex-col gap-6 sm:flex-row sm:justify-center items-center"
-          >
-            <Link
-              to="/matric"
-              className="group relative inline-flex items-center justify-center px-12 py-6 text-xl font-bold text-white bg-gradient-to-r from-amber-500 to-orange-600 rounded-2xl shadow-2xl hover:shadow-amber-500/25 transform hover:scale-105 transition-all duration-300 border border-amber-400/20"
-            >
-              <span className="absolute inset-0 bg-gradient-to-r from-amber-400 to-orange-500 rounded-2xl blur opacity-50 group-hover:opacity-75 transition duration-300"></span>
-              <span className="relative flex items-center gap-3">
-                <Crown className="w-6 h-6" />
-                Start Excellence Journey
-                <Zap className="w-6 h-6" />
-              </span>
-            </Link>
-            <Link
-              to="/matric"
-              className="group inline-flex items-center justify-center px-12 py-6 text-xl font-bold text-amber-300 border-2 border-amber-400/50 rounded-2xl hover:bg-amber-400/10 hover:border-amber-400 transition-all duration-300 backdrop-blur-sm"
-            >
-              <span className="flex items-center gap-3">
-                <Target className="w-6 h-6" />
-                Explore Excellence
-                <Star className="w-6 h-6" />
-              </span>
-            </Link>
-          </motion.div>
+        <div className="flex items-center justify-center gap-3 mb-4">
+          <img src="/logo.svg" alt="Simple Road" className="w-12 h-12 md:w-16 md:h-16" />
+          <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-amber-400 via-orange-400 to-amber-400 bg-clip-text text-transparent">
+            Simple Road
+          </h1>
+          <img src="/logo.svg" alt="Simple Road" className="w-12 h-12 md:w-16 md:h-16" />
         </div>
-      </motion.section>
-
-      {/* New Feature Announcement - Tech Company Style */}
-      <motion.section
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.85 }}
-        className="relative px-4 py-16"
-      >
-        <div className="mx-auto max-w-5xl">
-          <div className="relative group">
-            <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 rounded-3xl blur-2xl opacity-30 group-hover:opacity-50 transition-all duration-500 animate-pulse"></div>
-            <div className="relative bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 p-8 md:p-12 rounded-3xl border border-purple-400/30 overflow-hidden">
-              {/* Background Pattern */}
-              <div className="absolute inset-0 opacity-10">
-                <div className="absolute top-0 right-0 w-96 h-96 bg-purple-500 rounded-full blur-3xl"></div>
-                <div className="absolute bottom-0 left-0 w-96 h-96 bg-pink-500 rounded-full blur-3xl"></div>
-              </div>
-
-              <div className="relative z-10">
-                <div className="flex items-center justify-center gap-2 mb-6">
-                  <div className="px-4 py-1.5 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full text-white text-sm font-bold tracking-wide uppercase">
-                    New Feature
-                  </div>
-                  <div className="px-4 py-1.5 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full text-white text-sm font-bold tracking-wide uppercase">
-                    90% Accuracy
-                  </div>
-                </div>
-
-                <h2 className="text-4xl md:text-6xl font-bold text-white text-center mb-4 leading-tight">
-                  Introducing
-                  <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-orange-400 bg-clip-text text-transparent block mt-2">
-                    AI-Powered Exam Predictions
-                  </span>
-                </h2>
-
-                <p className="text-xl md:text-2xl text-white/70 text-center mb-8 max-w-3xl mx-auto leading-relaxed">
-                  Practice with questions that have a 90% probability of appearing in your next matric exam. Built using advanced pattern analysis.
-                </p>
-
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-                  {[
-                    { icon: "🎯", label: "High Accuracy", desc: "90% probability" },
-                    { icon: "📊", label: "Data-Driven", desc: "Pattern analysis" },
-                    { icon: "📚", label: "All Subjects", desc: "Complete coverage" },
-                    { icon: "⚡", label: "Instant Access", desc: "Start now" },
-                  ].map((feature, index) => (
-                    <div key={index} className="text-center p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300">
-                      <div className="text-3xl mb-2">{feature.icon}</div>
-                      <div className="text-white font-semibold text-sm mb-1">{feature.label}</div>
-                      <div className="text-white/50 text-xs">{feature.desc}</div>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                  <Link
-                    to="/predicted-matric"
-                    className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl shadow-2xl hover:shadow-purple-500/50 transform hover:scale-105 transition-all duration-300 border border-purple-400/30"
-                  >
-                    <span className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl blur opacity-50 group-hover:opacity-75 transition duration-300"></span>
-                    <span className="relative flex items-center gap-2">
-                      <Target className="w-5 h-5" />
-                      Try Predictions Now
-                      <Zap className="w-5 h-5" />
-                    </span>
-                  </Link>
-                  <Link
-                    to="/matric"
-                    className="group inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white/80 border-2 border-white/30 rounded-2xl hover:bg-white/10 hover:border-white/50 transition-all duration-300 backdrop-blur-sm"
-                  >
-                    <span className="flex items-center gap-2">
-                      <Star className="w-5 h-5" />
-                      View All Exams
-                    </span>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="flex items-center justify-center gap-2 mb-2">
+          <Sparkles className="w-5 h-5 text-amber-300" />
+          <p className="text-xl md:text-2xl text-amber-200 font-semibold">
+            Elite Education Platform
+          </p>
+          <Sparkles className="w-5 h-5 text-amber-300" />
         </div>
-      </motion.section>
+      </motion.div>
 
-      {/* Predicted Matric Section */}
+      {/* Menu Cards Section */}
       <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 0.9 }}
-        className="relative px-4 py-16"
+        transition={{ duration: 0.3 }}
+        className="relative px-4 py-12"
       >
-        <div className="mx-auto max-w-7xl">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.0 }}
-            className="relative group cursor-pointer"
-          >
-            <Link to="/predicted-matric" className="block">
-              <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-3xl blur-2xl opacity-30 group-hover:opacity-50 transition-all duration-500"></div>
-              <div className="relative bg-gradient-to-br from-emerald-500/20 to-teal-500/20 backdrop-blur-xl p-8 md:p-12 rounded-3xl border border-emerald-400/30 hover:border-emerald-400/50 transition-all duration-300 hover:transform hover:scale-[1.02]">
-                <div className="flex flex-col md:flex-row items-center gap-8">
-                  <div className="flex-shrink-0">
-                    <div className="w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center shadow-2xl group-hover:scale-110 transition-all duration-300">
-                      <Target className="w-12 h-12 md:w-16 md:h-16 text-white" />
-                    </div>
-                  </div>
-                  <div className="flex-1 text-center md:text-left">
-                    <div className="flex items-center justify-center md:justify-start gap-2 mb-3">
-                      <Sparkles className="w-5 h-5 text-emerald-300" />
-                      <span className="px-3 py-1 bg-emerald-500/30 border border-emerald-400/50 rounded-full text-emerald-300 text-sm font-semibold">
-                        90% Predicted
-                      </span>
-                      <span className="px-3 py-1 bg-emerald-500/30 border border-emerald-400/50 rounded-full text-emerald-300 text-sm font-semibold">
-                        2018 E.C.
-                      </span>
-                    </div>
-                    <h3 className="text-3xl md:text-4xl font-bold text-white mb-3">
-                      Next Year's Matric Predictions
+        <div className="mx-auto max-w-4xl">
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {menuItems.map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: index * 0.05 }}
+                className="group"
+              >
+                <Link
+                  to={item.route}
+                  className="block relative group"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-r from-amber-500/20 to-orange-500/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
+                  <div className="relative bg-slate-800/50 backdrop-blur-xl p-6 rounded-2xl border border-amber-400/20 hover:border-amber-400/40 transition-all duration-300 hover:transform hover:scale-105">
+                    <h3 className="text-xl font-bold text-amber-100 group-hover:text-amber-200 transition-colors text-center">
+                      {item.title}
                     </h3>
-                    <p className="text-emerald-200/80 text-lg mb-4 max-w-2xl">
-                      Practice with questions that have a 90% probability of appearing in the next matric exam. Based on analysis of previous years' patterns and frequently tested topics.
-                    </p>
-                    <div className="flex items-center justify-center md:justify-start gap-6 text-emerald-300">
-                      <span className="flex items-center gap-2">
-                        <GraduationCap className="w-5 h-5" />
-                        <span className="font-medium">50+ Questions</span>
-                      </span>
-                      <span className="flex items-center gap-2">
-                        <BookOpen className="w-5 h-5" />
-                        <span className="font-medium">All Streams</span>
-                      </span>
-                      <span className="flex items-center gap-2">
-                        <TrendingUp className="w-5 h-5" />
-                        <span className="font-medium">High Probability</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div className="flex-shrink-0">
-                    <div className="w-16 h-16 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-all duration-300">
-                      <Zap className="w-8 h-8 text-white" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Link>
-          </motion.div>
-        </div>
-      </motion.section>
-
-      {/* Elite Features Section */}
-      <motion.section
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 0.7 }}
-        className="relative px-4 py-20"
-      >
-        <div className="mx-auto max-w-7xl">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-            className="text-center mb-16"
-          >
-            <div className="flex items-center justify-center gap-3 mb-4">
-              <Award className="w-8 h-8 text-amber-400" />
-              <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-amber-400 to-orange-400 bg-clip-text text-transparent">
-                Elite Features
-              </h2>
-              <Award className="w-8 h-8 text-amber-400" />
-            </div>
-            <p className="text-xl text-amber-100/60 max-w-3xl mx-auto">
-              Experience the pinnacle of educational excellence
-            </p>
-          </motion.div>
-          
-          <div className="grid gap-8 md:grid-cols-3">
-            {[
-              { title: "Premium Content", desc: "Exclusive study materials curated by experts", icon: Crown, color: "amber" },
-              { title: "Advanced Analytics", desc: "AI-powered performance tracking and insights", icon: TrendingUp, color: "orange" },
-              { title: "Elite Certification", desc: "Recognized credentials for academic excellence", icon: Shield, color: "yellow" },
-            ].map((feature, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.9 + index * 0.1 }}
-                className="group relative"
-              >
-                <div className="absolute inset-0 bg-gradient-to-r from-amber-500/20 to-orange-500/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-                <div className="relative bg-slate-800/50 backdrop-blur-xl p-8 rounded-3xl border border-amber-400/20 hover:border-amber-400/40 transition-all duration-300 hover:transform hover:scale-105">
-                  <div className={`w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-${feature.color}-400 to-${feature.color}-600 rounded-2xl flex items-center justify-center shadow-lg`}>
-                    <feature.icon className="w-8 h-8 text-white" />
-                  </div>
-                  <h3 className="mb-4 text-2xl font-bold text-amber-100 text-center">
-                    {feature.title}
-                  </h3>
-                  <p className="text-amber-200/70 text-center leading-relaxed">
-                    {feature.desc}
-                  </p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </motion.section>
-
-      {/* Matric Excellence Section */}
-      <motion.section
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 1.1 }}
-        className="relative px-4 py-20 bg-gradient-to-br from-slate-800/50 to-purple-900/50 backdrop-blur-xl"
-      >
-        <div className="mx-auto max-w-7xl">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.2 }}
-            className="text-center mb-16"
-          >
-            <div className="flex items-center justify-center gap-3 mb-4">
-              <GraduationCap className="w-8 h-8 text-amber-400" />
-              <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-amber-400 to-orange-400 bg-clip-text text-transparent">
-                Matric Supremacy
-              </h2>
-              <GraduationCap className="w-8 h-8 text-amber-400" />
-            </div>
-            <p className="text-xl text-amber-100/60 max-w-3xl mx-auto">
-              Master the Ethiopian Matriculation Examination with elite preparation
-            </p>
-          </motion.div>
-          
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {[
-              { title: "Natural Science", desc: "Mathematics, Physics, Chemistry, Biology", icon: "🔬", route: "/matric/2016/natural" },
-              { title: "Social Science", desc: "History, Geography, Economics, Civics", icon: "📚", route: "/matric/2016/social" },
-              { title: "Language Arts", desc: "English, Amharic, Literature", icon: "📝", route: "/matric/2016/natural" },
-              { title: "Exam Strategy", desc: "Advanced test-taking techniques", icon: "🎯", route: "/matric/2016/natural" },
-              { title: "Past Papers", desc: "Extensive exam archives", icon: "📋", route: "/matric/2016/natural" },
-              { title: "Performance Tracking", desc: "Monitor your progress", icon: "📊", route: "/performance" },
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 1.3 + index * 0.05 }}
-                className="group"
-              >
-                <Link
-                  to={item.route}
-                  className="block relative group"
-                >
-                  <div className="absolute inset-0 bg-gradient-to-r from-amber-500/20 to-orange-500/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-                  <div className="relative bg-slate-800/50 backdrop-blur-xl p-8 rounded-3xl border border-amber-400/20 hover:border-amber-400/40 transition-all duration-300 hover:transform hover:scale-105">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="text-4xl">{item.icon}</div>
-                      <h3 className="text-2xl font-bold text-amber-100 group-hover:text-amber-200 transition-colors">
-                        {item.title}
-                      </h3>
-                    </div>
-                    <p className="text-amber-200/70 leading-relaxed mb-4">{item.desc}</p>
-                    <div className="mt-6 flex items-center gap-2 text-amber-300 group-hover:text-amber-200 transition-colors">
-                      <span className="text-sm font-semibold">Master Excellence</span>
-                      <Zap className="w-4 h-4" />
-                    </div>
                   </div>
                 </Link>
               </motion.div>
             ))}
           </div>
         </div>
-      </motion.section>
-
-      {/* Elite Menu Items Section */}
-      <motion.section
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 1.6 }}
-        className="relative px-4 py-20"
-      >
-        <div className="mx-auto max-w-7xl">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.7 }}
-            className="text-center mb-16"
-          >
-            <div className="flex items-center justify-center gap-3 mb-4">
-              <img src="/logo.svg" alt="Simple Road" className="w-8 h-8" />
-              <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-amber-400 to-orange-400 bg-clip-text text-transparent">
-                Elite Portfolio
-              </h2>
-              <img src="/logo.svg" alt="Simple Road" className="w-8 h-8" />
-            </div>
-            <p className="text-xl text-amber-100/60 max-w-3xl mx-auto">
-              Explore our comprehensive suite of premium educational services
-            </p>
-          </motion.div>
-          
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {[
-              { title: "Academic Excellence", desc: "Premier grade-level mastery programs", icon: "🎓", route: "/grades" },
-              { title: "Matric Supremacy", desc: "Elite exam preparation systems", icon: "🏆", route: "/matric" },
-              { title: "Knowledge Vault", desc: "Exclusive digital library access", icon: "📚", route: "/notes" },
-              { title: "Digital Collection", desc: "Curated premium textbooks", icon: "📖", route: "/books" },
-              { title: "Career Architects", desc: "Professional pathway design", icon: "💼", route: "/career-simulator" },
-              { title: "Performance Analytics", desc: "Advanced progress tracking", icon: "📊", route: "/performance" },
-              { title: "Elite Profile", desc: "Premium account management", icon: "👤", route: "/profile" },
-              { title: "Contact Us", desc: "Get in touch with our team", icon: "📞", route: "/contact" },
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 1.8 + index * 0.05 }}
-                className="group"
-              >
-                <Link
-                  to={item.route}
-                  className="block relative group"
-                >
-                  <div className="absolute inset-0 bg-gradient-to-r from-amber-500/20 to-orange-500/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-                  <div className="relative bg-slate-800/50 backdrop-blur-xl p-8 rounded-3xl border border-amber-400/20 hover:border-amber-400/40 transition-all duration-300 hover:transform hover:scale-105">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="text-4xl">{item.icon}</div>
-                      <h3 className="text-2xl font-bold text-amber-100 group-hover:text-amber-200 transition-colors">
-                        {item.title}
-                      </h3>
-                    </div>
-                    <p className="text-amber-200/70 leading-relaxed">{item.desc}</p>
-                    <div className="mt-6 flex items-center gap-2 text-amber-300 group-hover:text-amber-200 transition-colors">
-                      <span className="text-sm font-semibold">Access Excellence</span>
-                      <Zap className="w-4 h-4" />
-                    </div>
-                  </div>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </motion.section>
-
-      {/* Supreme CTA Section */}
-      <motion.section
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 1.9 }}
-        className="relative px-4 py-24 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900"
-      >
-        <div className="mx-auto max-w-5xl text-center relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 2.0 }}
-            className="mb-8"
-          >
-            <div className="flex items-center justify-center gap-3 mb-6">
-              <Crown className="w-10 h-10 text-amber-400" />
-              <h2 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-amber-400 via-orange-400 to-amber-400 bg-clip-text text-transparent">
-                Ascend to Excellence
-              </h2>
-              <Crown className="w-10 h-10 text-amber-400" />
-            </div>
-            <p className="text-2xl md:text-3xl text-amber-100/80 max-w-4xl mx-auto leading-relaxed">
-              Join the <span className="text-amber-300 font-bold">elite circle</span> of academic achievers
-            </p>
-          </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 2.1 }}
-            className="flex flex-col gap-6 sm:flex-row sm:justify-center items-center"
-          >
-            <Link
-              to="/matric"
-              className="group relative inline-flex items-center justify-center px-16 py-8 text-2xl font-bold text-white bg-gradient-to-r from-amber-500 to-orange-600 rounded-3xl shadow-2xl hover:shadow-amber-500/30 transform hover:scale-105 transition-all duration-300 border border-amber-400/20"
-            >
-              <span className="absolute inset-0 bg-gradient-to-r from-amber-400 to-orange-500 rounded-3xl blur opacity-50 group-hover:opacity-75 transition duration-300"></span>
-              <span className="relative flex items-center gap-4">
-                <Crown className="w-8 h-8" />
-                Begin Excellence Journey
-                <Zap className="w-8 h-8" />
-              </span>
-            </Link>
-            <Link
-              to="/matric"
-              className="group inline-flex items-center justify-center px-16 py-8 text-2xl font-bold text-amber-300 border-2 border-amber-400/50 rounded-3xl hover:bg-amber-400/10 hover:border-amber-400 transition-all duration-300 backdrop-blur-sm"
-            >
-              <span className="flex items-center gap-4">
-                <Target className="w-8 h-8" />
-                Explore Excellence
-                <Star className="w-8 h-8" />
-              </span>
-            </Link>
-          </motion.div>
-        </div>
-        
-        {/* Bottom decorative elements */}
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-slate-900 to-transparent"></div>
       </motion.section>
 
       {/* Footer Section */}
