@@ -8,6 +8,9 @@ const SERVER_URL = "https://parseapi.back4app.com/";
 
 const Parse = (globalThis as typeof globalThis & { Parse?: ParseType }).Parse;
 
+console.log('Parse Config - APP_ID:', APP_ID);
+console.log('Parse Config - JS_KEY:', JS_KEY ? '***' + JS_KEY.slice(-4) : 'missing');
+
 if (!Parse) {
   console.error('Parse SDK failed to load in browser context.');
 } else if (!APP_ID || !JS_KEY) {
@@ -15,6 +18,7 @@ if (!Parse) {
 } else {
   Parse.initialize(APP_ID, JS_KEY);
   Parse.serverURL = SERVER_URL;
+  console.log('Parse SDK initialized successfully');
 }
 
 export default Parse;

