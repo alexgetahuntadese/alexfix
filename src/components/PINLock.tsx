@@ -79,10 +79,13 @@ const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false, erro
         
         try {
           // Validate PIN against Back4App database
+          console.log('Validating PIN:', newPin, 'for subject:', subjectName);
           const { valid, pinData } = await pinService.validatePIN(newPin, subjectName);
+          console.log('Validation result:', { valid, pinData });
           
           if (!valid) {
             // PIN is invalid or not found in database
+            console.log('PIN validation failed');
             setInternalError(true);
             setPin('');
             setIsValidating(false);

@@ -25,9 +25,30 @@ export const pinService = {
       const pinObject = await query.first();
       
       if (!pinObject) {
-        return null;
+        console.log(`PIN ${pinValue} not found with field 'pin_code', trying 'pin' field...`);
+        // Try alternative field name
+        const queryAlt = new Parse.Query(PIN_CLASS);
+        queryAlt.equalTo('pin', pinValue);
+        const pinObjectAlt = await queryAlt.first();
+        
+        if (!pinObjectAlt) {
+          console.log(`PIN ${pinValue} not found in database`);
+          return null;
+        }
+        
+        console.log(`PIN ${pinValue} found with 'pin' field`);
+        return {
+          objectId: pinObjectAlt.id,
+          pin_code: pinObjectAlt.get('pin') || pinObjectAlt.get('pin_code'),
+          subject: pinObjectAlt.get('subject') || undefined,
+          grade: pinObjectAlt.get('grade') || undefined,
+          isActive: pinObjectAlt.get('isActive') !== false,
+          createdAt: pinObjectAlt.createdAt?.toISOString(),
+          updatedAt: pinObjectAlt.updatedAt?.toISOString(),
+        };
       }
       
+      console.log(`PIN ${pinValue} found with 'pin_code' field`);
       return {
         objectId: pinObject.id,
         pin_code: pinObject.get('pin_code'),
@@ -88,7 +109,7 @@ export const pinService = {
       
       return results.map((pinObject) => ({
         objectId: pinObject.id,
-        pin_code: pinObject.get('pin_code'),
+        pin_code: pinObject.get('pin_code') || pinObject.get('pin'),
         subject: pinObject.get('subject') || undefined,
         grade: pinObject.get('grade') || undefined,
         isActive: pinObject.get('isActive') !== false,
