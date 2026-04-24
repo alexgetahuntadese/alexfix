@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Lock, X, Shield, Sparkles } from 'lucide-react';
+import { Lock, X, Shield, Sparkles, Loader2 } from 'lucide-react';
+import { pinService } from '@/integrations/parse/pinService';
 
 interface PINLockProps {
   onUnlock: (pin: string) => void;
@@ -43,6 +44,7 @@ const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false, erro
   const [internalError, setInternalError] = useState(false);
   const error = externalError || internalError;
   const [deviceMismatch, setDeviceMismatch] = useState(false);
+  const [isValidating, setIsValidating] = useState(false);
 
   useEffect(() => {
     // Clear device mismatch error when PIN changes
@@ -66,14 +68,28 @@ const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false, erro
     glowColor: isSocialStream ? 'shadow-purple-500/50' : 'shadow-emerald-500/50',
   };
 
-  const handleDigitClick = (digit: string) => {
+  const handleDigitClick = async (digit: string) => {
     if (pin.length < 4) {
       const newPin = pin + digit;
       setPin(newPin);
       
       if (newPin.length === 4) {
         // Auto-submit when 4 digits are entered
-        setTimeout(() => {
+        setIsValidating(true);
+        
+        try {
+          // Validate PIN against Back4App database
+          const { valid, pinData } = await pinService.validatePIN(newPin, subjectName);
+          
+          if (!valid) {
+            // PIN is invalid or not found in database
+            setInternalError(true);
+            setPin('');
+            setIsValidating(false);
+            return;
+          }
+          
+          // PIN is valid, check device binding
           const currentDeviceFingerprint = generateDeviceFingerprint();
           const storedBinding = localStorage.getItem(PIN_DEVICE_KEY);
           
@@ -91,9 +107,13 @@ const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false, erro
                 setPin('');
               }
             } else {
-              // PIN doesn't match - reject
-              setInternalError(true);
-              setPin('');
+              // PIN doesn't match stored binding - update it
+              localStorage.setItem(PIN_DEVICE_KEY, JSON.stringify({
+                pin: newPin,
+                deviceFingerprint: currentDeviceFingerprint,
+                timestamp: Date.now()
+              }));
+              onUnlock(newPin);
             }
           } else {
             // First time using this PIN - bind to current device
@@ -104,7 +124,13 @@ const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false, erro
             }));
             onUnlock(newPin);
           }
-        }, 100);
+        } catch (error) {
+          console.error('Error validating PIN:', error);
+          setInternalError(true);
+          setPin('');
+        } finally {
+          setIsValidating(false);
+        }
       }
     }
   };
@@ -162,9 +188,11 @@ const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false, erro
                     : 'border-white/20 bg-white/5'
                 }`}
               >
-                {pin[index] && (
+                {isValidating && pin.length === 4 ? (
+                  <Loader2 className="h-5 w-5 animate-spin text-white/70" />
+                ) : pin[index] ? (
                   <div className={`w-4 h-4 rounded-full bg-gradient-to-br ${theme.gradient} shadow-lg`} />
-                )}
+                ) : null}
               </div>
             ))}
           </div>

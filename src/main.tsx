@@ -1,6 +1,8 @@
 import { createRoot } from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
+// Initialize Parse SDK for Back4App
+import '@/integrations/parse/parseConfig'
 
 const rootElement = document.getElementById("root");
 if (!rootElement) {

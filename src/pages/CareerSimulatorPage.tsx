@@ -6,7 +6,6 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { ArrowLeft, Sparkles, Loader2, ChevronRight, RotateCcw, GraduationCap, Banknote, Brain, TrendingUp } from 'lucide-react';
 import { simulatorCareers, SimulatorCareer } from '@/lib/careerSimulatorData';
-import { careerSimulatorService } from '@/services/supabaseServiceFixed';
 import { useToast } from '@/hooks/use-toast';
 import { useLanguage } from '@/i18n/LanguageContext';
 import TopBar from "@/components/TopBar";
