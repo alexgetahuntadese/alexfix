@@ -80,7 +80,7 @@ const PredictedMatricPage = () => {
   };
 
   const handlePINUnlock = (pin: string) => {
-    if (pin === '1325' && pendingSubject) {
+    if (pendingSubject) {
       setPinError(false);
       setShowPINLock(false);
       navigate(`/predicted-matric/${pendingSubject.stream}/${pendingSubject.subject}`);
