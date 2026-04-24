@@ -76,15 +76,19 @@ const Index = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="text-center md:text-left">
               <p className="text-amber-100/80 text-sm mb-2">
-                Created by <span className="text-amber-300 font-semibold">Milkesa Comm.</span> <span className="text-amber-300 font-semibold">Getahun Tadese in Ethiopia</span>
+                Created by <span className="text-amber-300 font-semibold">Milkesa Comm.</span> <span className="text-amber-300 font-semibold">Getahun Tadese in Eastern Ethiopia and Addis Ababa</span>
               </p>
               <p className="text-amber-100/60 text-xs mb-2">
                 © 2026 Simple Road. All rights reserved.
               </p>
-              <div className="flex flex-col gap-1 text-amber-100/60 text-xs">
+              <div className="flex flex-col gap-2 text-amber-100/60 text-xs">
                 <p className="flex items-center gap-2">
                   <span className="text-amber-400">📱</span>
-                  <span>0992010092 / 0950502881</span>
+                  <span>Alexander Getahun: 0992010092 / 0950502881</span>
+                </p>
+                <p className="flex items-center gap-2">
+                  <span className="text-amber-400">📱</span>
+                  <span>Fenet Adem: 0914546032</span>
                 </p>
                 <p className="flex items-center gap-2">
                   <span className="text-amber-400">✉️</span>
