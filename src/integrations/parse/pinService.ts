@@ -5,7 +5,7 @@ const PIN_CLASS = 'PIN';
 
 export interface PINData {
   objectId?: string;
-  pin: string;
+  pin_code: string;
   subject?: string;
   grade?: string;
   isActive: boolean;
@@ -20,7 +20,7 @@ export const pinService = {
   async fetchPIN(pinValue: string): Promise<PINData | null> {
     try {
       const query = new Parse.Query(PIN_CLASS);
-      query.equalTo('pin', pinValue);
+      query.equalTo('pin_code', pinValue);
       
       const pinObject = await query.first();
       
@@ -30,7 +30,7 @@ export const pinService = {
       
       return {
         objectId: pinObject.id,
-        pin: pinObject.get('pin'),
+        pin_code: pinObject.get('pin_code'),
         subject: pinObject.get('subject') || undefined,
         grade: pinObject.get('grade') || undefined,
         isActive: pinObject.get('isActive') !== false,
@@ -88,7 +88,7 @@ export const pinService = {
       
       return results.map((pinObject) => ({
         objectId: pinObject.id,
-        pin: pinObject.get('pin'),
+        pin_code: pinObject.get('pin_code'),
         subject: pinObject.get('subject') || undefined,
         grade: pinObject.get('grade') || undefined,
         isActive: pinObject.get('isActive') !== false,
@@ -109,7 +109,7 @@ export const pinService = {
       const PINClass = Parse.Object.extend(PIN_CLASS);
       const pinObject = new PINClass();
       
-      pinObject.set('pin', pinData.pin);
+      pinObject.set('pin_code', pinData.pin_code);
       pinObject.set('isActive', pinData.isActive);
       
       if (pinData.subject) {
@@ -124,7 +124,7 @@ export const pinService = {
       
       return {
         objectId: savedPin.id,
-        pin: savedPin.get('pin'),
+        pin_code: savedPin.get('pin_code'),
         subject: savedPin.get('subject') || undefined,
         grade: savedPin.get('grade') || undefined,
         isActive: savedPin.get('isActive') !== false,
