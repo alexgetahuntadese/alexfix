@@ -218,6 +218,9 @@ const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false, erro
             if (binding.pin === newPin) {
               if (binding.deviceFingerprint === currentDeviceFingerprint) {
                 // Same device, PIN matches - allow access
+                if (pinData?.objectId) {
+                  await pinService.markPINAsUsed(pinData.objectId);
+                }
                 onUnlock(newPin);
               } else {
                 // PIN matches but different device - reject
@@ -232,6 +235,9 @@ const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false, erro
                 deviceFingerprint: currentDeviceFingerprint,
                 timestamp: Date.now()
               }));
+              if (pinData?.objectId) {
+                await pinService.markPINAsUsed(pinData.objectId);
+              }
               onUnlock(newPin);
             }
           } else {
@@ -241,6 +247,9 @@ const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false, erro
               deviceFingerprint: currentDeviceFingerprint,
               timestamp: Date.now()
             }));
+            if (pinData?.objectId) {
+              await pinService.markPINAsUsed(pinData.objectId);
+            }
             onUnlock(newPin);
           }
         } catch (error) {

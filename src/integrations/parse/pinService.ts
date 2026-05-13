@@ -141,6 +141,7 @@ export const pinService = {
       
       pinObject.set('pin_code', pinData.pin_code);
       pinObject.set('isActive', pinData.isActive);
+      pinObject.set('used', false);
       
       if (pinData.subject) {
         pinObject.set('subject', pinData.subject);
@@ -193,6 +194,7 @@ export const pinService = {
       const pinObject = await query.get(objectId);
       
       pinObject.set('used', true);
+      pinObject.set('isActive', false);
       await pinObject.save();
     } catch (error) {
       console.error('Error marking PIN as used:', error);
