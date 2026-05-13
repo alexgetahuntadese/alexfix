@@ -38,10 +38,7 @@ const MatricExamPage = () => {
         </div>
 
         {/* Predicted Questions Card */}
-        <div
-          className="mb-8 group relative cursor-pointer"
-          onClick={() => navigate('/predicted-matric')}
-        >
+        <div className="mb-8 group relative">
           <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl opacity-0 group-hover:opacity-30 blur-xl transition-all duration-500" />
           <Card className="relative bg-gradient-to-r from-emerald-500/20 to-teal-500/20 backdrop-blur-xl border-emerald-500/30 hover:border-emerald-500/50 transition-all duration-300">
             <CardContent className="p-6">
@@ -61,11 +58,15 @@ const MatricExamPage = () => {
                   </div>
                   <h3 className="text-xl font-bold text-white mb-1">2018 E.C. Predicted Questions</h3>
                   <p className="text-white/60 text-sm">
-                    Practice with questions that have a 90% probability of appearing in the next matric exam
+                    Practice with questions that have a 90% probability of appearing in the next matric exam.
                   </p>
                 </div>
-                <Button className="bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white shadow-lg group-hover:shadow-emerald-500/30 transition-all duration-300">
-                  Start Practice
+                <Button
+                  className="bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white shadow-lg group-hover:shadow-emerald-500/30 transition-all duration-300"
+                  onClick={() => navigate('/predicted-matric')}
+                  aria-label="View predicted matric questions"
+                >
+                  View predicted questions
                   <ArrowLeft className="h-4 w-4 ml-2 rotate-180" />
                 </Button>
               </div>

@@ -29,23 +29,23 @@ const getPredictedQuestions = () => {
 
 // Subject metadata (lightweight, doesn't include question data)
 const naturalSubjectsMetadata = [
-  { subject: 'Mathematics', icon: 'ðŸ“' },
-  { subject: 'Physics', icon: 'âš›ï¸' },
-  { subject: 'Chemistry', icon: 'ðŸ§ª' },
-  { subject: 'Biology', icon: 'ðŸ§¬' },
-  { subject: 'English', icon: 'ðŸ“š' },
-  { subject: 'Civics', icon: 'âš–ï¸' },
-  { subject: 'Scholastic Aptitude Test', icon: 'ðŸ§ ' },
+  { subject: 'Mathematics', icon: '📐' },
+  { subject: 'Physics', icon: '⚛️' },
+  { subject: 'Chemistry', icon: '🧪' },
+  { subject: 'Biology', icon: '🧬' },
+  { subject: 'English', icon: '📚' },
+  { subject: 'Civics', icon: '⚖️' },
+  { subject: 'Scholastic Aptitude Test', icon: '🧠' },
 ] as const;
 
 const socialSubjectsMetadata = [
-  { subject: 'Mathematics', icon: 'ðŸ“' },
-  { subject: 'English', icon: 'ðŸ“š' },
-  { subject: 'History', icon: 'ðŸ›ï¸' },
-  { subject: 'Geography', icon: 'ðŸŒ' },
-  { subject: 'Economics', icon: 'ðŸ’°' },
-  { subject: 'Civics', icon: 'âš–ï¸' },
-  { subject: 'Scholastic Aptitude Test', icon: 'ðŸ§ ' },
+  { subject: 'Mathematics', icon: '📐' },
+  { subject: 'English', icon: '📚' },
+  { subject: 'History', icon: '🏛️' },
+  { subject: 'Geography', icon: '🌍' },
+  { subject: 'Economics', icon: '💰' },
+  { subject: 'Civics', icon: '⚖️' },
+  { subject: 'Scholastic Aptitude Test', icon: '🧠' },
 ] as const;
 
 const PredictedMatricPage = () => {
@@ -98,26 +98,26 @@ const PredictedMatricPage = () => {
   const naturalSubjects = useMemo(() => {
     if (!questionData) return [];
     return [
-      { subject: 'Mathematics', questions: questionData.naturalMath, icon: 'ðŸ“' },
-      { subject: 'Physics', questions: questionData.naturalPhysics, icon: 'âš›ï¸' },
-      { subject: 'Chemistry', questions: questionData.naturalChemistry, icon: 'ðŸ§ª' },
-      { subject: 'Biology', questions: questionData.naturalBiology, icon: 'ðŸ§¬' },
-      { subject: 'English', questions: questionData.naturalEnglish, icon: 'ðŸ“š' },
-      { subject: 'Civics', questions: questionData.naturalCivics, icon: 'âš–ï¸' },
-      { subject: 'Scholastic Aptitude Test', questions: questionData.naturalScholastic, icon: 'ðŸ§ ' },
+      { subject: 'Mathematics', questions: questionData.naturalMath, icon: '📐' },
+      { subject: 'Physics', questions: questionData.naturalPhysics, icon: '⚛️' },
+      { subject: 'Chemistry', questions: questionData.naturalChemistry, icon: '🧪' },
+      { subject: 'Biology', questions: questionData.naturalBiology, icon: '🧬' },
+      { subject: 'English', questions: questionData.naturalEnglish, icon: '📚' },
+      { subject: 'Civics', questions: questionData.naturalCivics, icon: '⚖️' },
+      { subject: 'Scholastic Aptitude Test', questions: questionData.naturalScholastic, icon: '🧠' },
     ];
   }, [questionData]);
 
   const socialSubjects = useMemo(() => {
     if (!questionData) return [];
     return [
-      { subject: 'Mathematics', questions: questionData.socialMath, icon: 'ðŸ“' },
-      { subject: 'English', questions: questionData.socialEnglish, icon: 'ðŸ“š' },
-      { subject: 'History', questions: questionData.socialHistory, icon: 'ðŸ›ï¸' },
-      { subject: 'Geography', questions: questionData.socialGeography, icon: 'ðŸŒ' },
-      { subject: 'Economics', questions: questionData.socialEconomics, icon: 'ðŸ’°' },
-      { subject: 'Civics', questions: questionData.socialCivics, icon: 'âš–ï¸' },
-      { subject: 'Scholastic Aptitude Test', questions: questionData.socialScholastic, icon: 'ðŸ§ ' },
+      { subject: 'Mathematics', questions: questionData.socialMath, icon: '📐' },
+      { subject: 'English', questions: questionData.socialEnglish, icon: '📚' },
+      { subject: 'History', questions: questionData.socialHistory, icon: '🏛️' },
+      { subject: 'Geography', questions: questionData.socialGeography, icon: '🌍' },
+      { subject: 'Economics', questions: questionData.socialEconomics, icon: '💰' },
+      { subject: 'Civics', questions: questionData.socialCivics, icon: '⚖️' },
+      { subject: 'Scholastic Aptitude Test', questions: questionData.socialScholastic, icon: '🧠' },
     ];
   }, [questionData]);
 
