@@ -202,6 +202,17 @@ const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false, erro
             return;
           }
           
+          // Mark PIN as used in database
+          if (pinData?.objectId) {
+            try {
+              await pinService.markPINAsUsed(pinData.objectId);
+              console.log('PIN marked as used:', newPin);
+            } catch (error) {
+              console.error('Error marking PIN as used:', error);
+              // Continue anyway - the PIN has been validated
+            }
+          }
+          
           // PIN is valid, check device binding
           const currentDeviceFingerprint = generateDeviceFingerprint();
           const storedBinding = localStorage.getItem(PIN_DEVICE_KEY);
