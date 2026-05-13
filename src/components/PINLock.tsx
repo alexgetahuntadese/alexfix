@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Lock, X, Shield, Sparkles, Loader2 } from 'lucide-react';
+import { X, Shield, Sparkles, Loader2 } from 'lucide-react';
 import { pinService } from '@/integrations/parse/pinService';
 
 interface PINLockProps {
@@ -12,17 +13,22 @@ interface PINLockProps {
   error?: boolean;
 }
 
+interface NavigatorWithDeviceMemory extends Navigator {
+  deviceMemory?: number;
+}
+
 // Generate a device fingerprint using browser characteristics
 const generateDeviceFingerprint = (): string => {
+  const nav = navigator as NavigatorWithDeviceMemory;
   const fingerprint = {
-    userAgent: navigator.userAgent,
-    language: navigator.language,
-    platform: navigator.platform,
+    userAgent: nav.userAgent,
+    language: nav.language,
+    platform: nav.platform,
     screenResolution: `${screen.width}x${screen.height}`,
     colorDepth: screen.colorDepth,
     timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
-    hardwareConcurrency: navigator.hardwareConcurrency || 0,
-    deviceMemory: (navigator as any).deviceMemory || 0,
+    hardwareConcurrency: nav.hardwareConcurrency ?? 0,
+    deviceMemory: nav.deviceMemory ?? 0,
   };
   
   // Create a hash from the fingerprint data
@@ -271,7 +277,7 @@ const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false, erro
 
   return (
     <div className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50 p-4">
-      <Card className={`bg-white/[0.08] backdrop-blur-xl border-white/[0.1] w-full max-w-sm shadow-2xl ${theme.glowColor}`}>
+      <Card className={`bg-white/[0.08] backdrop-blur-xl border-white/[0.1] w-full max-w-md shadow-2xl ${theme.glowColor}`}>
         <CardContent className="p-6">
           <div className="text-center mb-6">
             <div className={`w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br ${theme.gradient} flex items-center justify-center shadow-lg ${theme.glowColor} animate-pulse`}>
@@ -286,6 +292,24 @@ const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false, erro
                 </p>
               </div>
             )}
+            <p className="mt-4 rounded-xl border-2 border-amber-400 bg-amber-500/25 p-3.5 text-left text-sm font-bold leading-snug text-amber-50 shadow-inner shadow-amber-950/20 ring-1 ring-amber-300/50">
+              <span className="block text-center text-xs font-black uppercase tracking-[0.2em] text-amber-200">
+                No money for full fee?
+              </span>
+              <span className="mt-2 block text-center text-[13px] md:text-sm">
+                <Link
+                  to="/contact"
+                  className="font-black text-amber-200 underline decoration-2 decoration-amber-300 underline-offset-2 hover:text-white"
+                >
+                  CONTACT OUR TEAM
+                </Link>{" "}
+                and ask for a{" "}
+                <span className="whitespace-nowrap rounded bg-amber-300 px-1 py-0.5 font-black text-amber-950">
+                  DISCOUNTED PIN
+                </span>
+                — we will help you.
+              </span>
+            </p>
           </div>
 
           {/* PIN Display */}
@@ -326,9 +350,18 @@ const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false, erro
                 </button>
               )}
               {!deviceMismatch && (
-                <div className="mt-3 p-3 rounded-lg bg-amber-500/10 border border-amber-500/30">
-                  <p className="text-amber-300 text-xs font-semibold mb-2 text-center">💳 Payment Required</p>
-                  <div className="space-y-1 text-xs text-amber-200/80">
+                <div className="mt-3 rounded-xl border-2 border-amber-400 bg-amber-500/20 p-3 shadow-lg shadow-amber-900/40 ring-1 ring-amber-300/40">
+                  <p className="text-center text-sm font-black uppercase tracking-wide text-amber-100">
+                    Payment or discounted PIN
+                  </p>
+                  <p className="mt-2 text-center text-sm font-bold leading-snug text-amber-50">
+                    Cannot pay the full <span className="text-white">125 ETB</span>?{" "}
+                    <span className="block sm:inline">
+                      Message us first for a{" "}
+                      <span className="rounded bg-amber-300 px-1 font-black text-amber-950">DISCOUNTED PIN</span>.
+                    </span>
+                  </p>
+                  <div className="mt-3 space-y-1.5 border-t border-amber-400/30 pt-3 text-xs font-semibold text-amber-100">
                     <p><strong>Amount:</strong> 125 ETB</p>
                     <p><strong>CBE Bank:</strong> 1000282751279</p>
                     <p><strong>Account Name:</strong> Alexander Getahun</p>

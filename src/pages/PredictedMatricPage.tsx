@@ -1,9 +1,8 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { memo, useMemo, useState, useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { ArrowLeft, TrendingUp, Sparkles, Target, BookOpen, Clock, CheckCircle } from 'lucide-react';
+import { ArrowLeft, TrendingUp, Sparkles, Target, BookOpen, Clock, CheckCircle, HeartHandshake } from 'lucide-react';
 import TopBar from '@/components/TopBar';
 import StarField from '@/components/StarField';
 import PINLock from '@/components/PINLock';
@@ -292,6 +291,46 @@ const PredictedMatricPage = () => {
                 <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 text-xs">
                   <BookOpen className="h-3 w-3" />
                   <span>All Streams</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          role="region"
+          aria-label="Discounted PIN information"
+          className="relative mb-8 overflow-hidden rounded-2xl border-[3px] border-amber-400 bg-gradient-to-br from-amber-500/35 via-amber-600/25 to-orange-600/30 p-1 shadow-[0_0_0_1px_rgba(251,191,36,0.4),0_8px_40px_rgba(251,191,36,0.25)] ring-2 ring-amber-300/60 md:rounded-3xl"
+        >
+          <div className="rounded-[14px] bg-slate-950/80 px-4 py-5 backdrop-blur-sm md:rounded-[22px] md:px-6 md:py-6">
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-start">
+              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-amber-400 text-amber-950 shadow-lg shadow-amber-500/40 ring-2 ring-amber-200">
+                <HeartHandshake className="h-7 w-7" aria-hidden />
+              </div>
+              <div className="min-w-0 flex-1">
+                <p className="mb-2 inline-block rounded-md bg-amber-400 px-2.5 py-1 text-xs font-black uppercase tracking-widest text-amber-950 shadow-sm">
+                  Important
+                </p>
+                <h3 className="text-balance text-2xl font-black leading-tight tracking-tight text-white drop-shadow-sm md:text-3xl">
+                  If paying full price is hard right now — you can still get a PIN
+                </h3>
+                <p className="mt-3 text-base font-bold leading-relaxed text-amber-50 md:text-lg">
+                  Message or call us, mention <span className="text-white">Predicted Matric</span>, and ask for a{" "}
+                  <span className="rounded bg-amber-400 px-1.5 py-0.5 font-black uppercase tracking-wide text-amber-950">
+                    PIN with a discount
+                  </span>
+                  . Same team, private and fair — no judgment.
+                </p>
+                <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+                  <Button
+                    asChild
+                    className="h-12 border-2 border-amber-300 bg-amber-400 px-6 text-base font-black text-amber-950 shadow-lg shadow-amber-500/30 hover:bg-amber-300 hover:text-amber-950"
+                  >
+                    <Link to="/contact">Contact us for a discount</Link>
+                  </Button>
+                  <p className="text-sm font-bold text-amber-100/95 sm:max-w-xs">
+                    Say you need a <span className="text-white">reduced-price PIN</span> before you pay the full fee.
+                  </p>
                 </div>
               </div>
             </div>
