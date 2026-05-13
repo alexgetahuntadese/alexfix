@@ -44,7 +44,6 @@ const generateDeviceFingerprint = (): string => {
 
 const DEVICE_FINGERPRINT_KEY = 'device_fingerprint';
 const PIN_DEVICE_KEY = 'pin_device_binding';
-const PIN_USED_KEY = 'pin_used_tracking';
 
 const getStoredDeviceFingerprint = (): string => {
   try {
@@ -59,25 +58,6 @@ const getStoredDeviceFingerprint = (): string => {
   } catch {
     return generateDeviceFingerprint();
   }
-};
-
-const getUsedPins = (): Set<string> => {
-  try {
-    const stored = localStorage.getItem(PIN_USED_KEY);
-    return stored ? new Set<string>(JSON.parse(stored)) : new Set<string>();
-  } catch {
-    return new Set<string>();
-  }
-};
-
-const markPinAsUsed = (pinValue: string) => {
-  const usedPins = getUsedPins();
-  usedPins.add(pinValue);
-  localStorage.setItem(PIN_USED_KEY, JSON.stringify(Array.from(usedPins)));
-};
-
-const isPinAlreadyUsed = (pinValue: string): boolean => {
-  return getUsedPins().has(pinValue);
 };
 
 const getPinDeviceBindings = (): Record<string, string> => {
@@ -241,14 +221,6 @@ const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false, erro
           ]);
           
           if (validPINs.has(newPin)) {
-            if (isPinAlreadyUsed(newPin)) {
-              console.log('PIN already used in this browser:', newPin);
-              setInternalError(true);
-              setPin('');
-              setIsValidating(false);
-              return;
-            }
-
             if (!isDeviceAllowed(newPin, currentDeviceFingerprint)) {
               setInternalError(true);
               setPin('');
@@ -257,7 +229,6 @@ const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false, erro
             }
 
             bindPinToDevice(newPin, currentDeviceFingerprint);
-            markPinAsUsed(newPin);
             onUnlock(newPin);
             setIsValidating(false);
             return;
