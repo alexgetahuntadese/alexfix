@@ -107,13 +107,6 @@ const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false, erro
   const [isValidating, setIsValidating] = useState(false);
   const currentDeviceFingerprint = useMemo(() => getStoredDeviceFingerprint(), []);
 
-  useEffect(() => {
-    // Clear error when PIN changes
-    if (pin.length === 0) {
-      setInternalError(false);
-    }
-  }, [pin]);
-
   const theme = {
     primary: isSocialStream ? 'purple' : 'emerald',
     secondary: isSocialStream ? 'pink' : 'teal',
@@ -131,6 +124,10 @@ const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false, erro
 
   const handleDigitClick = async (digit: string) => {
     if (pin.length < 4) {
+      if (internalError) {
+        setInternalError(false);
+      }
+
       const newPin = pin + digit;
       setPin(newPin);
       
