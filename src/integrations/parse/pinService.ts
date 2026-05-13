@@ -160,6 +160,10 @@ export const pinService = {
         pinObject.set('grade', pinData.grade);
       }
       
+      if (pinData.deviceFingerprint) {
+        pinObject.set('deviceFingerprint', pinData.deviceFingerprint);
+      }
+      
       const savedPin = await pinObject.save();
       
       return {

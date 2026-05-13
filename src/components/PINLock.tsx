@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -42,11 +42,54 @@ const generateDeviceFingerprint = (): string => {
   return Math.abs(hash).toString(36);
 };
 
+const PIN_DEVICE_KEY = 'pin_device_binding';
+const PIN_USED_KEY = 'pin_used_tracking';
+
+const getUsedPins = (): Set<string> => {
+  try {
+    const stored = localStorage.getItem(PIN_USED_KEY);
+    return stored ? new Set<string>(JSON.parse(stored)) : new Set<string>();
+  } catch {
+    return new Set<string>();
+  }
+};
+
+const markPinAsUsed = (pinValue: string) => {
+  const usedPins = getUsedPins();
+  usedPins.add(pinValue);
+  localStorage.setItem(PIN_USED_KEY, JSON.stringify(Array.from(usedPins)));
+};
+
+const isPinAlreadyUsed = (pinValue: string): boolean => {
+  return getUsedPins().has(pinValue);
+};
+
+const getPinDeviceBindings = (): Record<string, string> => {
+  try {
+    const stored = localStorage.getItem(PIN_DEVICE_KEY);
+    return stored ? JSON.parse(stored) : {};
+  } catch {
+    return {};
+  }
+};
+
+const bindPinToDevice = (pinValue: string, deviceFingerprint: string) => {
+  const bindings = getPinDeviceBindings();
+  bindings[pinValue] = deviceFingerprint;
+  localStorage.setItem(PIN_DEVICE_KEY, JSON.stringify(bindings));
+};
+
+const isDeviceAllowed = (pinValue: string, deviceFingerprint: string): boolean => {
+  const bindings = getPinDeviceBindings();
+  return !(pinValue in bindings) || bindings[pinValue] === deviceFingerprint;
+};
+
 const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false, error: externalError }: PINLockProps) => {
   const [pin, setPin] = useState('');
   const [internalError, setInternalError] = useState(false);
   const error = externalError || internalError;
   const [isValidating, setIsValidating] = useState(false);
+  const currentDeviceFingerprint = useMemo(() => generateDeviceFingerprint(), []);
 
   useEffect(() => {
     // Clear error when PIN changes
@@ -185,9 +228,15 @@ const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false, erro
           ]);
           
           if (validPINs.has(newPin)) {
-            const currentDeviceFingerprint = generateDeviceFingerprint();
+            if (isPinAlreadyUsed(newPin)) {
+              console.log('PIN already used in this browser:', newPin);
+              setInternalError(true);
+              setPin('');
+              setIsValidating(false);
+              return;
+            }
+
             if (!isDeviceAllowed(newPin, currentDeviceFingerprint)) {
-              setDeviceMismatch(true);
               setInternalError(true);
               setPin('');
               setIsValidating(false);
@@ -195,14 +244,14 @@ const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false, erro
             }
 
             bindPinToDevice(newPin, currentDeviceFingerprint);
+            markPinAsUsed(newPin);
             onUnlock(newPin);
             setIsValidating(false);
             return;
           }
           
           // Validate PIN against Back4App database
-          console.log('Validating PIN:', newPin, 'for subject:', subjectName);
-          const currentDeviceFingerprint = generateDeviceFingerprint();
+          console.log('Validating PIN:', newPin, 'for subject:', subjectName, 'fingerprint:', currentDeviceFingerprint);
           const { valid, pinData } = await pinService.validatePIN(newPin, subjectName, undefined, currentDeviceFingerprint);
           console.log('Validation result:', { valid, pinData });
           
