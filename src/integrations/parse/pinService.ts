@@ -10,6 +10,7 @@ export interface PINData {
   grade?: string;
   isActive: boolean;
   used: boolean;
+  deviceFingerprint?: string;
   createdAt?: string;
   updatedAt?: string;
 }
@@ -45,6 +46,7 @@ export const pinService = {
           grade: pinObjectAlt.get('grade') || undefined,
           isActive: pinObjectAlt.get('isActive') !== false,
           used: pinObjectAlt.get('used') === true,
+          deviceFingerprint: pinObjectAlt.get('deviceFingerprint') || undefined,
           createdAt: pinObjectAlt.createdAt?.toISOString(),
           updatedAt: pinObjectAlt.updatedAt?.toISOString(),
         };
@@ -58,6 +60,7 @@ export const pinService = {
         grade: pinObject.get('grade') || undefined,
         isActive: pinObject.get('isActive') !== false,
         used: pinObject.get('used') === true,
+        deviceFingerprint: pinObject.get('deviceFingerprint') || undefined,
         createdAt: pinObject.createdAt?.toISOString(),
         updatedAt: pinObject.updatedAt?.toISOString(),
       };
@@ -70,7 +73,7 @@ export const pinService = {
   /**
    * Validate a PIN against the database
    */
-  async validatePIN(pinValue: string, subject?: string, grade?: string): Promise<{ valid: boolean; pinData?: PINData }> {
+  async validatePIN(pinValue: string, subject?: string, grade?: string, deviceFingerprint?: string): Promise<{ valid: boolean; pinData?: PINData }> {
     try {
       const pinData = await this.fetchPIN(pinValue);
       
@@ -94,6 +97,11 @@ export const pinService = {
       }
       
       if (grade && pinData.grade && pinData.grade !== grade) {
+        return { valid: false };
+      }
+      
+      // Check device binding if deviceFingerprint provided
+      if (deviceFingerprint && pinData.deviceFingerprint && pinData.deviceFingerprint !== deviceFingerprint) {
         return { valid: false };
       }
       
@@ -122,6 +130,7 @@ export const pinService = {
         grade: pinObject.get('grade') || undefined,
         isActive: pinObject.get('isActive') !== false,
         used: pinObject.get('used') === true,
+        deviceFingerprint: pinObject.get('deviceFingerprint') || undefined,
         createdAt: pinObject.createdAt?.toISOString(),
         updatedAt: pinObject.updatedAt?.toISOString(),
       }));
@@ -201,6 +210,60 @@ export const pinService = {
       throw new Error('Failed to mark PIN as used');
     }
   },
-};
 
-export default pinService;
+  /**
+   * Bind a device fingerprint to a PIN
+   */
+  async bindDeviceToPIN(objectId: string, deviceFingerprint: string): Promise<void> {
+    try {
+      const query = new Parse.Query(PIN_CLASS);
+      const pinObject = await query.get(objectId);
+      
+      pinObject.set('deviceFingerprint', deviceFingerprint);
+      await pinObject.save();
+    } catch (error) {
+      console.error('Error binding device to PIN:', error);
+      throw new Error('Failed to bind device to PIN');
+    }
+  },
+
+  /**
+   * Check if the device is bound to the PIN
+   */
+  async checkDeviceBound(objectId: string, deviceFingerprint: string): Promise<boolean> {
+    try {
+      const pinData = await this.fetchPINById(objectId);
+      if (!pinData) return false;
+      
+      return pinData.deviceFingerprint === deviceFingerprint;
+    } catch (error) {
+      console.error('Error checking device binding:', error);
+      return false;
+    }
+  },
+
+  /**
+   * Fetch a PIN by objectId
+   */
+  async fetchPINById(objectId: string): Promise<PINData | null> {
+    try {
+      const query = new Parse.Query(PIN_CLASS);
+      const pinObject = await query.get(objectId);
+      
+      return {
+        objectId: pinObject.id,
+        pin_code: pinObject.get('pin_code') || pinObject.get('pin'),
+        subject: pinObject.get('subject') || undefined,
+        grade: pinObject.get('grade') || undefined,
+        isActive: pinObject.get('isActive') !== false,
+        used: pinObject.get('used') === true,
+        deviceFingerprint: pinObject.get('deviceFingerprint') || undefined,
+        createdAt: pinObject.createdAt?.toISOString(),
+        updatedAt: pinObject.updatedAt?.toISOString(),
+      };
+    } catch (error) {
+      console.error('Error fetching PIN by ID:', error);
+      return null;
+    }
+  },
+};

@@ -42,39 +42,16 @@ const generateDeviceFingerprint = (): string => {
   return Math.abs(hash).toString(36);
 };
 
-// Storage keys for device binding
-const PIN_DEVICE_KEY = 'pin_device_binding';
-
-const bindPinToDevice = (pinValue: string, deviceFingerprint: string) => {
-  localStorage.setItem(PIN_DEVICE_KEY, JSON.stringify({
-    pin: pinValue,
-    deviceFingerprint,
-  }));
-};
-
-const isDeviceAllowed = (pinValue: string, deviceFingerprint: string): boolean => {
-  const storedBinding = localStorage.getItem(PIN_DEVICE_KEY);
-  if (!storedBinding) return true;
-
-  try {
-    const binding = JSON.parse(storedBinding);
-    return binding.pin === pinValue && binding.deviceFingerprint === deviceFingerprint;
-  } catch {
-    return false;
-  }
-};
-
 const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false, error: externalError }: PINLockProps) => {
   const [pin, setPin] = useState('');
   const [internalError, setInternalError] = useState(false);
   const error = externalError || internalError;
-  const [deviceMismatch, setDeviceMismatch] = useState(false);
   const [isValidating, setIsValidating] = useState(false);
 
   useEffect(() => {
-    // Clear device mismatch error when PIN changes
+    // Clear error when PIN changes
     if (pin.length === 0) {
-      setDeviceMismatch(false);
+      setInternalError(false);
     }
   }, [pin]);
 
@@ -225,11 +202,12 @@ const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false, erro
           
           // Validate PIN against Back4App database
           console.log('Validating PIN:', newPin, 'for subject:', subjectName);
-          const { valid, pinData } = await pinService.validatePIN(newPin, subjectName);
+          const currentDeviceFingerprint = generateDeviceFingerprint();
+          const { valid, pinData } = await pinService.validatePIN(newPin, subjectName, undefined, currentDeviceFingerprint);
           console.log('Validation result:', { valid, pinData });
           
           if (!valid) {
-            // PIN is invalid or not found in database
+            // PIN is invalid or not found in database or device mismatch
             console.log('PIN validation failed');
             setInternalError(true);
             setPin('');
@@ -237,17 +215,11 @@ const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false, erro
             return;
           }
           
-          // PIN is valid, check device binding
-          const currentDeviceFingerprint = generateDeviceFingerprint();
-          if (!isDeviceAllowed(newPin, currentDeviceFingerprint)) {
-            setDeviceMismatch(true);
-            setInternalError(true);
-            setPin('');
-            setIsValidating(false);
-            return;
+          // PIN is valid, bind device if not already bound
+          if (pinData?.objectId && !pinData.deviceFingerprint) {
+            await pinService.bindDeviceToPIN(pinData.objectId, currentDeviceFingerprint);
           }
-
-          bindPinToDevice(newPin, currentDeviceFingerprint);
+          
           if (pinData?.objectId) {
             await pinService.markPINAsUsed(pinData.objectId);
           }
@@ -266,22 +238,13 @@ const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false, erro
   const handleClear = () => {
     setPin('');
     setInternalError(false);
-    setDeviceMismatch(false);
   };
 
   const handleDelete = () => {
     if (pin.length > 0) {
       setPin(pin.slice(0, -1));
       setInternalError(false);
-      setDeviceMismatch(false);
     }
-  };
-
-  const handleResetDeviceBinding = () => {
-    localStorage.removeItem(PIN_DEVICE_KEY);
-    setPin('');
-    setInternalError(false);
-    setDeviceMismatch(false);
   };
 
   return (
@@ -346,40 +309,28 @@ const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false, erro
           {error && (
             <div className="mb-4 p-3 rounded-lg bg-red-500/20 border border-red-500/30">
               <p className="text-red-400 text-center text-sm font-medium mb-2">
-                {deviceMismatch 
-                  ? 'PIN is bound to another device. Reset to use on this device.'
-                  : 'Incorrect PIN. Access requires payment.'}
+                Incorrect PIN. Access requires payment.
               </p>
-              {deviceMismatch && (
-                <button
-                  onClick={handleResetDeviceBinding}
-                  className="mt-2 text-xs text-red-300 hover:text-red-200 underline"
-                >
-                  Reset Device Binding
-                </button>
-              )}
-              {!deviceMismatch && (
-                <div className="mt-3 rounded-xl border-2 border-amber-400 bg-amber-500/20 p-3 shadow-lg shadow-amber-900/40 ring-1 ring-amber-300/40">
-                  <p className="text-center text-sm font-black uppercase tracking-wide text-amber-100">
-                    Payment or discounted PIN
-                  </p>
-                  <p className="mt-2 text-center text-sm font-bold leading-snug text-amber-50">
-                    Cannot pay the full <span className="text-white">125 ETB</span>?{" "}
-                    <span className="block sm:inline">
-                      Message us first for a{" "}
-                      <span className="rounded bg-amber-300 px-1 font-black text-amber-950">DISCOUNTED PIN</span>.
-                    </span>
-                  </p>
-                  <div className="mt-3 space-y-1.5 border-t border-amber-400/30 pt-3 text-xs font-semibold text-amber-100">
-                    <p><strong>Amount:</strong> 125 ETB</p>
-                    <p><strong>CBE Bank:</strong> 1000282751279</p>
-                    <p><strong>Account Name:</strong> Alexander Getahun</p>
-                    <p><strong>Telebirr:</strong> 0949835147 (Merry Getahun)</p>
-                    <p className="mt-2"><strong>Contact:</strong> 0992010092 / 0914546032</p>
-                    <p className="text-amber-200/60 italic">Available anytime</p>
-                  </div>
+              <div className="mt-3 rounded-xl border-2 border-amber-400 bg-amber-500/20 p-3 shadow-lg shadow-amber-900/40 ring-1 ring-amber-300/40">
+                <p className="text-center text-sm font-black uppercase tracking-wide text-amber-100">
+                  Payment or discounted PIN
+                </p>
+                <p className="mt-2 text-center text-sm font-bold leading-snug text-amber-50">
+                  Cannot pay the full <span className="text-white">125 ETB</span>?{" "}
+                  <span className="block sm:inline">
+                    Message us first for a{" "}
+                    <span className="rounded bg-amber-300 px-1 font-black text-amber-950">DISCOUNTED PIN</span>.
+                  </span>
+                </p>
+                <div className="mt-3 space-y-1.5 border-t border-amber-400/30 pt-3 text-xs font-semibold text-amber-100">
+                  <p><strong>Amount:</strong> 125 ETB</p>
+                  <p><strong>CBE Bank:</strong> 1000282751279</p>
+                  <p><strong>Account Name:</strong> Alexander Getahun</p>
+                  <p><strong>Telebirr:</strong> 0949835147 (Merry Getahun)</p>
+                  <p className="mt-2"><strong>Contact:</strong> 0992010092 / 0914546032</p>
+                  <p className="text-amber-200/60 italic">Available anytime</p>
                 </div>
-              )}
+              </div>
             </div>
           )}
 
