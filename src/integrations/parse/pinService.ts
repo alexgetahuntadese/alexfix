@@ -9,6 +9,7 @@ export interface PINData {
   subject?: string;
   grade?: string;
   isActive: boolean;
+  used: boolean;
   createdAt?: string;
   updatedAt?: string;
 }
@@ -43,6 +44,7 @@ export const pinService = {
           subject: pinObjectAlt.get('subject') || undefined,
           grade: pinObjectAlt.get('grade') || undefined,
           isActive: pinObjectAlt.get('isActive') !== false,
+          used: pinObjectAlt.get('used') === true,
           createdAt: pinObjectAlt.createdAt?.toISOString(),
           updatedAt: pinObjectAlt.updatedAt?.toISOString(),
         };
@@ -55,6 +57,7 @@ export const pinService = {
         subject: pinObject.get('subject') || undefined,
         grade: pinObject.get('grade') || undefined,
         isActive: pinObject.get('isActive') !== false,
+        used: pinObject.get('used') === true,
         createdAt: pinObject.createdAt?.toISOString(),
         updatedAt: pinObject.updatedAt?.toISOString(),
       };
@@ -77,6 +80,11 @@ export const pinService = {
       
       // Check if PIN is active
       if (!pinData.isActive) {
+        return { valid: false };
+      }
+      
+      // Check if PIN has already been used
+      if (pinData.used) {
         return { valid: false };
       }
       
@@ -113,6 +121,7 @@ export const pinService = {
         subject: pinObject.get('subject') || undefined,
         grade: pinObject.get('grade') || undefined,
         isActive: pinObject.get('isActive') !== false,
+        used: pinObject.get('used') === true,
         createdAt: pinObject.createdAt?.toISOString(),
         updatedAt: pinObject.updatedAt?.toISOString(),
       }));
@@ -149,6 +158,7 @@ export const pinService = {
         subject: savedPin.get('subject') || undefined,
         grade: savedPin.get('grade') || undefined,
         isActive: savedPin.get('isActive') !== false,
+        used: savedPin.get('used') === true,
         createdAt: savedPin.createdAt?.toISOString(),
         updatedAt: savedPin.updatedAt?.toISOString(),
       };
@@ -171,6 +181,22 @@ export const pinService = {
     } catch (error) {
       console.error('Error deactivating PIN:', error);
       throw new Error('Failed to deactivate PIN');
+    }
+  },
+
+  /**
+   * Mark a PIN as used (called after successful validation)
+   */
+  async markPINAsUsed(objectId: string): Promise<void> {
+    try {
+      const query = new Parse.Query(PIN_CLASS);
+      const pinObject = await query.get(objectId);
+      
+      pinObject.set('used', true);
+      await pinObject.save();
+    } catch (error) {
+      console.error('Error marking PIN as used:', error);
+      throw new Error('Failed to mark PIN as used');
     }
   },
 };
