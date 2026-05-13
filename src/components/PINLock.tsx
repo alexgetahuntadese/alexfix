@@ -42,8 +42,24 @@ const generateDeviceFingerprint = (): string => {
   return Math.abs(hash).toString(36);
 };
 
+const DEVICE_FINGERPRINT_KEY = 'device_fingerprint';
 const PIN_DEVICE_KEY = 'pin_device_binding';
 const PIN_USED_KEY = 'pin_used_tracking';
+
+const getStoredDeviceFingerprint = (): string => {
+  try {
+    const stored = localStorage.getItem(DEVICE_FINGERPRINT_KEY);
+    if (stored) {
+      return stored;
+    }
+
+    const fingerprint = generateDeviceFingerprint();
+    localStorage.setItem(DEVICE_FINGERPRINT_KEY, fingerprint);
+    return fingerprint;
+  } catch {
+    return generateDeviceFingerprint();
+  }
+};
 
 const getUsedPins = (): Set<string> => {
   try {
@@ -89,7 +105,7 @@ const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false, erro
   const [internalError, setInternalError] = useState(false);
   const error = externalError || internalError;
   const [isValidating, setIsValidating] = useState(false);
-  const currentDeviceFingerprint = useMemo(() => generateDeviceFingerprint(), []);
+  const currentDeviceFingerprint = useMemo(() => getStoredDeviceFingerprint(), []);
 
   useEffect(() => {
     // Clear error when PIN changes

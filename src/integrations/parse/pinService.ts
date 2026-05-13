@@ -75,6 +75,7 @@ export const pinService = {
    */
   async validatePIN(pinValue: string, subject?: string, grade?: string, deviceFingerprint?: string): Promise<{ valid: boolean; pinData?: PINData }> {
     try {
+      const normalize = (value?: string) => value?.toString().trim().toLowerCase() ?? '';
       const pinData = await this.fetchPIN(pinValue);
       
       if (!pinData) {
@@ -92,11 +93,15 @@ export const pinService = {
       }
       
       // Optional: Check if PIN matches subject/grade if provided
-      if (subject && pinData.subject && pinData.subject !== subject) {
+      const normalizedSubject = normalize(subject);
+      const normalizedPinSubject = normalize(pinData.subject);
+      if (normalizedSubject && normalizedPinSubject && normalizedPinSubject !== normalizedSubject) {
         return { valid: false };
       }
       
-      if (grade && pinData.grade && pinData.grade !== grade) {
+      const normalizedGrade = normalize(grade);
+      const normalizedPinGrade = normalize(pinData.grade);
+      if (normalizedGrade && normalizedPinGrade && normalizedPinGrade !== normalizedGrade) {
         return { valid: false };
       }
       
