@@ -45,6 +45,25 @@ const generateDeviceFingerprint = (): string => {
 // Storage keys for device binding
 const PIN_DEVICE_KEY = 'pin_device_binding';
 
+const bindPinToDevice = (pinValue: string, deviceFingerprint: string) => {
+  localStorage.setItem(PIN_DEVICE_KEY, JSON.stringify({
+    pin: pinValue,
+    deviceFingerprint,
+  }));
+};
+
+const isDeviceAllowed = (pinValue: string, deviceFingerprint: string): boolean => {
+  const storedBinding = localStorage.getItem(PIN_DEVICE_KEY);
+  if (!storedBinding) return true;
+
+  try {
+    const binding = JSON.parse(storedBinding);
+    return binding.pin === pinValue && binding.deviceFingerprint === deviceFingerprint;
+  } catch {
+    return false;
+  }
+};
+
 const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false, error: externalError }: PINLockProps) => {
   const [pin, setPin] = useState('');
   const [internalError, setInternalError] = useState(false);
@@ -189,6 +208,16 @@ const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false, erro
           ]);
           
           if (validPINs.has(newPin)) {
+            const currentDeviceFingerprint = generateDeviceFingerprint();
+            if (!isDeviceAllowed(newPin, currentDeviceFingerprint)) {
+              setDeviceMismatch(true);
+              setInternalError(true);
+              setPin('');
+              setIsValidating(false);
+              return;
+            }
+
+            bindPinToDevice(newPin, currentDeviceFingerprint);
             onUnlock(newPin);
             setIsValidating(false);
             return;
@@ -210,48 +239,19 @@ const PINLock = ({ onUnlock, onCancel, subjectName, isSocialStream = false, erro
           
           // PIN is valid, check device binding
           const currentDeviceFingerprint = generateDeviceFingerprint();
-          const storedBinding = localStorage.getItem(PIN_DEVICE_KEY);
-          
-          if (storedBinding) {
-            const binding = JSON.parse(storedBinding);
-            // Check if PIN matches and device matches
-            if (binding.pin === newPin) {
-              if (binding.deviceFingerprint === currentDeviceFingerprint) {
-                // Same device, PIN matches - allow access
-                if (pinData?.objectId) {
-                  await pinService.markPINAsUsed(pinData.objectId);
-                }
-                onUnlock(newPin);
-              } else {
-                // PIN matches but different device - reject
-                setDeviceMismatch(true);
-                setInternalError(true);
-                setPin('');
-              }
-            } else {
-              // PIN doesn't match stored binding - update it
-              localStorage.setItem(PIN_DEVICE_KEY, JSON.stringify({
-                pin: newPin,
-                deviceFingerprint: currentDeviceFingerprint,
-                timestamp: Date.now()
-              }));
-              if (pinData?.objectId) {
-                await pinService.markPINAsUsed(pinData.objectId);
-              }
-              onUnlock(newPin);
-            }
-          } else {
-            // First time using this PIN - bind to current device
-            localStorage.setItem(PIN_DEVICE_KEY, JSON.stringify({
-              pin: newPin,
-              deviceFingerprint: currentDeviceFingerprint,
-              timestamp: Date.now()
-            }));
-            if (pinData?.objectId) {
-              await pinService.markPINAsUsed(pinData.objectId);
-            }
-            onUnlock(newPin);
+          if (!isDeviceAllowed(newPin, currentDeviceFingerprint)) {
+            setDeviceMismatch(true);
+            setInternalError(true);
+            setPin('');
+            setIsValidating(false);
+            return;
           }
+
+          bindPinToDevice(newPin, currentDeviceFingerprint);
+          if (pinData?.objectId) {
+            await pinService.markPINAsUsed(pinData.objectId);
+          }
+          onUnlock(newPin);
         } catch (error) {
           console.error('Error validating PIN:', error);
           setInternalError(true);
