@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useMemo, useState, useEffect } from 'react';
 import { Grade9Question } from '../data/grade9Questions';
 import { 
   GameProgress, 
@@ -15,6 +15,7 @@ import {
   getRandomEncouragement 
 } from '../data/grade9Gamification';
 import { QuizNavigation, QuestionCard, QuizProgress } from './QuizNavigation';
+import { shuffleQuestionOptions } from '@/lib/quizUtils';
 
 interface GamifiedQuizProps {
   questions: Grade9Question[];
@@ -31,6 +32,10 @@ export const GamifiedQuiz: React.FC<GamifiedQuizProps> = ({
   onPEV,
   showPEVButton = false
 }) => {
+  const quizQuestions = useMemo(
+    () => questions.map(shuffleQuestionOptions),
+    [questions]
+  );
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string>('');
   const [showHint, setShowHint] = useState(false);
@@ -47,7 +52,7 @@ export const GamifiedQuiz: React.FC<GamifiedQuizProps> = ({
   const [startTime, setStartTime] = useState<number>(Date.now());
   const [showAchievement, setShowAchievement] = useState<Achievement | null>(null);
 
-  const currentQuestion = questions[currentQuestionIndex];
+  const currentQuestion = quizQuestions[currentQuestionIndex];
   const currentLevel = calculateLevel(gameProgress.totalPoints);
 
   useEffect(() => {
@@ -97,18 +102,18 @@ export const GamifiedQuiz: React.FC<GamifiedQuizProps> = ({
       setSelectedAnswer('');
       setShowHint(false);
       setIsAnswered(false);
-      setTimeRemaining(questions[currentQuestionIndex - 1]?.timeLimit || 60);
+      setTimeRemaining(quizQuestions[currentQuestionIndex - 1]?.timeLimit || 60);
       setStartTime(Date.now());
     }
   };
 
   const handleNext = () => {
-    if (currentQuestionIndex < questions.length - 1) {
+    if (currentQuestionIndex < quizQuestions.length - 1) {
       setCurrentQuestionIndex(prev => prev + 1);
       setSelectedAnswer('');
       setShowHint(false);
       setIsAnswered(false);
-      setTimeRemaining(questions[currentQuestionIndex + 1]?.timeLimit || 60);
+      setTimeRemaining(quizQuestions[currentQuestionIndex + 1]?.timeLimit || 60);
       setStartTime(Date.now());
     } else {
       onComplete(gameProgress);
@@ -120,13 +125,13 @@ export const GamifiedQuiz: React.FC<GamifiedQuizProps> = ({
     setSelectedAnswer('');
     setShowHint(false);
     setIsAnswered(false);
-    setTimeRemaining(questions[0]?.timeLimit || 60);
+    setTimeRemaining(quizQuestions[0]?.timeLimit || 60);
     setStartTime(Date.now());
   };
 
   const canGoPrevious = currentQuestionIndex > 0;
-  const canGoNext = isAnswered && currentQuestionIndex < questions.length - 1;
-  const isCompleted = isAnswered && currentQuestionIndex === questions.length - 1;
+  const canGoNext = isAnswered && currentQuestionIndex < quizQuestions.length - 1;
+  const isCompleted = isAnswered && currentQuestionIndex === quizQuestions.length - 1;
 
   const handleHint = () => {
     if (currentQuestion.hints && currentQuestion.hints.length > 0 && !showHint) {
@@ -264,7 +269,7 @@ export const GamifiedQuiz: React.FC<GamifiedQuizProps> = ({
       {/* Navigation */}
       <QuizNavigation
         currentIndex={currentQuestionIndex}
-        totalQuestions={questions.length}
+        totalQuestions={quizQuestions.length}
         onNext={handleNext}
         onRestart={handleRestart}
         onPEV={onPEV}
@@ -276,13 +281,13 @@ export const GamifiedQuiz: React.FC<GamifiedQuizProps> = ({
       {/* Progress */}
       <QuizProgress
         current={currentQuestionIndex}
-        total={questions.length}
+        total={quizQuestions.length}
         answered={gameProgress.completedQuestions.map(id => 
-          questions.findIndex(q => q.id === id)
+          quizQuestions.findIndex(q => q.id === id)
         ).filter(i => i >= 0)}
         correct={gameProgress.completedQuestions.map(id => 
-          questions.findIndex(q => q.id === id)
-        ).filter(i => i >= 0 && questions[i]?.correct === selectedAnswer)}
+          quizQuestions.findIndex(q => q.id === id)
+        ).filter(i => i >= 0 && quizQuestions[i]?.correct === selectedAnswer)}
         timeRemaining={timeRemaining}
         totalTime={currentQuestion.timeLimit}
       />
@@ -290,7 +295,7 @@ export const GamifiedQuiz: React.FC<GamifiedQuizProps> = ({
       {/* Question Card */}
       <QuestionCard
         questionNumber={currentQuestionIndex + 1}
-        totalQuestions={questions.length}
+        totalQuestions={quizQuestions.length}
         category={currentQuestion.questionType || 'Multiple Choice'}
         difficulty={currentQuestion.difficulty}
       >

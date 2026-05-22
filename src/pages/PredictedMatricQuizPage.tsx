@@ -8,6 +8,7 @@ import { ArrowLeft, CheckCircle2, XCircle, ChevronRight, Clock, Target, Brain, L
 import { MatricExamQuestion } from '@/data/matricExams';
 import TopBar from '@/components/TopBar';
 import StarField from '@/components/StarField';
+import { shuffleIndexedQuestionOptions } from '@/lib/quizUtils';
 
 // Lazy load question data to reduce initial bundle size
 const getPredictedQuestions = async (stream: string, subject: string): Promise<MatricExamQuestion[]> => {
@@ -88,7 +89,7 @@ const PredictedMatricQuizPage = () => {
 
   useEffect(() => {
     getPredictedQuestions(streamKey, subject ?? '').then(data => {
-      setQuestions(data);
+      setQuestions(data.map(shuffleIndexedQuestionOptions));
       setLoading(false);
     });
   }, [streamKey, subject]);
@@ -216,7 +217,9 @@ const PredictedMatricQuizPage = () => {
     setShowExplanation(false);
     setScore(0);
     setFinished(false);
+    setShowCorrectAnswer(false);
     setAnswers(new Array(questions.length).fill(null));
+    setQuestions(prev => prev.map(shuffleIndexedQuestionOptions));
   };
 
   const handleJumpToQuestion = (index: number) => {

@@ -1,4 +1,4 @@
-import { Fragment, useState } from 'react';
+import { Fragment, useMemo, useState } from 'react';
 import { useParams, useNavigate, Navigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -8,6 +8,7 @@ import { ArrowLeft, CheckCircle2, XCircle, ChevronRight, Clock, Target, Brain, L
 import { getMatricQuestions, getMatricSubjectsForYear, MatricExamQuestion } from '@/data/matricExams';
 import TopBar from '@/components/TopBar';
 import StarField from '@/components/StarField';
+import { shuffleIndexedQuestionOptions } from '@/lib/quizUtils';
 
 const MatricQuizPage = () => {
   const { year, stream, subject } = useParams<{ year: string; stream: string; subject: string }>();
@@ -15,7 +16,11 @@ const MatricQuizPage = () => {
   const yearNum = Number(year);
   const streamKey = stream ?? 'natural';
   const streamLabel = streamKey === 'social' ? 'Social Science' : 'Natural Science';
-  const questions = getMatricQuestions(yearNum, streamKey, subject ?? '');
+  const [shuffleRun, setShuffleRun] = useState(0);
+  const questions = useMemo(
+    () => getMatricQuestions(yearNum, streamKey, subject ?? '').map(shuffleIndexedQuestionOptions),
+    [yearNum, streamKey, subject, shuffleRun]
+  );
   const scoreableQuestions = questions.filter((question) => question.correctAnswer >= 0).length;
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -97,7 +102,7 @@ const MatricQuizPage = () => {
       setFinished(true);
     } else {
       setCurrentIndex((i) => i + 1);
-      setSelectedAnswer(answers[currentIndex + 1] || null);
+      setSelectedAnswer(answers[currentIndex + 1] ?? null);
       setShowExplanation(false);
       setShowCorrectAnswer(false);
     }
@@ -124,7 +129,7 @@ const MatricQuizPage = () => {
   const handlePrevious = () => {
     if (currentIndex > 0) {
       setCurrentIndex((i) => i - 1);
-      setSelectedAnswer(answers[currentIndex - 1] || null);
+      setSelectedAnswer(answers[currentIndex - 1] ?? null);
       setShowExplanation(false);
       setShowCorrectAnswer(false);
     }
@@ -166,6 +171,9 @@ const MatricQuizPage = () => {
                     setShowExplanation(false);
                     setScore(0);
                     setFinished(false);
+                    setAnswers(new Array(questions.length).fill(null));
+                    setShowCorrectAnswer(false);
+                    setShuffleRun((run) => run + 1);
                   }}
                 >
                   Retry
@@ -247,7 +255,7 @@ const MatricQuizPage = () => {
                     key={questionIndex}
                     onClick={() => {
                       setCurrentIndex(questionIndex);
-                      setSelectedAnswer(answers[questionIndex] || null);
+                      setSelectedAnswer(answers[questionIndex] ?? null);
                       setShowExplanation(false);
                       setShowCorrectAnswer(false);
                     }}
