@@ -73,7 +73,7 @@ const menuItems: MenuDef[] = [
   {
     title: "2018 Predicted Matric",
     route: "/predicted-matric",
-    description: "High-probability predicted items — PIN access where required.",
+    description: "High-probability predicted questions for the next matric exam.",
     icon: LineChart,
     gridClass: "lg:col-span-2 min-h-[220px]",
     cardVariant: "predicted",
