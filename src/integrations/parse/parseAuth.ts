@@ -1,4 +1,4 @@
-import Parse from '@/integrations/parse/parseConfig';
+import Parse, { isParseInitialized } from '@/integrations/parse/parseConfig';
 import type {
   AuthSessionResponse,
   AuthUser,
@@ -67,21 +67,30 @@ const getUserProfile = async (parseUser: Parse.User): Promise<UserProfile> => {
 
 export const parseAuthService = {
   async getSession(): Promise<AuthSessionResponse> {
+    // Check if Parse is initialized
+    if (!isParseInitialized || !Parse) {
+      console.warn('Parse SDK not initialized, returning null session');
+      return {
+        session: null,
+        profile: null,
+      };
+    }
+
     const currentUser = Parse.User.current();
-    
+
     if (!currentUser) {
       return {
         session: null,
         profile: null,
       };
     }
-    
+
     try {
       // Refresh the user to get latest data
       await currentUser.fetch();
       const userProfile = await getUserProfile(currentUser);
       const authUser = parseUserToAuthUser(currentUser);
-      
+
       return {
         session: {
           user: authUser,

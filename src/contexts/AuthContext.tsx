@@ -73,7 +73,7 @@ const AuthProvider = ({ children }: { children: ReactNode }) => {
     const bootstrap = async () => {
       try {
         const session = await parseAuthService.getSession();
-        
+
         if (!active) {
           return;
         }
@@ -89,13 +89,26 @@ const AuthProvider = ({ children }: { children: ReactNode }) => {
         if (active) {
           clearAuthState();
         }
+      } finally {
+        if (active) {
+          setIsLoading(false);
+        }
       }
     };
+
+    // Add timeout to prevent infinite loading
+    const timeoutId = setTimeout(() => {
+      if (active) {
+        console.warn("Auth bootstrap timeout - clearing loading state");
+        setIsLoading(false);
+      }
+    }, 5000); // 5 second timeout
 
     bootstrap();
 
     return () => {
       active = false;
+      clearTimeout(timeoutId);
     };
   }, [clearAuthState, applyUserData, checkInactiveAccount]);
 

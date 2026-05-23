@@ -11,14 +11,22 @@ const Parse = (globalThis as typeof globalThis & { Parse?: ParseType }).Parse;
 console.log('Parse Config - APP_ID:', APP_ID);
 console.log('Parse Config - JS_KEY:', JS_KEY ? '***' + JS_KEY.slice(-4) : 'missing');
 
+let isParseInitialized = false;
+
 if (!Parse) {
   console.error('Parse SDK failed to load in browser context.');
 } else if (!APP_ID || !JS_KEY) {
   console.error('Back4App credentials missing. Please check your .env file for VITE_BACK4APP_APP_ID and VITE_BACK4APP_JS_KEY.');
 } else {
-  Parse.initialize(APP_ID, JS_KEY);
-  Parse.serverURL = SERVER_URL;
-  console.log('Parse SDK initialized successfully');
+  try {
+    Parse.initialize(APP_ID, JS_KEY);
+    Parse.serverURL = SERVER_URL;
+    isParseInitialized = true;
+    console.log('Parse SDK initialized successfully');
+  } catch (error) {
+    console.error('Failed to initialize Parse SDK:', error);
+  }
 }
 
 export default Parse;
+export { isParseInitialized };
