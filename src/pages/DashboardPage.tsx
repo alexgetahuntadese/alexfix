@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
   BookOpen,
+  DoorOpen,
   GraduationCap,
   Library,
   NotebookPen,
@@ -16,6 +17,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { useAuth } from "@/hooks/useAuth";
 import AppLogo from "@/components/AppLogo";
+import { EXAM_TOGETHER_URL } from "@/lib/examTogetherUrl";
 
 const DashboardPage = () => {
   const navigate = useNavigate();
@@ -50,6 +52,13 @@ const DashboardPage = () => {
       route: "/matric",
       color: "from-violet-500 to-purple-500",
     },
+    {
+      title: "Exam Room",
+      description: "Timed practice and exam mode",
+      icon: DoorOpen,
+      route: EXAM_TOGETHER_URL,
+      color: "from-rose-500 to-pink-600",
+    },
   ];
 
   const recentActivity = [
@@ -81,14 +90,20 @@ const DashboardPage = () => {
           </div>
           
           {/* Menu Cards */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
             {quickActions.map((action) => {
               const Icon = action.icon;
               return (
                 <Card
                   key={action.title}
                   className="cursor-pointer border-white/10 bg-white/5 backdrop-blur-xl transition-all hover:bg-white/10 hover:scale-105"
-                  onClick={() => navigate(action.route)}
+                  onClick={() => {
+                    if (action.route.startsWith("http")) {
+                      window.location.assign(action.route);
+                    } else {
+                      navigate(action.route);
+                    }
+                  }}
                 >
                   <CardContent className="p-4">
                     <div className="flex items-center gap-3">

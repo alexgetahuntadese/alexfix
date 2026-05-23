@@ -6,5 +6,9 @@ export const customerContacts = [
   {
     name: "Fenet Adem",
     phoneNumbers: ["0914546032"]
+  },
+  {
+    name: "Engineer Kefialew",
+    phoneNumbers: ["0707529520"]
   }
 ];

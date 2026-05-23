@@ -9,6 +9,8 @@ export interface PINData {
   subject?: string;
   grade?: string;
   isActive: boolean;
+  used: boolean;
+  deviceFingerprint?: string;
   createdAt?: string;
   updatedAt?: string;
 }
@@ -43,6 +45,8 @@ export const pinService = {
           subject: pinObjectAlt.get('subject') || undefined,
           grade: pinObjectAlt.get('grade') || undefined,
           isActive: pinObjectAlt.get('isActive') !== false,
+          used: pinObjectAlt.get('used') === true,
+          deviceFingerprint: pinObjectAlt.get('deviceFingerprint') || undefined,
           createdAt: pinObjectAlt.createdAt?.toISOString(),
           updatedAt: pinObjectAlt.updatedAt?.toISOString(),
         };
@@ -55,6 +59,8 @@ export const pinService = {
         subject: pinObject.get('subject') || undefined,
         grade: pinObject.get('grade') || undefined,
         isActive: pinObject.get('isActive') !== false,
+        used: pinObject.get('used') === true,
+        deviceFingerprint: pinObject.get('deviceFingerprint') || undefined,
         createdAt: pinObject.createdAt?.toISOString(),
         updatedAt: pinObject.updatedAt?.toISOString(),
       };
@@ -67,8 +73,9 @@ export const pinService = {
   /**
    * Validate a PIN against the database
    */
-  async validatePIN(pinValue: string, subject?: string, grade?: string): Promise<{ valid: boolean; pinData?: PINData }> {
+  async validatePIN(pinValue: string, subject?: string, grade?: string, deviceFingerprint?: string): Promise<{ valid: boolean; pinData?: PINData }> {
     try {
+      const normalize = (value?: string) => value?.toString().trim().toLowerCase() ?? '';
       const pinData = await this.fetchPIN(pinValue);
       
       if (!pinData) {
@@ -80,12 +87,26 @@ export const pinService = {
         return { valid: false };
       }
       
-      // Optional: Check if PIN matches subject/grade if provided
-      if (subject && pinData.subject && pinData.subject !== subject) {
+      // Check if PIN has already been used
+      if (pinData.used) {
         return { valid: false };
       }
       
-      if (grade && pinData.grade && pinData.grade !== grade) {
+      // Optional: Check if PIN matches subject/grade if provided
+      const normalizedSubject = normalize(subject);
+      const normalizedPinSubject = normalize(pinData.subject);
+      if (normalizedSubject && normalizedPinSubject && normalizedPinSubject !== normalizedSubject) {
+        return { valid: false };
+      }
+      
+      const normalizedGrade = normalize(grade);
+      const normalizedPinGrade = normalize(pinData.grade);
+      if (normalizedGrade && normalizedPinGrade && normalizedPinGrade !== normalizedGrade) {
+        return { valid: false };
+      }
+      
+      // Check device binding if deviceFingerprint provided
+      if (deviceFingerprint && pinData.deviceFingerprint && pinData.deviceFingerprint !== deviceFingerprint) {
         return { valid: false };
       }
       
@@ -113,6 +134,8 @@ export const pinService = {
         subject: pinObject.get('subject') || undefined,
         grade: pinObject.get('grade') || undefined,
         isActive: pinObject.get('isActive') !== false,
+        used: pinObject.get('used') === true,
+        deviceFingerprint: pinObject.get('deviceFingerprint') || undefined,
         createdAt: pinObject.createdAt?.toISOString(),
         updatedAt: pinObject.updatedAt?.toISOString(),
       }));
@@ -132,6 +155,7 @@ export const pinService = {
       
       pinObject.set('pin_code', pinData.pin_code);
       pinObject.set('isActive', pinData.isActive);
+      pinObject.set('used', false);
       
       if (pinData.subject) {
         pinObject.set('subject', pinData.subject);
@@ -139,6 +163,10 @@ export const pinService = {
       
       if (pinData.grade) {
         pinObject.set('grade', pinData.grade);
+      }
+      
+      if (pinData.deviceFingerprint) {
+        pinObject.set('deviceFingerprint', pinData.deviceFingerprint);
       }
       
       const savedPin = await pinObject.save();
@@ -149,6 +177,7 @@ export const pinService = {
         subject: savedPin.get('subject') || undefined,
         grade: savedPin.get('grade') || undefined,
         isActive: savedPin.get('isActive') !== false,
+        used: savedPin.get('used') === true,
         createdAt: savedPin.createdAt?.toISOString(),
         updatedAt: savedPin.updatedAt?.toISOString(),
       };
@@ -173,6 +202,77 @@ export const pinService = {
       throw new Error('Failed to deactivate PIN');
     }
   },
-};
 
-export default pinService;
+  /**
+   * Mark a PIN as used (called after successful validation)
+   */
+  async markPINAsUsed(objectId: string): Promise<void> {
+    try {
+      const query = new Parse.Query(PIN_CLASS);
+      const pinObject = await query.get(objectId);
+      
+      pinObject.set('used', true);
+      pinObject.set('isActive', false);
+      await pinObject.save();
+    } catch (error) {
+      console.error('Error marking PIN as used:', error);
+      throw new Error('Failed to mark PIN as used');
+    }
+  },
+
+  /**
+   * Bind a device fingerprint to a PIN
+   */
+  async bindDeviceToPIN(objectId: string, deviceFingerprint: string): Promise<void> {
+    try {
+      const query = new Parse.Query(PIN_CLASS);
+      const pinObject = await query.get(objectId);
+      
+      pinObject.set('deviceFingerprint', deviceFingerprint);
+      await pinObject.save();
+    } catch (error) {
+      console.error('Error binding device to PIN:', error);
+      throw new Error('Failed to bind device to PIN');
+    }
+  },
+
+  /**
+   * Check if the device is bound to the PIN
+   */
+  async checkDeviceBound(objectId: string, deviceFingerprint: string): Promise<boolean> {
+    try {
+      const pinData = await this.fetchPINById(objectId);
+      if (!pinData) return false;
+      
+      return pinData.deviceFingerprint === deviceFingerprint;
+    } catch (error) {
+      console.error('Error checking device binding:', error);
+      return false;
+    }
+  },
+
+  /**
+   * Fetch a PIN by objectId
+   */
+  async fetchPINById(objectId: string): Promise<PINData | null> {
+    try {
+      const query = new Parse.Query(PIN_CLASS);
+      const pinObject = await query.get(objectId);
+      
+      return {
+        objectId: pinObject.id,
+        pin_code: pinObject.get('pin_code') || pinObject.get('pin'),
+        subject: pinObject.get('subject') || undefined,
+        grade: pinObject.get('grade') || undefined,
+        isActive: pinObject.get('isActive') !== false,
+        used: pinObject.get('used') === true,
+        deviceFingerprint: pinObject.get('deviceFingerprint') || undefined,
+        createdAt: pinObject.createdAt?.toISOString(),
+        updatedAt: pinObject.updatedAt?.toISOString(),
+      };
+    } catch (error) {
+      console.error('Error fetching PIN by ID:', error);
+      return null;
+    }
+  },
+};
