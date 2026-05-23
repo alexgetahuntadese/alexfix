@@ -5,7 +5,6 @@ import { Button } from '@/components/ui/button';
 import { ArrowLeft, TrendingUp, Sparkles, Target, BookOpen, Clock, CheckCircle, HeartHandshake } from 'lucide-react';
 import TopBar from '@/components/TopBar';
 import StarField from '@/components/StarField';
-import PINLock from '@/components/PINLock';
 
 // Lazy load question data to reduce initial bundle size
 const getPredictedQuestions = () => {
@@ -51,9 +50,6 @@ const socialSubjectsMetadata = [
 const PredictedMatricPage = () => {
   const navigate = useNavigate();
   const [questionData, setQuestionData] = useState<any>(null);
-  const [showPINLock, setShowPINLock] = useState(false);
-  const [pendingSubject, setPendingSubject] = useState<{ stream: string; subject: string } | null>(null);
-  const [pinError, setPinError] = useState(false);
   const [loadingError, setLoadingError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -66,33 +62,7 @@ const PredictedMatricPage = () => {
   }, []);
 
   const handleSubjectClick = (stream: string, subject: string) => {
-    const subjectLower = subject.toLowerCase();
-    
-    // Skip PIN for Mathematics and History
-    if (subjectLower === 'mathematics' || subjectLower === 'history') {
-      navigate(`/predicted-matric/${stream}/${subject}`);
-    } else {
-      setPendingSubject({ stream, subject });
-      setPinError(false);
-      setShowPINLock(true);
-    }
-  };
-
-  const handlePINUnlock = (pin: string) => {
-    if (!pendingSubject) {
-      setPinError(true);
-      return;
-    }
-
-    setPinError(false);
-    setShowPINLock(false);
-    navigate(`/predicted-matric/${pendingSubject.stream}/${pendingSubject.subject}`);
-    setPendingSubject(null);
-  };
-
-  const handlePINCancel = () => {
-    setShowPINLock(false);
-    setPendingSubject(null);
+    navigate(`/predicted-matric/${stream}/${subject}`);
   };
 
   const naturalSubjects = useMemo(() => {
@@ -358,16 +328,6 @@ const PredictedMatricPage = () => {
           </div>
         </div>
       </div>
-
-      {showPINLock && (
-        <PINLock
-          onUnlock={handlePINUnlock}
-          onCancel={handlePINCancel}
-          subjectName={pendingSubject?.subject}
-          isSocialStream={pendingSubject?.stream === 'social'}
-          error={pinError}
-        />
-      )}
     </div>
   );
 };
