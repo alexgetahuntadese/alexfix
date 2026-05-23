@@ -3,6 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { NetworkStatusIndicator } from "@/components/NetworkStatusIndicator";
+import { NotificationPermissionRequest } from "@/components/NotificationPermissionRequest";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { ThemeProvider } from "next-themes";
@@ -88,6 +89,7 @@ const App = () => (
         <AuthProvider>
           <TooltipProvider>
             <NetworkStatusIndicator />
+            <NotificationPermissionRequest />
             <Toaster />
             <Sonner />
             <BrowserRouter>
