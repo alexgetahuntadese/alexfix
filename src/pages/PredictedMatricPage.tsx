@@ -50,14 +50,12 @@ const socialSubjectsMetadata = [
 const PredictedMatricPage = () => {
   const navigate = useNavigate();
   const [questionData, setQuestionData] = useState<any>(null);
-  const [loadingError, setLoadingError] = useState<string | null>(null);
 
   useEffect(() => {
     getPredictedQuestions()
       .then(data => setQuestionData(data))
       .catch(err => {
         console.error('Error loading question data:', err);
-        setLoadingError('Failed to load question data');
       });
   }, []);
 
@@ -90,25 +88,6 @@ const PredictedMatricPage = () => {
       { subject: 'Scholastic Aptitude Test', questions: questionData.socialScholastic, icon: '🧠' },
     ];
   }, [questionData]);
-
-  if (loadingError) {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-indigo-950 via-purple-900 to-indigo-950 flex items-center justify-center">
-        <div className="text-white text-center">
-          <p className="text-xl mb-4">Error loading questions</p>
-          <p className="text-white/50">{loadingError}</p>
-        </div>
-      </div>
-    );
-  }
-
-  if (!questionData) {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-indigo-950 via-purple-900 to-indigo-950 flex items-center justify-center">
-        <div className="text-white">Loading...</div>
-      </div>
-    );
-  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-950 via-purple-900 to-indigo-950 pt-14 px-4 pb-4 md:p-8 md:pt-14 overflow-hidden relative">

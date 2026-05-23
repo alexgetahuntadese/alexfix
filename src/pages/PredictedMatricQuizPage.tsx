@@ -85,12 +85,10 @@ const PredictedMatricQuizPage = () => {
   };
   
   const [questions, setQuestions] = useState<MatricExamQuestion[]>([]);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     getPredictedQuestions(streamKey, subject ?? '').then(data => {
       setQuestions(data.map(shuffleIndexedQuestionOptions));
-      setLoading(false);
     });
   }, [streamKey, subject]);
 
@@ -114,18 +112,6 @@ const PredictedMatricQuizPage = () => {
     setScore(0);
     setFinished(false);
   }, [questions]);
-
-  if (loading) {
-    return (
-      <div className={`min-h-screen bg-gradient-to-br ${theme.bgGradient} pt-14 px-4 pb-4 overflow-hidden relative flex items-center justify-center`}>
-        <StarField />
-        <TopBar />
-        <div className="text-center text-white relative z-10">
-          <p className="text-xl">Loading questions...</p>
-        </div>
-      </div>
-    );
-  }
 
   if (questions.length === 0) {
     return (

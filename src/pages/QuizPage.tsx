@@ -462,7 +462,6 @@ const QuizPage = () => {
   const [showResults, setShowResults] = useState<boolean>(false);
   const [startTime, setStartTime] = useState<number>(0);
   const [elapsedTime, setElapsedTime] = useState<number>(0);
-  const [isLoading, setIsLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
   const [showAnswerForQuestion, setShowAnswerForQuestion] = useState<number | null>(null);
   const [revealedAnswers, setRevealedAnswers] = useState<Set<number>>(new Set());
@@ -472,14 +471,12 @@ const QuizPage = () => {
     
     if (!subject || !chapterId || !difficulty || !grade) {
       setError('Missing required quiz parameters');
-      setIsLoading(false);
       return;
     }
 
     if (grade === '12' && unsupportedGrade12QuizSubjects.has(subject)) {
       setError(`Grade 12 ${subject} quizzes are not available yet. Use the notes section for this subject.`);
       setQuestions([]);
-      setIsLoading(false);
       return;
     }
     
@@ -506,8 +503,6 @@ const QuizPage = () => {
       setError('Failed to load quiz questions. Please try again.');
       setQuestions([]);
     }
-    
-    setIsLoading(false);
   };
 
   useEffect(() => {
@@ -517,7 +512,7 @@ const QuizPage = () => {
   useEffect(() => {
     let intervalId: ReturnType<typeof setInterval>;
 
-    if (!showResults && !isLoading && startTime > 0 && questions.length > 0) {
+    if (!showResults && startTime > 0 && questions.length > 0) {
       intervalId = setInterval(() => {
         setElapsedTime(Date.now() - startTime);
       }, 100);
@@ -526,7 +521,7 @@ const QuizPage = () => {
     return () => {
       if (intervalId) clearInterval(intervalId);
     };
-  }, [showResults, startTime, isLoading, questions.length]);
+  }, [showResults, startTime, questions.length]);
 
   const handleAnswerSelect = (answer: string) => {
     console.log('Answer selected:', answer, 'for question index:', currentQuestionIndex);
@@ -582,35 +577,6 @@ const QuizPage = () => {
       navigate(-1);
     }
   };
-
-  if (isLoading) {
-    return (
-    <div className="app-shell container mx-auto pt-14 px-4 pb-4">
-      <StarField starCount={30} shootingCount={2} />
-      <TopBar />
-        <div className="flex items-center mb-6">
-          <Button
-            variant="ghost"
-            onClick={handleBackToChapters}
-            className="text-white hover:bg-white/10 mr-4"
-          >
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            Back
-          </Button>
-          <h2 className="text-2xl font-semibold text-white">
-            Loading Quiz...
-          </h2>
-        </div>
-        <div className="space-y-4">
-          <Skeleton className="h-4 w-[250px] bg-white/[0.08]" />
-          <Skeleton className="h-4 w-[400px] bg-white/[0.08]" />
-          <Skeleton className="h-10 bg-white/[0.08]" />
-          <Skeleton className="h-10 bg-white/[0.08]" />
-          <Skeleton className="h-10 bg-white/[0.08]" />
-        </div>
-      </div>
-    );
-  }
 
   if (error) {
     return (
