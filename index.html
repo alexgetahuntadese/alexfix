@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simple Road - Ethiopian Student Learning Platform | Practice Quizzes, Notes & Matric Exam Prep</title>
+    <title>Simple Road: Ethiopian Student Learning Platform</title>
     <meta name="description" content="Simple Road helps Ethiopian students in grades 9-12 excel with interactive quizzes, comprehensive notes, matric past papers, predicted exams, and career guidance. Start learning today for free.">
     <meta name="keywords" content="Ethiopian education, grade 9, grade 10, grade 11, grade 12, matric exams, Ethiopian matriculation, student learning, quizzes, notes, study materials, career guidance, Ethiopian students, exam preparation">
     <meta name="author" content="Simple Road - Milkesa Comm." />
@@ -22,17 +22,18 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://successdoor.vercel.app/" />
-    <meta property="og:title" content="Simple Road - Ethiopian Student Learning Platform">
-    <meta property="og:description" content="The ultimate learning platform for Ethiopian students. Access quizzes, notes, matric past papers, predicted exams, and career guidance in one app.">
+    <meta property="og:title" content="Simple Road: Ethiopian Student Learning Platform">
+    <meta property="og:description" content="Simple Road helps Ethiopian students in grades 9-12 excel with interactive quizzes, comprehensive notes, matric past papers, predicted exams, and career guidance. Start learning today for free.">
     <meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/15a2cae6-2db3-493b-9cb5-285cae3f6177/id-preview-9bced005--1b07ffdf-5d28-42fd-9d6d-4e67b227573f.lovable.app-1772555595590.png">
+    <meta property="og:image:alt" content="Simple Road - Ethiopian Student Learning Platform">
     <meta property="og:site_name" content="Simple Road">
     <meta property="og:locale" content="en_US">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://successdoor.vercel.app/" />
-    <meta name="twitter:title" content="Simple Road - Ethiopian Student Learning Platform">
-    <meta name="twitter:description" content="The ultimate learning platform for Ethiopian students. Access quizzes, notes, matric past papers, predicted exams, and career guidance in one app.">
+    <meta name="twitter:title" content="Simple Road: Ethiopian Student Learning Platform">
+    <meta name="twitter:description" content="Simple Road helps Ethiopian students in grades 9-12 excel with interactive quizzes, comprehensive notes, matric past papers, predicted exams, and career guidance. Start learning today for free.">
     <meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/15a2cae6-2db3-493b-9cb5-285cae3f6177/id-preview-9bced005--1b07ffdf-5d28-42fd-9d6d-4e67b227573f.lovable.app-1772555595590.png">
 
     <!-- Structured Data -->
@@ -40,8 +41,8 @@
     {
       "@context": "https://schema.org",
       "@type": "WebApplication",
-      "name": "Simple Road",
-      "description": "The ultimate learning platform for Ethiopian students in grades 9-12. Access quizzes, notes, matric past papers, predicted exams, and career guidance.",
+      "name": "Simple Road: Ethiopian Student Learning Platform",
+      "description": "Simple Road helps Ethiopian students in grades 9-12 excel with interactive quizzes, comprehensive notes, matric past papers, predicted exams, and career guidance. Start learning today for free.",
       "url": "https://successdoor.vercel.app",
       "applicationCategory": "EducationalApplication",
       "operatingSystem": "Web",
@@ -69,7 +70,14 @@
 </head>
 
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Fallback content for SEO crawlers that don't execute JavaScript -->
+      <noscript>
+        <h1>Simple Road - Ethiopian Student Learning Platform</h1>
+        <h2>Practice Quizzes, Notes & Matric Exam Prep</h2>
+        <p>Simple Road helps Ethiopian students in grades 9-12 excel with interactive quizzes, comprehensive notes, matric past papers, predicted exams, and career guidance.</p>
+      </noscript>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

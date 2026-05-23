@@ -4,9 +4,11 @@ import TopBar from "@/components/TopBar";
 import StarField from "@/components/StarField";
 import { Button } from "@/components/ui/button";
 import { notesByGrade } from "@/lib/notesData";
+import { usePageTitle } from '@/hooks/usePageTitle';
 
 const NotesPage = () => {
   const navigate = useNavigate();
+  usePageTitle('Study Notes');
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-950 via-violet-900 to-purple-950 pt-14 px-4 pb-4 md:p-8 md:pt-14 overflow-hidden relative">

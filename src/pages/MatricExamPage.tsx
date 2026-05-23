@@ -6,10 +6,12 @@ import { ArrowLeft, Calendar, BookOpen, Clock, TrendingUp, Award, Sparkles, Targ
 import { getMatricStreamsForYear, getMatricYears } from '@/data/matricExams';
 import TopBar from '@/components/TopBar';
 import StarField from '@/components/StarField';
+import { usePageTitle } from '@/hooks/usePageTitle';
 
 const MatricExamPage = () => {
   const navigate = useNavigate();
   const years = getMatricYears();
+  usePageTitle('Matric Exams');
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-950 via-purple-900 to-indigo-950 pt-14 px-4 pb-4 md:p-8 md:pt-14 overflow-hidden relative">

@@ -9,6 +9,7 @@ import { simulatorCareers, SimulatorCareer } from '@/lib/careerSimulatorData';
 import { useToast } from '@/hooks/use-toast';
 import { useLanguage } from '@/i18n/LanguageContext';
 import TopBar from "@/components/TopBar";
+import { usePageTitle } from '@/hooks/usePageTitle';
 
 type Stage = 'select' | 'loading' | 'intro' | 'scenario' | 'final';
 
@@ -22,6 +23,7 @@ const CareerSimulatorPage = () => {
   const navigate = useNavigate();
   const { toast } = useToast();
   const { language } = useLanguage();
+  usePageTitle('Career Simulator');
   const [stage, setStage] = useState<Stage>('select');
   const [selectedCareer, setSelectedCareer] = useState<SimulatorCareer | null>(null);
   const [introData, setIntroData] = useState<any>(null);

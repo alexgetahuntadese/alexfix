@@ -3,8 +3,10 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 import { Phone, Mail, MapPin, User } from 'lucide-react';
 import TopBar from "@/components/TopBar";
 import { customerContacts } from '@/lib/contactsData';
+import { usePageTitle } from '@/hooks/usePageTitle';
 
 const ContactPage = () => {
+  usePageTitle('Contact Us');
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-950 via-violet-900 to-purple-950 pt-14 px-4 pb-4 md:p-8 md:pt-14 overflow-hidden relative">
       <StarField starCount={40} shootingCount={2} />

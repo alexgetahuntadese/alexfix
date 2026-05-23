@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/i18n/LanguageContext";
 import TopBar from "@/components/TopBar";
 import StarField from '@/components/StarField';
+import { usePageTitle } from '@/hooks/usePageTitle';
 
 const gradeData = [
   {
@@ -47,6 +48,7 @@ const gradeData = [
 const GradesPage = () => {
   const navigate = useNavigate();
   const { t } = useLanguage();
+  usePageTitle('Grades');
 
   return (
     <div className="app-shell pt-14 px-4 pb-4 md:p-8 md:pt-14">

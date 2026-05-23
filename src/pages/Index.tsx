@@ -168,14 +168,13 @@ const Index = () => {
                   Elite education
                 </p>
                 <h1 className="text-balance font-light leading-[0.95] tracking-tight text-white md:leading-[0.92]">
-                  <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl">The road to</span>
+                  <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Ethiopian Matric Exam</span>
                   <span className="mt-1 block bg-gradient-to-r from-amber-200 via-amber-400 to-orange-300 bg-clip-text text-5xl font-semibold text-transparent sm:text-6xl md:text-7xl lg:text-8xl">
-                    mastery
+                    Preparation Platform (Grade 12 EUEE)
                   </span>
                 </h1>
                 <p className="mt-8 max-w-xl text-pretty text-base leading-relaxed text-white/55 md:text-lg">
-                  Simple Road brings grades, notes, matric prep, predicted papers, and career tools into one calm
-                  workspace — built with Ethiopian students in mind.
+                  SuccessDoor is an Ethiopian matric exam preparation platform designed for Grade 9–12 students preparing for the Ethiopian University Entrance Exam (EUEE / matric exam). It provides quizzes, notes, and past papers.
                 </p>
                 <div className="mt-10 flex flex-wrap items-center gap-4">
                   <Link

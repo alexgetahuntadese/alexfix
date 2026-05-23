@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowLeft, TrendingUp, Sparkles, Target, BookOpen, Clock, CheckCircle, HeartHandshake } from 'lucide-react';
 import TopBar from '@/components/TopBar';
 import StarField from '@/components/StarField';
+import { usePageTitle } from '@/hooks/usePageTitle';
 
 // Lazy load question data to reduce initial bundle size
 const getPredictedQuestions = () => {
@@ -50,6 +51,7 @@ const socialSubjectsMetadata = [
 const PredictedMatricPage = () => {
   const navigate = useNavigate();
   const [questionData, setQuestionData] = useState<any>(null);
+  usePageTitle('Predicted Matric Exams');
 
   useEffect(() => {
     getPredictedQuestions()
