@@ -49,6 +49,7 @@ import { ArrowLeft, Eye, Clock, Target, Brain, CheckCircle2, RotateCcw } from 'l
 import TopBar from "@/components/TopBar";
 import { useAuth } from "@/hooks/useAuth";
 import { isFreeChapter } from '@/lib/paymentAccess';
+import { shuffleQuestionOptions } from '@/lib/quizUtils';
 
 interface Question {
   id: string;
@@ -483,7 +484,8 @@ const QuizPage = () => {
     }
     
     try {
-      const fetchedQuestions = getQuestionsForSubject(subject, chapterId, difficulty, grade, 10);
+      const fetchedQuestions = getQuestionsForSubject(subject, chapterId, difficulty, grade, 10)
+        .map(shuffleQuestionOptions);
       
       if (fetchedQuestions.length > 0) {
         console.log('Questions loaded successfully:', fetchedQuestions.length);

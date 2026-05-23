@@ -35,6 +35,71 @@ interface NormalizedQuestion {
   difficulty?: string;
 }
 
+interface OptionQuestion {
+  options: string[];
+  correct?: string;
+  correctAnswer?: string;
+}
+
+interface IndexedOptionQuestion {
+  options: string[];
+  correctAnswer: number;
+}
+
+const shuffleArray = <T,>(items: T[]): T[] => {
+  const shuffled = [...items];
+
+  for (let i = shuffled.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+
+  return shuffled;
+};
+
+export const shuffleQuestionOptions = <T extends OptionQuestion>(question: T): T => {
+  if (!Array.isArray(question.options) || question.options.length < 2) {
+    return question;
+  }
+
+  const correctAnswer = question.correct ?? question.correctAnswer;
+  const originalCorrectIndex = correctAnswer ? question.options.indexOf(correctAnswer) : -1;
+  let shuffledOptions = shuffleArray(question.options);
+
+  if (
+    correctAnswer &&
+    originalCorrectIndex >= 0 &&
+    shuffledOptions.length > 1 &&
+    shuffledOptions.indexOf(correctAnswer) === originalCorrectIndex
+  ) {
+    shuffledOptions = [...shuffledOptions.slice(1), shuffledOptions[0]];
+  }
+
+  return {
+    ...question,
+    options: shuffledOptions,
+  };
+};
+
+export const shuffleIndexedQuestionOptions = <T extends IndexedOptionQuestion>(question: T): T => {
+  if (!Array.isArray(question.options) || question.options.length < 2 || question.correctAnswer < 0) {
+    return question;
+  }
+
+  const correctOption = question.options[question.correctAnswer];
+  let shuffledOptions = shuffleArray(question.options);
+
+  if (shuffledOptions.indexOf(correctOption) === question.correctAnswer) {
+    shuffledOptions = [...shuffledOptions.slice(1), shuffledOptions[0]];
+  }
+
+  return {
+    ...question,
+    options: shuffledOptions,
+    correctAnswer: shuffledOptions.indexOf(correctOption),
+  };
+};
+
 // Flatten questions from nested objects to flat arrays
 const flattenQuestions = (questionsObj: Record<string, any[]>): any[] => {
   const result: any[] = [];
@@ -112,5 +177,7 @@ export const getQuestionsForQuiz = (
   }
 
   // Shuffle and return
-  return normalized.sort(() => Math.random() - 0.5);
+  return normalized
+    .sort(() => Math.random() - 0.5)
+    .map(shuffleQuestionOptions);
 };

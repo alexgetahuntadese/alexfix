@@ -15,6 +15,7 @@ import { useToast } from '@/hooks/use-toast';
 import { getQuestionsForQuiz } from '@/data/naturalScienceQuizzes';
 import QuestionExplanation from './QuestionExplanation';
 import { useLanguage } from '@/i18n/LanguageContext';
+import { shuffleQuestionOptions } from '@/lib/quizUtils';
 
 interface Quiz {
     id: string;
@@ -73,7 +74,9 @@ const QuizInterface = ({ quiz, user, onComplete, onBack }: QuizInterfaceProps) =
           allQuestions.push(...chapterQuestions);
         });
         const shuffled = allQuestions.sort(() => Math.random() - 0.5);
-        return shuffled.slice(0, Math.min(quiz.questions || 10, shuffled.length));
+        return shuffled
+          .slice(0, Math.min(quiz.questions || 10, shuffled.length))
+          .map(shuffleQuestionOptions);
       }
       return [];
     };
