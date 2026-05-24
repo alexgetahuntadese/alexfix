@@ -233,7 +233,7 @@ const App = () => (
                     <EthiopianMatricExamPage />
                   </Suspense>
                 } />
-                <Route path="/grade-12-euee" element={
+                <Route path="/grade-12-euee-exam" element={
                   <Suspense fallback={<PageLoader />}>
                     <Grade12EUEEPage />
                   </Suspense>
