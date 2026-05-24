@@ -40,6 +40,9 @@ const PredictedMatricPage = lazy(() => import("./pages/PredictedMatricPage"));
 const PredictedMatricQuizPage = lazy(() => import("./pages/PredictedMatricQuizPage"));
 const TeachersDashboard = lazy(() => import("./pages/TeachersDashboard"));
 const ExamRoomPage = lazy(() => import("./pages/ExamRoomPage"));
+const EthiopianMatricExamPage = lazy(() => import("./pages/EthiopianMatricExamPage"));
+const Grade12EUEEPage = lazy(() => import("./pages/Grade12EUEEPage"));
+const PastPapersEthiopiaPage = lazy(() => import("./pages/PastPapersEthiopiaPage"));
 
 // Loading component for lazy loaded routes
 const PageLoader = () => (
@@ -223,6 +226,21 @@ const App = () => (
                 <Route path="/teachers" element={
                   <Suspense fallback={<PageLoader />}>
                     <TeachersDashboard />
+                  </Suspense>
+                } />
+                <Route path="/ethiopian-matric-exam" element={
+                  <Suspense fallback={<PageLoader />}>
+                    <EthiopianMatricExamPage />
+                  </Suspense>
+                } />
+                <Route path="/grade-12-euee" element={
+                  <Suspense fallback={<PageLoader />}>
+                    <Grade12EUEEPage />
+                  </Suspense>
+                } />
+                <Route path="/past-papers-ethiopia" element={
+                  <Suspense fallback={<PageLoader />}>
+                    <PastPapersEthiopiaPage />
                   </Suspense>
                 } />
               </Routes>
