@@ -1,10 +1,10 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import StarField from '@/components/StarField';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { ArrowLeft, Sparkles, Loader2, ChevronRight, RotateCcw, GraduationCap, Banknote, Brain, TrendingUp } from 'lucide-react';
+import { ArrowLeft, Sparkles, Loader2, ChevronRight, RotateCcw, GraduationCap, Banknote, Brain, TrendingUp, Trophy, Target } from 'lucide-react';
 import { simulatorCareers, SimulatorCareer } from '@/lib/careerSimulatorData';
 import { useToast } from '@/hooks/use-toast';
 import { useLanguage } from '@/i18n/LanguageContext';
@@ -19,6 +19,12 @@ interface Choice {
   consequence: string;
 }
 
+interface SkillProgress {
+  skill: string;
+  level: number;
+  careers: string[];
+}
+
 const CareerSimulatorPage = () => {
   const navigate = useNavigate();
   const { toast } = useToast();
@@ -31,6 +37,44 @@ const CareerSimulatorPage = () => {
   const [finalData, setFinalData] = useState<any>(null);
   const [previousChoices, setPreviousChoices] = useState<string[]>([]);
   const [scenarioCount, setScenarioCount] = useState(0);
+  const [skillProgress, setSkillProgress] = useState<SkillProgress[]>([]);
+  const [completedCareers, setCompletedCareers] = useState<string[]>([]);
+  const [showCompare, setShowCompare] = useState(false);
+
+  // Load saved progress from localStorage
+  useEffect(() => {
+    const savedSkills = localStorage.getItem('careerSkillProgress');
+    const savedCareers = localStorage.getItem('completedCareers');
+    if (savedSkills) setSkillProgress(JSON.parse(savedSkills));
+    if (savedCareers) setCompletedCareers(JSON.parse(savedCareers));
+  }, []);
+
+  // Save skill progress
+  const updateSkillProgress = (skills: string[], careerId: string) => {
+    const updatedProgress = [...skillProgress];
+    skills.forEach(skill => {
+      const existingSkill = updatedProgress.find(s => s.skill === skill);
+      if (existingSkill) {
+        if (!existingSkill.careers.includes(careerId)) {
+          existingSkill.careers.push(careerId);
+          existingSkill.level = Math.min(existingSkill.level + 1, 5);
+        }
+      } else {
+        updatedProgress.push({ skill, level: 1, careers: [careerId] });
+      }
+    });
+    setSkillProgress(updatedProgress);
+    localStorage.setItem('careerSkillProgress', JSON.stringify(updatedProgress));
+  };
+
+  const updateCompletedCareers = (careerId: string) => {
+    const updated = [...completedCareers];
+    if (!updated.includes(careerId)) {
+      updated.push(careerId);
+      setCompletedCareers(updated);
+      localStorage.setItem('completedCareers', JSON.stringify(updated));
+    }
+  };
 
   const callSimulator = async (stageType: string, career: SimulatorCareer, choices: string[] = []) => {
     // Use local fallback instead of calling Supabase function
@@ -422,6 +466,198 @@ const CareerSimulatorPage = () => {
           advice: "Your ethical approach is valuable. Consider specializing in forensic accounting or tax advisory.",
           nextSteps: ["Get CPA certification", "Specialize in Ethiopian tax law", "Join the Ethiopian Accounting Association"]
         }
+      },
+      "tourism-guide": {
+        intro: {
+          title: `A Day as a ${career.name}`,
+          setting: "You're leading a group of international tourists through Lalibela's rock-hewn churches. The group is fascinated but has many questions about Ethiopian history.",
+          scenario: "A tourist asks about the religious significance of the churches, but you're not completely certain about the historical details. The group is waiting for your response. What do you do?",
+          careerInfo: {
+            salaryRange: "ETB 8,000 - 25,000 per month",
+            universities: ["Addis Ababa University (Tourism)", "University of Gondar", "Ethiopian Tourism Organization Training"],
+            requiredSkills: ["Cultural knowledge", "Communication", "Languages", "Customer service"],
+            growthOutlook: "Growing with Ethiopia's tourism development"
+          },
+          choices: [
+            { id: "1", text: "Share what you know and offer to research more details", consequence: "Honest approach - builds trust and shows commitment to accuracy" },
+            { id: "2", text: "Connect them with a local historian for deeper insights", consequence: "Resourceful networking - provides expert knowledge while supporting local community" },
+            { id: "3", text: "Focus on what you're certain about and redirect to other topics", consequence: "Professional handling - maintains tour flow while avoiding misinformation" }
+          ]
+        },
+        consequence: {
+          outcome: "The tourists appreciated your honesty and the connection with local historians. They gave excellent reviews about your authentic approach.",
+          progressNote: "You're building strong relationships through cultural authenticity.",
+          newScenario: "A tourist wants to visit a restricted archaeological site. They offer a significant tip if you can arrange access. This could help your income but violates regulations. What do you do?",
+          skillsUsed: ["Cultural knowledge", "Professional ethics"]
+        },
+        final: {
+          summary: "You've showcased Ethiopia's rich heritage while maintaining professional integrity. You balanced cultural education with ethical tourism practices.",
+          fitScore: 87,
+          strengths: ["Cultural authenticity", "Professional ethics", "Customer relationship building"],
+          areasToImprove: ["Advanced historical knowledge", "Multiple language fluency"],
+          advice: "Your authentic approach is perfect for cultural tourism. Consider specializing in historical sites or becoming a certified tour guide trainer.",
+          nextSteps: ["Get certified by Ethiopian Tourism Organization", "Learn additional languages (French, Arabic)", "Specialize in specific historical periods"]
+        }
+      },
+      "coffee-exporter": {
+        intro: {
+          title: `A Day as a ${career.name}`,
+          setting: "You're at your office in Addis Ababa, managing coffee exports from Yirgacheffe farmers. A European buyer is interested in a premium lot but questions the pricing.",
+          scenario: "The buyer offers 30% below your asking price, citing market competition. Your farmers need fair prices to sustain their livelihoods. How do you negotiate?",
+          careerInfo: {
+            salaryRange: "ETB 25,000 - 80,000 per month",
+            universities: ["Addis Ababa University (Business)", "St. Mary's University", "Ethiopian Commodity Exchange"],
+            requiredSkills: ["Negotiation", "Quality assessment", "International trade", "Supply chain management"],
+            growthOutlook: "Excellent - Ethiopian coffee demand is growing globally"
+          },
+          choices: [
+            { id: "1", text: "Emphasize the unique quality and fair trade certification", consequence: "Value-based negotiation - justifies premium pricing through differentiation" },
+            { id: "2", text: "Offer a smaller discount with volume commitment", consequence: "Strategic compromise - protects farmer income while securing business" },
+            { id: "3", text: "Decline and seek other buyers who value quality", consequence: "Principled stance - maintains brand value but risks losing the sale" }
+          ]
+        },
+        consequence: {
+          outcome: "Your emphasis on quality and fair trade convinced the buyer to pay a fair price. The farmers received good income and the buyer got premium coffee.",
+          progressNote: "You're successfully balancing business interests with social responsibility.",
+          newScenario: "A new coffee variety shows great potential but requires farmers to change their cultivation methods. Some farmers are resistant to change. How do you approach this?",
+          skillsUsed: ["Negotiation", "Quality assessment"]
+        },
+        final: {
+          summary: "You've managed Ethiopia's coffee trade while ensuring fair compensation for farmers. You balanced international business with local community impact.",
+          fitScore: 89,
+          strengths: ["Ethical business practices", "Quality focus", "Farmer relationship management"],
+          areasToImprove: ["Market diversification", "Risk management strategies"],
+          advice: "Your commitment to fair trade is admirable. Consider expanding into direct-to-consumer markets or specialty coffee certifications.",
+          nextSteps: ["Get certified in international trade", "Build relationships with specialty coffee buyers", "Invest in farmer training programs"]
+        }
+      },
+      "telecom-engineer": {
+        intro: {
+          title: `A Day as a ${career.name}`,
+          setting: "You're working for Ethio Telecom in Addis Ababa. The company is expanding 4G coverage to rural areas, but terrain challenges are causing delays.",
+          scenario: "A remote community needs urgent connectivity for emergency services and education. The standard installation timeline is 6 months, but they need it in 2. What's your approach?",
+          careerInfo: {
+            salaryRange: "ETB 20,000 - 60,000 per month",
+            universities: ["Addis Ababa University (Engineering)", "ASTU", "University of Gondar", "Ethio Telecom Training Institute"],
+            requiredSkills: ["Network engineering", "Problem-solving", "Project management", "Technical troubleshooting"],
+            growthOutlook: "Excellent - Ethiopia's digital transformation requires telecom expansion"
+          },
+          choices: [
+            { id: "1", text: "Propose a phased rollout with temporary solutions", consequence: "Pragmatic approach - provides immediate relief while working toward full solution" },
+            { id: "2", text: "Reallocate resources from less critical projects", consequence: "Priority-based decision - addresses urgent community needs" },
+            { id: "3", text: "Explore alternative technologies like satellite connectivity", consequence: "Innovative solution - may provide faster deployment with different trade-offs" }
+          ]
+        },
+        consequence: {
+          outcome: "Your phased approach provided immediate connectivity while maintaining the broader rollout schedule. The community was grateful for the quick response.",
+          progressNote: "You're balancing technical constraints with community needs effectively.",
+          newScenario: "A major network outage affects multiple regions. The cause is unclear, and customers are demanding answers. The PR team wants you to provide a statement, but technical investigation is ongoing. How do you handle this?",
+          skillsUsed: ["Project management", "Problem-solving"]
+        },
+        final: {
+          summary: "You've expanded Ethiopia's telecommunications infrastructure while managing technical challenges and community expectations. You balanced rapid deployment with quality standards.",
+          fitScore: 86,
+          strengths: ["Technical problem-solving", "Community-focused approach", "Project management"],
+          areasToImprove: ["Advanced network security", "Emerging technologies (5G, IoT)"],
+          advice: "Your community-focused approach is valuable. Consider specializing in rural connectivity or network security for critical infrastructure.",
+          nextSteps: ["Get certified in advanced network technologies", "Learn about 5G implementation", "Join professional telecom associations"]
+        }
+      },
+      "public-health-officer": {
+        intro: {
+          title: `A Day as a ${career.name}`,
+          setting: "You're at a health center in the Oromia region. There's been an increase in waterborne diseases, and you suspect contamination in the local water supply.",
+          scenario: "The community relies on this water source for daily needs. Immediate testing will take 3 days, but people are getting sick daily. What's your immediate action?",
+          careerInfo: {
+            salaryRange: "ETB 15,000 - 45,000 per month",
+            universities: ["Addis Ababa University (Public Health)", "University of Gondar", "Jimma University", "Ethiopian Public Health Institute"],
+            requiredSkills: ["Epidemiology", "Community health", "Emergency response", "Health education"],
+            growthOutlook: "Critical - Ethiopia is investing in public health infrastructure"
+          },
+          choices: [
+            { id: "1", text: "Issue immediate boil-water advisory while testing", consequence: "Precautionary measure - protects community while investigation continues" },
+            { id: "2", text: "Distribute clean water from alternative sources temporarily", consequence: "Direct intervention - provides immediate protection" },
+            { id: "3", text: "Accelerate testing through mobile laboratory units", consequence: "Technical solution - speeds up diagnosis for targeted response" }
+          ]
+        },
+        consequence: {
+          outcome: "Your quick action prevented new cases while the investigation identified the contamination source. The community health center became a model for rapid response.",
+          progressNote: "You're demonstrating strong public health emergency management skills.",
+          newScenario: "A vaccination campaign is facing resistance due to misinformation in the community. Parents are refusing to vaccinate their children. How do you address this?",
+          skillsUsed: ["Emergency response", "Community health"]
+        },
+        final: {
+          summary: "You've protected community health through rapid response and education. You balanced immediate intervention with long-term prevention strategies.",
+          fitScore: 91,
+          strengths: ["Emergency response", "Community engagement", "Health education"],
+          areasToImprove: ["Advanced epidemiological analysis", "Health policy development"],
+          advice: "Your community-focused approach is exemplary. Consider specializing in epidemiology or health emergency management.",
+          nextSteps: ["Get certified in epidemiology", "Learn health emergency management protocols", "Join the Ethiopian Public Health Association"]
+        }
+      },
+      "bank-manager": {
+        intro: {
+          title: `A Day as a ${career.name}`,
+          setting: "You're managing a branch of the Commercial Bank of Ethiopia in a growing regional town. Many small business owners are seeking loans to expand their operations.",
+          scenario: "A young entrepreneur with a promising business plan applies for a loan but lacks traditional collateral. The business could create local jobs. How do you evaluate this?",
+          careerInfo: {
+            salaryRange: "ETB 25,000 - 70,000 per month",
+            universities: ["Addis Ababa University", "St. Mary's University", "Ethiopian Civil Service University", "Commercial Bank Training Institute"],
+            requiredSkills: ["Risk assessment", "Financial analysis", "Customer relationship", "Regulatory compliance"],
+            growthOutlook: "Steady - Ethiopia's banking sector is formalizing and expanding"
+          },
+          choices: [
+            { id: "1", text: "Approve with a guarantor and business monitoring", consequence: "Balanced approach - manages risk while supporting entrepreneurship" },
+            { id: "2", text: "Connect them with government loan programs for small businesses", consequence: "Resourceful solution - finds appropriate funding mechanisms" },
+            { id: "3", text: "Decline and provide guidance on building collateral", consequence: "Conservative approach - follows traditional lending criteria" }
+          ]
+        },
+        consequence: {
+          outcome: "Your balanced approach helped the entrepreneur get funding while protecting the bank's interests. The business created jobs and became a reliable customer.",
+          progressNote: "You're supporting economic development while maintaining sound banking practices.",
+          newScenario: "An influential local politician pressures you to approve a questionable loan for their associate. Refusing could affect your branch's relationship with local authorities. How do you handle this?",
+          skillsUsed: ["Risk assessment", "Customer relationship"]
+        },
+        final: {
+          summary: "You've managed banking operations while supporting local economic development. You balanced risk management with community impact.",
+          fitScore: 85,
+          strengths: ["Risk assessment", "Community development focus", "Professional integrity"],
+          areasToImprove: ["Advanced financial products knowledge", "Digital banking transformation"],
+          advice: "Your balanced approach to banking is valuable. Consider specializing in SME lending or digital banking services.",
+          nextSteps: ["Get certified in risk management", "Learn about digital banking products", "Join banking industry associations"]
+        }
+      },
+      "textile-engineer": {
+        intro: {
+          title: `A Day as a ${career.name}`,
+          setting: "You're at a textile factory in Hawassa that produces garments for international brands. The factory needs to improve efficiency to meet growing demand.",
+          scenario: "The production line has bottlenecks in the quality control stage. Management wants to speed up inspection, but you're concerned about maintaining quality standards. What's your solution?",
+          careerInfo: {
+            salaryRange: "ETB 18,000 - 55,000 per month",
+            universities: ["Addis Ababa University (Textile)", "Bahirdar University (Textile)", "ASTU", "Ethiopian Textile Industry Development Institute"],
+            requiredSkills: ["Production optimization", "Quality control", "Process engineering", "Textile technology"],
+            growthOutlook: "Growing - Ethiopia's textile sector is expanding rapidly"
+          },
+          choices: [
+            { id: "1", text: "Implement automated inspection technology", consequence: "Technical solution - improves speed while maintaining quality" },
+            { id: "2", text: "Redesign the workflow with parallel inspection lines", consequence: "Process optimization - increases capacity through better flow" },
+            { id: "3", text: "Train additional inspectors for parallel processing", consequence: "Human capital approach - creates jobs while solving bottleneck" }
+          ]
+        },
+        consequence: {
+          outcome: "Your workflow redesign increased capacity by 40% without compromising quality. The factory met its production targets and maintained client satisfaction.",
+          progressNote: "You're effectively applying process engineering to solve production challenges.",
+          newScenario: "An international client requests sustainable production certification. This requires changes in materials and processes but could open new markets. The factory owner is hesitant about the investment. How do you persuade them?",
+          skillsUsed: ["Production optimization", "Quality control"]
+        },
+        final: {
+          summary: "You've optimized textile production processes while maintaining quality standards. You balanced efficiency improvements with sustainable practices.",
+          fitScore: 88,
+          strengths: ["Process optimization", "Quality focus", "Sustainable manufacturing"],
+          areasToImprove: ["Advanced textile technologies", "International compliance standards"],
+          advice: "Your process optimization skills are excellent. Consider specializing in sustainable textile manufacturing or factory automation.",
+          nextSteps: ["Get certified in sustainable manufacturing", "Learn about Industry 4.0 technologies", "Join textile engineering associations"]
+        }
       }
     };
 
@@ -468,9 +704,27 @@ const CareerSimulatorPage = () => {
       if (newCount >= 3) {
         const data = await callSimulator('final', selectedCareer!, newChoices);
         setFinalData(data);
+        
+        // Track skills from the simulation
+        if (data.strengths) {
+          updateSkillProgress(data.strengths, selectedCareer!.id);
+        }
+        if (scenarioData?.skillsUsed) {
+          updateSkillProgress(scenarioData.skillsUsed, selectedCareer!.id);
+        }
+        
+        // Mark career as completed
+        updateCompletedCareers(selectedCareer!.id);
+        
         setStage('final');
       } else {
         const data = await callSimulator('consequence', selectedCareer!, newChoices);
+        
+        // Track skills used in this scenario
+        if (data.skillsUsed) {
+          updateSkillProgress(data.skillsUsed, selectedCareer!.id);
+        }
+        
         setScenarioData(data);
         setStage('scenario');
       }
@@ -488,6 +742,23 @@ const CareerSimulatorPage = () => {
     setFinalData(null);
     setPreviousChoices([]);
     setScenarioCount(0);
+  };
+
+  const getTopSkills = () => {
+    return skillProgress
+      .sort((a, b) => b.level - a.level)
+      .slice(0, 5);
+  };
+
+  const getCareerRecommendations = () => {
+    const topSkills = getTopSkills();
+    const recommendations = simulatorCareers.filter(career => {
+      const careerSkills = career.id === 'doctor' ? ['Medical diagnosis', 'Patient care'] :
+                          career.id === 'software-engineer' ? ['Programming', 'Problem-solving'] :
+                          career.id === 'teacher' ? ['Communication', 'Patience'] : [];
+      return topSkills.some(skill => careerSkills.includes(skill.skill));
+    }).slice(0, 3);
+    return recommendations;
   };
 
   return (
