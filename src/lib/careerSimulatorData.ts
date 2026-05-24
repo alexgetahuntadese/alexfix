@@ -20,4 +20,10 @@ export const simulatorCareers: SimulatorCareer[] = [
   { id: 'data-scientist', name: 'Data Scientist', icon: '📊', description: 'Analyze data to discover insights and drive decisions', field: 'Technology', color: 'from-violet-500 to-purple-600' },
   { id: 'veterinarian', name: 'Veterinarian', icon: '🐄', description: 'Care for animals and support livestock health', field: 'Agriculture', color: 'from-yellow-500 to-amber-600' },
   { id: 'accountant', name: 'Accountant', icon: '🧮', description: 'Manage finances and ensure regulatory compliance', field: 'Business', color: 'from-indigo-500 to-blue-600' },
+  { id: 'tourism-guide', name: 'Tourism Guide', icon: '🗺️', description: 'Showcase Ethiopia\'s rich history and culture to visitors', field: 'Tourism', color: 'from-orange-500 to-red-600' },
+  { id: 'coffee-exporter', name: 'Coffee Exporter', icon: '☕', description: 'Manage Ethiopia\'s world-renowned coffee trade internationally', field: 'Business', color: 'from-amber-700 to-yellow-800' },
+  { id: 'telecom-engineer', name: 'Telecom Engineer', icon: '📡', description: 'Build and maintain Ethiopia\'s growing telecommunications network', field: 'Engineering', color: 'from-teal-500 to-cyan-600' },
+  { id: 'public-health-officer', name: 'Public Health Officer', icon: '🏥', description: 'Lead community health initiatives and disease prevention', field: 'Healthcare', color: 'from-pink-500 to-rose-600' },
+  { id: 'bank-manager', name: 'Bank Manager', icon: '🏦', description: 'Oversee banking operations and financial services', field: 'Business', color: 'from-emerald-600 to-green-700' },
+  { id: 'textile-engineer', name: 'Textile Engineer', icon: '🧵', description: 'Manage Ethiopia\'s growing textile and garment industry', field: 'Engineering', color: 'from-purple-600 to-indigo-700' },
 ];
