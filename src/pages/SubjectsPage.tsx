@@ -10,6 +10,8 @@ import StarField from '@/components/StarField';
 import { grade9Subjects } from '@/data/grade9Subjects';
 import { grade10Subjects } from '@/data/grade10Subjects';
 import { grade11Subjects } from '@/data/grade11Subjects';
+import { grade7Subjects } from '@/data/grade7Subjects';
+import { grade8Subjects } from '@/data/grade8Subjects';
 import { 
   Calculator, 
   Atom, 
@@ -138,6 +140,32 @@ const SubjectsPage = () => {
       category: normalizeCategory(subject.category as CurriculumCategory),
     }));
 
+  const buildGrade8Subjects = (): SubjectCardData[] =>
+    grade8Subjects.map((subject) => ({
+      name: subject.name,
+      description: subject.description,
+      chapters: subject.chapters.length,
+      estimatedTime: `${Math.max(subject.chapters.length * 3, 18)} hours`,
+      difficulty: subject.category === 'Mathematics' || subject.name === 'Physics' || subject.name === 'Chemistry'
+        ? 'Intermediate'
+        : 'Beginner',
+      icon: subjectIcons[subject.name as keyof typeof subjectIcons] || BookOpen,
+      category: normalizeCategory(subject.category as CurriculumCategory),
+    }));
+
+  const buildGrade7Subjects = (): SubjectCardData[] =>
+    grade7Subjects.map((subject) => ({
+      name: subject.name,
+      description: subject.description,
+      chapters: subject.chapters.length,
+      estimatedTime: `${Math.max(subject.chapters.length * 3, 18)} hours`,
+      difficulty: subject.category === 'Mathematics' || subject.name === 'General Science'
+        ? 'Beginner'
+        : 'Beginner',
+      icon: subjectIcons[subject.name as keyof typeof subjectIcons] || BookOpen,
+      category: normalizeCategory(subject.category as CurriculumCategory),
+    }));
+
   // Grade-specific subjects configuration
   const getSubjectsForGrade = (gradeNum: string): SubjectCardData[] => {
     if (gradeNum === '12') {
@@ -259,6 +287,18 @@ const SubjectsPage = () => {
 
     if (gradeNum === '10') {
       return buildGrade10Subjects();
+    }
+
+    if (gradeNum === '9') {
+      return buildGrade9Subjects();
+    }
+
+    if (gradeNum === '8') {
+      return buildGrade8Subjects();
+    }
+
+    if (gradeNum === '7') {
+      return buildGrade7Subjects();
     }
 
     return buildGrade9Subjects();

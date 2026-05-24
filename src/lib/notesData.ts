@@ -1,6 +1,8 @@
 import { grade9Subjects } from "@/data/grade9Subjects";
 import { grade10Subjects } from "@/data/grade10Subjects";
 import { grade11Subjects } from "@/data/grade11Subjects";
+import { grade7Subjects } from "@/data/grade7Subjects";
+import { grade8Subjects } from "@/data/grade8Subjects";
 import { grade12Mathematics } from "@/data/grade12Mathematics";
 import { grade12BiologyQuestions } from "@/data/grade12BiologyQuestions";
 import { grade12ChemistryQuestions } from "@/data/grade12ChemistryQuestions";
@@ -88,6 +90,26 @@ const grade12AmharicChaptersClean = [
 ];
 
 export const notesByGrade: NotesGrade[] = [
+  {
+    grade: 7,
+    accent: "from-pink-500 to-rose-500",
+    description: "Start your learning journey with foundational notes for every subject.",
+    subjects: grade7Subjects.map((subject) => ({
+      name: subject.name,
+      description: subject.description,
+      chapters: subject.chapters,
+    })),
+  },
+  {
+    grade: 8,
+    accent: "from-indigo-500 to-purple-500",
+    description: "Build core skills with comprehensive chapter notes for all subjects.",
+    subjects: grade8Subjects.map((subject) => ({
+      name: subject.name,
+      description: subject.description,
+      chapters: subject.chapters,
+    })),
+  },
   {
     grade: 9,
     accent: "from-emerald-500 to-teal-500",
